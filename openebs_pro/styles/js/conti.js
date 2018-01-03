@@ -169,7 +169,7 @@ function requestJSON(url, callback) {
     });
 }
 
-function initMap() {
+/*function initMap() {
 
 
     var mzoom;
@@ -322,7 +322,7 @@ function initMap() {
 
 
     // map.set('styles', styles);
-}
+}*/
 
 
 
