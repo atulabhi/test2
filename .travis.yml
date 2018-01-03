@@ -2,42 +2,33 @@ language: node_js
 node_js: stable
 env:
   global:
-    # Travis limits maximum log size, we have to cut tests output 
-    - secure: "MTki/yfsGipvUx4tFsdv7mf2QhKxuZtwdSDZZeegUaPDD4lgdntXdzE76xm+lu7Y+22XAGp7K+0UlwdJUs6Gqzs1sD+1IV7fgrNSAuIroGkSLnnMwa3rktw1lhNP+nwnhLnExfHkgmN+xCxuCNavN7JM99W3Ajtn6eVEnv93IGTkmiSjuTfug48hV0hR+MSWRjK6gC7BvWCJwS0waAq4LAxZ5qClkOTP3HnUbEoRIAAGnIQLAl1tvRECKGb3o4QTnb4cKNeYmt7c7Ea2Kk5J17E0tIZaZiydQ8K7d0cpOrkIYalRTNHJCsk1HcYvywN57Yq/yeeX64lHJF8m8C9MHDkqzPV1XpfTDmGQhBcyJn4y4cqeC4V2dd+ps2CsAMaxBT5u0FveXtlhSu4PXKbxbywAQtTYdgOpbdcLnmMqqfNB3Brom5EW+nQYfebL3WYZ/PNYtmPzxFzqLQK31VXvbdukr7dGnFoh/QhQ2qYRqXS/1n7VrfJWZ4v7D/ji11oSWmPjhyW9gTewAR9IYIQEsj9n9U88ie1o9vv5NXMDmIdFCRpt27ha9KLIomb3tFrZRMnRLGWOY/Eb5T0dVdreXVW+0WVGuN71o3EKoPEcKJcHdPEXoAKfwvWxSyoOKF7Qx5TIYLBv6wyusN32Mjm+yB5QU8/5CDsL9/W/zJK0OaA="
-    - secure: "L+JC9TR//RfMqkPuujn9LSon0DK2dqu6sVBmjiLGs/sfOcCmVY/TX9RFdwCA68FvTz1DMnrExoZjyBrCBUw6DNxUeUPzlbxNpWjTQ4ZtRy44qWNXax+UiSIy1ZxJGuqwQ0wVPZMi6T+bfneaPgMXXMJsTU376nZ8XCstgEIi/HWyLhg11YNL8lzbxA/JcVCZk6ydeUb7I6gv4eLdOBTFqaFExF6En4G5+pZ/+uWS27+EjEtRpBiYrQgSyV0JjSpW+WlPAv/ohwolF8DQqZF3AUgDibKZ+tic0ATmW4h+LGYy58QlFlowj/fxN+qfu6TCEDXB7Ac0RT7RaZgNn2Xv47hHi1W3z37X2X3dxxpkaiPhOZaNsxpAY8qNOHBV6ZB5oTqSQNk+GhIjS7e1aXq6sBhf9WMFcAVNFxyhXP1XKI06mGQUtLilQlWqfND8MTcrBr+IqxVwzXg5RWJucrxh1joT6reSMamzssg3aqRPuiFCwzha8bLgtJRBDu5FRbG94MXxFdG7TjOr/IlaNTWPZq+tsxRWdil4w+s5nMELUul2A21Bqp2VkfpzWDv08klQ7p0uiqDgU/bSLHaj4YcxUNgydWZTT8kBgob2ETlveJOfsMo19jktPbC6qIAYVVviDxVaUX29Z+946ivr6g9P1oQDR9Ty+RHwmBoFgn6TaTg="
-    - secure: "QWunpeJwmWleCJpdyD4Ss/4Zd6fZF2oxnTl5O1kJ7c0oO6fBVWmWQVOQAMKLvrQCsu/RQOiFfyD4FKTpYMG5s1kO5Vj3kWsYes7S+6q3yJX5/PneizZXQZzO20l9T09bkXoeGVZ7pTIiwWyrLHdFSiQQ11Xpu/yCIphqZ/zFR6Zw3/MsnV+RIlLYelHNAdxqQ1aQLrMXfvEui6DjdRmDr9ndmuFxTfydNAwnfpKnPx4zNN30w+mSV1fzPI/Z6bfYVbf90/8QNF5noMc0b2W0Y1exfHolhn/Nc4N3nWr7ppOtR2dGoXlvS4cfkskCdjZRyXUvf0wXV2kRBRHFPquR1HsFBsLy83wLZGiLWebB3f+ztNBsVraq5T5bHfpW7eCKoEeOk5UAagBivAI2HeAQWXiiqrwv6lU+mToM0qTzUzEfOc8k/fQ8fevY3kG9jDeEyGaYAC6TxbBGmhFadGSaJ7OmSoJgUkaGicVgXWcw30qQEW4ngdjSn2r3osNywQpMMOiEINJpimYf3q0s+P33eZ5hbAWNjmM7CmgWp8/nulLqR3Fv3e6lIrygSaKniwlyCoTF+GtlhAEvjtI2wp15Byq3O3dRgT/v87daIQOxd6/rkSl4MoMAGeODL6EpxN3iZQfN+0AK6kIaNiNcA5VHSY7cXfJ31BmVbXgaZfAIaHE="
-    - COMMIT=${TRAVIS_COMMIT::6}
+  - secure: q3CFBvPyfTS7XgZ6KOgYcREItw/FVnnwQW5nJZf6taA4YGjy363N934nT+p0ofRzQqlEykR/Qw90CVqMAmJAV7sBVypkB9hIutnP4lPyY+4moi5DIQwo7GWDC+mFJ1Pc5bDLdpcAW6vvKm8QKYw9N0nmZozIi8YKto2yxglElpH97BuSbvH7Q/8uD7X1xv87Yx6pBndM18B920wWAoDIgIhD0L/BPnlyIKDYdhip+VqpGHSph4LCAiHK5NDXhaBh7n4EmCyEcd7dq376v+Uj3NAECitu0rNwIPJ6Kno6o1mvSzsxhw2cKipbm3BcCtjfn/wGYAKXaSXow8HmtB08LRSu5Yb6/Fh6PsMySG9ZSPwZIi3rbwMwj22svLH16ntJ89N1P2ms/P6LIxq7WPg1P1P1dt9rpiBi7W5bEyqFz6nT9o9Is6uxu50rSB7+PDfI97HQtZqRq/QswqdkTs5fbJ4403Yib/oqP4hay+XjUfEB+BGZ4fUbieookaedGFrkXrs3Uwoef705iYVFxQdRWPLWBHAf3ScwVToFiiyJ4RAbq5qJu44zezHnb7sIBjJ1TyN3sU5FRlM0eQptBdhedxIz4CrgnpXMlEYAm4pSiKPHvQuVIgOLYziCWyHQgXgxouxK6JpPpf8fI0o75ukqIztc69r0oqjKcSLWuvvZnTA=
+  - secure: ahrQbvjcoq9j6+GdERKxiNzhZP+6n6nsan85/jTZZL85YClcd9iqZLiPVE9hxmpBamYfjnlCXBHfVeqxe+TwdCI+5PWWRU4Qy/SaIIChncS/brhuIr/ZETZMy8x9/J44NWD6KBRfJeZkk3/hjefh8bZTWmBCfazauYS+MV9bYwsJdkmD4edaXbPUIshVnpJ3hC8ZBzI79Ez+8ZZVSafYWkvdO0izGFcV7CQ8L6IguxOmCpNAp1SEhy5wqyOC9ntb31x41umSM7Hx+CYmCJ1u0bv/66rS/olq0vJqZYthgIirmF7+uTKiDNroMGAwEjk4NC1eh/ee5SyoftbOkhAlQMh/07oAA3CMFU8SpyoBl21lue9hiaii1XkYcHPttRMoemqNcDJbpDBCOjgYhL3b+e29K23qsbjBPLyJG5rNzJsb7xYkYKODfqdHefHGp1XPedsvCjhgSoi3QdkaOkcyjhbJeOZD+1Co124RUmyCa3bp5hUJc6490VIESmcPyEl3gohgJazfDtm4tR+OUr/lk6oJ7W3oqNbcoC4sdK0X5xQ0mYvAAilSa7fSndw5iDgCXSLdwUnL4GRberAqL8+MfwDvV75OXvqtiaXYp11/l0EZ4OyrM1Et2hnnRmGfifCDVDtOfnTrzDzTDQk1gZGrR3BJ0q9tiZV8mapkjlcaXzE=
+  - COMMIT=${TRAVIS_COMMIT::6}
 before_install:
-   - stty cols 80
-
+- stty cols 80
 dist: trusty
 sudo: required
 services:
-  - docker
-
+- docker
 addons:
   firefox: latest
   apt:
     sources:
-     - google-chrome
+    - google-chrome
     packages:
-     - google-chrome-stable fluxbox
-
+    - google-chrome-stable fluxbox
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - sleep 3
-  - fluxbox >/dev/null 2>&1 &
- 
-  
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sleep 3
+- fluxbox >/dev/null 2>&1 &
 after_success:
-   - if  [ $TRAVIS_PULL_REQUEST = "false" ]; then
-      export REPO=avneetsingh/openebs-website;
-      docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" && docker build -f openebs_pro/Dockerfile -t $REPO:$COMMIT . && docker push $REPO;
-     fi
-
-  
+- if  [ $TRAVIS_PULL_REQUEST = "false" ]; then export REPO=avneetsingh/openebs-website;
+  docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" && docker build -f openebs_pro/Dockerfile
+  -t $REPO:$COMMIT . && docker push $REPO; fi
 notifications:
   email:
     on_success: never
 on_failure: always
+
