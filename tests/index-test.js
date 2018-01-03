@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture `Getting Started`
-    .page `http://127.0.0.1:5500/openebs_pro/index.html`;
+    .page `http://localhost:9090/openebs_pro/index.html`;
 
 test("unit test", async t => {
     await t
