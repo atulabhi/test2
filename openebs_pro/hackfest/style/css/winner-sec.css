@@ -1,0 +1,196 @@
+.middle-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container,
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.winner-tp {}
+
+.winner-trophy img {
+    width: 100%;
+    height: 100%;
+}
+
+.pd-hackfest {
+    padding: 10% 0%;
+}
+
+.about-winner {
+    text-align: right;
+    line-height: 1;
+}
+
+.about-winner p {
+    font-size: 1.5rem;
+}
+
+.winner-image img {
+    border-radius: 50rem;
+}
+
+.about-winner .winner-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00999e;
+}
+
+
+/* Mobile View  */
+
+@media screen and (max-width:767px) {
+    .winner-tp {
+        background: linear-gradient(180deg, #ffffff 69.5%, #00999e 69.500005%);
+        padding: 5% 0%;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .pd-hackfest {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .winner-trophy {
+        width: 50%;
+    }
+    .reverse-mob {
+        flex-direction: column-reverse;
+    }
+    .about-winner {
+        text-align: center;
+        line-height: 1.5;
+        padding: 3% 0%;
+    }
+    .mobile-background {
+        background-color: #00999e;
+        padding: 5% 0%;
+    }
+    .about-winner .winner-name {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    .about-winner p {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+    .about-winner a,
+    .about-winner a:focus,
+    .about-winner a:hover {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width:576px) {}
+
+@media screen and (max-width:480px) {
+    .about-winner .winner-name {
+        font-size: 1.5rem;
+    }
+    .about-winner p {
+        font-size: 1.15rem;
+    }
+    .winner-image img {
+        width: 85%;
+    }
+    .m-r {
+        margin-top: -0.5%;
+    }
+}
+
+@media screen and (max-width:400px) {}
+
+
+/* Desktop View  */
+
+@media screen and (min-width:768px) {
+    .about-winner a,
+    .about-winner a:focus,
+    .about-winner a:hover {
+        color: #00999e;
+    }
+    .winner-image img {
+        width: 100%;
+    }
+    .about-winner p {
+        font-size: 1rem;
+    }
+    .about-winner .winner-name {
+        font-size: 1.5rem;
+    }
+    .pd-hackfest {
+        padding: 5% 0%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .winner-image img {
+        width: 100%;
+    }
+    .about-winner p {
+        font-size: 1.15rem;
+    }
+    .about-winner .winner-name {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+    .pd-hackfest {
+        padding: 7% 0%;
+    }
+    .winner-trophy img {
+        width: 120%;
+        height: 120%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .winner-image img {
+        width: 80%;
+    }
+    .pd-hackfest {
+        padding: 9% 0%;
+    }
+    .winner-trophy img {
+        width: 150%;
+        height: 120%;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .middle-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .winner-tp {}
+    .winner-trophy img {
+        width: 200%;
+        height: 100%;
+    }
+    .pd-hackfest {
+        padding: 10% 0%;
+    }
+    .about-winner {
+        text-align: right;
+        line-height: 1;
+    }
+    .about-winner p {
+        font-size: 1.5rem;
+    }
+    .winner-image img {
+        border-radius: 50rem;
+    }
+    .winner-name {
+        font-size: 2rem;
+    }
+}

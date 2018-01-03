@@ -1,0 +1,3387 @@
+        html {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .mar-b-5 {
+            margin-bottom: 5%;
+        }
+        
+        .mar-b-10 {
+            margin-bottom: 10%;
+        }
+        
+        .countdown-container {
+            margin: 4% 0%;
+        }
+        
+        .countdown-div {}
+        
+        .countdown {
+            padding-top: 0;
+            text-align: center;
+            font-size: 18px;
+            padding-left: 4%;
+        }
+        
+        .countdown p {
+            text-align: right;
+            padding-right: 9%;
+        }
+        
+        .countdown h2 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        
+        .countdown h3 {
+            font-size: 2.3rem;
+            font-weight: lighter;
+            padding: 2% 0%;
+            border-top: 2px solid #ee5d2b;
+            border-bottom: 2px solid #ee5d2b;
+            margin-bottom: 0;
+            display: inline-block;
+            color: #ee5d2b;
+        }
+        
+        .countdown-img {}
+        
+        .countdown .counttime {
+            margin: 10% auto;
+        }
+        
+        .countdown .counttime .num {
+            height: 100%;
+        }
+        
+        .countdown .counttime .num .alignme {
+            display: inline-block;
+            margin: 0% 2%;
+        }
+        
+        .countdown .counttime .num .pic {
+            height: 80px;
+            width: 80px;
+            /* margin: auto 0%; */
+            padding: 0;
+            background-color: #ffff;
+            border-radius: 0.3em;
+            background-color: black;
+            font-size: 3rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            /* margin-top: -8%; */
+            color: #ee5d2b
+        }
+        
+        .countdown .counttime .num .name {
+            color: black;
+            font-size: 0.8rem;
+            margin-top: 10%;
+            text-transform: uppercase;
+        }
+        
+        .registerbutton,
+        .registerbutton a:hover,
+        .registerbutton a:focus,
+        .registerbutton a {
+            background-color: #ee5d2b;
+            margin: 0;
+            padding: 2% 5%;
+            border-radius: 10rem;
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+        
+        .imageplane {
+            margin-top: 7%;
+            margin-left: -40%;
+            margin-right: 40%;
+        }
+        /* NEW COUNTDOWN DESIGNS ----------------------   */
+        
+        .main-example {
+            margin: 0 auto;
+            width: 355px;
+        }
+        
+        .main-example .countdown-container {
+            height: 130px;
+        }
+        
+        .main-example .time {
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            height: 95px;
+            width: 65px;
+            -webkit-perspective: 479px;
+            -moz-perspective: 479px;
+            -ms-perspective: 479px;
+            -o-perspective: 479px;
+            perspective: 479px;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .main-example .count {
+            background: #202020;
+            color: #ee5d2b;
+            display: block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            line-height: 2.4em;
+            overflow: hidden;
+            position: absolute;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            top: 0;
+            width: 100%;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transform-style: flat;
+            -moz-transform-style: flat;
+            -ms-transform-style: flat;
+            -o-transform-style: flat;
+            transform-style: flat;
+        }
+        
+        .main-example .count.top {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px 5px 0 0;
+            height: 50%;
+            -webkit-transform-origin: 50% 100%;
+            -moz-transform-origin: 50% 100%;
+            -ms-transform-origin: 50% 100%;
+            -o-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+        }
+        
+        .main-example .count.bottom {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            border-radius: 0 0 5px 5px;
+            line-height: 0;
+            height: 50%;
+            top: 50%;
+            -webkit-transform-origin: 50% 0;
+            -moz-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            -o-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+        }
+        
+        .main-example .count.next {}
+        
+        .main-example .label {
+            font-size: normal;
+            margin-top: 5px;
+            display: block;
+            position: absolute;
+            top: 95px;
+            width: 100%;
+        }
+        /* Animation start */
+        
+        .main-example .count.curr.top {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            z-index: 3;
+        }
+        
+        .main-example .count.next.bottom {
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            z-index: 2;
+        }
+        /* Animation end */
+        
+        .main-example .flip .count.curr.top {
+            -webkit-transition: all 250ms ease-in-out;
+            -moz-transition: all 250ms ease-in-out;
+            -ms-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
+            transition: all 250ms ease-in-out;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+        }
+        
+        .main-example .flip .count.next.bottom {
+            -webkit-transition: all 250ms ease-in-out 250ms;
+            -moz-transition: all 250ms ease-in-out 250ms;
+            -ms-transition: all 250ms ease-in-out 250ms;
+            -o-transition: all 250ms ease-in-out 250ms;
+            transition: all 250ms ease-in-out 250ms;
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+        
+        .main-example {
+            width: 100%;
+        }
+        
+        .main-example .countdown-container {
+            height: 100%;
+        }
+        
+        .main-example .time {
+            height: 70px;
+            width: 52px;
+            margin: 0 0.5rem;
+        }
+        
+        .main-example .count {
+            font-size: 1.5em;
+            line-height: 70px;
+        }
+        
+        .main-example .label {
+            font-size: 0.8em;
+            top: 72px;
+        }
+        /* Stop NEW COUNTDOWN HERE -------------   */
+        
+        .btn-overwrite {
+            /* border-radius: 10em; */
+            font-size: 1.1em;
+            font-weight: bold;
+            background-color: #ff9933;
+            color: #fff;
+            padding: 1.5% 8%;
+            margin-right: 2%;
+            border: 1px solid transparent;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .hacktober-banner {
+            background-color: #273274;
+            text-align: center;
+        }
+        
+        .hacktober-banner a {
+            padding: 1% 2%;
+            border: 2px solid white;
+            border-radius: 25px;
+            font-size: 18px;
+            margin-bottom: 2%;
+            color: white;
+            margin-top: 2%;
+        }
+        
+        .hacktober-banner h1 {
+            color: white;
+            font-size: 25px;
+        }
+        
+        .hacktober-banner .hacktober-link1 {
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+        /* .hack-cafe .hacktober-link {
+            margin-top: 3%;
+        } */
+        
+        .hacktober-banner .hack-head {
+            height: 70px;
+        }
+        
+        .hacktober-banner .hack-circle {
+            height: 250px;
+        }
+        
+        .hacktober-banner .laptop-prize {
+            padding-right: 0;
+            flex-direction: row;
+        }
+        
+        .wtopenebs {
+            /* margin-top: 5%; */
+        }
+        
+        .wtopenebs .vediobackgrd {
+            padding-left: 0;
+        }
+        
+        .hacktober-banner .laptop-prize img {
+            background-color: white;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+            /* margin-left: 14%; */
+            height: 350px;
+            width: 350px;
+            margin-left: 1%;
+        }
+        
+        .hacktober-banner .laptop-prize .main-lap-details {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            height: 350px;
+            width: -webkit-fill-available;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+            background-color: white;
+            width: 52%;
+            font-size: 25px;
+            text-align: right;
+            padding: 4%;
+            color: #192559
+        }
+        
+        .hacktober-banner .laptop-prize .main-lap-details .lplink {
+            margin-right: 2%;
+            border: none;
+            background-color: #192559;
+            padding: 2% 10%;
+        }
+        
+        .hacktober-banner .hacktober-link1 .link-mar {
+            margin-right: 2%;
+        }
+        /* .mule-banner {
+            padding-top: 5%;
+        } */
+        /* .mule-banner .blog-link {
+            text-align: center;
+            margin-left: 36%;
+            margin-top: -10%;
+        }
+        
+        .mule-banner .blog-link .blog-link-a {
+            padding: 0% 5%;
+            color: white;
+            font-size: 40px;
+            transition: all 1s;
+        }
+        
+        .mule-banner .blog-link .blog-link-a i:hover {
+            background-color: white;
+            border-radius: 50%;
+            color: #ff9933;
+        }
+        
+        .mblog-link .mblog-link-a {
+            padding: 0% 10%;
+            border-radius: 3em;
+            color: white;
+            font-size: 30px;
+            transition: all 2.3s;
+        }
+        
+        .mblog-link .mblog-link-a:hover {
+            background-color: white;
+            color: #ff9933;
+        } */
+        
+        .quotes {
+            padding: 2.5% 1%;
+        }
+        
+        .quotes .qoute-main {
+            height: 260px;
+            color: #727272;
+        }
+        
+        .quotes .qoute-main .qout {
+            padding: 3% 7%;
+        }
+        
+        .quotes .qoute-main .qout-details {
+            padding: 5% 5%;
+            text-align: center;
+        }
+        
+        .quotes .qoute-main .qout-details .qoutes1 {
+            font-size: 18px;
+        }
+        
+        .btn-ebs-md {
+            background-color: #ee5a2b;
+            border: none;
+            margin-top: 3%;
+            padding: 1% 5%;
+            border-radius: 499rem;
+        }
+        
+        .btn-ebs-sm {
+            background-color: #ee5a2b;
+            border: none;
+            /* border-radius: 499rem; */
+        }
+        
+        .btn-ebs-md:hover {
+            background-color: #ee5a2b;
+        }
+        
+        .btn-ebs-sm:hover {
+            background-color: #ee5a2b;
+        }
+        
+        .hero-header {
+            color: #66637A;
+            font-size: 48px;
+            text-align: left;
+        }
+        
+        .review {
+            text-align: right;
+        }
+        
+        .gbtn {
+            text-align: right;
+        }
+        
+        .slack-sec {
+            background-color: #efefef;
+        }
+        /* .box {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    margin: 60px 60px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
+
+.box p {
+    font-size: 20px;
+} */
+        
+        .icbtn {
+            padding-bottom: 5%;
+        }
+        
+        .icbtn .btn-option {
+            background-color: #00bbb6;
+            border-top-left-radius: 0.2em;
+            border-bottom-left-radius: 0.2em;
+        }
+        
+        .icbtn .btn-option .enc-btn {
+            height: 100%;
+            padding-top: 18%;
+            padding-bottom: 18%;
+            /* padding-left: 30%; */
+        }
+        
+        .icbtn .btn-option .enc-btn .box-btn {
+            text-align: center;
+            padding: 2%;
+            height: 33.33%;
+            text-align: center;
+            padding: 2%;
+            height: 33.33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+        
+        .icbtn .btn-option .enc-btn .box-btn .fnt3 {
+            font-size: 35px;
+        }
+        
+        .icbtn .btn-option .enc-btn .box-btn .fnt3 .fnt1 {
+            background-color: white;
+            border-radius: 50%;
+            color: aquamarine;
+            font-size: 75%
+        }
+        
+        .subheadSection {
+            font-family: din;
+            padding-right: 2%;
+            font-size: 20px;
+        }
+        
+        .event-sec {
+            margin-top: 25px;
+        }
+        
+        .hack-cafe .hack-sec {
+            text-align: center;
+            background-color: #273274;
+            padding: 0%;
+            border-top-right-radius: 16em;
+        }
+        
+        .hack-cafe .hack-sec p {
+            color: #ff9933;
+            font-size: 20px;
+            line-height: normal;
+        }
+        
+        .hack-cafe .hack-sec a {
+            font-size: 18px;
+            text-align: center;
+            padding: .5rem 1rem;
+            border-radius: 499rem;
+            background-color: #ff9933;
+            color: white;
+            line-height: 3;
+        }
+        
+        .hack-cafe .cafe-sec {
+            padding-top: 2%;
+            text-align: center;
+            color: #4B3736;
+            font-size: 20px;
+        }
+        
+        .hack-cafe .cafe-sec img {
+            height: 250px;
+            width: auto;
+            margin-bottom: 3%;
+            margin-top: 3%;
+        }
+        
+        .hack-cafe .cafe-sec .attract {
+            font-size: 22px;
+        }
+        
+        .hack-cafe .cafe-sec a {
+            font-size: 18px;
+            text-align: center;
+            background-color: #62b2b2;
+            color: #4B3736;
+            padding: .5rem 1rem;
+            /* border-radius: 499rem; */
+            margin-top: 0%;
+        }
+        
+        .hack-cafe .hacktober-banner p {
+            font-size: 20px;
+        }
+        
+        .list-inline {
+            padding-left: 0;
+            margin-left: -5px;
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .strong {
+            font-weight: inherit;
+        }
+        
+        .middle-position {
+            display: inline-block;
+            line-height: 0.8;
+            vertical-align: middle;
+        }
+        
+        .no-deco a {
+            text-decoration: none;
+            color: #cc0000;
+            -moz-text-decoration: none;
+            -webkit-text-decoration: none;
+            -o-text-decoration: none;
+            -ms-text-decoration: none;
+        }
+        
+        .no-deco a:hover {
+            text-decoration: none;
+            color: #cc0000;
+            -moz-text-decoration: none;
+            -webkit-text-decoration: none;
+            -o-text-decoration: none;
+            -ms-text-decoration: none;
+        }
+        
+        .careers-page {
+            background-color: #F2F6F9;
+        }
+        
+        .drop-mail h3 {
+            font-size: 30px;
+        }
+        
+        .vacancy-detail h1 {
+            margin-bottom: 30px;
+            font-size: 54px;
+            font-weight: 300;
+            line-height: 60px;
+            color: #465275;
+        }
+        
+        .vacancy-detail .location {
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 30px;
+            color: #7E91A2;
+            margin-bottom: 45px;
+        }
+        
+        .job-des h3 {
+            font-family: "Lato", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.20;
+            opacity: 1.00;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            letter-spacing: 0.00px;
+            word-spacing: 0.00px;
+            text-transform: none;
+        }
+        
+        .job-des p {
+            font-family: "Karla", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.60;
+            opacity: 0.70;
+            margin-top: 0px;
+            text-align: justify;
+            margin-bottom: 25px;
+            letter-spacing: -0.30px;
+            word-spacing: -0.10px;
+            text-transform: none;
+        }
+        
+        .job-des ul li {
+            font-family: "Karla", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            opacity: 0.70;
+            margin-top: 0px;
+            letter-spacing: -0.30px;
+            word-spacing: -0.10px;
+            text-transform: none;
+        }
+        
+        .apply-form h3 {
+            color: #344D62;
+            text-align: center;
+            margin: 43px 0 16px;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        
+        .slack-section {
+            margin: 5%;
+        }
+        
+        .slack-section img {
+            height: 220px;
+            width: auto;
+            margin-left: 10%;
+        }
+        
+        .slack-section .media-body h5 {
+            color: #ee5a2b;
+            font-size: 30px;
+        }
+        
+        .slack-section .media-body {
+            margin: 2% 10% 2% 10%;
+        }
+        
+        .section-1 .fea-body {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        
+        .ebs-footer {
+            vertical-align: middle;
+            text-align: center;
+            margin: 3% 0% 3% 0%;
+            color: #fff;
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+        
+        .ebs-footer a {
+            color: #fff;
+        }
+        
+        .ebs_feature h2 {
+            font-size: 18px;
+        }
+        
+        .ebs_feature .fea-card:hover {
+            -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+        }
+        
+        .ebs_feature .fea-card {
+            -webkit-transition: -webkit-box-shadow .3s;
+            transition: -webkit-box-shadow .3s;
+            transition: box-shadow .3s;
+            transition: box-shadow .3s, -webkit-box-shadow .3s;
+            border-radius: 5px;
+            font-size: 85%;
+            max-width: 270px;
+            text-align: center;
+            background: white;
+            cursor: default;
+        }
+        
+        .ebs_feature .fea-card img {
+            margin: 5%;
+        }
+        
+        .ebs_feature {
+            text-align: center;
+        }
+        
+        .ebs_env h2 {
+            font-size: 18px;
+        }
+        
+        .ebs_env .fea-card {
+            -webkit-transition: -webkit-box-shadow .3s;
+            transition: -webkit-box-shadow .3s;
+            transition: box-shadow .3s;
+            transition: box-shadow .3s, -webkit-box-shadow .3s;
+            border-radius: 5px;
+            font-size: 85%;
+            max-width: 270px;
+            text-align: center;
+            cursor: default;
+        }
+        
+        .ebs_env .fea-card img {
+            margin: 5%;
+        }
+        
+        .ebs-env {
+            text-align: center;
+        }
+        
+        .ebs-nav {
+            -webkit-box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .2);
+            box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .2);
+            /* padding: 1%; */
+            /* background-color: #273274; */
+        }
+        
+        .bs {
+            border: 1px solid;
+        }
+        
+        .b-d {
+            border: 1px dotted;
+        }
+        
+        .rb {
+            border: 1px solid #ff0000;
+        }
+        
+        .pd-b-5 {
+            padding-bottom: 5%;
+        }
+        
+        .pd-b-8 {
+            padding-bottom: 8%;
+        }
+        
+        .pd-b-20 {
+            padding-bottom: 20%;
+        }
+        
+        .pd-t-5 {
+            padding-top: 5%;
+        }
+        
+        .pd-t-10 {
+            padding-top: 10%;
+        }
+        
+        .subhead {
+            padding: 5% 0 5% 0;
+        }
+        
+        .subhead .subhead-title {
+            font-family: sans-serif;
+            text-align: center;
+            color: #ee5a2b;
+            font-size: 27px;
+        }
+        
+        .index-pd {
+            padding-top: 7%;
+        }
+        
+        .alg-itm {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        html body {
+            overflow-x: hidden;
+            -webkit-overflow-x: hidden;
+            -o-overflow-x: hidden;
+            -ms-overflow-x: hidden;
+            -moz-overflow-x: hidden;
+        }
+        
+        .social-top a img {
+            margin-bottom: 6px;
+        }
+        
+        .social-top a {
+            color: #f05928;
+            font-size: 30px;
+        }
+        
+        .social-top-cafe a {
+            color: #7acbb1;
+            font-size: 30px;
+        }
+        
+        .ebs_feature .fea-card h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: #484c50
+        }
+        
+        .ebs_feature .fea-card p {
+            color: #85919d;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+        
+        .news-subc {
+            background: #f9f9f9;
+            padding: 3em 0;
+        }
+        
+        .body-area .ebs-hero .mule-hero {
+            height: 290px;
+            width: auto;
+        }
+        
+        .ebs-hero h2 {
+            color: #66637A;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        
+        .container-fluid .yvedio {
+            text-align: center;
+            background-color: #E5E5E5;
+            height: 100%;
+            justify-content: center;
+        }
+        
+        .container-fluid .yvedio .video-details {
+            /* padding-top: 9%; */
+        }
+        /* .container-fluid .yvedio {
+            background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51));
+        } */
+        
+        .container-fluid .yvedio .video-details a {
+            color: #ff8a29;
+            /* font-size: 25px; */
+        }
+        
+        .container-fluid .row .yvedio .view-model {
+            height: 420px;
+            width: 750px;
+            top: 50%;
+            right: 25%;
+            background-color: transparent;
+            border: transparent;
+        }
+        
+        .container-fluid .row .yvedio .view-model .yvideo {
+            height: 360px;
+            width: 720px;
+        }
+        
+        .wtopenebs .yvedio .video-details .playicon {
+            background-color: white;
+            border-radius: 50%;
+            font-size: 70%
+        }
+        
+        .wtopenebs .openebs-details h2 {
+            color: #ff8a29;
+            padding-top: 3%;
+        }
+        
+        .wtopenebs .openebs-details {
+            padding: 10%;
+            color: #3F3F3F;
+        }
+        
+        .wtopenebs .openebs-details li {
+            color: #7C7C6D;
+            font-size: 20px;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        
+        .section-1 {
+            /* background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51)); */
+            background-color: #ff8a29;
+            color: #fff;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+            /* background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51))*/
+        }
+        
+        .section-1 .media-body h2 {
+            font-size: 37px;
+        }
+        
+        .section-1 .media-body p {
+            font-size: 23px;
+            padding-bottom: 3%;
+        }
+        
+        .section-1 .media-body .readdoc {
+            border: 3px solid white;
+            font-size: 20px;
+            width: 150px;
+            padding: 1% 3%;
+            border-radius: 30px;
+            text-align: center;
+            color: white
+        }
+        
+        .contribute {
+            padding: 4% 0 4% 0;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51));
+        }
+        
+        .contribute p {
+            font-family: sans-serif;
+        }
+        
+        .ebs-footer .docicon {
+            height: 50px;
+            margin-bottom: 12px;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51));
+            overflow-x: hidden;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+        
+        .sidenav .social-top {
+            align-items: center;
+            padding-right: 25px;
+        }
+        
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .absolute-Center {
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            min-width: 200px;
+            max-width: 500px;
+            padding: 40px;
+        }
+        
+        .mobile-logo {
+            display: none;
+        }
+        
+        .section-1 .ebs4 {
+            width: auto;
+            height: 380px;
+        }
+        
+        .ebs-footer .social {
+            margin: 0 2.5% 0 2.5%;
+        }
+        
+        .ebs-footer .under {
+            font-size: 12px;
+            margin: 0;
+        }
+        
+        .card-block:hover {
+            -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+        }
+        
+        .footer-other {
+            background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51));
+        }
+        
+        .job-des {
+            padding: 0 5% 0 5%;
+        }
+        
+        .vacancy-detail {
+            padding: 0 5% 0 5%;
+        }
+        
+        .drop-line {
+            padding: 10% 10% 10% 10%;
+            text-align: center;
+            color: #66637a;
+        }
+        
+        .event {
+            margin: 0% 12%;
+        }
+        
+        .event .event-title {
+            font-size: 32px;
+            font-weight: normal;
+        }
+        
+        .webinars-detail__info {
+            font-size: 14px;
+            line-height: 16px;
+            color: #64787e;
+        }
+        
+        .webinars {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        }
+        
+        .webinars-detail__date,
+        .webinars-detail__lang,
+        .webinars-detail__add-to-calendar {
+            display: inline-block;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .webinars-detail__separator {
+            padding: 0 15px;
+        }
+        
+        .webinars-detail__add-to-calendar {
+            margin: 0 0 10px 0;
+        }
+        
+        .event-form {
+            max-width: 300px;
+        }
+        
+        .event-form h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        
+        .agenda h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        
+        .careers-page .title-job {
+            margin-left: 6%;
+        }
+        
+        .agenda ul li {
+            font-size: 14px;
+        }
+        
+        .absolute-Center {
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 50%;
+            min-width: 200px;
+            max-width: 500px;
+            padding: 40px;
+        }
+        
+        .intro-video {
+            width: 800px;
+            height: auto;
+        }
+        /** Event page**/
+        
+        .event-hero {
+            background: url(../../styles/images/event-hero-xl.jpg);
+            max-height: 900px;
+            height: 700px;
+            margin-bottom: 5%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .event-body {
+            margin-top: 5%;
+        }
+        
+        .event-body .event-time {
+            text-align: center;
+            background-color: #ff922e;
+            font-family: sans-serif;
+        }
+        
+        .event-body .event-time h2 {
+            font-size: 30px;
+            margin: 9%;
+            color: #fff;
+        }
+        /* .event-body .event-time .event-time-box {
+            width:
+        } */
+        
+        .event-body .event-des {
+            font-family: sans-serif;
+            text-align: left;
+            padding-left: 10%;
+        }
+        
+        .event-body .event-des h1 {
+            font-size: 30px;
+            color: #585858;
+            line-height: 60px;
+        }
+        
+        .event-body .event-des h3 {
+            font-size: 16px;
+            color: #808080;
+            line-height: 20px;
+        }
+        
+        .event-body .event-des a {
+            font-size: 15px;
+            color: #ff922e;
+            font-family: inherit;
+            text-decoration: none;
+        }
+        
+        .event-body .event-des a:hover {
+            text-decoration: none;
+        }
+        /** OpenEBS cafe **/
+        
+        .course-section {
+            padding-top: 5%;
+        }
+        
+        .hero button {
+            margin-top: -43%;
+            background-color: #4B3736;
+            color: #62b2b2;
+            font-size: 18px;
+            padding: 1% 3% 1% 3%;
+        }
+        
+        .hero button:hover {
+            background-color: #4B3736;
+            color: #62b2b2;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cafe-body {
+            font-family: 'Montserrat';
+        }
+        
+        .cafe-hero-section {
+            background: url('../../cafe/styles/icons/cafe-hero.svg');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: table;
+            width: 100%;
+            height: 500px;
+        }
+        
+        .hero .hero-btn {
+            margin-top: -43%;
+            background-color: #4B3736;
+            color: #7acbb1;
+            font-size: 20px;
+            padding: 1% 3% 1% 3%;
+        }
+        
+        .cafe-hero-section button:hover {
+            background-color: #4B3736;
+            color: #7acbb1;
+        }
+        
+        .cafe-hero .hero-container {
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+        
+        .cafe-hero .hero-container h1 {
+            font-size: 70px;
+            color: #ee5a2b;
+            background-color: #fff;
+            margin: 0% 25% 0% 25%;
+            padding: 3%;
+            border-radius: 499rem;
+            font-family: sans-serif;
+        }
+        
+        .menu-section {
+            margin-top: 5%;
+        }
+        
+        .course-section {
+            margin-top: 5%;
+        }
+        
+        .course-section .triangle {
+            height: 350px;
+            width: auto;
+            background-color: #ee5a2b;
+            -ms-transform: rotate(45de);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            margin-left: -55%;
+        }
+        
+        .course-section .course-text {
+            padding: 0% 0 0 25%;
+        }
+        
+        .course-section .course-text h2 {
+            font-size: 33px;
+        }
+        
+        .course-section .course-text p {
+            color: #66637a;
+            font-size: 16px;
+        }
+        
+        .course-section .course-icon {
+            padding: 5%;
+        }
+        
+        .course-section .course-icon .course-icon-list {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .coming-soon-section {
+            padding-top: 5%;
+        }
+        
+        .coming-soon-section .meet-icon img {
+            width: 400px;
+            height: auto;
+            margin-left: 15%;
+        }
+        
+        .coming-soon-section .soon-text {
+            padding-left: 15%;
+        }
+        
+        .coming-soon-section .soon-text h2 {
+            color: #ee5a2b;
+            font-size: 40px;
+        }
+        
+        .coming-soon-section .soon-text h3 {
+            color: gray;
+            font-size: 20px;
+        }
+        
+        .coming-soon-section .soon-text button {
+            color: #fff;
+        }
+        
+        .coming-soon-section .soon-text button:hover {
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .coming-soon-section .soon-text input {
+            border-radius: 225em;
+        }
+        
+        .coming-soon-section .soon-text input:focus {
+            border-color: #62b2b2;
+        }
+        
+        .cafe-footer a {
+            color: #52b8ba;
+        }
+        /**  news letter page **/
+        
+        .menu-section .news-list .list-group-item {
+            color: dimgray;
+        }
+        
+        .menu-section .news-list .active {
+            color: #fff;
+            background-color: #ee5a2b;
+            border-color: #ee5a2b;
+        }
+        
+        .arrow-right {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 87.5px 0 87.5px 151.6px;
+            border-color: transparent transparent transparent #ee582b;
+            margin-left: -20%;
+        }
+        
+        .arrow-right {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 87.5px 0 87.5px 151.6px;
+            border-color: transparent transparent transparent #ee582b;
+            margin-left: -20%;
+        }
+        /** option buttons index**/
+        
+        .main-op {
+            background-color: #00bbb6;
+            padding: 7%;
+            border-top-left-radius: 40%;
+            border-bottom-left-radius: 40%;
+        }
+        
+        .box {
+            position: relative;
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            font-size: 30px;
+            margin: 60px 60px;
+            background: none;
+            /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .box::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        
+        .box:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+        }
+        
+        .box:hover::after {
+            opacity: 1;
+        }
+        
+        .temp-mar {
+            margin-top: -1.8%;
+        }
+        
+        .box:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+        }
+        
+        .box:hover::after {
+            opacity: 1;
+        }
+        
+        .box-btn:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+        }
+        
+        .ebs_feature1 .fea-card1:hover {
+            -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+        }
+        
+        .ebs_feature1 .fea-card1 {
+            -webkit-transition: -webkit-box-shadow .3s;
+            transition: -webkit-box-shadow .3s;
+            transition: box-shadow .3s;
+            transition: box-shadow .3s, -webkit-box-shadow .3s;
+            border-radius: 5px;
+            /* border: 2px solid red; */
+            font-size: 90%;
+            max-width: 32%;
+            text-align: justify;
+            background: white;
+            cursor: default;
+        }
+        
+        @media screen and (min-width:1500px) {
+            .countdown p {
+                text-align: right;
+                padding-right: 18%;
+            }
+            .imageplane {
+                margin-top: 7%;
+                margin-left: -53%;
+                margin-right: 65%;
+            }
+            .hero-header {
+                text-align: left;
+                font-size: 60px;
+            }
+            .review {
+                text-align: right;
+            }
+            .navbar-brand img {
+                height: 60px;
+                width: auto;
+            }
+            .section-1 .ebs4 {
+                width: auto;
+                height: 430px;
+            }
+            .form-apply {}
+            .mobile-view {
+                display: none;
+            }
+            .box {
+                height: 100px;
+                width: 110px;
+                margin: 70px 60px;
+            }
+        }
+        /*  
+         * hackfest banner
+        */
+        
+        .hack-cafe .hackfest {
+            background: linear-gradient(-180deg, #00999E 87%, white 6%);
+            border-top-right-radius: 0.2em
+        }
+        
+        .hack-cafe .hackfest .hackfestrow {
+            border: 1px solid transparent;
+            padding-bottom: 0;
+            padding-top: 10%;
+            padding-left: 8%;
+            text-align: left;
+        }
+        
+        .hack-cafe .hackfest .hackfestrow p {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        
+        .pd-t-5mul {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        /*
+        *end of hackfest banner
+        */
+        
+        @media screen and (min-width:1700px) {
+            .countdown p {
+                text-align: right;
+                padding-right: 24%;
+            }
+        }
+        
+        @media screen and (min-width:1824px) {
+            .pd-t-5mul {
+                padding-top: 5%;
+            }
+            .countdown p {
+                text-align: right;
+                padding-right: 24%;
+            }
+            .imageplane {
+                margin-top: -3%;
+                margin-left: -48%;
+                margin-right: 48%;
+            }
+            .hacktober-banner .banner-height {
+                height: 410px;
+            }
+            .hacktober-banner h1 {
+                font-size: 45px;
+            }
+            .hacktober-banner .hack-head {
+                height: 120px;
+            }
+            .hacktober-banner .hack-circle {
+                height: 450px
+            }
+            .hacktober-banner .laptop-prize img {
+                height: 550px;
+                width: 550px;
+                margin-left: 1%;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details {
+                height: 550px;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+                background-color: white;
+                width: 49%;
+                font-size: 30px;
+                text-align: right;
+                padding: 4%;
+                color: #192559
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lplink {
+                font-size: 20px;
+            }
+            .tag-line {
+                font-size: 50px;
+            }
+            .btn-ebs-md {
+                font-size: 30px;
+            }
+            .box {
+                position: relative;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                font-size: 30px;
+                margin: 60px 60px;
+                background: none;
+                /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+                -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+                transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+            .hero-header {
+                color: #66637A;
+                font-size: 44px;
+                text-align: left;
+            }
+            .review {
+                text-align: right;
+            }
+            .hero-header .hero-text .subheadSection {
+                font-size: 22px;
+            }
+            .navbar-brand img {
+                height: 75px;
+                width: auto;
+            }
+            .section-1 .ebs4 {
+                width: auto;
+                height: 561px;
+            }
+            .social-top a {
+                color: #f05928;
+                font-size: 43px;
+                margin: 0 10% 0 0;
+            }
+            .navbar {
+                padding: 0% 2%;
+            }
+            .body-area .ebs-hero .mule-hero {
+                height: 500px;
+                width: auto;
+            }
+            .body-area .ebs-hero .hero-text {
+                margin-left: 40%;
+            }
+            .subhead .subhead-title {
+                font-family: sans-serif;
+                text-align: center;
+                color: #ee5a2b;
+                font-size: 50px;
+            }
+            .ebs_feature .fea-card {
+                -webkit-transition: -webkit-box-shadow .3s;
+                transition: -webkit-box-shadow .3s;
+                transition: box-shadow .3s;
+                transition: box-shadow .3s, -webkit-box-shadow .3s;
+                border-radius: 5px;
+                font-size: 90%;
+                max-width: 270px;
+                text-align: center;
+                background: white;
+                cursor: default;
+            }
+            .ebs_feature .fea-card h2 {
+                font-size: 22px;
+                font-weight: bold;
+                margin: 0 0 10px 0;
+                color: #484c50
+            }
+            .ebs_feature .fea-card p {
+                color: #85919d;
+                -webkit-transition: 0.5s;
+                font-size: 18px;
+                transition: 0.5s;
+            }
+            .section-1 .media-body h2 {
+                font-size: 50px;
+            }
+            .section-1 .media-body p {
+                font-size: 35px;
+                margin-bottom: 5%;
+            }
+            .section-1 .media-body .readdoc {
+                font-size: 38px;
+                border-radius: 50px;
+            }
+            .contribute h2 {
+                font-size: 40px;
+            }
+            .contribute p {
+                font-family: sans-serif;
+                font-size: 25px;
+            }
+            .up-event {}
+            .hack-cafe .hack-sec p {
+                font-size: 30px;
+                margin-bottom: 5%;
+            }
+            .hack-cafe .hack-sec a {
+                font-size: 28px;
+                padding: 2% 5%;
+            }
+            .hack-cafe .cafe-sec {
+                font-size: 1.5rem;
+            }
+            .hack-cafe .cafe-sec img {
+                height: 280px;
+                width: auto;
+                margin-bottom: 5%;
+            }
+            .hack-cafe .cafe-sec .attract {
+                font-size: 1.7rem;
+            }
+            .hack-cafe .cafe-sec a {
+                font-size: 28px;
+            }
+            .body-area .ebs-hero .hero-text {
+                margin-left: 10%;
+            }
+            .careers-page .title-job {
+                margin-left: 23%;
+            }
+            .mobile-view {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width:1268px) {
+            .pd-t-5mul {
+                padding-top: 3%;
+            }
+            .countdown p {
+                text-align: right;
+                padding-right: 10%;
+            }
+            .imageplane {
+                margin-top: 13%;
+                margin-left: -40%;
+                margin-right: 40%;
+            }
+            .wtopenebs .openebs-details li {
+                font-size: 14px;
+            }
+            .hack-cafe .hack-sec {
+                border-top-right-radius: 15em;
+            }
+        }
+        
+        @media screen and (max-width:980px) {
+            .hacktober-banner .hacktober-link {
+                line-height: 5;
+            }
+            .hacktober-banner .hacktober-link .space-bt {
+                margin-left: 3%;
+            }
+            .hacktober-banner .banner-height {
+                height: 410px;
+            }
+            .hacktober-banner .laptop-prize img {
+                background-color: white;
+                border-bottom-left-radius: 50%;
+                border-top-left-radius: 50%;
+                /* margin-left: 14%; */
+                height: 250px;
+                width: 250px;
+                margin-left: 1%;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                height: 250px;
+                width: -webkit-fill-available;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+                background-color: white;
+                width: 49%;
+                text-align: right;
+                padding: 4%;
+                color: #192559
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lplink {
+                margin-right: 2%;
+                border: none;
+                background-color: #192559;
+                padding: 2% 10%;
+                font-size: 10px;
+            }
+            .section-1 .ebs4 {
+                width: auto;
+                height: 250px;
+            }
+            .social-bottom a {
+                font-size: 44px;
+            }
+            .navbar-brand img {
+                height: 40px;
+                width: auto;
+            }
+            .navbar-brand img {
+                height: 40px;
+                width: auto;
+            }
+            .body-area .ebs-hero .mule-hero {
+                height: 300px;
+                width: auto;
+            }
+            .hero-header .subheadSection {
+                text-align: center;
+                font-size: 60px;
+            }
+            .form-apply {
+                left: 25%;
+            }
+            .mobile-view {
+                display: none;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+                font-size: 17px;
+            }
+            /*  
+         * hackfest banner
+        */
+            .hack-cafe .hackfest .hackfestrow p {
+                font-size: 14px;
+            }
+            .btn-overwrite {
+                font-size: 0.9em;
+                padding: 1% 6%;
+            }
+            /*
+        *end of hackfest banner
+        */
+        }
+        
+        @media screen and (max-width:780px) {
+            .wtopenebs {
+                margin-top: 0%;
+            }
+            .quotes .qoute-main {
+                height: 290px;
+            }
+            .quotes .qoute-main .qout {
+                padding: 5% 6%;
+            }
+            .quotes .qoute-main .qout-details {
+                padding: 5% 10%;
+                text-align: justify;
+            }
+            .quotes .qoute-main .qout-details .name {
+                text-align: center;
+                font-size: 12px;
+            }
+            .quotes .qoute-main .qout-details .qoutes1 {
+                font-size: 15px;
+            }
+            .hero-header {
+                color: #66637A;
+                font-size: 48px;
+                text-align: center;
+            }
+            .tag-line {
+                font-size: 35px;
+            }
+            .wtopenebs .openebs-details li {
+                font-size: 15px;
+            }
+            .wtopenebs .openebs-details h2 {
+                font-size: 29px;
+            }
+            .container-fluid .yvedio .video-details a {
+                color: #ff8a29;
+                /* font-size: 19px; */
+            }
+            .hacktober-banner .hack-head {
+                height: 50px;
+            }
+            .hack-cafe .hack-sec {
+                border-top-right-radius: 12em;
+            }
+            .hack-cafe .hacktober-banner p {
+                font-size: 17px;
+            }
+            .quotes .temp2 {
+                padding: 0px;
+            }
+            .hacktober-banner .hacktober-link1 .link-mar {
+                margin-right: 0%;
+            }
+            /*  
+         * hackfest banner
+        */
+            .hack-cafe .hackfest {
+                border-top-right-radius: 0;
+                background: linear-gradient(-180deg, #00999E 71%, white 6%);
+            }
+            .hack-cafe .hackfest .hackfestrow {
+                padding-left: 6%;
+            }
+            .hack-cafe .hackfest .hackfestrow p {
+                font-size: 13px;
+            }
+            /*
+        *end of hackfest banner
+        */
+        }
+        
+        @media screen and (max-width:767px) {
+            .img-mule {
+                margin-top: 4%;
+            }
+            .gbtn {
+                text-align: center;
+            }
+            .countdown-container {
+                margin: 4% 0%;
+                margin-bottom: 10%;
+            }
+            .countdown-div {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .countdown h2 {
+                font-size: 2.5rem;
+            }
+            .countdown p {
+                text-align: right;
+                padding-right: 25%;
+                font-size: 1rem;
+            }
+            .countdown-container .registerbtn {
+                margin-top: 5%;
+            }
+            .countdown h3 {
+                font-size: 2rem;
+                font-weight: lighter;
+                margin-bottom: 0;
+                display: inline-block;
+                color: #ee5d2b;
+            }
+            .registerbutton {
+                background-color: #ee5d2b;
+                margin: 0;
+                padding: 2% 4%;
+                border-radius: 10rem;
+                color: #ffffff;
+                font-size: 1rem;
+                /* font-weight: 400; */
+            }
+        }
+        
+        @media screen and (max-width:720px) {
+            .countdown p {
+                text-align: right;
+                padding-right: 22.5%;
+                font-size: 1rem;
+            }
+            .quotes .temp2 {
+                padding: 0px;
+            }
+            .icbtn .btn-option {
+                margin-top: 0%;
+            }
+            .icbtn {
+                padding-bottom: 0;
+            }
+            .section-1 {
+                margin-top: 40%;
+                padding-bottom: 6%;
+            }
+            .section-1 .fea-body {
+                flex-direction: column-reverse;
+            }
+            .section-1 .fea-body .fea-details {
+                text-align: center;
+            }
+            .section-1 .ebs4 {
+                width: auto;
+                height: 390px;
+                margin-top: -40%;
+            }
+            .hero-header {
+                color: #66637A;
+                font-size: 48px;
+                text-align: center;
+            }
+            .hack-cafe .cafe-sec {
+                padding-top: 13%;
+                padding-bottom: 5%;
+            }
+            .hacktober-banner .hacktober-link .a-margin {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            .hacktober-banner .laptop-prize {
+                background: linear-gradient(90deg, #e1ddda, #ffffff);
+                flex-direction: column;
+                padding-top: 10%;
+            }
+            .hacktober-banner .laptop-prize img {
+                height: 150px;
+                width: 200px;
+                background-color: transparent;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details {
+                height: 150px;
+                background-color: transparent;
+                margin-bottom: 10%;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+                background-color: transparent;
+                width: 100%;
+                font-size: 20px;
+                text-align: right;
+                padding: 4%;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lplink {
+                font-size: 16px;
+            }
+            .wtopenebs .y-heading {
+                color: #999999;
+                text-align: center;
+                padding: 2% 0%;
+                font-size: 30px;
+                padding-bottom: 10%;
+                padding-top: 10%
+            }
+            /* .wtopenebs .vediobackgrd {
+                background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51));
+            } */
+            .wtopenebs .yvedio .video-details {
+                padding-bottom: 10%;
+            }
+            .wtopenebs .yvedio .video-details .playicon {
+                background-color: white;
+                border-radius: 50%;
+                font-size: 70%
+            }
+            .wtopenebs .openebs-details {
+                padding-bottom: 10%;
+            }
+            .wtopenebs .openebs-details h2 {
+                color: #ff8a29;
+                font-size: 30px;
+                padding-top: 10%
+            }
+            .wtopenebs .openebs-details {
+                padding: 2%;
+            }
+            .wtopenebs .openebs-details li {
+                font-size: 16px;
+            }
+            .container-fluid .yvedio {
+                /* height: 450px; */
+                background-color: transparent;
+            }
+            .main-op {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            .hack-cafe .hack-sec {
+                border-top-right-radius: 0;
+            }
+            .icbtn {
+                margin-bottom: 0;
+            }
+            .icbtn .btn-option {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                margin-top: 3rem;
+            }
+            .icbtn .btn-option .enc-btn {
+                padding-left: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .icbtn .btn-option .enc-btn .box-btn .fnt3 {
+                font-size: 30px;
+            }
+            .box img {
+                height: 90px;
+                width: auto;
+            }
+            .tag-line {
+                text-align: center;
+            }
+            .hacktober-banner .hacktober-link {
+                /* margin-bottom: 7%;
+                margin-top: 6%; */
+                display: flex;
+                flex-direction: column;
+            }
+            .temp-pd {
+                padding-left: 15px;
+            }
+            .slack-sec {
+                background-color: #e8e8e8;
+            }
+            .opbutton {
+                margin-left: 0;
+                display: flex;
+                justify-content: center;
+            }
+            .intro-video {
+                width: 500px;
+                height: auto;
+            }
+            .social-bottom a {
+                font-size: 40px;
+            }
+            .hack-cafe .hack-sec p {
+                font-size: 15px;
+            }
+            .ebs-hero {
+                text-align: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .ebs-hero .mule-hero {
+                text-align: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .ebs-hero .hero-text {
+                text-align: center;
+                margin: 40%;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .navbar-brand img {
+                height: 40px;
+                width: auto;
+            }
+            .body-area .ebs-hero .mule-hero {
+                height: 200px;
+                width: auto;
+                margin-top: 0;
+            }
+            .event {
+                margin: 0% 0%;
+            }
+            .slack-section .slack-img img {
+                margin-bottom: 10%;
+                margin-left: 10%;
+                height: 130px;
+                width: 130px;
+            }
+            .slack-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .slack-section img {
+                margin-left: 0;
+            }
+            /*  
+         * hackfest banner
+        */
+            .hack-cafe .hackfest {
+                background: linear-gradient(-180deg, #00999E 71%, white 6%);
+            }
+            .hack-cafe .hackfest .hackfestrow {
+                text-align: center;
+            }
+            .hack-cafe .hackfest .hackfestrow p {
+                font-size: 15px;
+            }
+            /*
+        *end of hackfest banner
+        */
+        }
+        
+        @media screen and (max-width:590px) {
+            .countdown p {
+                text-align: right;
+                padding-right: 15%;
+                font-size: 1rem;
+            }
+            .section-1 {
+                margin-top: 45%;
+                padding-bottom: 6.5%;
+            }
+            .section-1 .ebs4 {
+                width: auto;
+                height: 408px;
+                margin-top: -50%;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            .countdown h2 {
+                font-size: 2.3rem;
+            }
+            .countdown p {
+                text-align: right;
+                padding-right: 12%;
+                font-size: 1rem;
+            }
+            .hacktober-banner a {
+                font-size: 15px;
+                padding: 2% 4%;
+                margin-top: 3%;
+            }
+            .hacktober-banner h1 {
+                font-size: 20px;
+                margin-top: 4%;
+            }
+            .hacktober-banner .hack-head {
+                height: 60px;
+            }
+            .hacktober-banner .hack-circle {
+                height: 200px
+            }
+            .opbutton .box img {
+                height: 70px;
+            }
+            Updated upstream .coming-soon-section {
+                margin: 15% 0 15% 0;
+            }
+            /** options index**/
+            .index-pd {
+                padding-top: 22%;
+            }
+            .box {
+                margin: 20px 20px;
+            }
+            .box p {
+                font-size: 20px;
+            }
+            .temp-pd {
+                padding-left: 15px;
+            }
+            .coming-soon-section {
+                margin: 15% 0 15% 0;
+            }
+            .ebs-hero .hero-header h1 {
+                color: #66637A;
+                font-size: 25px;
+                padding-top: 5%;
+                text-align: center;
+            }
+            .slack-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .slack-section .slack-img {
+                margin-bottom: 15%;
+            }
+            .section-1 .media-body h2 {
+                padding-top: 0%;
+            }
+            .social-bottom a {
+                font-size: 22px;
+            }
+            .ebs_feature .fea-card {
+                max-width: 320px;
+            }
+            .ebs-hero {
+                text-align: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .ebs-hero .mule-hero {
+                text-align: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .ebs-hero .hero-text {
+                text-align: center;
+                font-size: 22px;
+                margin: 40%;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .navbar-brand img {
+                height: 40px;
+                width: auto;
+            }
+            .body-area .ebs-hero .mule-hero {
+                height: 185px;
+                width: auto;
+            }
+            .desktop-logo {
+                display: none;
+            }
+            .mobile-logo {
+                display: block;
+            }
+            .hack-cafe {
+                margin-bottom: 10%;
+            }
+            .container-fluid .yvedio {
+                /* height: 250px; */
+            }
+            .container-fluid .yvedio .video-details a {
+                /* font-size: 10px; */
+            }
+            .container-fluid .row .yvedio .view-model {
+                height: 390px;
+                width: auto;
+                right: auto;
+            }
+            .container-fluid .row .yvedio .view-model .yvideo {
+                height: 200px;
+                width: auto;
+            }
+            .section-1 .media-body h2 {
+                font-size: 32px;
+            }
+            .section-1 .media-body p {
+                font-size: 20px;
+            }
+            .section-1 {
+                margin-top: 45%;
+                padding-bottom: 6.5%;
+            }
+            .section-1 .ebs4 {
+                height: 350px;
+                margin-top: -53%;
+            }
+            .section-1 .media-body .readdoc {
+                font-size: 22px;
+                width: 100px;
+                padding: 1% 3%;
+            }
+            .icbtn {
+                background-color: #e8e8e8;
+                padding-top: 5%;
+            }
+            .icbtn .event .eventmob {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 5%;
+                margin-top: 5%;
+                background-color: white;
+            }
+            .icbtn .event .eventmob .ev-details {
+                margin-top: 10%;
+                text-align: center;
+            }
+            .main-op {
+                margin-top: 15%;
+            }
+            .hack-cafe .hack-sec p {
+                font-size: 15px;
+            }
+            .hack-cafe .hack-sec a {
+                font-size: 15px;
+            }
+            .hack-cafe .cafe-sec {
+                font-size: 15px;
+            }
+            .hack-cafe .cafe-sec img {
+                height: 200px;
+                width: auto;
+                margin-bottom: 5%;
+            }
+            .hack-cafe .cafe-sec .attract {
+                font-size: 17px;
+            }
+            .hack-cafe .cafe-sec a {
+                font-size: 18px;
+                text-align: center;
+                background-color: #62b2b2;
+                color: #4B3736;
+                padding: .5rem 1rem;
+                /* border-radius: 499rem; */
+                margin-top: 0%;
+            }
+            .contribute h2 {
+                font-size: 24px;
+            }
+            .contribute p {
+                font-family: sans-serif;
+                font-size: 15px;
+            }
+            .ebs-footer {
+                padding: 0;
+            }
+            .ebs-footer a {
+                font-size: 27px;
+            }
+            .ebs-footer .social {
+                margin: 4%;
+            }
+            .ebs-footer .docicon {
+                height: 35px;
+            }
+            .form-apply {
+                left: 0;
+            }
+            .vacancy-detail {
+                padding: 0;
+            }
+            .vacancy-detail h1 {
+                font-size: 44px;
+            }
+            .vacancy-detail .location {
+                font-size: 22px;
+            }
+            .job-des {
+                padding: 0%;
+            }
+            .drop-line .drop-mail h3 {
+                font-size: 22px;
+            }
+            .event .event-title {
+                font-size: 27px;
+                font-weight: normal;
+            }
+            .event .event-time {
+                display: none;
+            }
+            .absolute-Center {
+                margin: auto;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                height: 50%;
+                min-width: 300px;
+                max-width: 500px;
+                padding: 0px;
+            }
+            .intro-video {
+                width: 320px;
+                height: auto;
+            }
+            .slack-section {
+                margin: 2%;
+            }
+            .slack-section img {
+                height: 100px;
+                width: auto;
+            }
+            .slack-section .media-body {
+                margin: 5% 0 0 5%;
+            }
+            .slack-section .media-body h5 {
+                color: #ee5a2b;
+                font-size: 22px;
+            }
+            .slack-section .media-body p {
+                font-size: 15px;
+                text-align: center;
+            }
+            .btn-ebs-sm {
+                font-size: 15px;
+            }
+            .slack-section img {
+                height: 110px;
+                width: auto;
+                margin-left: 2%;
+            }
+            /* Event page */
+            .event-hero {
+                background: url(../../styles/images/event-hero-xl.jpg);
+                max-height: 900px;
+                height: 200px;
+                margin-bottom: 5%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .event-body .event-time {
+                text-align: center;
+                background-color: #ff922e;
+                font-family: sans-serif;
+                display: inline-block;
+                margin: 2% 50% 2% 0;
+            }
+            .event-body .event-time h2 {
+                font-size: 24px;
+                margin: 3%;
+                color: #fff;
+            }
+            .event-body .event-time .event-time-box {}
+            .event-body {
+                margin-top: 10%;
+                border-radius: 25%;
+            }
+            .event-body .event-des h1 {
+                font-size: 20px;
+                color: #585858;
+                line-height: 50px;
+            }
+            .event-body .event-des h3 {
+                font-size: 15px;
+                color: #808080;
+                line-height: 20px;
+            }
+            /** cafe page**/
+            .desktop-view {
+                display: none;
+            }
+            .mobile-view {
+                display: contents;
+            }
+            .hero .hero-btn {
+                margin-top: -120%;
+                background-color: #4B3736;
+                color: #62b2b2;
+                font-size: 18px;
+                padding: 1% 3% 1% 3%;
+            }
+            .course-section .course-icon .course-icon-list {
+                width: 150px;
+                height: auto;
+                padding: 3%;
+            }
+            .cafe-hero .hero-container h1 {
+                font-size: 30px;
+                margin: 0% 2% 0% 2%;
+                padding: 3%;
+            }
+            .coming-soon-section .soon-text {
+                padding-left: 0%;
+                text-align: center;
+            }
+            .coming-soon-section .soon-text h2 {
+                padding-top: 25px;
+                font-size: 26px;
+            }
+            .coming-soon-section .soon-text h3 {
+                font-size: 15px;
+            }
+            .course-section .course-text {
+                padding: 0% 0 0 14%;
+            }
+            .course-section .course-text h2 {
+                font-size: 28px;
+            }
+            .course-section .course-text p {
+                color: #66637a;
+                font-size: 14px;
+            }
+            .course-section .course-icon {
+                padding: 5%;
+            }
+            .coming-soon-section .meet-icon img {
+                width: 200px;
+                height: auto;
+                margin-left: 20%;
+            }
+            .coming-soon-section .soon-frm {
+                text-align: center;
+                margin-left: 20%;
+            }
+            .coming-soon-section button {
+                text-align: center;
+                margin-left: 34%;
+            }
+            /* hackfest banner
+            */
+            .hack-cafe .hackfest {
+                border-top-right-radius: 0;
+                background: linear-gradient(-180deg, #00999E 89%, white 6%);
+            }
+            .hack-cafe .hackfest .hackfestrow {
+                padding-left: 6%;
+            }
+            .hack-cafe .hackfest .hackfestrow p {
+                font-size: 15px;
+            }
+            /*
+            *end of hackfest banner
+            */
+        }
+        
+        @media screen and (max-width:400px) {
+            .countdown h2 {
+                font-size: 1.5rem;
+            }
+            .countdown h3 {
+                font-size: 1.5rem;
+                font-weight: lighter;
+                margin-bottom: 0;
+                display: inline-block;
+                color: #ee5d2b;
+            }
+            .countdown p {
+                text-align: right;
+                padding-right: 19%;
+                font-size: 1rem;
+            }
+            .countdown .counttime .num .pic {
+                height: 60px;
+                width: 60px;
+                /* margin: auto 0%; */
+                padding: 0;
+                background-color: #ffff;
+                border-radius: 0.3em;
+                background-color: black;
+                font-size: 2.5rem;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                /* margin-top: -8%; */
+                color: #ee5d2b;
+            }
+            .countdown .counttime .num .name {
+                color: black;
+                font-size: 0.7rem;
+                margin-top: 10%;
+                text-transform: uppercase;
+            }
+            .quotes .qoute-main {
+                height: 300px;
+            }
+            .quotes .qoute-main .qout {
+                padding: 5% 10%;
+            }
+            .quotes .qoute-main .qout-details {
+                padding: 5% 2%;
+                text-align: center;
+            }
+            .section-1 .media-body h2 {
+                font-size: 26px;
+                font-weight: bolder;
+            }
+            .section-1 .media-body p {
+                font-size: 20px;
+            }
+            .section-1 .ebs4 {
+                height: 150px;
+            }
+            .section-1 .media-body .readdoc {
+                font-size: 22px;
+                width: 80px;
+                padding: 1% 3%;
+            }
+            .section-1 .ebs4 {
+                height: 300px;
+                margin-top: -50%;
+            }
+        }
+        
+        @media screen and (max-width:360px) {
+            .section-1 .ebs4 {
+                height: 265px;
+                margin-top: -55%;
+            }
+        }
+        
+        @media screen and (max-width:1100px) {
+            section .justify-content-center .box {
+                height: 80px;
+                width: 80px;
+                line-height: 90px;
+                font-size: 30px;
+                margin: 60px 40px;
+            }
+            section .justify-content-center .box p {
+                font-size: 20px;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            section .justify-content-center .box {
+                height: 80px;
+                width: 80px;
+                line-height: 70px;
+                font-size: 30px;
+                margin: 40px 40px;
+            }
+            section .justify-content-center .box p {
+                font-size: 20px;
+            }
+        }
+        /**Global utilitties**/
+        
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+        }
+        
+        @media screen and (max-width:4500px) {
+            .temp-mar {
+                margin-top: -0.7%;
+            }
+        }
+        
+        @media screen and (max-width: 2500px) {
+            .temp-mar {
+                margin-top: -1.2%;
+            }
+            .hacktober-banner .hacktober-link1 {
+                line-height: 5;
+            }
+            .quotes .qoute-main .qout-details .qoutes1 {
+                font-size: 1.8rem;
+                text-align: justify;
+            }
+            .quotes .qoute-main .qout-details .name {
+                font-size: 1rem;
+            }
+        }
+        
+        @media screen and (max-width: 1900px) {
+            .temp-mar {
+                margin-top: -1.4%;
+            }
+            .hacktober-banner .hacktober-link1 {
+                line-height: 5;
+            }
+            .quotes .qoute-main .qout-details .qoutes1 {
+                font-size: 1.4rem;
+            }
+            .quotes .qoute-main .qout-details .name {
+                font-size: 1.1rem;
+            }
+            .hack-cafe .hackfest .hackfestrow p {
+                font-size: 1.4rem;
+                color: #fff;
+            }
+        }
+        
+        @media screen and (max-width: 1500px) {
+            .countdown p {
+                text-align: right;
+                padding-right: 16%;
+            }
+            .temp-mar {
+                margin-top: -2%;
+            }
+            .hacktober-banner .hacktober-link1 {
+                line-height: 5;
+            }
+            .quotes .qoute-main .qout-details .qoutes1 {
+                font-size: 1.2rem;
+            }
+            .quotes .qoute-main .qout-details .name {
+                font-size: 0.8rem;
+            }
+            .pd-t-5mul {
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+            .hack-cafe .hackfest .hackfestrow p {
+                font-size: 1.2rem;
+                color: #fff;
+            }
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .countdown h2 {
+                font-size: 2.5rem;
+            }
+            .countdown h3 {
+                font-size: 2rem;
+            }
+            .imageplane {
+                margin-top: 23%;
+                margin-left: -40%;
+                margin-right: 40%;
+            }
+            .temp-mar {
+                margin-top: -2.5%;
+            }
+            .hacktober-banner .hacktober-link1 {
+                line-height: 3;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+                font-size: 22px;
+            }
+            .quotes .qoute-main .qout-details .qoutes1 {
+                font-size: 1rem;
+            }
+        }
+        
+        @media screen and (max-width: 870px) {
+            .countdown h2 {
+                font-size: 2.23rem;
+            }
+            .countdown h3 {
+                font-size: 2rem;
+            }
+            .imageplane {
+                margin-top: 41%;
+                margin-left: -38%;
+                margin-right: 20%;
+            }
+            .temp-mar {
+                margin-top: -3%;
+            }
+            .hacktober-banner .hacktober-link {
+                line-height: 2;
+            }
+            .hacktober-banner .laptop-prize .main-lap-details .lap-details {
+                font-size: 17px;
+            }
+        }
+        
+        .youtube-player {
+            position: relative;
+            padding-bottom: 56.23%;
+            /* Use 75% for 4:3 videos */
+            height: 100%;
+            overflow: hidden;
+            max-width: 100%;
+            background: transparent;
+        }
+        
+        .youtube-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+            background: transparent;
+            border: transparent;
+        }
+        
+        .youtube-player img {
+            bottom: 0;
+            display: block;
+            left: 0;
+            margin: auto;
+            max-width: 100%;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            height: auto;
+            cursor: pointer;
+            -webkit-transition: .4s all;
+            -moz-transition: .4s all;
+            transition: .4s all;
+            background-color: transparent;
+            border: transparent;
+        }
+        
+        .youtube-player img:hover {
+            -webkit-filter: brightness(75%);
+        }
+        
+        .youtube-player .play {
+            height: 72px;
+            width: 72px;
+            left: 50%;
+            top: 50%;
+            margin-left: -36px;
+            margin-top: -36px;
+            position: absolute;
+            background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+            cursor: pointer;
+        }
+        
+        .mule-banner {
+            background: linear-gradient(to right, #ee5d2b, #ff9933);
+            color: white;
+            border-radius: 20em;
+            display: flex;
+            align-items: center;
+            margin: 5% 5% 1% 5%;
+        }
+        
+        .remove-pd .mule-banner h1 {
+            font-size: 35px;
+        }
+        
+        .remove-pd .mule-banner .mule-img {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .remove-pd .mule-banner .mule-img img {
+            height: 300px;
+        }
+        
+        .mule-banner .yebsonaws .blog-link {
+            padding: 0% 0%;
+            color: white;
+            font-size: 20px;
+            transition: all 1s;
+        }
+        
+        .mule-banner .yebsonaws {
+            text-align: left;
+        }
+        
+        .mule-banner .tag-line {
+            text-align: center;
+            padding-left: 11%;
+        }
+        
+        .mule-banner .yebsonaws .blog-link i:hover {
+            background-color: white;
+            border-radius: 50%;
+            color: #ff9933;
+        }
+        
+        .btn-ebs-md {
+            background-color: #ee5a2b;
+            border: none;
+            margin-top: 1%;
+            padding: 1% 4%;
+            border-radius: 499rem;
+        }
+        
+        @media screen and (max-width:3000px) {
+            .remove-pd .mule-banner h1 {
+                font-size: 70px;
+            }
+            .remove-pd .mule-banner .yebsonaws h1 {
+                font-size: 70px;
+            }
+            .remove-pd .mule-banner .mule-img img {
+                height: 400px;
+            }
+            .mule-banner .tag-line {
+                padding-right: 0;
+            }
+        }
+        
+        @media screen and (max-width:2500px) {
+            .mule-banner .yebsonaws .blog-link {
+                font-size: 27px;
+            }
+            .remove-pd .mule-banner .mule-img img {
+                height: 480px;
+            }
+            .countdown-container {
+                margin: 7.5% 0% 7.5% 0%;
+            }
+        }
+        
+        @media screen and (max-width:2000px) {
+            .mule-banner .yebsonaws .blog-link {
+                font-size: 1.7em;
+            }
+            .remove-pd .mule-banner h1 {
+                font-size: 42px;
+            }
+            .remove-pd .mule-banner .yebsonaws h1 {
+                font-size: 41px;
+            }
+            .remove-pd .mule-banner .mule-img img {
+                height: 360px;
+            }
+        }
+        
+        @media screen and (max-width:1500px) {
+            .mule-banner .yebsonaws .blog-link {
+                font-size: 22px;
+            }
+            .remove-pd .mule-banner .mule-img img {
+                height: 310px;
+            }
+            .remove-pd .mule-banner h1 {
+                font-size: 38px;
+            }
+            .remove-pd .mule-banner .yebsonaws h1 {
+                font-size: 33px;
+            }
+        }
+        
+        @media screen and (max-width:1100px) {
+            .mule-banner .yebsonaws .blog-link {
+                font-size: 15px;
+            }
+            .remove-pd .mule-banner .mule-img img {
+                height: 230px;
+            }
+            .remove-pd .mule-banner h1 {
+                font-size: 25px;
+            }
+            .remove-pd .mule-banner .yebsonaws h1 {
+                font-size: 25px;
+            }
+            .mule-banner .tag-line {
+                padding-right: 15px;
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            .countdown h2 {
+                font-size: 2rem;
+            }
+            .countdown p {
+                text-align: right;
+                padding-right: 25%;
+                font-size: 1rem;
+            }
+            .countdown h3 {
+                font-size: 1.5rem;
+            }
+            .imageplane {
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+                display: flex;
+                justify-content: center;
+                text-align: center
+            }
+            .remove-pd {
+                padding: 0;
+            }
+            .mule-banner {
+                background: transparent;
+                color: white;
+                border-radius: 0;
+                text-align: center;
+                margin: 0;
+                margin-top: 5%;
+            }
+            .mule-banner .yebsonaws {
+                text-align: center;
+            }
+            .mule-banner .tag-line {
+                text-align: center;
+                padding-left: 15px;
+            }
+            .tag-line {
+                /* color: #ee5a2b */
+            }
+            .remove-pd .mule-banner .mule-img {
+                display: block;
+            }
+            .remove-pd .mule-banner .mule-img img {
+                height: auto;
+            }
+            .mule-banner .yebsonaws .blog-link {
+                padding: 0% 5%;
+                color: white;
+                font-size: 20px;
+                transition: all 1s;
+            }
+            .mule-banner .mule-img {
+                position: relative;
+                border-radius: 50%;
+                border: 15px solid;
+                height: 100%;
+                width: 50%;
+                border-top-color: #ff9933;
+                border-left-color: #ff9933;
+                border-right-color: #ee5d3b;
+                border-bottom-color: #ee5d3b;
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                margin: 0 auto;
+            }
+            .mule-banner .mule-img img {
+                -moz-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            .mule-banner .yebsonaws .blog-link i:hover {
+                background-color: white;
+                border-radius: 50%;
+                color: #ff9933;
+            }
+            .mule-banner .mule {
+                background: linear-gradient(180deg, white 50%, #ff9933 50%);
+                margin-top: 10%;
+            }
+            .mule-banner .yebsonaws {
+                background-color: #ff9933;
+                padding: 5%;
+                margin-top: -0.2%;
+            }
+        }
+        
+        @media screen and (max-width:567px) {
+            .countdown p {
+                text-align: right;
+                padding-right: 20%;
+                font-size: 1rem;
+            }
+        }
+        
+        @media screen and (max-width:400px) {
+            .countdown p {
+                padding-right: 3%;
+            }
+        }
+        
+        .pb-2 {
+            padding-bottom: 1.5rem!important;
+        }
+        
+        .openebs05 .openebsdetalis {
+            background-color: #f93;
+            color: #fff;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs {
+            padding: 15% 8%;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs h2 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs p {
+            font-size: 0.9rem;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs h5 {
+            font-size: 1rem;
+            font-weight: 100;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn-release {
+            padding: 0.7% 3%;
+            background-color: #fff;
+            color: #ff9933;
+            border-color: #fff;
+            padding: 1% 4%;
+            font-size: 1rem;
+        }
+        
+        .btn-release:hover {
+            background-color: #fff;
+            color: #f93;
+            border-color: #fff;
+        }
+        
+        .imgopenebs {
+            background: url(../images/openebsrelease.svg) no-repeat;
+            background-size: 0 0;
+            background-position: center;
+        }
+        
+        .imgfront {
+            display: block;
+            /* height: 400px; */
+            margin-top: 10%;
+        }
+        
+        .mule-background {
+            background: #198A9C;
+            padding: 5% 0%;
+        }
+        
+        .flying-mule .mayaonine-logo {
+            height: 33px;
+        }
+        
+        .flying-mule .mayaonline-details-block {
+            padding: 10%;
+        }
+        
+        .flying-mule .mayaonline-details-block p {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: 4%;
+            text-align: center;
+            font-size: 1rem;
+        }
+        
+        .mule-heading h3 {
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+            margin-top: 5%;
+        }
+        
+        .mule-text {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .mayaonline-details-block {
+            text-align: center;
+        }
+        
+        .mycol {
+            padding: 10%;
+        }
+        
+        @media screen and (min-width:480px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 2.4rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 1.5rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.8rem;
+            }
+            .btn-release {
+                font-size: 1.4rem;
+            }
+            .imgopenebs {
+                background-size: contain;
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 2rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 0.9rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.1rem;
+            }
+            .btn-release {
+                font-size: 1.2rem;
+            }
+            .imgopenebs {
+                background-size: contain;
+            }
+            .imgfront {
+                display: none;
+            }
+            .openebs05 .openebsdetalis .pd-openebs {
+                padding: 10% 10%;
+            }
+            .mule-heading h3 {
+                font-size: 1.2rem;
+                margin-top: 0%;
+            }
+            .flying-mule .mayaonine-logo {
+                height: 50px;
+            }
+            .flying-mule .mayaonline-details-block p {
+                font-size: 1rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .mule-background {
+                background: #198A9C;
+                background: -webkit-linear-gradient(0deg, #a4d1f9, #036878);
+                background: linear-gradient(0deg, #a4d1f9, #036878);
+                padding: 5% 0%;
+            }
+            .mule-text {
+                flex-direction: row;
+            }
+            .flying-mule .mayaonline-details-block p {
+                text-align: left;
+                font-size: 0.8rem;
+            }
+            .mayaonline-details-block {
+                text-align: left;
+            }
+            .openebs05 .openebsdetalis .pd-openebs {
+                text-align: left;
+            }
+            .mycol {
+                padding: 0;
+            }
+        }
+        
+        @media screen and (min-width:1200px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 3rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 1.2rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.5rem;
+            }
+            .btn-release {
+                font-size: 1.5rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs {
+                padding: 15% 8%;
+                margin: 0 auto;
+                width: 500px;
+            }
+            .flying-mule .mayaonine-logo {
+                height: 70px;
+            }
+            .flying-mule .mayaonline-details-block p {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media screen and (min-width:1536px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 3rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 1.3rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.4rem;
+            }
+            .btn-release {
+                font-size: 1.3rem;
+            }
+            .ebscontainer {
+                max-width: 1536px;
+            }
+            .ebs_feature .fe-width {
+                max-width: 33%
+            }
+        }

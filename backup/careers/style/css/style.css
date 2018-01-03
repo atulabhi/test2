@@ -1,0 +1,56 @@
+/*
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                CAREERS PAGE CSS
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+.career-video {
+    padding: 4% 0%;
+    background-color: #ffffff;
+}
+
+.careeract {
+    padding: 0;
+    background-color: lightgrey;
+}
+
+.drop-line {
+    padding: 0;
+    text-align: center;
+    color: #66637a;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footer-other {
+    margin-top: 0%;
+    padding: 3% 0;
+}
+
+.ebs-footer {
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.ebs-footer .docicon {
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width:768) {
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:992) {}
+
+@media screen and (min-width:1200) {}
+
+@media screen and (min-width:1500) {}

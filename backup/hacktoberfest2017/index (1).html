@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>OpenEBS | HacktoberFest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../styles/images/fav/largetile.png" />
+    <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../styles/css/openebs.css" rel="stylesheet">
+    <link href="style/css/style.css" rel="stylesheet">
+    <script src="../styles/js/jquery.min.js"></script>
+    <script src="../styles/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="../index.html"><img src="../styles/images/banner-icon.svg" height="40" width="auto"></a>
+                <a class="navbar-brand mobile-logo" href="../index.html"><img src="../styles/images/openebs-logo.svg" height="40" width="auto"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <a href="https://www.facebook.com/openebs/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="http://slack.openebs.io" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://blog.openebs.io" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://twitter.com/openebs" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com/openebs/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <a href="https://www.facebook.com/openebs/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="http://slack.openebs.io" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://blog.openebs.io" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/openebs" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/openebs/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+
+
+
+
+
+    <section class="hero hackheader">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="img-re">
+                                <img class="" src="style/images/hacktitilebig-01.svg">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="ebs">
+                                            <p>OpenEBS project is looking for contributions !<br>We are celebrating the month long Hackerfest !!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <a href="#issuetab" value="#issuetab">
+                                            <div class="d-flex align-items-center sthack btn-hack">
+                                                <p style="">Start Hacking</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4 re">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <img class="extraspace" src="style/images/laptopPNG.png" align="right">
+                        </div>
+
+                        <div class="col-md-12" style="padding-right:0;">
+
+                            <div class="d-flex align-items-end flex-column justify-content-end sthack1 ">
+                                <div class="abc">
+                                    <p>The <strong>Best PR</strong> of the month</p>
+                                </div>
+                                <div>
+                                    <p style="border-radius: 0.1em 0em 0em 5em;">wins a <strong>Laptop!</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <img class=" " src="style/images/treeshacktober-01.svg ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-issuesec" id="issuetab">
+        <section class="issuesec">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-md-6 d-flex align-items-center  flex-column">
+                        <div class="col-md-12 isbtn">
+                            <center>
+                                <img class="mule-hacktober" src="style/images/issuemulehacktober.svg ">
+                                <div class="d-flex align-items-center justify-content-center ">
+                                    <div class="button " style="margin-right:2.5%; ">
+                                        <a href="https://github.com/openebs/openebs/issues?utf8=%E2%9C%93&q=is%3Aopen%20python " target="_blank ">
+                                            <p>Python</p>
+                                        </a>
+                                    </div>
+                                    <div class="button " style="margin-left:2.5%; ">
+                                        <a href="https://github.com/openebs/openebs/labels/documentation " target="_blank ">
+                                            <p>Documentation</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center ">
+                                    <div class="button " style="margin-right:2.5%; ">
+                                        <a href="https://github.com/openebs/openebs/labels/help%2Fsmall " target="_blank ">
+                                            <p>Easy</p>
+                                        </a>
+                                    </div>
+                                    <div class="button " style="margin-left:2.5%; ">
+                                        <a href="https://github.com/openebs/openebs/labels/help%2Fmedium " target="_blank ">
+                                            <p>Intermediate</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center ">
+                                    <div class="button " style="margin-left:2.5%;">
+                                        <a href="https://github.com/openebs/openebs/search?q=go&type=Issues&utf8=%E2%9C%93" target="_blank ">
+                                            <p>Go</p>
+                                        </a>
+                                    </div>
+                                    <div class="button " style="margin-left:2.5%;">
+                                        <a href="https://github.com/openebs/openebs/issues" target="_blank ">
+                                            <p>All</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12 ">
+                            <section class="hactober-calender">
+                                <center>
+                                    <p class="hacktober-heading">OpenEBS Hacktoberfest Days</p>
+                                    <p class="hack-details">Come down to our <span style="font-weight: bolder"><a href="https://www.google.co.in/maps/place/OpenEBS+Office+Space/@12.9108372,77.649571,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae149d096e1157:0xae5ac3d1fafa5658!8m2!3d12.910832!4d77.6517597" target="_blank" style="color:white;text-decoration:none;">OpenEBS Open Source Cafe </a></span>to
+                                        get help from the team to submit your PRs on OpenEBS Hacktoberfest days</p>
+                                    <div class="d-flex align-items-center justify-content-center dt-main-box">
+                                        <div class="sq-box d-flex justify-content-center">
+                                            <img src="style/images/calender (3).svg" alt="">
+                                        </div>
+                                        <div class="sq-box d-flex justify-content-center">
+                                            <img src="style/images/calender (1).svg" alt="">
+                                        </div>
+                                        <div class="sq-box d-flex justify-content-center">
+                                            <img src="style/images/calender (2).svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dir">
+                                        <a href="https://www.google.co.in/maps/place/OpenEBS+Office+Space/@12.9108372,77.649571,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae149d096e1157:0xae5ac3d1fafa5658!8m2!3d12.910832!4d77.6517597"> <img src="style/images/direction.svg" alt=""></a>
+                                    </div>
+                                </center>
+                            </section>
+
+                            <section class="github-section">
+                                <div class="col-md-12  mob-re-p">
+                                    <center>
+                                        <div class="d-flex align-items-center justify-content-center github-row">
+                                            <div class=" d-flex align-items-center git-button">
+                                                <div class="rounded-circle d-flex justify-content-center git-num"> 304</div>
+                                                <div class="git-tag">
+                                                    Total Open Issues
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex align-items-center git-button">
+                                                <div class="rounded-circle d-flex justify-content-center git-num"> 45</div>
+                                                <div class="git-tag">
+                                                    Submitted PRs
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center github-row">
+                                            <div class=" d-flex align-items-center git-button">
+                                                <div class="rounded-circle d-flex justify-content-center git-num"> 36</div>
+                                                <div class="git-tag">
+                                                    Merged PRs
+                                                </div>
+                                            </div>
+
+                                            <div class=" d-flex align-items-center git-button">
+                                                <div class="rounded-circle d-flex justify-content-center git-num"> 5</div>
+                                                <div class="git-tag">
+                                                    Open PRs
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </center>
+                                </div>
+
+
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hacktree ">
+
+            <div class="container-fluid ">
+                <div clas="row ">
+                    <div class="col-md-12 ">
+                        <img src="style/images/buttonbottom.svg ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="starcontributor" id="starcontri">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="padding-top:3.5%;">OpenEBS Hacktoberfest Contributors, Thank you!</h1>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+
+
+                            <!-- <div class="carousel-item ">
+                                <div class="contributorsection">
+                                    <div class="d-flex justify-content-between contriname-pr">
+
+                                        5 PR HERE
+
+                                    </div>
+                                    <div class="d-flex justify-content-between contriname-pr">
+                                        
+                                        5 PR HERE
+
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                            <div class="carousel-item active">
+                                <div class="contributorsection">
+                                    <div class="d-flex justify-content-between contriname-pr">
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/abhisheklakra007" target="_blank "><img src="https://avatars3.githubusercontent.com/u/16861795?s=70&v=4" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Abhishek lakra <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/636" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/carolkng" target="_blank "><img src="https://avatars0.githubusercontent.com/u/9583167?s=70&v=4" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Carol Ng<br>
+                                                        <a href="https://github.com/openebs/openebs/pull/634" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/chentex" target="_blank "><img src="https://avatars0.githubusercontent.com/u/757508?s=70&v=4" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Vicente Zepeda <br>
+                                                        <a href="https://github.com/openebs/maya/pull/113" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/crod93" target="_blank "><img src="https://avatars0.githubusercontent.com/u/18606197?s=70&v=4" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Cody<br>
+                                                        <a href="https://github.com/openebs/maya/pull/112" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/debojitkakoti" target="_blank "><img src="https://avatars3.githubusercontent.com/u/6252201?s=70&v=4" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Debjit kakoti <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/609" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between contriname-pr">
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/benjaminmisell" target="_blank "><img src="https://avatars3.githubusercontent.com/u/7520894?s=70&v=4" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Benjamin Misell <br>
+                                                        <a href="https://github.com/openebs/maya/pull/110" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/ProZsolt" target="_blank "><img src="https://avatars1.githubusercontent.com/u/4410174?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Zsolt Prontvai <br>
+                                                        <a href="https://github.com/openebs/openebs/issues/559" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/rjsabatini" target="_blank "><img src="https://avatars0.githubusercontent.com/u/11415980?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Ryan Sabatini <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/588" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/pik4ez" target="_blank "><img src="https://avatars3.githubusercontent.com/u/1404470?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">pik4ez <br>
+                                                        <a href="https://github.com/openebs/maya/pull/104" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex  align-items-center pedetails">
+                                                <a href="https://github.com/l0010o0001l" target="_blank "><img src="https://avatars2.githubusercontent.com/u/5507015?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column mainnapr">
+                                                    <p class="namepr">Tara Planas <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/581" target="_blank "><img class="primage" src="style/images/merged.svg">PR</a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="contributorsection">
+                                    <div class="d-flex justify-content-between contriname-pr">
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/NexWeb" target="_blank "><img src="https://avatars2.githubusercontent.com/u/3054475?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Nexus Web dev.<br>
+                                                        <a href="https://github.com/openebs/jiva/pull/23" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/circa10a" target="_blank "><img src="https://avatars0.githubusercontent.com/u/21261388?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Caleb Lemoine <br>
+                                                        <a href="https://github.com/openebs/jiva/pull/24" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/surajnarwade" target="_blank "><img src="https://avatars2.githubusercontent.com/u/17265451?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Suraj Narvade <br>
+                                                        <a href="https://github.com/openebs/maya/pull/99" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack pedetails">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/dread-uo" target="_blank "><img src="https://avatars3.githubusercontent.com/u/7685154?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Eduardo Silva <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/556" target="_blank "></a><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex  align-items-center pedetails">
+                                                <a href="https://github.com/lxfontes" target="_blank "><img src="https://avatars2.githubusercontent.com/u/35205?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Lucas Fontes <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/561" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between contriname-pr">
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/cxong" target="_blank "><img src="https://avatars0.githubusercontent.com/u/1083215?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Cong <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/562" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/sanket0896" target="_blank "><img src="https://avatars2.githubusercontent.com/u/8885566?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Sanket <br> Mishra <br>
+                                                        <a href="https://github.com/openebs/maya/pull/98" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/BaoTran91" target="_blank "><img src="https://avatars3.githubusercontent.com/u/26566256?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Bao Tran <br>
+                                                        <a href="https://github.com/openebs/jiva/pull/21" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/kiwiroy" target="_blank "><img src="https://avatars3.githubusercontent.com/u/313562?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Roy Storey <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/515" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex  align-items-center pedetails">
+                                                <a href="https://github.com/CodeB9" target="_blank "><img src="https://avatars1.githubusercontent.com/u/32376220?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">CodeB9 <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/497" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="contributorsection">
+                                    <div class="d-flex justify-content-between contriname-pr">
+
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/AliceWonderland" target="_blank "><img src="https://avatars3.githubusercontent.com/u/4131409?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Alice Chuang <br>
+                                                        <a href="https://github.com/openebs/jiva/pull/19" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack pedetails">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/dread-uo" target="_blank "><img src="https://avatars3.githubusercontent.com/u/7685154?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Eduardo Silva <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/556" target="_blank "></a><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/wdhif" target="_blank "><img src="https://avatars3.githubusercontent.com/u/5231539?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Wassim Dhif <br>
+                                                        <a href="https://github.com/openebs/easy-jupyter/pull/3" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/Kurolox" target="_blank "><img src="https://avatars2.githubusercontent.com/u/13695988?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Carlos <br>
+                                                        <a href="https://github.com/openebs/easy-jupyter/pull/2" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/lisaychuang" target="_blank "><img src="https://avatars0.githubusercontent.com/u/12424987?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Lisa Huang <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/457" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between contriname-pr">
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex  align-items-center pedetails">
+                                                <a href="https://github.com/shovanch" target="_blank "><img src="https://avatars1.githubusercontent.com/u/16104985?v=4&s=400" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Shovan Chatterjee <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/455" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/waseem18" target="_blank "><img src="https://avatars1.githubusercontent.com/u/5843007?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Wasim Thabraze <br>
+                                                        <a href="https://github.com/openebs/maya/pull/94" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/Endi1" target="_blank "><img src="https://avatars1.githubusercontent.com/u/5697907?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Endi Sukaj <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/448" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <a href="https://github.com/adsrc" target="_blank "><img src="https://avatars1.githubusercontent.com/u/30755871?v=4&s=70" alt=""></a>
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr">Aditya Chetan <br>
+                                                        <a href="https://github.com/openebs/openebs/pull/447" target="_blank "><img class="primage" src="style/images/merged.svg">PR </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center people-hack">
+                                            <div class="d-flex align-items-center pedetails">
+                                                <!-- <a href="" target="_blank "><img src="" alt=""></a> -->
+                                                <div class="d-flex flex-column justify-content-start mainnapr">
+                                                    <p class="namepr"> <br>
+                                                        <!-- <a href="" target="_blank "><img class="primage" src=""> </a> -->
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class=" btnclass  carousel-control-prev " style="width:5%;" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span> -->
+                            <i class="fa fa-chevron-left " aria-hidden="true" style="color:grey; font-size:25px;"></i>
+                        </a>
+                        <a class="carousel-control-next btnclass" style="width:5%;" href="#carouselExampleControls" role="button" data-slide="next">
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span> -->
+                            <i class="fa fa-chevron-right" aria-hidden="true" style="color:grey; font-size:25px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newhacktobercafe">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 hacktober-cafe">
+                    <div class="desktop-view">
+                        <div class="  prsection d-flex flex-column align-items-center justify-content-center ">
+                            <img src="style/images/prdetails.svg" width="80%;">
+                            <div>
+                                <center>
+                                    <p class=" d-flex align-items-center justify-content-center prdetails"> Submit PRs to the Hacktoberfest issues on OpenEBS and win cool Hacktoberfest T-shirts</p>
+                                </center>
+                            </div>
+
+                            <a href="https://github.com/openebs/openebs/pulls " class="btn-hack" target="_blank ">
+                                    Submit Now
+                                </a>
+
+                        </div>
+                    </div>
+
+                    <div class="mobile-view">
+                        <div class="prsection d-flex flex-column align-items-center" style="background: linear-gradient(to bottom right, #ff8c58 0%, #ff544e 100%);">
+                            <img src="style/images/prbox-01.svg" height="280px" width="auto">
+                            <div style="width:150px;">
+                                <p class="hack-tshirt"> Submit PRs to the Hacktoberfest issues on OpenEBS and win cool Hacktoberfest <br> T-shirts</p>
+                            </div>
+
+                            <a href="https://github.com/openebs/openebs/pulls " class="btn-hack" target="_blank ">
+                    Submit Now
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6  d-flex  justify-content-center align-items-center settingcafe">
+
+                    <img src="../styles/images/openebs hacktober section-01.svg">
+                    <div class="cafe-details">
+                        <p>Hey! If you are in Bangalore, join the <br class="desktop-view"> Hacktoberfest activities at Open Source Cafe:</p>
+                        <a href="../cafe/" class="btn-cafe desktop-view" id="" target="_blank" name="hero-bttn" value="">
+                            OpenEBS Cafe
+               </a>
+                        <center> <a href="../cafe/" class="btn-cafe mobile-view" id="" target="_blank" name="hero-bttn" value="">
+                                 OpenEBS Cafe
+                    </a></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mar-t-5  footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="d-flex justify-content-center ">
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="https://www.facebook.com/openebs/" target="_blank "><span class="fa-stack fa-2x" style="background-color: white;border-radius:50%;">
+                                <i class=" fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x" style="color:#273274"></i>
+                              </span></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="http://slack.openebs.io" target="_blank "><span class="fa-stack fa-2x">
+                                <i class=" fa-stack-2x"></i>
+                                <i class="fa fa-slack fa-stack-1x" style="color:#273274"></i>
+                              </span></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="https://twitter.com/openebs" target="_blank "><span class="fa-stack fa-2x">
+                                <i class=" fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x" style="color:#273274"></i>
+                              </span></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="https://github.com/openebs/" target="_blank "><span class="fa-stack fa-2x">
+                                <i class=" fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x" style="color:#273274"></i>
+                              </span></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="../careers/index.html " target="_blank "><span class="fa-stack fa-2x">
+                                <i class=" fa-stack-2x"></i>
+                                <i class="fa fa-briefcase fa-stack-1x" style="color:#273274"></i>
+                              </span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92076314-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!--Agile crm Analytics-->
+    <script id="_agile_min_js" async type="text/javascript" src="https://d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js">
+    </script>
+    <script type="text/javascript">
+        var Agile_API = Agile_API || {};
+        Agile_API.on_after_load = function() {
+            _agile.set_account('ofv20gusf2tbcdnmiuo68v5sun', 'cloudbyte');
+            _agile.track_page_view();
+            _agile_execute_web_rules();
+        };
+    </script>
+</body>
+
+<script src="../styles/js/openebs.js "></script>
+
+</html>

@@ -1,0 +1,1127 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>openEBS | News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="../../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../styles/css/openebs.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../styles/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="https://openebs.io"><img src="../../styles/images/banner-icon.svg" height="40" width="auto"></a>
+                <a class="navbar-brand mobile-logo" href="https://openebs.io"><img src="../../styles/images/openebs-logo.svg" height="40" width="auto"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <a href="http://openebs.readthedocs.io/en/latest/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="documentation"><img src="../../styles/images/docevery.svg" alt="doc" height="35px"></li>
+                        </a>
+                        <a href="https://www.facebook.com/openebs/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="http://slack.openebs.io" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://blog.openebs.io" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://twitter.com/openebs" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com/openebs/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="documentation"><img src="../../styles/images/docindex.svg" alt="doc" height="35px"></li>
+            </a>
+            <a href="https://www.facebook.com/openebs/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="http://slack.openebs.io" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://blog.openebs.io" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/openebs" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/openebs/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+
+
+    <!--newsletter menu-->
+    <div class="pd-t-5 menu-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 news-list">
+                    <div class="list-group">
+                        <a href="../index.html" class="list-group-item ">September 2017</a>
+                        <a href="august.html" class="list-group-item ">August 2017</a>
+                        <a href="july.html" class="list-group-item ">July 2017</a>
+                        <a href="june.html" class="list-group-item ">June 2017</a>
+                        <a href="" class="list-group-item active">April 2017</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <style>
+                        body {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        body,
+                        table,
+                        td,
+                        p,
+                        a,
+                        li {
+                            -webkit-text-size-adjust: 100%;
+                            -ms-text-size-adjust: 100%;
+                        }
+                        
+                        a {
+                            word-wrap: break-word;
+                        }
+                        
+                        table td {
+                            border-collapse: collapse;
+                        }
+                        
+                        table {
+                            border-spacing: 0;
+                            border-collapse: collapse;
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                        }
+                        
+                        table,
+                        td {
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                        }
+                        
+                        .ReadMsgBody {
+                            width: 100%;
+                            background-color: #eeeeee;
+                        }
+                        
+                        .ExternalClass {
+                            width: 100%;
+                            background-color: #eeeeee;
+                        }
+                        
+                        .ExternalClass,
+                        .ExternalClass p,
+                        .ExternalClass span,
+                        .ExternalClass font,
+                        .ExternalClass td,
+                        .ExternalClass div {
+                            line-height: 100%;
+                        }
+                        
+                        .ExternalClass * {
+                            line-height: 100%;
+                        }
+                        
+                        @media only screen and (max-width: 640px) {
+                            table[class="main"],
+                            td[class="main"] {
+                                width: 100% !important;
+                                min-width: 200px !important;
+                            }
+                            table[class="logo-img"] {
+                                width: 100% !important;
+                                float: none;
+                                margin-bottom: 15px;
+                            }
+                            table[class="logo-img"] td {
+                                text-align: center !important;
+                            }
+                            table[class="logo-title"] {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            table[class="logo-title"] td {
+                                text-align: center;
+                                height: auto
+                            }
+                            table[class="logo-title"] h1 {
+                                font-size: 24px !important;
+                            }
+                            table[class="logo-title"] h2 {
+                                font-size: 18px !important;
+                            }
+                            td[class="header-img"] img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            td[class="title"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="title"] h1 {
+                                font-size: 24px !important;
+                            }
+                            td.block-text {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="block-text"] h2 {
+                                font-size: 20px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="block-text"] p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="block-text"] li {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="two-columns"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            table[class="text-column"] {
+                                width: 100% !important;
+                                float: none;
+                                margin-bottom: 15px;
+                            }
+                            td[class="image-caption"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            table[class="image-caption-container"] {
+                                width: 100% !important;
+                            }
+                            table[class="image-caption-column"] {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            table[class="image-caption-column-text"] {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            td[class="image-caption-content"] img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            td[class="image-caption-content"] h2 {
+                                font-size: 20px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="image-caption-content"] p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="image-caption-top-gap"] {
+                                height: 15px !important;
+                            }
+                            td[class="image-caption-bottom-gap"] {
+                                height: 5px !important;
+                            }
+                            td[class="text"] {
+                                width: 100% !important;
+                            }
+                            td[class="text"] p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="text"] h2 {
+                                font-size: 20px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="gap"] {
+                                display: none;
+                            }
+                            td[class="header"] {
+                                padding: 25px 25px 25px 25px !important;
+                            }
+                            td[class="header"] h1 {
+                                font-size: 24px !important;
+                            }
+                            td[class="header"] h2 {
+                                font-size: 20px !important;
+                            }
+                            td[class="footer"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="footer"] p {
+                                font-size: 13px !important;
+                            }
+                            table[class="footer-side"] {
+                                width: 100% !important;
+                                float: none !important;
+                            }
+                            td[class="footer-side"] {
+                                text-align: center !important;
+                            }
+                            td[class="social-links"] {
+                                text-align: center !important;
+                            }
+                            table[class="footer-social-icons"] {
+                                float: none !important;
+                                margin: 0px auto !important;
+                            }
+                            td[class="social-icon-link"] {
+                                padding: 0px 5px !important;
+                            }
+                            td[class="image"] img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            td[class="image"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="image-full"] img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            td[class="image-full"] {
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            td[class="image-group"] img {
+                                width: 100% !important;
+                                height: auto !important;
+                                margin: 15px 0px 15px 0px !important;
+                            }
+                            td[class="image-group"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            table[class="image-in-table"] {
+                                width: 100% !important;
+                                float: none;
+                                margin-bottom: 15px;
+                            }
+                            table[class="image-in-table"] td {
+                                width: 100% !important;
+                            }
+                            table[class="image-in-table"] img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            td[class="image-text"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="image-text"] p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            td[class="divider-simple"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="divider-full"] {
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            td[class="social"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            table[class="preheader"] {
+                                display: none;
+                            }
+                            td[class="preheader-gap"] {
+                                display: none;
+                            }
+                            td[class="preheader-link"] {
+                                display: none;
+                            }
+                            td[class="preheader-text"] {
+                                width: 100%;
+                            }
+                            td[class="buttons"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            table[class="button"] {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            td[class="content-buttons"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            td[class="buttons-full-width"] {
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            td[class="buttons-full-width"] a {
+                                /*width:100% !important;*/
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            td[class="buttons-full-width"] span {
+                                width: 100% !important;
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            table[class="content"] {
+                                width: 100% !important;
+                                float: none !important;
+                            }
+                            td[class="gallery-image"] {
+                                width: 100% !important;
+                                padding: 0px !important;
+                            }
+                            table[class="social"] {
+                                width: 100%!important;
+                                text-align: center!important;
+                            }
+                            table[class="links"] {
+                                width: 100%!important;
+                            }
+                            table[class="links"] td {
+                                text-align: center!important;
+                            }
+                            table[class="footer-btn"] {
+                                text-align: center!important;
+                                width: 100%!important;
+                                margin-bottom: 10px;
+                            }
+                            table[class="footer-btn-wrap"] {
+                                margin-bottom: 0px;
+                                width: 100%!important;
+                            }
+                            td[class="head-social"] {
+                                width: 100%!important;
+                                text-align: center!important;
+                                padding-top: 20px;
+                            }
+                            td[class="head-logo"] {
+                                width: 100%!important;
+                                text-align: center!important;
+                            }
+                            tr[class="header-nav"] {
+                                display: none;
+                            }
+                            td[class="responsive-cell"] {
+                                display: block;
+                            }
+                            td[class="image-caption"] {
+                                padding: 0px!important;
+                            }
+                            td[class="image-group"] {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            table[class="image-group-column"] {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            table[class="image-group-column-text"] {
+                                width: 100% !important;
+                                float: none;
+                            }
+                        }
+                    </style>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 21px; color: #000000;">
+                        <tbody>
+                            <tr>
+                                <td width="100%" id="primary" class="main demo" align="center" valign="top">
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="95f5341e-ab5b-ba3d-0d43-24c23dd182bb" data-color="true">
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="1aa14af1-f4cd-b90c-1279-53ab06f75ee4">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                    <h1 style="text-align: center;">COMMUNITY NEWSLETTER</h1>
+                                                    <h4 style="text-align: center;">APRIL 2017</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="c11c63c5-0465-4cb1-fc41-d93bc82e9bbe">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                    <h1 style="text-align: left;"><strong><span style="font-size: 18px;"><span style="color: #ff6600;">OPENEBS PROJECT&nbsp;UPDATES</span>&nbsp;</span></strong></h1>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="da36267d-b184-293c-be20-e4dad01a8e6b">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table class="image-caption-column-text" align="left" border="0" cellpadding="0" cellspacing="0" width="280" data-align="left">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: justify;"><span style="font-size: 16px;"><strong><span style="font-family: arial, helvetica, sans-serif;">The first usable release of OpenEBS is now available. </span></strong>
+                                                                                            </span><br /> 10 April, 2017</div>
+                                                                                        <div style="text-align: justify;"><br /><span style="font-size: 16px; font-family: arial, helvetica, sans-serif; color: #999999;"><span style="color: #000000;">OpenEBS 0.2 is released with kubernetes flex volume driver plugin. Setting up of OpenEBS and Kubernetes is made extremely easy using Vagrant.</span>                                                                                            <a href="https://github.com/openebs/openebs/blob/master/k8s/dedicated/tutorial-ubuntu1604-vagrant.md">Check it out Yourself.</a></span>
+                                                                                        </div>
+                                                                                        <div style="text-align: justify;"><br /><span style="font-size: 16px; font-family: arial, helvetica, sans-serif; color: #999999;"><span style="color: #000000;">Find out</span> <a href="https://www.openebs.io/">What's New</a></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="right" border="0" cellpadding="0" cellspacing="0" width="225">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn"><img border="0" src="../components/openebs%20logo-01%20(1).png" style="display: block; max-width: 225px; outline: none;" width="225" height="225" data-maxwidth="265" id="b23350b3-4f14-6976-758c-64b1d7404e23"
+                                                                                        class="" alt="" /></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="528a9968-082f-f0b5-ba50-a9e5c42696d3">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table class="image-caption-column-text" align="left" border="0" cellpadding="0" cellspacing="0" width="280" data-align="left">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: justify;"><br /><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 16px;">Our Roadmap is posted</span></strong>
+                                                                                            </span><br /> <br /><span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: #999999;"><span style="color: #000000;">The 0.3 release will support hyper-converged mode of deployment and maya will use native kubernetes for storage orchestration and scheduling</span>.
+                                                                                            <a href="https://github.com/openebs/openebs/wiki/Project-Tracker">What's cooking in OpenEBS 0.3</a></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="right" border="0" cellpadding="0" cellspacing="0" width="225">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn"><img border="0" src="../components/roadmap%20image-01.png" style="display: block; max-width: 225px; outline: none;" width="225" height="202" data-maxwidth="265" id="6986be39-680d-84dd-274d-ac6fcc8379ac"
+                                                                                        class="" alt="" /></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="8e7b0a27-b9c4-f5e2-dc20-e6ef0fbc80eb">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="b5aafb3a-1f07-cc07-684e-30678fb53fe7">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                    <h1 style="text-align: center;"><strong><span style="font-size: 18px; color: #ff6600;">REGISTER FOR OUR UPCOMING HANGOUT AND AMA SESSION</span></strong></h1>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="cbc46e84-eceb-6c38-78dd-793ac3d73add">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="8a0855f8-452c-f693-cc54-73510611331a">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="padding: 0px;" class="image">
+                                                    <a target="_blank" class="imgLink" href="#" rel="noopener"><img class="" border="0" align="one_image" style="display: block; max-width: 250px;" alt="" src="../components/meetup.png" width="250" height="250" data-maxwidth="640" id="373e03fd-e711-c904-7ac3-201280720025"
+                                                            tabindex="0" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="008142d7-272d-fdf1-ed6d-886a3cc7ebac">
+                                        <tbody>
+                                            <tr>
+                                                <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                    <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; outline: none; font-size: 12px; line-height: 16px;" class="textFix" helvetica="" font-size:="" line-height:="" outline:="" red="" dotted="">
+                                                        <div style="text-align: center;"><span style="line-height: 22px; font-size: 16px; font-family: arial, helvetica, sans-serif; color: #000000;">Do you want to know how OpenEBS is solving the persistent storage challenges of stateful applications in containers? <br />Have you ever wondered how a DevOps user or operator can automate storage operations ? <br />Do you have lots of questions about how we are using Rancher longhorn?<br />Are you curious about what is OpenEBS maya ?</span></div>
+                                                        <div style="text-align: center;"><span style="color: #ff6600;"><span style="line-height: 22px; font-size: 16px; font-family: arial, helvetica, sans-serif;">Join us at the first OpenEBS hangout and AMA session<br /><strong>18th May, 10AM PST </strong></span></span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="margin: auto; background-color: #ffffff; display: table;" width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" data-type="button" id="c6b2e51a-0e72-2ac1-fdc4-b76fddf962a3" data-color="true">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 15px 50px 15px 50px;" class="buttons-full-width">
+                                                    <table style="margin: auto;" width="" cellspacing="0" cellpadding="0" border="0" align="center" class="button">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; padding: 10px 10px 10px 10px;" class="button"><a href="https://www.openebs.io/register-for-webinar/" style="background: #f15a29; border: 15px solid #f15a29; text-align: center; text-decoration: none; display: block; border-radius: 6px; font-weight: bold; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px;"
+                                                                        class="textbuttonsimg"><span style="color: #ffffff;">REGISTER HERE</span></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="ccf4b6f5-b5ee-cb06-d47f-b9c50f7cdde8">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="afa496b4-92be-9f7d-a647-4bc77a8567f7">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                    <h1 style="text-align: left;"><span style="font-size: 18px;"><strong><span style="color: #ff6600;">OPENEBS EVENTS</span></strong>
+                                                        </span>
+                                                    </h1>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="8c0bb8b6-6cb3-6f53-cbfa-b612951ee407">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="d2aeee22-3cb0-9b81-adb3-47d1ec1ae578">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="left" border="0" cellpadding="0" cellspacing="0" width="250">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn">
+                                                                                    <a target="_blank" class="imgLink" href="https://www.meetup.com/OpenEBS-Bangalore-Meetup/events/238378428/" rel="noopener"><img border="0" src="http://new-staging.openebs.io/wp-content/themes/openebs/redesign/meetup.png" style="display: block; max-width: 265px; outline: none;" width="265"
+                                                                                            height="190" data-maxwidth="265" id="df4db0d3-e25a-4bf4-5c61-9f62de273c89" class="" alt="Meetup" /></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table class="image-caption-column-text" align="right" border="0" cellpadding="0" cellspacing="0" width="240" data-align="right">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: justify;"><span style="color: #353a3e;"><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Amazing talks at OpenEBS: Containerized Storage for containers Meetup #3!</span></strong>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div style="text-align: justify;">&nbsp;8 April, 2017</div>
+                                                                                        <div style="text-align: justify;">&nbsp;</div>
+                                                                                        <div style="text-align: left;"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif; color: #000000;">It was all about discussions and demos. We were to glad to have <a href="https://twitter.com/ianmlewis">Ian M Lewis</a>, GCP Developer Advocate, and Evan Powell, our Chairman, join us for this Meetup, and like always the demo session by Kiran Mova was a treat.&nbsp;</span>
+                                                                                            <span style="font-size: 16px; font-family: arial, helvetica, sans-serif; color: #748086;"><a href="https://www.slideshare.net/kiranmova/containerized-storage-for-containers-meetup-3">Check out the slides</a></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="video-record" id="5ef2f27d-57be-eebd-6c96-959985145807">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" style="padding: 15px 50px 15px 50px;" class="image">
+                                                    <a target="_blank" class="imgLink" href="https://www.youtube.com/watch?v=Gxw5k8_bG90&amp;feature=youtu.be" rel="noopener"><img class="" data-maxwidth="520" border="0" align="one_image" style="display: block; max-width: 300px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/Gxw5k8_bG90.png" width="300"
+                                                            height="225" id="01fbae5f-e2cc-81b8-6b53-977996edba32" tabindex="0" /></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="ed98cf61-f934-54f2-6ea0-59a36777f7bf">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table class="image-caption-column-text" align="left" border="0" cellpadding="0" cellspacing="0" width="325" data-align="left">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: justify;"><span style="color: #353a3e; font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>We were at the Bangalore Container Conference!</strong></span></span>
+                                                                                        </div>
+                                                                                        <div style="text-align: justify;">&nbsp;7 April, 2017</div>
+                                                                                        <div style="text-align: left;"><span style="color: #000000; font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">OpenEBS chairman Evan Powell was the keynote speaker at India's first container conference at Bangalore, on the 7th of April. </span></span>
+                                                                                        </div>
+                                                                                        <div style="text-align: left;"><span style="color: #748086; font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="color: #000000;">Check out the</span> <a href="https://www.slideshare.net/OpenEBS/ep-keyote-slides-75378744">talk </a>
+                                                                                            <span style="color: #000000;">by Evan</span>
+                                                                                            </span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="right" border="0" cellpadding="0" cellspacing="0" width="180">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn">
+                                                                                    <a target="_blank" class="imgLink" href="http://www.containerconf.in/" rel="noopener"><img border="0" src="../components/bcc_openebs.PNG" style="display: block; max-width: 180px; outline: none;" width="180" height="170" data-maxwidth="265" class="" alt=""
+                                                                                            id="df4a89fb-975f-09df-4e97-aa75b5f15ec5" /></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="d85d2a8b-589b-a8f2-950f-58cab40bd462">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="caf0be27-5e0e-b122-178f-bb2b3549f0de">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                    <h1 style="text-align: left;"><span style="font-size: 18px;"><strong><span style="color: #ff6600;">COMMUNITY UPDATES AND SUCCESS STORIES</span></strong>
+                                                        </span>
+                                                    </h1>
+                                                    <h4 style="text-align: center;">&nbsp;</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="1dc1f89b-a81d-894d-d758-721e39b20c5d">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="9670bcd7-2dd5-ccba-f6c7-2fd792581824">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table class="image-caption-column-text" align="left" border="0" cellpadding="0" cellspacing="0" width="240" data-align="left">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: justify;"><strong><span style="font-size: 18px;"><a href="https://www.capgemini.com/">capgemini.com / @rahulkrishnanra</a></span></strong></div>
+                                                                                        <div style="text-align: justify;">&nbsp;7 April, 2017</div>
+                                                                                        <div style="text-align: left;"><span style="color: #748086; font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="color: #000000;">I came across OpenEBS at the Bangalore Container Conference. I found the project interesting. I have been able to deploy OpenEBS in my AWS cloud and explored the usage of OpenEBS with PostgreSQL . I am definitely excited with the flexibility that OpenEBS brings to the DevOps toolkit and our team will be exploring more on this in the coming days.</span><br
+                                                                                            /></span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                        <div style="text-align: left;"><strong><span style="color: #666699; font-family: arial, helvetica, sans-serif; font-size: 14px;">Rahulkrishnan R A, works at Capgemini. He is a Debian and Hamara Linux Contributor.</span></strong></div>
+                                                                                        <div style="text-align: left;">&nbsp;</div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="right" border="0" cellpadding="0" cellspacing="0" width="180">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn">
+                                                                                    <a target="_blank" class="imgLink" href="http://www.containerconf.in/" rel="noopener"><img border="0" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhITExMVFhMXFxobGBcYGBgXGRUdFxkZGBgfGRYYHSggGx0mGxcaITIhJTUrLi4vFyAzODMtNygtLisBCgoKDg0OGxAQGy0lICYwLy0tLTAtLTUvMjAtLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAG4ByQMBEQACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAwQFBgcCAQj/xABMEAACAQMBBAUGBw8DAwQDAAABAgMABBESBQYhMRNBUWFxByIycoGRFBZCUlOhsSMzNDVic3SCkpOys8HR0iQlohXCw1SjtPEXNkT/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAwQBAgUG/8QAOhEAAgECAQgIBgICAwADAQAAAAECAxEEEiExQVFxodEFExQVUmGBsSIyM5HB8DThQoIjcvFTYpJD/9oADAMBAAIRAxEAPwDcaAKAKAKAKAKAKAYz7VjSeOAnz3BI7BjkD3njj1T3VLGjJwc1oRXniacasaTed/vHVuH1RFgKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAjdtbYS3XJ4ufRQc2/sO0/14VNRoyqPNo2lXFYqFCOfO9S2/15mcXru7NKzHpCdWRwwRy09mMDHhXXhkxWStB5qopzbqSfxPP/5uLzuxvItwoRyFnHMcteOtf6jq8K5uJwzpu6+U72Bx8a8cmWaS4+aLBVQ6IUAUAUAUAUAUAUBne+3lLW3dre0USzA4Zzkoh5aQBxdurHIHtORV7D4NzWVPMipWxSg8mOdnWxd0by6UTbSu58txFvG/RqB+XowM9wAI7TyrFSvTh8NKK3szClOWeo/Qlv8A8cbN59A2r53TT59/SVH2urt4LkSdnp6bFf3k3Ku7ZDNs+8ufN4mBpWOQPmdTY+awJPUc4BnpYinN5NWK32IatGcVem3uGvkq3svLu7eKeYyRiBnAKoDkPGoOpVBPBjzrbGUKdOF4q2c1wtac5NSZq1c0vBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQHPSDOMjPZnj7qzZ6TF1ex1WDIUAUAUAUAUBy0gBAJGTyGeJrNmYujqsGQoAoAoDiaZUGp2CjtYgD3msqLbsjWUoxV5OyI2beGAeiWc/kKT/y9H66mWGm9ObeVpY6itDvuX50cRnJvDIfvdufF2C49i5+2pFhor5pfYgeOm/kp/d8rjG52jdPzkVB2IvH3tk+7FSxp0lqvvIJ1sTLTJLcud/wQ8kABJJJY82JJJ8SeJqdS1FXqknfS9rGkwqSJFNZiJuo+ORz+yrEWc6qrO6H1lvbeQ8Ok6RR1SDV/y4N9dRTwdGeq24sUelsRTzXvv/bk5aeUbqlg9qN/2sP61Vl0b4Zfc6VPpxP54fZ/vuTNnvzZvzdoz2Op+1ciq88DWjqvuL1PpXDT123onrS8jlGqN1de1SGH1VVlCUXaSsXoVITV4tPcL1qbhQBQFL8qe8ps7XRG2JpyVUjmigeew7wCAOwsD1VbwdHrJ3ehFfE1erhm0soHke2EJ7szOMpbgMB+WxIT3aWbuIWruOq5MMlayng6eVLKeo3OuOdQKAKAzrYGyRbbfugowktq0qjs1yxav+avV+pUy8LG+p24Mqwhk13bWjRaoFoKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKASuQ2h9Hp6Tp8ccPrrMbXVzWV8l20mJCwuOlx0cvTas8m16s8888545r0fWU8m91Y8V1NfrLWeVfzNugDaV1elgZ8ccfrrzjtfMe2jeyuKVgyFAFAFAFAYrt2yuPhMvSI5dnbjpJ1ceGntGMYxXoqNSn1ayWrWPGYujW6+WUnds1rd9JBbQiXPSBBqzz9vfjGa4VdxdR5Og9ZhlNUYqem2ckKiJwoCFk2m8zFYCAg4GUjOfUB4H1jw7AedWFSUFeenZzKTryqO1LRt5cxH/paZ1OS7fOYlj7M8h3CtutloWY07NC95Z35nTBF5AUzs2tFaENZp63SI5SGE0tSpEEpDGZqkRDJjKapUVpkfOKmiUaoxlWpkUpCDCtjCYmRQkTCGVkYMjFWHIqSCPaONYaTVmSwm4u8XZly3e38kQhLnz0+kA85fED0h9fjXPr4CLV6eZ7Ds4XpaUXk1s626/wC/3SaNFKrKGUgqQCCOIIPIg1yGmnZnoYyUldaDusGTCPLFfmTaBjzwhjRcdWWHSE+5191dnAwtSvtOVjZXnbYXbyKWumxkfrkmY+xVVR9Yb31Ux8r1LbEWsGrU7mg1RLYUAUA1Oz4zMJ9A6YIYw/HOgnUR2YyM1tlPJydRjJV7nm1Npw20ZlnkWOMdbdvYBzJ7hxpCEpu0UYlJRV2V2034Fxk2lndToDjpAqRxnwaRxnwqeWGyPnkl++RHGspfKmzm838W3K/C7O6gUnGsqjoD3tG549w41mOGc/kkmJV1H5k0WPZW1IbmMSwSLIh6x1HsIPFTx5HBqvOEoO0kSRkpK6IO435t401yxXcScPOktZkAzyyxXGamWGm3ZNP1RpKrGKu/Yd7t722180i27MTGAW1KV9LOMZ8DWtWhOlbKM06sanyicu9QZmW1t57rSSC8YRYgRwIEsjKrkfk5xWVRt87S36fshl7Fcjz5Q4I5RFdwXFq55GVAUPgyE5HfyHbW/ZJOOVBp7jR4iKdpZi3QTK6q6MGVgCrKQQwPIgjgRVZpp2ZMnfOjusGSAm3tg6ToohJO/ZCuoDv1EgY7xmrSwk8nKlaK8yjLpCll5ELyflz0BPvQkWOngnhU/KZAy+GUJ491YWFcvkkn++ZmeOjT+pGUVtazcLifx4sfpT+7k/xrbsNfZxRp3phfFwfIltk7ViuULwtqUNpJwV4gA8mA6iKgq0pU3aSLVDEU60cqm7oa7W3kt7c6HfMnzEGpuPLgOROevFb0sNUqK6WbaR18bRovJk8+xZ2ItvEwXWbK70+omr9jXmtuzq9suPHkaPFySyurlbcva9xzsfeC3uuET5Yc0PmsPYeY7xkVpVw9Sl8yJMPjKNf5Hn2axxtDaKw6dSyHVnGiN5MYxz0A451rCm56LfdIkqVo07XT9E37EXJvlaK2gu4bONJjkBBPaCoxUywdVq9s29FZ9JYdSyW8+yz5EttDaEcChpGwCcAYJZieQVRxY9wqCFOU3aJaq1YU1eT/AHyIq83m6Jdb2l0I+ttCcB2ka8geOKnhhsp2U43/AHyKtTG9XHKlTlbcufuPtjbahulLRPnHpKeDLntB+3lUVWjOk7SRNh8VSrq9Ni20NpRwhdZOpuCooLO5HzUXif6ViFOU9H9G9WtCn82vQtb3Iir3efoV1yWlyqdbaU4eID8PbipoYXLdozV/XkVquO6tZUqcrblzH2xtuQXQJifJHpKRhl8QervHCo6tCdJ/EibD4qlXV6bO77aqRMFZZSSM5SKRxzI5op48OVawpOaurfdG1SvGDs0/RN+yI9N8bQuEDtqLBcaHHEnGDkcONTPB1Ur2zb0V10lh3LIUs+jQyQvdrJE2hllJxnKRSOOOetFIzw5VFCk5K6t90WKleMHZp+ib9kMrPe21lkWJHYuxwBoccfEjuqSeEqxjlNZt5BT6QoVJqEXn3MfbQ2rHCVViS7ejGil3bwUdXeeFRQpSnnWjbqJ6teFOyel6Es7Iu+3rEODLa3KIflFUI9uH4VPDCZeaMk368itVx6pZ5wkltsuZK7K2rDcprhcMOscip7weIqCpSnTdpIs0MRTrRyqbue7Q2isOnUsh1ZxojeTGMc9AOOdIU3PRb7pGalWNO17+ib9iKn30s0JVncMOamOQEeIK1MsFWedLiirLpPDxdpNp7nyLAjZAI5EZqqy8nc9oZITey8KRBFODK2jPWFwS31DH61WcLDKnd6s5Sx1Rxp5K/wAnbnyEbFwiADhwraau85rSajGyOZbmiiYcxnLPUiiROQ1klrdIjchs71ukRtjeR63SIpMZyvUiRWnIZzGpYlOoxlIamRTkINWxqhNqEiODQ3R5Q2NE8mG0yyyW7HITzk7gx84eGcH9Y1yekaSTU1r0noehq7lF0nqzovVcw7Z86+Uo/wC53frL/LSu7hPox/dZx8V9Vmr+SL8WQ+vL/MaubjfrP09joYX6SLnVQsBQBQBQGH+Wq6kN6kbZESRAxg8iWJ1sO/IA/VFdjARXVtrTc5mNcnJLUab5OomXZtoGXSdGcYxwLMVOO8EH21zsS06srF6gmqauS22bBbiCaFxlXRlPtHAjvBwQe0VFCTjJSRvKKkmmYf5JNrvDfxxg/c5wUcdWQpZDjtBGPBjXYxtNSpt60czCTcamTtNI8r/4tk9eP+MVQwX1l6lzF/SZnXky1SyTWiFl+EaBIy8CsMetpcEci2Vjz1dIT1VfxdklN6vfVz9CphHe8Vr9jdreBY1VEUKigBVUYCgcAAByFcZtt3Z1ErFZ8pex1ubCckefEplQ9YKDLAeKgjHeOyrGFqOFVeeYgxEFOmyieRreRkmNk7ExyBmiB+Q4BZgOwMoJ8V/KNXMdRTj1i06ypg6rvkP0Lf5S9rNHGkCHHSZLkc9IwMeBJ4+rjrqPo+kpSc3q0FfpnEyhBU469O7+x35N7FUtBJjzpWYk9eFJQDw4E/rGtMfNurk7CXoiko4fL1y/GYsl9arLG8bjKuCD7f69dU4TcJKS1HSqU41IuEtDMu3H2q9vdCFj9zkbQy9QbOlSO/OB4HuFdrGUlUp5a0rP6HmOjcRKhX6p6G7epeN9ttm1g8w/dZDpT8n5zY7h9ZFc3CUOtnn0I7fSOKeHpXjpeZcyt+TTZgd5bl/OKnSpPHziMuePXgjj+UaudIVclKmv3Yc3oahluVaWd6Fv1miVyT0JmHlAtPg93HPEdBcasjhh1OGPtBGe3J7a7OBn1lJwlnt7HmelafUV41aea+f1Rfd3dqfCbeOXkSMMOxhwb2ZGR3EVzK9Lqqjid7CV+vpRqbfcy/eb8YS/nV/7a7OH/jrceZxn8171+DRNiR9PLJdtxGpo4OxUQ6WYd7sDx7ABXJrPIiqa3vf/AEehw662brPzUdyzX9XwJ1lBBBGQeYPXVYutXMds7k2V+dJwiSsh749WDnt83j4gV6CceuoZ9LV/U8fTqdlxbtmSdvS5pO78XSarthl5c6M/IiB+5qOzI889pburj13k2prQtO/XyPS4aOXeu9MtH/XUvXSyYljDAqwBUggg8iDwINQJtO6LTSaszHdkTG1v1Ck4WYxnvXVoOe3hx8QK79VKrQz7L/k8fh5PD4u0dTt6XsbJXnz2Jiyfh4/Sf/LXoX9D/X8HjF/M/wB/ybTXnj2ZjO784jvUdjhVd2J7lVifsr0FeLlRaXkePwklHF5T0Jv8mmbs2h0G4kH3efzm/IU8UQdgC44dua4+Imr5EdC/Wz0uEg8nrZ/NLPuWpehJbQtFmikjYZV1IPtH2jnUMJuElJaixVpqpBwehmUbh3zRXkQB82TzGHbkcPc2PrruY2ClSflnPKdF1XDEJLQ8xr9cE9cY3vt+G3HrD+Ba9Bg/ox/dZ47pP+VL09ka/begnqj7K4EtLPXx0IVrBsVPfokNat1anHtIUj6gavYLOpLccrpLM4PeIQXHm1vKOc1hPMJyTVlRMOQ2kmrdRInMbvNW6iROY3eetlEidQbyTVuokUqg3d63SIJSG8j1IkVpyGzmt0VmxFjWxlITNDdHJobo5obFv8mCn4U56hC2fa6Y+yqHSL/4lv5nX6GX/O935RqFcU9KYJ5XbMx7SkbqlSNx7F6M/XH9ddrAyvSS2HJxkbVL7S++Re51WDJ1xzOPeFf/ALj7qpY+Nqt9qLmDd6ZfqpFoKAKAaz7QiSWKFmxLKGKLg+cEALccYGARzrZRbTktCMOSTsNN4dr2tqgkumRRnzQRqYn8hQCSeXLl11tTpzm7QNZzjBXkV7Z+/M14T8BsJJEBwZZZFhQe3DavAceIqeWGjT+pK3ks5FGu5/JEkHk2sQfudggx1yTufqRajtQ2y+y5m76zVYxPyf8A4wsvzq/Ya7GK+lI5eH+qjXfK/wDi2T14/wCMVy8F9Zep0MX9JlR8hkANxdP1rGqjwdiT/AKtdIP4Yor4FZ2zY65R0RttJNUMoPIow96mto6UYeg+btz5yl9ZMOfTxD2M6q31E1366vTluZxaLtVW81Xyp2p6SCX5JUpnsIOoe8E+41U6NksmUfUg6cpu8J6tBZNwXBsYe7WD+2x+wiqmNVq79PY6XRbvhY+vuyw1UOgY1sSIzX8ejiDPr/VVtZ+oV6Cs8ig77Lfg8dho9bjFk+K/pe5NeVKYmeFOpY9X7TEH+AVX6Nj8Dfn++5c6cnepGPlf7v8AokNxb2SO1wlrJIC7EsrRgE8ByZgeoVDjYRlVzyS+5a6LqShh0owbzvPm/LLF/wBXn/8ARTftw/51V6mHjXHkdHtFT/43948ytb5WV1edDotZF0a86mi46tOMYf8AJq5hJ0qN7zWe23kczpGjXxOTk02rX0ta7eZLbgbOmt4ZEmQoTJqUEg81APInsqDG1IVJpwd8xa6LoVKNJxqK2coO+J/1tx6/9BXUwn0YnA6R/lT3ms7Ft+jt4E+bGo9ukZ+uuFVllTb8z1mHhkUox2JD2oyYxLej8Lufzr/aa9HhvpR3Hisd/JnvNntIQkaIOSqFH6oA/pXnpSypNns4RUYqK1C1amxi1/8Ah8n6S38016GH0F/1/B4yp/Mf/b8m01549mYsn4eP0n/y16F/Q/1/B4xfzP8Af8m01549mYZBB0lwqfPlC/tNp/rXpXLJp32I8PGOXXydrt92bkBXmj3B7QGJ7r/hdt+dX7a9FifpS3HisB/JhvNsrzp7Uxvfb8NuPWH8C16DB/Rj+6zx3Sf8qXp7I1+29BPVH2VwJaWevjoQrWDYh96tmG4t2VfvikOneVzw9oJHtqxhqqp1LvQ8zKmNoOtSajpWdfvnoKPYX2Rg8DyIPMeIrpTgcWlVzDp5a0SJHIbvJW6RFKQ3eSt0iGUhu8lbpELkdQWrOC3AIDguxwoPZnmT3DJ7qxKSjm1iNOU1fVtej98ldnskcI4dK5PaIhp/5SA/VROb1L7/ANGJKks2U/8A85uMk+AzubYgFlYOo5lc5X1lPEePLvqWM1oeZlWrRkleLuvL8rSvbzGDPUhAoiZNZN0jgmhukeUM2PKGxqHk52OYYWmcYaXGAepBnT78k+GK4uPrKc8lavc9N0ThnTpuctMvYt9UDqmf+WHd8z2y3EYy9vksBzMbY1/skBvDVV3A1cieS9fuVMXSy4XWoq3kV2yI7mW2Y4Eygp68eTgeKk/sCrOPp3ipLUQYKpZuJtNck6QUAUBQrnaIl2/BEDkQQOD3O41MP2dH11cUMnDOW1lZzvXS2Iy7fXaMl5tCbJ5SmKMHkqqxRfDJ8497Gulh4KnSW65Qryc6tvQ+hdm2KQRRwxjSiKFUdw7e0nmT1k1w5Scm5M68YqKsg2ndCKGWRuSIzH9VSf6UisqSQk7Js+d/J+P9ws/zq/Ya7uK+lI4+H+qjXPK/+LZPXj/jFcvBfWXqdDF/SZR/IpfBLyWI8OliOO9kIYD9kuf1auY+N4J7CrgZWk0bbXIOmM9tTiO3nc8lidj4KpP9K2grySMSdk2fPfk/sDNtC0UfJkVz3CL7px/ZA9td3EyyaUn+5zj4eOVVR9BbatIZYXWfAjxkknGnHyg3URXEpTnGacNJ08RTp1KbjU0FQ3XiubfpPgyfCLVjlSxELMeRKa+4AHPA4GMcav4l06luseTL7nJwUK1C/VLLg9Gp+l/16iX2nLf3CNFHbiAMMGSSVSQDzCiPOD3/AP3UFNUKbypSv5Jcy3WliqsXCEMm+ttfi/3F9192I7ME51ysMF8YwOxR1D7ceytcTipVnsRtgsBDDK+mT1la8qdmdcE2OBUoT2EHUvvy3uq50bPNKPqc3pylnjU9OX5JPyYXGq2kTPFJDw7mAI+sN7qh6RjaontRZ6Fneg47H+/kuNc87AUAjbXSSAlGDAMVJHapwR762lFx0msZxkrxfkY9vl+G3Prf0Fd/CfRieP6R/lTNli5DwFefek9itB1WDJim8o/1lx+db+KvRYf6Mdx4vG/yZ7za686e0CgMWv8A8Pk/SW/mmvQw+gv+v4PGVP5j/wC35Nprzx7MxZPw8fpP/lr0L+h/r+Dxi/mf7/k2mvPHszE9j/hsH6Qn8wV6Kr9F7n7Hi6H8uP8A2XubZXnT2gUBie6/4XbfnV+2vRYn6Utx4rAfyYbzbK86e1Mb32/Dbj1h/Ategwf0Y/us8d0n/Kl6eyNftvQT1R9lcCWlnr46EK1g2CgK1vDuqszGWIiOY88+g/rY4g949xq5QxbgsmWdexzsVgFVeXB2lwe/mVG7tbiDhLE4HzgNS/tLw9+DV+E6c/lZyKlOtS+eL36V90MjfKese+pchlZ1o7Tu3R5TiNHc/kqW95HKsSaj8zsI5VTNBN7kWXZG5zNhrg6V+YD5x9ZhwHsz4iqdXGpZqf3Onh+ipS+KtmWzX6vV6fcbbYu0lYLEAIIgQmBgMflN4dnv663pQcFeXzPSR4ipGo7QXwR0fl8vvrKrevxq/BZjg1ZfGc7O2k0MqSKAdJ4g8mBGGB8QSKxUpKcXFljD1nSmprV+tFt2hujFdRi4smChhnoz6OesA/II5Y5eFUIYydKWRWXr+6Ts1ejadePW4d2vq1f1uKbf7KnhJEsTrjrI832MOB9ldCFWE/ldzkVMNVpfPFr926BjqqQhHthsuecgRRO+esDzfax4D21HOrCHzOxNSw9Wr8kW/wB26C9bt7hhCJLrDEcoxxUeufleHLxrm4jHuSyaebzO3hOiVF5VbP5avXaXmuYdsKADQGT74eTWSOT4Ts7gQwfoQQpjYHOYieGM8dJ5Y4Z4AdOhjE1kVfvzKFbCu+XT+xNbveUePAh2grWtyBx1oyo/fxGU5cjw7Cahq4R/NTzomp4hPNPMyzHeqxxn4ba4/PR/5VX6ir4X9mTdbDaisbxeUuFQ0ViGubgjgUViid54ZfwXh3irFLByeepmRDUxKWaGdlX8muxr1dorcTwTKrCQvJIpXJYE5IbB4t9tWMXUpulkRa1FfDU6iqZUkRXlI3WmtLmWdVYwSOXWQDIRmOoq3zSGPDPMY684lwteNSCi9KI8RRlCeUtBq+7++1ncwrIZ4o30+fG7qhQ/K9IjK55Nyrm1MNUhK1mX4V4SV7nsl8L5lSDzrVGDyzDOiUodSRxN8sagCzDK4XTxLHTjJ6tXlp1L8v8AH3Nr5WZaDCtyr2OK9tZJHCorgsxPADHM12cRFypySOVQ+GqmzU/KPt62u9mz/B5kl0SRatPydTcM+OD7q5uFpThWWUraS9iZxlSdmVLyXbMecXfRMFni6GSFjyDoZODY46WUsh7mNWsZNRyb6HdPgV8HG6lbSaps3e23fzJmFtcD04JmCMp69JbAkTsdcgj3VzZ0JLPHOtq/cxfjUT05mVfyjb4xPA1naOJ55vNIi+6aV+UMrnUxA06RxAJJxwzZwuHallzzJbSDEVlk5EM7Y88mG5jWSNPOB8IkGNPA9EnPTkc2JAJ6uAHbnTF4nrHkx0IzhqHVq70j/wApaubQac6RIuvHZhsZ7tWn24rbo+3W59mYqdMKXZ/h0XV93/pAbD39MMSRSQ6wihQytpOBwGVIOTjrzVqtgFOTlF6Tn4bpjq4KE43tmuiXTyjQdcUo8NB+1hUD6Oqami4um6OuL4cyT2dvpaTELrKMeQkGn/kMr9dQ1MFVgr2vuLNHpPD1XZOz8/2xKbY2YlzE0UnI8iOakciO8VBSqypyUolqvQjWpuEtDM/2bHPsq4JlQtbt5rOoypGfNbuYdh7Tz511Kjhi6dov4thwKEavR9VuavB61wZeYt4rRlDC5hwe11U+1WIIrmvD1U7ZL+x3I4zDtXU190NLjbJnzFZ5ZjwM+D0UQ6yGPpt2KM9/Kt40VT+Kr9tb5Ec8Q6vwUM//ANtS5vYl6jg3VtYRRRO+hcELkElsYLE4HMlsnxrXJqV5OSVzbrKOEhGEnZavyZVvPcrLdTuh1IzZB48eA7a7mGi40op6TyuOqRniJSi7o1fZu8FtMyxxyhnxyAbqHHmK4dTD1ILKksx6yli6NR5MJXYttPbMFuVE0gTVnGQTnGM8h3itadGdT5Vc2rYmlRt1jtcx7bk6vczOpyrSMQe0E136MXGmk9NjyGKnGWIlKLzXNd2ft+2nfRFKGbBOAGHAc+Y764M8PUgryVj11LF0assmErs72ltuC3IWaQIWGRkE5HsFYp0Z1FeKuZrYmlRaVSVjIbu4U3byA+YZ2YHj6JkJz7q70YtUlHXb8HkZzi8U53zZV+JqXxvsvp19z/41xeyVvCeo7xw3jRlq3C/DBJnzOn1Z4+j0mc+6u1kvqcnXb8Hl1OPasu+bKvxNS+N9l9Ovuf8Axri9kreE9R3jhvGjK9mTqt1E7HCCZWJ7AHBJ91dupFuk0tNvweVpTisRGTebKT4mw7M21BcFhDIHK4JwCMZ5cxXAqUZ0/mVj2FHE0q1+rlewntDb9tA+iWUK2AcENyPLkO6sww9SavFXMVcXRpSyZyszItgTrHcwO5wqyKSewA8a71eLlTklsPIYOcYV4yloTNU+N9l9Ovuf+1cTslbwnqu8cN40ZjvVdJLdTSRtqRiMHjx80Dr7xXZw0HGklLSeYx9SNTESlF3X9GpbK3gtpSkUcoZyvo4bqGTzHdXEqYepC8pLMepo4yjUahGV2TFQFsKAKAKATaBSclVJ7cCs5TNcmOwSvb6KFdUjqi9WTz7gOZPcK2hCU3aKua1KsKSvN2RTNtbwtc5jjBSHrJ4NJ3Y+SvdzPXjiK6NHDql8Us79jjYnFyr/AARzR17XyXvr2EbPIFXAqaKbdyrUkoxsiuXbZNXI6DjTV5DNq3Nokvu5vFLZuSvnRt6UZPA94PU3f76r4jDRrLPp2l7B42eGlmzp6UajsbeG3ugOjcautG4OP1evxGRXFq4epS+Zeuo9Nh8ZSrr4Hn2ayRMCZzpXPbgVDlPaWMlbBSsGwUAUAUAUAUAnPbo4w6qw7GAI9xrKbWgw1cj13bswdQtLYN29DHn36a366poyn9zXq4bESMUSqMKoUdgAA9wrRu5ud1gHhGeBoCO+L9pq1/BbfX87oo9XvxmpOtna2U/uadXG97IkQKjNw0jsoCl+V8f7bJ68f8Yq3gvrL1K2L+kyreQr75eerF9slWekdEfX8EGB/wAjVryximGmWNJF7HVXHuYVzYycc6ZfaT0nNjs2GEYhhjjB+Yip/CBSU5S+Z3CiloQ6rUyUqXaLX161qGK20erpADgzaCFYE89Oo4wOYz3Y6KpqhRVR/M9HkcZ13isS6CdoLT52/H4JS43KsnJPRFSfmswHuzgVBHG1lrLM+i8NJ3yfs2MpPJ5ank0y+DL/AFU1KukKuxEMuhsO9F16/wBEPt3cDo43khkZtIJKOBkgcThhjjjqxxqej0hlSUZop4noZQg5U5aNTLLuHdNJZRljkqWXJ6wp833DA9lU8bBRrOx0+jKkp4aLluLDVUvjY7PhJz0Uee3Quffit+snouyPqoXvkr7DgDFaEh7QBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQBQEZd7AtpXMjxBnOMtls8Bgcj2Cpo4ipFZKeYrTwlGcsqUbs4G7dr9EP2n/vWe01dpjsVDw+5427FoecI/ab+9O1Vdph4DDvTE4+Kdn9Avvb+9Z7XW8Rr3dhvAjz4pWX0C+9v71ntdbxGe78N4EHxRsv8A06+9v707XW8Q7vw3gQfFGy+gX3t/ena63iHd+G8CJsCqxcCgCgCgCgCgCgCgCgCgCgCgCgCgCgKV5X/xbJ68f8Yq3gvrL1K2L+kyreQr75eerF9slWekdEfX8EGB/wAjXq5Z0AoAoDNsts3aLSSKeglLeeBkaXOrh3qQMjngd4rr5sTh1GOlfjmecz4LGOc18Mr59+fgaJa3KSKHjZWU8ipBH1VypRcXZo9DCcZrKi7oVrU2IHbe2AQ1vb/dbhwVCrxEeeBaRuSgdh4nhVmjRzqc80Vx8kUsRiLp06WeTzbvN7B/sLZotoI4Qc6RxPaScsfeTUdaq6k3Imw1BUaSprUP6iJwoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoAoCn3+4Kzp0c19fyIcZVpYyDjiOHRVajinF3jGPHmQyoKSs2xHZnk2htyxgu72MtjVokiGcZxn7l3n31meMlP5op/fmaww0YfK2WnZNgYI9Bmlm4k65mDPx6sqoGB4VXnLKd7JbieKsrD2tDIUAnPArqVdVZTzDAEHxBrKk4u6NZRUlaSuiIO6dpqLLGUY9cbyJ9SsBU/a6trN33pFXsFBO6Vtza9mende2PpiRx2PLKw9xbBp2qotFl6LkZ7FSfzXe9vmSdpaRxLpjRUXsUBR9VQynKTvJ3LEKcYK0VZC9am4UAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUAUBE7e2ZayASXQUKgPnNI0aqDjOSGA99TUa1SGaGvyK1fDUatnUWjza/Ixtt1NnyKHjQOh5MssjKfAh8GpXi66dm+C5EK6NwrV1Hi+YlLu7sxZFiYIsreihncO3gpfJrKxWIaunm3LkY7uwidsni+Y6+Jll9Cf3kv+da9trbeC5Ge7MN4eL5icO6ez3GUjDDJGVlkIyOBGQ/bWXjK60vguQ7twr/x4vmexbo2DAMsQZTyIlkIPgQ9YeMrrXwXId24Xw8XzEH3d2YJBCQglPERmdw58E15rbtWIte+bcuRju7CXtk5975i826VgilnjCqOZaWQAeJL8K1WMrvMnwXIz3bhV/jxfMH3RsFKgxgFjhQZZBqOCcDz+JwCfZTtlfbwXId24Xw8XzCbdKwQamjCjhxMsgHE4HEv1kge2ixld6HwXId24Xw8XzO/iZZfQn95L/nTttbbwXId2Ybw8XzGMexNksQqmIknAAuGJJPIACTia2eJxK/8AFyMd34TZxfMdy7pWCgFowoJABMsgyScAcX5k1qsZXevguRnu3C+Hi+Z7LuhYKCzRYUDJJlkAAHMkl+AosZXevguQ7twvh4vmctups8JrMYCYzqMsmnHPOrXjHfWe1172vwXId24XTk8XzFPiZZfQn95L/nWO21tvBch3ZhvDxfMaS7A2Wsgibo1lPJDO4c55YUyZNbLFYhq6ebcuRju/CJ2txfMd/Eyy+hP7yX/Ote21tvBcjPdmG8PF8zxtzrEAkw4A6+kl4f8AOnbK23guQ7tw3h4vmNINhbKdgqGJmPILcMSevgBJxrZ4nErT7LkY7uwj1cXzFrrdfZ0Q1SIqAnGWmkUZ54yX58D7qwsXXeh8FyMvo3CrTHi+YWu62zpBqjRXXOMrNIwz2ZD8+NHi660vguQXRuFeiPF8zi83d2ZDp6UJHqOF1zumo9g1PxNZjisRLQ7+i5GH0dhFpjxfMXfdCwALGLCgZJMsgAA4kk6+Va9sr7eC5Ge7cL4eL5nDbq7PChigCnGGMsmDq9HB18c5GO3NZ7XX0X4LkO7cL4eL5ncu6FgoLNFhQMkmWQAAcySX4CsLGV3r4LkO7cL4eL5nLbqbPCazGAmM6jLJpx26teMd9Z7ZXva/Bch3bhdOTxfMU+Jll9Cf3kv+dY7bW28FyHdmG8PF8xqu7uzDIYQEMo4mMTvrA7015rbtWIte+bcuRju7CXtk8XzHLbnWIBJhwBzPSS8P+da9sr7eC5Ge7cN4eL5nkW6FgwDLFlSMgiWQgg8iCH4ijxlda+C5Du3C+Hi+YlebsbOiXXKqxp855pFX3s+KzHF4iTsnwXIw+jsKs7jxfMUh3RsHUMsQZSMgiWQgjuIfjWHjK60vguRnu3C+Hi+ZzdbrbOiUvIiog5s00iqPEl8VlYuu3ZPguQfRuFWdx4vmeWm6+zpVDxoroeTJNIyn2h8UeLrxdm+C5BdHYV51Hi+Z1FulYNq0xg6ThsSyHSRzBw/A8Rw76PGV1r4LkO7cL4eL5nsO6Vg6hkjDKeRWWQg+BD1h4yutL4LkO7cL4eL5nfxMsvoT+8l/zp22tt4LkO7MN4eL5jVN3dmGQxAIZRzjE7lx4pryK27ViLXvm3LkY7uwl7ZPF8xy+59iASYsAcSTJKAAO06617ZX28FyM924bw8XzEzurs/Sr6BpbGlulkw2rGnB14OcjHbms9rr6L8FyHduF8PF8z243U2fGpZ4wijmzSyKBk4GSXxzosXXeZPguQfRuFWmPF8xK13c2ZISIwjkDJCzuxA7wHrLxWIWl8FyMLo7CvRHi+YXu7mzIQDKEjBOAXndAT2As4yaRxWIlod/Rcg+jsItMeL5jhdzrEgEQ5B5HpJeP/Ote2V9vBcjPduG8PF8xtLu7sxZFiYIJW9FDO4dvBS+TWyxWIavfNuXIx3dhL2yeL5jr4mWX0J/eS/51r22tt4LkZ7sw3h4vmIjdbZ2gyaF0DOX6aTSNOQ2W144EHPhWe1172vwXId24XTk8XzFRubY/Q/+5L/nWO2VtvBch3bhvDxfMaW2wdlSOY4zG8g5otwzMPFRJkVs8TiUrv2XIwuj8I3ZLi+Y8+Jll9Cf3kv+da9trbeC5Ge7MN4eL5jW33d2Y7tGgRpF9JFndmX1lD5HtrZ4rEJXb4LkYXR2Ebso8XzF23SsAyqYwGbOkGWTLY54GvjjNY7ZX28FyM924Xw8XzPJt09npgtGFBIAzLIMk8gMvzPZRYyu9D4LkO7cL4eL5nsm6NguNUQGo4GZZBk4JwPP4nAPDurHbK+3guQ7twvh4vmd/Eyy+hP7yX/Onba23guQ7sw3h4vmcbI2fs+Of7g0fTrkFVmLsuRg5QufrFYqVq8o/Ho3f0b0cJh6c7wWfe+ZYqrFwq20FE21YIZAGjitnnRTxUyGRYwxHIlVzjs11Yj8NFtaW7elrkLz1EnsuWeOMKMKABx4AY58Ty76r3JilbuWEdzsyZ5VVnuTO8rEedq6R1XjzBQKoHZoGMYq3Vk4VUlqtb98yCCU6d3rLDundvNZWkjnLvBGzE9ZKDJ9p4+2oK0VGpJLayWDvFXKtuc5teif/wDnu5JFbsjnEsioe4SIoT1kT51WK3x3WtJfa349txDS+HPt9yw7h/i+19T+pqHEfUZJR+REXsyT4FK0N1DwnuXaK6AVldpXLRrJ8pHGQg4Y80YNSTXWK8HoWdbtnuYXwuzWvSPfKR+LL380ftFaYX60d5mr8jO96Pv+zP0o/wDx56Uvlnu/KMy0o48of4C/522/+TFTDfU9H7MxV+X7e5ZagJCr7Ot0G1LvCLwt7YjgOB1z8R7qsSb6mO9/gjSWW/QU38+8Qfpdr/PSsYf5nufsKmj1Q533P+3X36NN/LasYf6sd6Mz+VlV22xt7G/sm9D4NJLbE9cZHnx57Y2YAfkOnYasU/jqRqeaT37fX3uRv4YuP2Lztm5aK3nkUZZInZR2lVJH1iqcFlSSZLJ2i2VbZtzFZbPtZWt2lEixSSzL0ZJkmMfnuXYMxaSTgRnGOrAqzNSqVJK9rXss+hEUWoQTsXWqhOeEUBVt3IFG0Nq4VeD2+OA4f6deXZViq31cPX3IoL45ensG/rY/6eRGZCL1PMGnLfcZ+A1kL7yKzh/889s35Qq6t5P7McsgJgaAkn7m3R5HVk9EzLx8agmrPTf98yRFf3XhWe42lNKoaQXLQDUM6Y4kTSq55Al2Ygcy1T1W4xhFbL+rIqeeUm9tiV3sH+hvP0eb+W1R0fqR3r3NqvyS3MqG0b+RrCxRrWZEEll91ZoChxJFggJKX49Xm9fHFWYxSqSeUv8ALNn2PyI23kLNsLVvuf8Abr79Gm/ltVfD/VjvRLP5WVXbTG3sb+yb0Pgzy2xPXGca489sbMAPyHTsNWKfx1I1PNJ79vr73In8MXH7F425ctFbXEi+kkUjL4qhI+sVUprKkk9pNN2i2U7aFhHHsNJEAEkcEdwsvyulAWQvq56mYnJ69RHXVmMm8RZ6G7W8tFiJr/iv6lx2k2beU9sTfwmqsfmRM9Ay3K/F9j+jQ/y1rev9WW9mtP5UMygl2swcBhBao0aniFaaRw7AdumNVz2Z7a3vajm1vP6WMWvUz6kebrgR3m04EGIkkikVRyVpotUgA6ssurHa57aVc8ISenPwZiD+KS3HE0Ym2o4kXWtvbI8UZwRrleQM4DcNWECgnlk8smieTRza3n9LDTP0JTYG00nEwWFoWilKOjdHnVoR85jZlPBxxz1VHUg42z3ubxlfUV/ea3lhuSsB0jaAELEHHRSIOMo7+g1+2JKnpOMofF/jn9Nn392RzTUs2suFnapFGkcahURQqqOQCjAHuFVZScndkyVhrvFdtDaXUqenHDI6+KozD6xW1KKlNJ62jWbtFsqe2LCOHYqSRgCSGKOdJMDV0g0uXLcyXJbJ69Z7aswk5V7PQ3b0/oikv+O5bdun/S3H5mT+A1Wh863ksvlZVbj8UbM8dnfzIKsr68/9vZkf/wDOPoXeRAwwQCOwjIqmTFa8nUSizUhQD0twMgDPC5lxxqxiX8fovZEdL5fv7ie3Y3t7s3jQG4g6ARsE0mSDSzMzKjEalYEZ0+d5g4HFKdpQyL2d77zErqWVbMWSwuI5I43iIMbKpQjgCpGVwOrh1VBJNNp6SRNNXRTd3bCO52TLJKoL3AnkkYjztet9JzzBQKoHZoGOVWqsnCsktVkv3zIYfHTu9ZZd1btprK0lc5d4I2Y9pZASfaeNQVoqNSSW1ksHeKZUrT/9fuvzd7/Onqy/5Mf9fZES+k/UvUH3tfUH2VTekm1Gd7uEXNjs62hU9PCbeVnI09CgbUWUni+tVZBoyMkgkcavVfgqTlLQ7rf/AOaSCPxRSRavKBePDs+5eMlW0hQw4FOkdYywPVgMTnuqvhoqVVJm9aTUG0S2z9mxQIiRRqioulcAAgcOvvwCe2opTlJ3bJFFLQQm2/xnsz1Lv+GKpofRn6fkjl9SPr+D3fu0SaK3icZR7mJW6jhtQ4HqPfWKEnFtrYzNVJpJ7SLkvnc2MExzc298qSHl0g+DzmOUDsdePcwYdVSqKSlKOhrN91m9DRv5U9Kf4ZL7+zMtoyqxXpJIYmYHBVZZUR8Hq80kZ76iw6WXn1Xf2RvV+UU+FQ209tbLalFfKRSKIhGCsbORgNrHmqRyrGTKcXPK36TN0mlYnqhNyI21sZpXinil6K4i1BXK61ZXxrSRMrqU6QeBBBGQe2WFRRTi1dM0lG7utI/sUkVAJXV5OOWRDGp4nGELMRgcOZ5VpJq+Y2V9ZAS7sShZoYbro7WZnLJ0WqROlJMgil1gICWYjKsRqOOrEyrRzSlG7XnmzaLr+zRwdmk8xYrW3WNEjQaURQqgcgFGAPcKgbbd2bpWViKtt3kFmbSRtanX5wGkgvI0ileJwykgg9qg1I6ry8tGih8OSx1u/s021tDAX1mNcF8adXfpyce81rUnlycjaMclWI+72FPPInT3CNBHKJVjSEozFG1Rh5DIwIU4PALnFbqpGK+FZ7W0/wBGHFvSyU2vs5LmCWCTOiRCpxwIyOY7xz9lRwm4SUlqNpRylYi7TYU5lge5uRMIMmNVi6LLFSmuU621MFZh5ukZJOOWJJVI2agrX05/Y1UXmu9A83l2Sbu3aEOIyWjYMV1gGORJBldS5zoxzHOtaU8iWVb9aMzjlKw42bFOoPTyRyNngY4miAGORDSPk568itZOL+VW9b/hGVfWI2+ytN3Nc689JHGmjT6PRmQ51Z4518sDGOvNbOd4KOy/GxhRz3Db2yvhMaJr0aZopM6dWeikV8YyOenGerPXSnPId/Jr7oSjcU25s/4RbTwatHSxOmrGrTrUrnTkZxnlkVinPImpbDLV1Yj97N2VvrboC5jcehIBkqSpRvNyMhkLKRnr7q3o1nTnlWNKlNTVidZQQQRkHmO2oSQqc+6MphFol0otAyFVeIvKixyLIqLMJANIKgDUpIHWasqvHKy3H4t+bRbRb8kTpu2TfMWe8jZo3VH0OVIV8BtDEEBtJ4Ng8cHniq8Wk85I72zHtqjKiK763CgM+AusgYLaRwGTxwOWaNpvMFozjDZ2yeiuLufXn4Q0Z06caOjjEfPPnZxnkMVvKeVGMdnMwo2be043j2Q9wLcxyrG8MwlUtGZFJVHTBUOp+XnOeqs0qihe6vdWEo3sPdnRzKpE8kcj55pGYhjhgaWkc558c9fKtJOLfwr9+yMq+si7jYcyTyzWs6xdNgypJEZULKAodAJEKtpAB5g4HDtkVSLiozV7aM9vwzXJd7pkntWy6eCaHVpMkbpqxnTrUrnTnjjOcZqOEsmSlsMyjlRaI+92B0lrb2/SY6JoDq051dAyN6Orhq0Y5nGeut41bTcrab8TGR8KQ925s/4RbTwatHSxOmrGrTrUrnTkZxnlkVrTnkTUths1dWI/ezdpb626EuY3HoSAZK5BVvNyMhkLKRnr7q3o1nTnlGlSmpqxOSIGBBGQRgjtB51CSFXXdOQxJavchrJCuI+ixKyIQyRvNrwUGAOCgkDGeZNjr1fLS+LbfNvt/ZF1d1k3zFlu4daOmcalK554yCOVQJ2dyRq6IrdvZdxbJHDJPFJDHEqIFgaN/MChSzmZgeAORgcT1YwZas4Tbkk035/0YhFpWOtq7Hd5kuYJRFOqGMlk6RJEJ1aXQMpyG4ggjGTzzWIVEo5MldGHHPdCuw9k9AJWZzJNK+uWTGnUcBQFXJ0qqqABk8uZrFSeVaysloMxjYS2rsZnmS5glEVwqlNTJ0iSITq0yJqUkBuIIIIJPbiswqJRyZK6MOOe60nW7+yXt+naSRZJJpTIxVDGoJREwql2OMIOZPOsVJqVrKySsZjG1xTauyumltZNenoJTJjTnXmN48ZyNPp5zx5UhPJUltX5DjdoX2pBLJEywy9DIcYk0LJpwwJ8xuByAR7c1rBpO8ldCSbVk7DiWMMpVhlWBBB6weBFap2NispupJ0cds9zrsoyuI+ixKyxkNHHJNrwUGlRwUEgYzzzY69Xckvifnm32/si6vNk3zFmniDqyMMqwII7QRg/VUCdnclKzabrShYIZLrpLWBkaNOiCyN0RBiEkushgpC8lXOkZ68zyrRbclHO/Pbpsv7I1BpJN5kWmq5IRm7uyvgsAh168PI2rTp++SPJjGTy1478dVSVZ5cr7uCsaxjkqwntmxupSViuY4o2XSwMJdxnOSj9IADg9anGKzCUFpV3v/oSTehj7ZlikEMUMedEaKi54nCjAye2tJycpOT1mUrKxAS7ryhJYIrro7SVnLJ0WqRBKSZFil1gKCWY8VYjUcHliZVo3UnG7XnmzaLr+zRwdmk8xZLaBY0VEAVEUKoHIBRgAewVA227s3SsrIrEm6UmiW2W502UjuzRdFmRVkYvIiTa8BCWbmpIBPHrFjr1dSt8S13zZtdv7I+rdrXzFp08MDljFViUrdjumYY7IRzYmtVCdLo4Sxn74jpq5HAI4nSwB7QbEq+U5XWZ6vMjVO1vIndpWKTxSQyDMcilWHcwxwPUe+oYycWpLUbtXVmMtjWNzFhZblJo1XSv3EpIeWC8nSEMQBjgq5zmtpyhLQrPfm9vyYimtLO77ZPSXVrca8dAso06c6+mCD0s8MaOw5z1UjO0HHbbgHG8k9gptbZ3T9D52no5kk5Z1aM8OYxnPOsQlk33WEo3Ge1t3VmubW5D6HhbJGMiVcMFU8RgqXJB441MMceG0KrjBx2mJU05KWwf7X2bHcwyQSglHGDg4I45BU9TAgEHtArSE3CSkjaUVJWZExbCuGmtpJ7pJFt2ZkAhKO5aNo8yP0hU8GJ81VyeypXVgotRVr+frs/Jrku6u9BYqgNz/9k="
+                                                                                            style="display: block; max-width: 265px; outline: none;" width="265" height="160" data-maxwidth="265" class="" alt="" id="0309ed59-178b-c214-d0b0-49f44a4e03a5" /></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="eb840374-1e6c-6d0b-46c4-fe9ecf1da49f">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px 15px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="center" border="0" cellpadding="0" cellspacing="0" width="170">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn"><img border="0" src="https://status.slack.com/img/allgood@2x.png" style="display: block; max-width: 170px; outline: none;" width="170" height="170" data-maxwidth="265" id="93296e54-4985-3903-ec9e-83f142aba50c"
+                                                                                        class="" alt="" /></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table class="image-caption-column-text" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" data-align="bottom">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: center;"><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 18px; color: #ff6600;"><a style="color: #ff6600;" href="http://slack.openebs.io/">Our Slack community is fast growing and now has 281 Members! Join us!</a></span></strong></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="d7955133-19c5-b759-48bc-1cc40dc87004">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding: 10px 0px 15px;">
+                                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                    <table style="margin: 0 auto;" class="image-caption-column" align="center" border="0" cellpadding="0" cellspacing="0" width="240">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td align="center" class="image-caption-content image imageInColumn">
+                                                                                    <a target="_blank" class="imgLink" href="https://github.com/login/oauth/authorize?client_id=768d7617e686c9c2bd81&amp;scope=user%20public_repo&amp;state=openebs1234cloudbyte1234&amp;allow_signup=true" rel="noopener"><img border="0" src="../components/githubstarmascot.png" style="display: block; max-width: 145px; outline: none;" width="145" height="170" data-maxwidth="265" id="bb6f66e7-08c5-07aa-6f5b-482c198c28c6"
+                                                                                            class="" alt="" /></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <table class="image-caption-column-text" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" data-align="bottom">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-block block-text">
+                                                                                    <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                        <div style="text-align: center;"><strong><span style="font-size: 18px; font-family: verdana, geneva, sans-serif; color: #ff6600;"><a style="color: #ff6600;" href="https://github.com/login/oauth/authorize?client_id=768d7617e686c9c2bd81&amp;scope=user%20public_repo&amp;state=openebs1234cloudbyte1234&amp;allow_signup=true">Check out our github project and star us if you like what we are doing?</a></span></strong></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td height="10" width="100%"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="10df472b-5888-d24a-66ed-e2eeb23a3206">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="0de783ea-2f01-9022-2b92-86bcc6510ea1">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                    <h1 style="text-align: left;"><strong><span style="font-size: 18px; color: #ff6600;">CONTRIBUTE</span></strong></h1>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="79c88bc8-b44a-c12b-4741-17f5a143dc60">
+                                        <tbody>
+                                            <tr>
+                                                <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%" height="15px"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="34f975b9-57ef-e4e4-287b-d6f2707c531f">
+                                        <tbody>
+                                            <tr>
+                                                <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                    <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                                                        <div style="text-align: justify;"><span style="color: #353a3e; font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Thinking about Contributing to OpenEBS?</strong></span></span>
+                                                        </div>
+                                                        <div style="text-align: left;"><span style="color: #748086; font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="color: #000000;">OpenEBS is one of the hottest young infrastructure projects written in Go - and we are here to help you make your first contributions and to give you prizes (and unending thanks and fame) for jumping in. And you don't have to write code to contribute, for example, we are also looking for speakers at upcoming meet-ups around the world and can help you afford sharing your experiences at such meet-ups. Please send a quick</span>                                                            <a href="mailto:support@cloudbyte.com">email</a>&nbsp;<span style="color: #000000;">if you are interested in talking about K8S, storage, and OpenEBS experiences at a meet-up near you</span>.
+                                                            </span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="main" align="center" width="640" cellspacing="0" cellpadding="0" border="0" style="background-color: #eeeeee; display: table;" data-type="social-links" id="0d671c03-bca3-910e-6307-cd2988942729" data-color="true">
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                    <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="61f91856-d4e2-018d-c2da-da7c749cce36">
+                                        <tbody>
+                                            <tr>
+                                                <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                    <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px;" class="textFix">
+                                                        <div style="text-align: center;"><a href="http://www.openebs.io">www.openebs.io </a>| <strong>April, 2017.</strong></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Community section-->
+    <div class="subhead"></div>
+    <section class="mar-t-10 contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: sans-serif; padding-bottom:1%">Join Our Community</h2><br>
+                    <p>Join the OpenEBS community by contributing on our blog, GitHub and following us on social media.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center ebs-footer">
+                            <div class="social ">
+                                <a href="http://openebs.readthedocs.io/en/latest/" target="_blank ">
+                                    <img class="docicon" src="../../styles/images/docindex.svg" alt="doc">
+                                </a>
+                            </div>
+                            <div class="social"> <a href="https://twitter.com/openebs" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                            <div class="social"> <a href="https://www.facebook.com/openebs" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="http://slack.openebs.io" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://github.com/openebs/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="careers/index.html"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>OpenEBS | HacktoberFest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../styles/images/fav/largetile.png" />
+    <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../styles/css/openebs.css" rel="stylesheet">
+    <link href="style/css/style.css" rel="stylesheet">
+    <script src="../styles/js/jquery.min.js"></script>
+    <script src="../styles/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="../index.html"><img src="../styles/images/banner-icon.png" height="40" width="auto"></a>
+                <a class="navbar-brand mobile-logo" href="../index.html"><img src="../styles/images/openebs-logo.svg" height="40" width="auto"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <a href="https://www.facebook.com/openebs/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="http://slack.openebs.io" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://blog.openebs.io" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://twitter.com/openebs" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com/openebs/" target="_blank">
+                            <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <a href="https://www.facebook.com/openebs/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="http://slack.openebs.io" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://blog.openebs.io" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/openebs" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/openebs/" target="_blank">
+                <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+
+
+
+
+
+    <section class="hero hackheader desktop-view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <img class="" src="style/images/headerhacktober(1).svg">
+                    <a href="#issuetab" value="#issuetab">
+                        <div class="d-flex align-items-center justify-content-center sthack">
+                            <p style="">Start Hacking</p>
+                        </div>
+                    </a>
+                    <img class=" " src="style/images/headerhacktober-02.svg ">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero hackheader mobile-view " style="margin-top:4%">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+
+                    <img class="" src="style/images/mobilehack-02.svg">
+                    <a href="#issuetab" value="#issuetab">
+                        <div class="d-flex align-items-center justify-content-center sthack">
+                            <p style="">Start Hacking</p>
+                        </div>
+                    </a>
+                    <img class=" " src="style/images/mobilehack-01.svg ">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-issuesec" id="issuetab">
+        <section class="issuesec">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-md-6 mule ">
+                        <center>
+                            <img src="style/images/issuemulehacktober.svg ">
+                        </center>
+                    </div>
+                    <div class="col-md-6 isbtn ">
+                        <center>
+                            <div class="d-flex align-items-center justify-content-center ">
+                                <div class="button " style="margin-right:2.5%; ">
+                                    <a href="https://github.com/openebs/openebs/issues?utf8=%E2%9C%93&q=is%3Aopen%20python " target="_blank ">
+                                        <p>Python</p>
+                                    </a>
+                                </div>
+                                <div class="button " style="margin-left:2.5%; ">
+                                    <a href="https://github.com/openebs/openebs/labels/documentation " target="_blank ">
+                                        <p>Documentation</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center ">
+                                <div class="button " style="margin-right:2.5%; ">
+                                    <a href="https://github.com/openebs/openebs/labels/help%2Fsmall " target="_blank ">
+                                        <p>Easy</p>
+                                    </a>
+                                </div>
+                                <div class="button " style="margin-left:2.5%; ">
+                                    <a href="https://github.com/openebs/openebs/labels/help%2Fmedium " target="_blank ">
+                                        <p>Intermediate</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center ">
+                                <div class="button " style="margin-left:2.5%;">
+                                    <a href="https://github.com/openebs/openebs/issues" target="_blank ">
+                                        <p>All</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="calender" style="color:white;text-align:center;">
+            <p class="lead">OpenEBS Hacktoberfest Days</p>
+            <p>Come down to our <span style="font-weight: bolder"><a href="https://www.google.co.in/maps/place/OpenEBS+Office+Space/@12.9108372,77.649571,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae149d096e1157:0xae5ac3d1fafa5658!8m2!3d12.910832!4d77.6517597" target="_blank" style="color:white;text-decoration:none;">OpenEBS office space </a></span>to
+                get help from the team to submit your PRs on OpenEBS HacktoberFest days</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="sq-box d-flex justify-content-center" style="background-color:white;color:#273274;margin:2% 2%;border-radius:10px;">
+                    <p style="font-size: 20px;padding:2% 2%; margin:2% 2%;border-radius:10px;">Oct 06</p>
+                </div>
+                <div class="sq-box d-flex justify-content-center" style="background-color:white;color:#273274;margin:2% 2%;border-radius:10px;">
+                    <p style="font-size: 20px;padding:2% 2%; margin:2% 2%;border-radius:10px;">Oct 13</p>
+                </div>
+                <div class="sq-box d-flex justify-content-center" style="background-color:white;color:#273274;margin:2% 2%;border-radius:10px;">
+                    <p style="font-size: 20px;padding:2% 2%; margin:2% 2%;border-radius:10px;">Oct 27</p>
+                </div>
+            </div>
+            <div style="margin-top:4%;">
+                <span style="font-weight: bolder;border:2px solid white;padding:10px 15px;border-radius:20px;margin-top:2%;"><a href="https://www.google.co.in/maps/place/OpenEBS+Office+Space/@12.9108372,77.649571,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae149d096e1157:0xae5ac3d1fafa5658!8m2!3d12.910832!4d77.6517597" target="_blank" style="color:white;text-decoration:none;">Get Directions </a></span>
+            </div>
+        </section>
+
+
+
+        <section class="hacktree ">
+
+            <div class="container-fluid ">
+                <div clas="row ">
+                    <div class="col-md-12 ">
+                        <img src="style/images/buttonbottom.svg ">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+    <section class="guddys ">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-4 prsection ">
+                    <img class="desktop-view" src="style/images/primage-01(3).svg ">
+                    <a href="https://github.com/openebs/openebs/pulls " target="_blank "><img class="desktop-view" src="style/images/primage-02(1).svg " style="margin-top: -1%; "></a>
+
+                    <div class="mobile-view">
+                        <a href="https://github.com/openebs/openebs/pulls " target="_blank "> <img class="mobile-view " src="style/images/prmobile-01(3).svg ">
+                            <div class="d-flex align-items-center justify-content-center subnow">
+                                <p style="">Submit Now</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class=" col-md-8 cafeseeting ">
+                    <center>
+                        <img class="cafes " src="style/images/cafesitting-01.svg ">
+                        <br>
+                        <a href="../cafe/ " target="_blank "><img class="cafelink " src="style/images/hacktoberbottom.svg "></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mar-t-5  footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="d-flex justify-content-center ">
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="https://www.facebook.com/openebs/" target="_blank "><img src="style/images/iconsfooter-03.svg "></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="http://slack.openebs.io" target="_blank "><img src="style/images/iconsfooter-05.svg "></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="https://twitter.com/openebs" target="_blank "><img src="style/images/iconsfooter-01.svg "></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="https://github.com/openebs/" target="_blank "><img src="style/images/iconsfooter-02.svg "></a>
+                        </div>
+                        <div class="d-flex align-items-center sicons ">
+                            <a href="../careers/index.html " target="_blank "><img src="style/images/iconsfooter-04.svg "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="../styles/js/openebs.js "></script>
+
+</html>

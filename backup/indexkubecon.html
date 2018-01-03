@@ -1,0 +1,1410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>OpenEBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OpenEBS is containerised storage for containers." />
+    <meta name="keywords" content="Containerized Storage,Block Storage,Open source,Kubernetes,Containerized Open source storage,Open source block storage,Storage DevOps,Written in Go,DevOps friendly,Cloud Native block storage,Cloud Native,Stateful applications,Scale out storage,Open Source storage,DevOps user,yaml files,Open source stack written in GO,Apache2 license"
+    />
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/" />
+    <link rel="shortcut icon" href="styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="styles/images/fav/largetile.png" />
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="OpenEBS">
+    <meta itemprop="description" content="Containerized Open Source Storage for Containers.">
+    <meta itemprop="image" content="http://openebs.io/styles/images/openebsfeature.png">
+    <meta itemprop="image" content="https://openebs.io/styles/images/openebsfeature.png">
+    <!-- <meta name="robots" content="noindex" /> -->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="Summary_large_image">
+    <meta name="twitter:site" content="@openebs">
+    <meta name="twitter:title" content="OpenEBS">
+    <meta name="twitter:description" content="Containerized Open Source Storage for Containers.">
+    <meta name="twitter:creator" content="@openebs">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="http://openebs.io/styles/images/openebsfeature.png">
+    <meta name="twitter:image" content="https://openebs.io/styles/images/openebsfeature.png">
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://www.openebs.io/" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="OpenEBS" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Containerized Open Source Storage for Containers." />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://openebs.io/styles/images/openebsfeature.png" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://openebs.io/styles/images/openebsfeature.png" />
+
+
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="styles/css/openebs_countdown.css" rel="stylesheet" />
+    <link href="styles/css/contri.css" rel="stylesheet" />
+    <link href="https://d1gwclp1pmzk26.cloudfront.net/agile/forms/v1/agile-form-min.css" rel="stylesheet">
+
+
+    <style>
+        .clhr {
+            display: none;
+        }
+        
+        .dek-v {
+            display: block;
+        }
+        /* #release {
+            font-size: 24px;
+            color: white;
+        } */
+        
+        .ebs-nav .release {
+            font-size: 24px;
+            color: #fff;
+        }
+        
+        #docicon {
+            height: 35px;
+        }
+        
+        #bannerrelease {
+            font-size: 20px;
+            background-color: transparent;
+            color: #ee5a2b;
+            font-size: 2em;
+            margin-bottom: 0;
+            margin-top: 1%;
+        }
+        
+        #releaselink {
+            display: flex;
+            justify-content: center;
+            margin-top: -2%;
+        }
+        
+        #releaselink a {
+            font-size: 1.3rem;
+        }
+        
+        @media screen and (max-width:1250px) {
+            #releaselink a {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            .clhr {
+                display: block;
+            }
+            .dek-v {
+                display: none;
+            }
+            #bannerrelease {
+                font-size: 1.5rem;
+                margin-top: 5%;
+            }
+            #releaselink a {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            #hero {
+                height: 300px
+            }
+            #bannerrelease {
+                font-size: 1.5em;
+            }
+            #releaselink a {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media screen and (min-width:1536px) {
+            #releaselink a {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="index.html" rel="noopener noreferrer">
+                    <img src="styles/images/openebs-logo1.svg" alt="desk-icon" title="OpenEBS"></a>
+                <a class="navbar-brand mobile-logo" href="index.html" rel="noopener noreferrer"><img src="styles/images/openebs-logo1.svg" alt="mob-icon" title="OpenEBS"></a>
+
+                <a class="github-button" href="https://github.com/openebs/openebs" data-icon="large" data-show-count="true" aria-label="Star openebs/openebs on GitHub">Star</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><i class="fa fa-bars" aria-hidden="true" style="font-size:30px;"></i></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top" style="align-items: center;">
+                        <li class="nav-item p-3" style="display:inline;" title="Documentation">
+                            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><i class="fa fa-book" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li class="nav-item p-3" style="display:inline;" title="Facebook">
+                            <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Slack">
+                            <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true" ></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Blog">
+                            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true" ></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Twitter">
+                            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Github ">
+                            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true" ></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <li class="nav-item p-2" style="display:inline;" title="Documentation">
+                <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><i class="fa fa-book" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Facebook">
+                <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Slack">
+                <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Blog">
+                <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Twitter">
+                <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Github ">
+                <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <!-- <style>
+        .openebs05 .openebsdetalis {
+            background-color: #f93;
+            color: #fff;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs {
+            padding: 15% 8%;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs h2 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs p {
+            font-size: 0.9rem;
+        }
+        
+        .openebs05 .openebsdetalis .pd-openebs h5 {
+            font-size: 1rem;
+            font-weight: 100;
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn-release {
+            padding: 0.7% 3%;
+            background-color: #fff;
+            color: #ff9933;
+            border-color: #fff;
+            padding: 1% 4%;
+            font-size: 1rem;
+        }
+        
+        .btn-release:hover {
+            background-color: #fff;
+            color: #f93;
+            border-color: #fff;
+        }
+        
+        .imgopenebs {
+            background: url(styles/images/openebsrelease.svg) no-repeat;
+            background-size: 0 0;
+            background-position: center;
+        }
+        
+        .imgfront {
+            display: block;
+            /* height: 400px; */
+            margin-top: 10%;
+        }
+        
+        .mule-background {
+            background: #198A9C;
+            padding: 5% 0%;
+        }
+        
+        .flying-mule .mayaonine-logo {
+            height: 33px;
+        }
+        
+        .flying-mule .mayaonline-details-block {
+            padding: 10%;
+        }
+        
+        .flying-mule .mayaonline-details-block p {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: 4%;
+            text-align: center;
+            font-size: 1rem;
+        }
+        
+        .mule-heading h3 {
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+            margin-top: 5%;
+        }
+        
+        .mule-text {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .mayaonline-details-block {
+            text-align: center;
+        }
+        
+        .mycol {
+            padding: 10%;
+        }
+        
+        @media screen and (min-width:480px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 2.4rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 1.5rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.8rem;
+            }
+            .btn-release {
+                font-size: 1.4rem;
+            }
+            .imgopenebs {
+                background-size: contain;
+            }
+        }
+        
+        @media screen and (min-width:768px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 2rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 0.9rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.1rem;
+            }
+            .btn-release {
+                font-size: 1.2rem;
+            }
+            .imgopenebs {
+                background-size: contain;
+            }
+            .imgfront {
+                display: none;
+            }
+            .openebs05 .openebsdetalis .pd-openebs {
+                padding: 10% 10%;
+            }
+            .mule-heading h3 {
+                font-size: 1.2rem;
+                margin-top: 0%;
+            }
+            .flying-mule .mayaonine-logo {
+                height: 50px;
+            }
+            .flying-mule .mayaonline-details-block p {
+                font-size: 1rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .mule-background {
+                background: #198A9C;
+                background: -webkit-linear-gradient(0deg, #a4d1f9, #036878);
+                background: linear-gradient(0deg, #a4d1f9, #036878);
+                padding: 5% 0%;
+            }
+            .mule-text {
+                flex-direction: row;
+            }
+            .flying-mule .mayaonline-details-block p {
+                text-align: left;
+                font-size: 0.8rem;
+            }
+            .mayaonline-details-block {
+                text-align: left;
+            }
+            .openebs05 .openebsdetalis .pd-openebs {
+                text-align: left;
+            }
+            .mycol {
+                padding: 0;
+            }
+        }
+        
+        @media screen and (min-width:1200px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 3rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 1.2rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.5rem;
+            }
+            .btn-release {
+                font-size: 1.5rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs {
+                padding: 15% 8%;
+                margin: 0 auto;
+                width: 500px;
+            }
+            .flying-mule .mayaonine-logo {
+                height: 70px;
+            }
+            .flying-mule .mayaonline-details-block p {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media screen and (min-width:1536px) {
+            .openebs05 .openebsdetalis .pd-openebs h2 {
+                font-size: 3rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs p {
+                font-size: 1.3rem;
+            }
+            .openebs05 .openebsdetalis .pd-openebs h5 {
+                font-size: 1.4rem;
+            }
+            .btn-release {
+                font-size: 1.3rem;
+            }
+            . {
+                max-width: 1536px;
+            }
+            .ebs_feature .fe-width {
+                max-width: 33%
+            }
+        }
+    </style> -->
+
+
+
+
+
+
+    <section class="flying-mule">
+
+        <div class="container-fluid  ">
+            <div class="row mule-background">
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class="col-md-12 mule-heading">
+                            <h3>OpenEBS sponsor now MayaData; free version of MayaOnline launched.<br> Learn more at <strong> <a href="mayadata.io" target="_blank" style="color:#fff"> MayaData</a></strong>.</h3>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid  ">
+                    <div class="row mule-text">
+                        <div class="col-md-6">
+                            <div class="mayaonline-details-block">
+                                <img src="styles/images/maya-logo.png" alt="mayaonline-logo" class="mayaonine-logo">
+                                <p class="mayaonline-details">Self management of storage for <strong>DevOps</strong>,<br class="dek-v"> with the help of software.<br class="dek-v">
+                                    <strong>Free</strong> visibility into <strong>Kubernetes</strong> w/ ChatOps &<br class="dek-v">cross cloud control.</p>
+
+                                <button class="btn btn-overwrite"> <a href="https://mayaonline.io/" style="color:#fff" target="_blank">Sign In</a> </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="styles/images/mule-flying.svg" alt="mule flying">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .hangout {
+            padding: 3%;
+        }
+        
+        .hangout-row {
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .hangout-row h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hangout-row .img-sec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .hangout-row .img-sec .hangoutimg {
+            height: 200px;
+            width: 200px;
+            display: block;
+        }
+        
+        .hangout-row .img-sec .openebsnotag {
+            width: 180px;
+            display: block;
+        }
+        
+        .register {
+            background-color: #ee5a2b;
+            float: right;
+            margin-top: 1rem;
+        }
+        
+        @media screen and (max-width:767px) {
+            .hangoutdate {
+                text-align: center;
+            }
+            .register {
+                float: inherit;
+            }
+            .hangout-row h4 {
+                font-size: 1.2rem;
+            }
+            .hangout-row h2 {
+                font-size: 1.5rem;
+            }
+            .hangout-row .img-sec .hangoutimg {
+                height: 150px;
+                width: 150px;
+            }
+        }
+    </style>
+
+
+    <section class="hangout">
+        <div class="container">
+            <div class="row hangout-row">
+                <div class="img-sec">
+                    <img class="hangoutimg" src="styles/images/hangout.svg" alt="OpenEBS-Hangout">
+                    <img class="openebsnotag" src="styles/images/opnebslogonotag.svg" alt="OpenEBS-logo">
+                    <h4>Hangout #4</h4>
+                </div>
+                <div class="hangoutdate">
+                    <h2>Date : 20th December, 2017</h2>
+                    <h4> <span style="color:#ee5a2b;"> Session 1</span> - Time :11 :00 AM(IST)</h4>
+                    <h4><span style="color:#ee5a2b;">Session 2</span> - Time :11 :00 AM(PT)</h4>
+                    <button class="btn btn-overwrite register" style=""> <a href="https://cloudbyte.agilecrm.com/forms/5761885492215808" style="color:#fff;" target="_blank"> Register</a> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="openebs05" style="background-color:#efefef;">
+        <div class="container-fluid ">
+            <div class="row">
+
+                <div class="col-md-6 imgopenebs">
+                    <img class="imgfront" src="styles/images/openebsrelease.svg" alt="">
+
+                </div>
+                <div class="col-md-6 openebsdetalis">
+                    <div class="pd-openebs">
+                        <h2>OpenEBS 0.5</h2>
+                        <h2 style="margin-bottom:1rem;">Released</h2>
+
+                        <p>Granular storage policies at volume<br class="br1">level are missing pieces of DevOps<br class="br2">puzzle for Cloud Native Storage</p>
+                        <p style="">With OpenEBS 0.5 release,<br> we make it complete</p>
+                        <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" class="btn btn-overwrite" style="background-color:#fff;color:#f93">Try It</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="wtopenebs ">
+        <div class="container-fluid  wtopencont ">
+            <div class="row ">
+                <div class="col-md-6" style="display:flex;align-items:center;padding-left:0;padding-right:0;">
+                    <div class="youtube-player" data-id="ePlEzZSUH1w" style="height:auto;width:100%;height:100%;"></div>
+                </div>
+                <div class="col-md-6 " style="display: flex;align-items: center;background-color:#efefef;">
+                    <div class="d-flex flex-column align-items-center openebs-details " style="padding:0;">
+                        <h2>Why OpenEBS?</h2>
+                        <ul>
+                            <li>OpenEBS enables your DevOps team to have their own storage policies for workloads on top of a cloud</li>
+                            <li>OpenEBS is not Yet Another Scale-out Storage System (YASSS)</li>
+                            <li>OpenEBS is tightly integrated with Kubernetes and is a part of Kubernetes-Incubator project</li>
+                            <li>OpenEBS is the most active Cloud Native Containerized Storage project</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--featured card-->
+    <section class="mar-t-5">
+        <div class="ebs_feature ">
+            <div class="container ">
+                <div class="row justify-content-center ">
+                    <div class="col-md-3 fea-card  m-4 fe-width"> <img src="styles/images/cloudnative1.svg " alt="cloudnative" title="Containerized Storage for Containers" width="120" height="120">
+                        <h2>Containerized Storage for Containers</h2>
+                        <p>Your storage controller is a container that follows around your workloads, very different than Yet Another Scale out Storage System (“!YASSS”).</p>
+                    </div>
+                    <div class="col-md-3 fea-card  m-4 fe-width"> <img src="styles/images/ebsfea.svg " alt="ebsfea" title="Improves EBS & other cloud storage" width="120" height="120">
+                        <h2>Improves EBS & other cloud storage</h2>
+                        <p>Runs on top of EBS-to improve resiliency, to limit lock-in, and for better integration with Kubernetes.</p>
+                    </div>
+                    <div class="col-md-3 fea-card m-4 fe-width"> <img src="styles/images/avoidlock.svg " alt="avoidlock" title="Avoid cloud lock-in" width="120" height="120">
+                        <h2>Avoid cloud lock-in</h2>
+                        <p>When you write your data to OpenEBS you write to an open source, highly flexible data management layer that allows you to manage your exposure to each cloud or data center.</p>
+                    </div>
+                    <div class="col-md-3 fea-card m-4 fe-width"> <img src="styles/images/granularcontrol1.svg" alt="granularcontrol" title="Granular Control" width="120" height="120">
+                        <h2>Granular Control</h2>
+                        <p>Each workload and hence, each team working on dynamic container based workloads has their own storage, instead of being managed by central storage.</p>
+                    </div>
+                    <!-- GO-->
+                    <div class="col-md-3 fea-card m-4 fe-width"> <img src="styles/images/WritteningO1.svg " alt="Writtening" title="Written in GO" width="120" height="120">
+                        <h2>Written in GO</h2>
+                        <p>OpenEBS is the only broadly adopted open source block storage written mostly in Go.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contibutor section -->
+
+    <section>
+        <div class="container-fluid  " style="padding-top:5%;padding-bottom:5%;background-color: #efefef;">
+            <div class="row ">
+
+                <div class="container mycont">
+
+                    <div class="row myr">
+
+                        <div class="col-md-12">
+                            <div class="titlecontri">
+                                <h2 style="text-align:center;color:#ee5a2b"> Our Contributors</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display:flex;text-align:center;">
+                            <div class="contributor" style="width:33.33%;">
+                                <h3>25K+</h3>
+                                <p>Docker Pulls</p>
+                            </div>
+
+                            <div class="contributor" style="width:33.33%;">
+                                <h3>2.4K+</h3>
+                                <p>Stargazers</p>
+                            </div>
+                            <div class="contributor" style="width:33.33%;">
+                                <h3>100+</h3>
+                                <p>Contributors</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="height:100%;width:100%">
+                            <div class="" id="map2" style=""></div>
+                        </div>
+                        <div class="clhr" style="height:5%;"></div>
+
+                        <div class="col-md-6 mycol">
+                            <div id="contibutorslist2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" icbtn " style="padding-bottom:0;">
+        <div class="container-fluid  ">
+            <div class="row ">
+                <div class="col-md-10 ">
+                    <div class="subhead ">
+                        <h2 class="subhead-title ">Upcoming Events</h2>
+                    </div>
+
+
+                    <div class="event " style="margin-bottom:10%;margin-top:2%;">
+                        <div class="event-list ">
+                            <!-- <div class="pt-5 "> </div> -->
+                            <div class="media pb-2 eventmob "> <img class="d-flex mr-3 " src="styles/images/openebsKubernet.png " alt="kubecon" title="Kubecon" width="100">
+                                <div class="media-body ev-details ">
+                                    <div>
+                                        <p> Murat Karslioglu's talk</p>
+                                        <h5 class="mt-0 " style="font-size:18px; ">Bay Area <br class="clhr ">Kubernetes Meetup </h5>
+                                    </div>
+                                    <div class="text-muted temp-pd " style="font-size:14px; "> <span><strong>Date:</strong></span> - 14th Dec, 2017
+                                        <br> <span><strong>Location:</strong></span> - Palo Alto, CA </div>
+
+                                </div>
+                                <a href="https://www.meetup.com/Bay-Area-Kubernetes-Meetup/events/244666155/?from=ref&_cookie-check=DqmP0I4sfkHhkobH" target="_blank" class="btn btn-outline-secondary btn-sm" rel="noopener noreferrer">Learn more</a> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-2 btn-option" title="Events">
+                    <div class="enc-btn">
+                        <div class="box-btn">
+                            <a href="events/ " target="events" rel="noopener noreferrer">
+                                <span class="fa-stack fa-3x fnt3">
+                                        <i class=" fa-stack-2x " ></i>
+                                        <i class="fa fa-calendar fa-stack-1x fnt1"></i>
+                                      </span></a>
+                            <p>Events</p>
+                        </div>
+                        <div class="box-btn" title="Newsletter">
+                            <a href="news/ " target="news" rel="noopener noreferrer">
+                                <span class="fa-stack fa-3x fnt3">
+                                        <i class=" fa-stack-2x"></i>
+                                        <i class="fa fa-newspaper-o fa-stack-1x fnt1" ></i>
+                                      </span></a>
+                            <p>Newsletter</p>
+                        </div>
+
+                        <div class="box-btn" title="Careers">
+                            <a href="careers/ " target="careers" rel="noopener noreferrer">
+                                <span class="fa-stack fa-3x fnt3">
+                                        <i class=" fa-stack-2x " ></i>
+                                        <i class="fa fa-briefcase  fa-stack-1x fnt1" ></i>
+                                      </span></a>
+                            <p>Careers</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- hackthoberfest -->
+    <section class=" hack-cafe ">
+        <div class="container-fluid  " style="padding-left:0;">
+            <div class="row ">
+                <div class="col-md-6  hackfest">
+                    <div class="row hackfestrow">
+                        <div class="col-md-12 ">
+                            <p>We are extending the Hacktoberfest to <br>our very own OpenEBS Hackfest</p>
+                            <button class="btn btn-overwrite"> <a href="hackfest/" style="color:#fff" target="_blank"> Start Hacking </a> </button>
+                        </div>
+                    </div>
+                    <img src="styles/images/openebhackfest.svg" alt="" style="width:90%;">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center cafe-sec " style="background-color: #efefef;">
+                    <img src="styles/images/openebs-hacktober-section-01.svg " alt="cafe-image" title="Open Source Cafe" />
+                    <p style="line-height: normal; "> <span class="attract ">Hey</span>! If you are in Bangalore, stop by the <br class="dek-v"><span class="attract ">OpenSource Cafe</span> for free WiFi and chai/coffee or <br class="dek-v">book it for your community meetings.</p>
+
+                    <div> <a href="cafe/ " class="btn btn-ebs-sm hero-btn " target="_blank" style="padding:2% 9%;line-height:normal" rel="noopener noreferrer">
+                            Visit Us 
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <hr class="dek-v " style="margin-top:0;width:43%;margin-left:53%;">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="quotes">
+        <div class="container-fluid ">
+            <div class="row" style="align-items:center;">
+                <div class="col-md-4">
+                    <img src="styles/images/customerquotesimage.svg" alt="userqoute" title="Openebs users">
+                </div>
+
+                <div class="col-md-8 temp2">
+                    <div id="carouselExampleControls" class="carousel slide qoute-main" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center align-items-center qout">
+
+                                    <div class="qout-details">
+
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> With wonderful and really helpful community and developers, I found it easier to get to know OpenEBS a lot better. I found OpenEBS to be really easy to use as
+                                            a software defined storage for cloud native applications. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div>
+                                            <p class="name"> <span style="color:#191919">~Hrishikesh N</span>, OpenEBS Contributor and Stargazer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center qout">
+
+                                    <div class="qout-details">
+
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> OpenEBS is promising as it has the potential to bring the stability and scalability of Google File System to the masses. Personally, I am looking into a scalable
+                                            store to cache large chunks of data and am looking forward to evaluate OpenEBS for the same. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div>
+                                            <p class="name"> <span style="color:#191919">~Goutham</span>,Prometheus upstream contributor & OpenEBS User</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center qout">
+
+                                    <div class="qout-details">
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> I was taking part on hacktoberfest, and used it as opportunity to get to know some interesting projects. That's how I discovered OpenEBS. I liked its features
+                                            and development. I took one issue, and the developers were very solicit and nice! <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div>
+                                            <p class="name"><span style="color:#191919"> ~Eduardo</span>, OpenEBS contributor and Stargazer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center qout">
+                                    <div class="qout-details">
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> A welcoming open source community developing DevOps friendly hyper-converged storage for containers, this is what attracted me to contribute to this project as
+                                            a DevOps Engineer. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div>
+                                            <p class="name"><span style="color:#191919">~Debojit Kakoti</span>,OpenEBS contributor and Stargazer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="width:10%;">
+                            <i class="fa fa-angle-left" style="font-size:2rem;color:#696969"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="width:10%;">
+                            <i class="fa fa-angle-right" style="font-size:2rem;color:#696969"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Slack section-->
+    <section class="">
+        <div class="container-fluid  slack-sec pd-b-5 pd-t-5  ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="media slack-section " style="margin:0;">
+                        <img class="d-flex align-self-center " src="styles/images/slack%20icon-01.svg " title="Join us on Slack" alt="Join us on Slack ">
+                        <div class="media-body ">
+                            <h5>Join us on Slack</h5>
+                            <p class="mb-0 lead ">Join our OpenEBS slack community to get help and support from the OpenEBS team and community members.</p><br>
+                            <a href="http://slack.openebs.io " target="_blank" class="btn btn-primary btn-ebs-sm btn-lg " rel="noopener noreferrer">Join Us!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container-fluid  ">
+
+            <div class="row contribute">
+
+                <div class="col-md-12 ">
+                    <h2 style="font-family: sans-serif; padding-bottom:1% ">Join Our Community</h2>
+                    <p>Join the OpenEBS community by contributing to our blog, GitHub and follow us on social media.</p>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="d-flex justify-content-center ebs-footer ">
+                        <div class="social ">
+                            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" title="Documentation">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="social"> <a href="https://twitter.com/openebs " target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                        <div class="social"> <a href="https://www.facebook.com/openebs " target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="http://slack.openebs.io " target="_blank" rel="noopener noreferrer" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="https://github.com/openebs/ " target="_blank" rel="noopener noreferrer" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g " target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fa fa-youtube-play " aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="careers/index.html " target="_blank" rel="noopener noreferrer" title="Career"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Community section-->
+
+    <!-- <section class="">
+
+        <div class="container-fluid   contribute">
+            <div class="row ">
+
+                <div class="col-md-12 ">
+                    <h2 style="font-family: sans-serif; padding-bottom:1% ">Join Our Community</h2>
+                    <p>Join the OpenEBS community by contributing to our blog, GitHub and follow us on social media.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid   contribute">
+            <div class="row ">
+
+                <div class="col-md-12 ">
+                    <div class="d-flex justify-content-center ebs-footer ">
+                        <div class="social ">
+                            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" title="Documentation">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="social"> <a href="https://twitter.com/openebs " target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                        <div class="social"> <a href="https://www.facebook.com/openebs " target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="http://slack.openebs.io " target="_blank" rel="noopener noreferrer" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="https://github.com/openebs/ " target="_blank" rel="noopener noreferrer" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g " target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fa fa-youtube-play " aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="careers/index.html " target="_blank" rel="noopener noreferrer" title="Career"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </section> -->
+
+    <!--footer-->
+    <section class="mar-t-5 social-bottom ">
+        <footer>
+            <div class="container-fluid  "> </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <!-- Github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
+    <!--Agile crm Analytics-->
+    <script id="_agile_min_js" async type="text/javascript" src="https://d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js ">
+    </script>
+
+    <!--js files-->
+    <script src="styles/js/openebs.js "></script>
+    <script src="styles/js/jquery.min.js"></script>
+
+    <!-- JS code -->
+    <script src="styles/js/popper.min.js"></script>
+    <script src="styles/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+    <!-- js for contibutor section -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvSU_bELokjtW0SQFJvIodlUxrkHB5RlI&callback=initMap">
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="styles/js/conti.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            // Defining a function to set size for #hero 
+            function fullscreen() {
+                if (jQuery(window).width() > 1200) {
+                    jQuery('#hero').css({
+                        width: jQuery(window).width(),
+                        height: jQuery(window).height()
+                    });
+                } else
+                if (jQuery(window).width() > 900) {
+                    jQuery('#hero').css({
+                        width: jQuery(window).width(),
+                        height: jQuery(window).height() - 100
+                    });
+                } else if (jQuery(window).width() < 500) {
+                    jQuery('#hero').css({
+                        width: jQuery(window).width(),
+                        height: jQuery(window).height() - 300
+                    });
+                } else if (jQuery(window).width() < 400) {
+                    jQuery('#hero').css({
+                        width: jQuery(window).width(),
+                        height: jQuery(window).height()
+                    });
+                }
+            }
+
+            fullscreen();
+
+            // Run the function in case of window resize
+            jQuery(window).resize(function() {
+                fullscreen();
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').focus()
+        })
+        $(window).on('load', function() {
+            var labels = ['Days', 'Hours', 'Minutes', 'Seconds', ],
+                finaltime = new Date().getFullYear() + '/12/06 10:10:00',
+                template = _.template($('#main-example-template').html()),
+                currDate = '00:00:00:00',
+                nextDate = '00:00:00:00',
+                parser = /([0-9]{2})/gi,
+                $example = $('#main-example');
+            // Parse countdown string to an object
+            function strfobj(str) {
+                var parsed = str.match(parser),
+                    obj = {};
+                labels.forEach(function(label, i) {
+                    obj[label] = parsed[i]
+                });
+                return obj;
+            }
+            // Return the time components that diffs
+            function diff(obj1, obj2) {
+                var diff = [];
+                labels.forEach(function(key) {
+                    if (obj1[key] !== obj2[key]) {
+                        diff.push(key);
+                    }
+                });
+                return diff;
+            }
+            // Build the layout
+            var initData = strfobj(currDate);
+            labels.forEach(function(label, i) {
+                $example.append(template({
+                    curr: initData[label],
+                    next: initData[label],
+                    label: label
+                }));
+            });
+            // Starts the countdown
+            $example.countdown(finaltime, function(event) {
+                var newDate = event.strftime('%D:%H:%M:%S'),
+                    data;
+                if (newDate !== nextDate) {
+                    currDate = nextDate;
+                    nextDate = newDate;
+                    // Setup the data
+                    data = {
+                        'curr': strfobj(currDate),
+                        'next': strfobj(nextDate)
+                    };
+                    // Apply the new values to each node that changed
+                    diff(data.curr, data.next).forEach(function(label) {
+                        var selector = '.%s'.replace(/%s/, label),
+                            $node = $example.find(selector);
+                        // Update the node
+                        $node.removeClass('flip');
+                        $node.find('.curr').text(data.curr[label]);
+                        $node.find('.next').text(data.next[label]);
+                        // Wait for a repaint to then flip
+                        _.delay(function($node) {
+                            $node.addClass('flip');
+                        }, 50, $node);
+                    });
+                }
+            });
+        });
+    </script>
+    <script type="text/template" id="main-example-template">
+        <div class="time <%= label %>">
+            <span class="count curr top"><%= curr %></span>
+            <span class="count next top"><%= next %></span>
+            <span class="count next bottom"><%= next %></span>
+            <span class="count curr bottom"><%= curr %></span>
+            <span class="label"><%= label.length < 10 ? label : label.substr(0, 3)  %></span>
+        </div>
+    </script>
+    <script type="text/javascript">
+        (function(a) {
+            var b = a.onload,
+                p = true;
+            isCaptcha = false;
+            if (p) {
+                a.onload = "function" != typeof b ? function() {
+                    try {
+                        _agile_load_form_fields()
+                    } catch (a) {}
+                } : function() {
+                    b();
+                    try {
+                        _agile_load_form_fields()
+                    } catch (a) {}
+                }
+            };
+            var formLen = document.forms.length;
+            for (i = 0; i < formLen; i++) {
+                if (document.forms.item(i).getAttribute("id") == "agile-form") {
+                    a.document.forms.item(i).onsubmit = function(a) {
+                        a.preventDefault();
+                        try {
+                            _agile_synch_form_v5(this)
+                        } catch (b) {
+                            this.submit()
+                        }
+                    }
+                }
+            }
+        })(window);
+    </script>
+    <script>
+        window.onload = function() {
+            appendFutureYears();
+        }
+
+        function appendFutureYears() {
+
+            var date = new Date();
+            var currentYear = date.getFullYear();
+            var chooseyear = document.getElementsByClassName("choose-year");
+            if (chooseyear.length != 0) {
+                for (var i = 0; i < chooseyear.length; i++) {
+                    var dropDownValue = parseInt(chooseyear[i].getElementsByTagName("option")[1].value);
+                    if (dropDownValue != (currentYear + 3)) {
+                        for (var j = 1; j <= (currentYear + 3) - dropDownValue; j++) {
+                            var option = document.createElement("option");
+                            option.value = dropDownValue + j;
+                            option.innerText = dropDownValue + j;
+                            chooseyear[i].getElementsByTagName("option")[0].after(option);
+                        }
+                    }
+                }
+            }
+        }
+        var agform = document.getElementById("agile-form");
+        agform.onsubmit = function() {
+            if (document.getElementsByClassName("agile_span_date_error").length > 0) {
+                return false;
+            }
+            var hasValidTag = tagValidationCheck();
+            var hasChecked = agileCheckboxRequiredValidation();
+            if (!hasValidTag || !hasChecked) {
+                return false;
+            }
+            console.log("Submit button processing hitting");
+            document.getElementsByClassName("agile-button")[0].innerHTML = "Thanks";
+            document.getElementsByClassName("agile-button")[0].disabled = true;
+        };
+
+        function agileCheckboxRequiredValidation() {
+            var hasChecked = true;
+            var agleRadioCheckboxesList = document.querySelectorAll(".agile-form-multicheckboxes,.agile-form-inlineradios,.agile-form-multiradios,.agile-form-inlinecheckboxes");
+            for (var i = 0; i < agleRadioCheckboxesList.length; i++) {
+                var requiredEle = agleRadioCheckboxesList[i].querySelector(".agile-span-asterisk");
+                if (requiredEle != null) {
+                    var eleChecked = agleRadioCheckboxesList[i].querySelector("input[type='radio']:checked,input[type='checkbox']:checked");
+                    var spanErr = agleRadioCheckboxesList[i].querySelector(".agile_span_err");
+                    if (eleChecked == null) {
+                        hasChecked = false;
+                        if (spanErr == null) {
+                            var paraTag = document.createElement("p");
+                            paraTag.innerHTML = "Please provide atleast one selection.";
+                            paraTag.className = "agile_span_err";
+                            paraTag.style.color = "red";
+                            paraTag.style.fontSize = "12px";
+                            agleRadioCheckboxesList[i].appendChild(paraTag);
+                        }
+                    } else {
+                        if (spanErr)
+                            agleRadioCheckboxesList[i].removeChild(spanErr);
+                    }
+                }
+            }
+
+            return hasChecked;
+        }
+
+        function tagValidationCheck() {
+            var tagElements = document.querySelectorAll("input[name='tags'][type='text'],input[name='tags'][type='hidden']");
+            var hasValidTag = true;
+            var tag_button_errMsg = document.querySelector("span[id='agile-error-msg']");
+            for (i = 0; i < tagElements.length; i++) {
+                var tagElement = tagElements[i];
+                var tagElementType = tagElements[i].type;
+                var tagElementsVal = tagElements[i].value;
+                if (tagElement.nextSibling != null && typeof(tagElement.nextSibling.getAttribute) != "undefined" && tagElement.nextSibling.getAttribute("id") == "agile_span" + tagElement.id)
+                    var tagSpan = tagElement.nextSibling;
+
+                if (tagElementsVal && !validTagsString(tagElementsVal)) {
+
+                    if (tagElementType == "hidden") {
+                        tag_button_errMsg.innerHTML = "Error: Invalid form tag.";
+                    } else {
+                        if (!tagSpan) {
+                            var spanTag = document.createElement("span");
+                            spanTag.innerHTML = "Please enter a valid tag.";
+                            spanTag.id = "agile_span" + tagElement.id;
+                            spanTag.style.color = "red";
+                            spanTag.style.fontSize = "12px";
+                            tagElement.parentNode.insertBefore(spanTag, tagElement.nextSibling);
+                        }
+                    }
+
+                    hasValidTag = false;
+                } else {
+                    if (tagElementType == "hidden") {
+                        tag_button_errMsg.innerHTML = "";
+                    } else {
+                        if (tagSpan)
+                            tagSpan.remove();
+                    }
+
+
+                }
+            }
+            return hasValidTag;
+        }
+
+        function validTagsString(tagsString) {
+            var r = '\u0041-\u005A\u0061-\u007A\u00AA\u00B5\u00BA\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u0527\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u08A0\u08A2-\u08AC\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0977\u0979-\u097F\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C33\u0C35-\u0C39\u0C3D\u0C58\u0C59\u0C60\u0C61\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D60\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F4\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191C\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19C1-\u19C7\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312D\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FCC\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA697\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA78E\uA790-\uA793\uA7A0-\uA7AA\uA7F8-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA80-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uABC0-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC';
+            var tagRegex = '^[' + r + '][' + r + ' 0-9_-]*$';
+            tagsString = tagsString.split(",");
+            for (var i = 0; i < tagsString.length; i++) {
+                if (!new RegExp(tagRegex).test(tagsString[i]))
+                    return false;
+            }
+            return true;
+        }
+        var prepareDateTypeValue = function(identifier) {
+            var dateFieldId = identifier.currentTarget.parentElement.id;
+            var dateHiddenField = document.getElementById("date-hiddeninput-" + dateFieldId);
+            var field_name = dateHiddenField.name;
+            var agilefield_type = dateHiddenField.getAttribute("data-agilefield-type");
+            var date = document.getElementById("choose-date-" + dateFieldId).value;
+            var month = document.getElementById("choose-month-" + dateFieldId).value;
+            var year = document.getElementById("choose-year-" + dateFieldId).value;
+            if (agilefield_type == null) {
+                dateHiddenField.value = "01-Jan-2017";
+                return;
+            }
+            if (agilefield_type.indexOf("DATE") > -1) {
+                if (date && month && year) {
+                    var errorExist = agileDateValueValidate(date, month, year, dateFieldId);
+                    if (!errorExist) {
+                        var formatteddate = date + "-" + month + "-" + year;
+                        var myEpoch = Date.parse(formatteddate) / 1000;
+                        console.log(typeof(myEpoch) + "	" + myEpoch);
+                        dateHiddenField.value = myEpoch;
+                    }
+
+                } else {
+                    var spanHidden = document.getElementById("agile_span_" + dateFieldId);
+                    if (spanHidden == null) {
+                        var spanTag = document.createElement("p");
+                        spanTag.innerHTML = "Select a valid date.";
+                        spanTag.id = "agile_span_" + dateFieldId;
+                        spanTag.className = "agile_span_date_error";
+                        spanTag.style.color = "#d9534f";
+                        spanTag.style.fontSize = "12px";
+                        dateHiddenField.parentNode.insertBefore(spanTag, dateHiddenField.nextSibling);
+                    }
+                    dateHiddenField.value = "";
+                }
+            } else {
+                if (date && month && year) {
+                    var errorExist = agileDateValueValidate(date, month, year, dateFieldId);
+                    if (!errorExist) {
+                        var formatteddate = date + "-" + month + "-" + year;
+                        console.log(typeof(formatteddate) + "	" + formatteddate);
+                        dateHiddenField.value = formatteddate.trim();
+                    }
+
+                } else {
+                    var spanHidden = document.getElementById("agile_span_" + dateFieldId);
+                    if (spanHidden == null) {
+                        var spanTag = document.createElement("p");
+                        spanTag.innerHTML = "Select a valid date.";
+                        spanTag.id = "agile_span_" + dateFieldId;
+                        spanTag.className = "agile_span_date_error";
+                        spanTag.style.color = "#d9534f";
+                        spanTag.style.fontSize = "12px";
+                        dateHiddenField.parentNode.insertBefore(spanTag, dateHiddenField.nextSibling);
+
+                    }
+                    dateHiddenField.value = "";
+                }
+            }
+        };
+        var agileDateValueValidate = function(date, month, year, dateFieldId) {
+            //validating date possibility
+            var errorExist = false;
+            var dateHiddenField = document.getElementById("date-hiddeninput-" + dateFieldId);
+            var spanHiddenField = document.getElementById("agile_span_" + dateFieldId);
+            if (month.indexOf('Feb') > -1) {
+                var dateInt = parseInt(date);
+                if (dateInt > 28) {
+                    if (dateInt == 29) {
+                        if (!(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))) {
+                            errorExist = true;
+                            if (spanHiddenField == null) {
+                                var spanTag = document.createElement("p");
+                                spanTag.innerHTML = "Select a valid date.";
+                                spanTag.id = "agile_span_" + dateFieldId;
+                                spanTag.className = "agile_span_date_error";
+                                spanTag.style.color = "#d9534f";
+                                spanTag.style.fontSize = "12px";
+                                dateHiddenField.parentNode.insertBefore(spanTag, dateHiddenField.nextSibling);
+                            }
+                        }
+                    } else {
+                        errorExist = true;
+                        if (spanHiddenField == null) {
+                            var spanTag = document.createElement("p");
+                            spanTag.innerHTML = "Select a valid date.";
+                            spanTag.id = "agile_span_" + dateFieldId;
+                            spanTag.className = "agile_span_date_error";
+                            spanTag.style.color = "#d9534f";
+                            spanTag.style.fontSize = "12px";
+                            dateHiddenField.parentNode.insertBefore(spanTag, dateHiddenField.nextSibling);
+                        }
+                    }
+                }
+            } else if (month.indexOf('Apr') > -1 || month.indexOf('June') > -1 || month.indexOf('Sep') > -1 || month.indexOf('Nov') > -1) {
+                if (date.indexOf('31') > -1) {
+                    errorExist = true;
+                    if (spanHiddenField == null) {
+                        var spanTag = document.createElement("p");
+                        spanTag.innerHTML = "Select a valid date.";
+                        spanTag.id = "agile_span_" + dateFieldId;
+                        spanTag.className = "agile_span_date_error";
+                        spanTag.style.color = "#d9534f";
+                        spanTag.style.fontSize = "12px";
+                        dateHiddenField.parentNode.insertBefore(spanTag, dateHiddenField.nextSibling);
+                    }
+                }
+            }
+            if (!errorExist) {
+                if (spanHiddenField) {
+                    spanHiddenField.parentNode.removeChild(spanHiddenField);
+                }
+            }
+            //validating date possibility
+            return errorExist;
+        };
+
+        $('#agile-form').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: 'https://cloudbyte.agilecrm.com/formsubmit',
+                type: 'post',
+                data: $('#agile-form').serialize(),
+                success: function() {
+
+                    $('thanksnote').css('display', 'flex');
+                    console.log('thanks u note');
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

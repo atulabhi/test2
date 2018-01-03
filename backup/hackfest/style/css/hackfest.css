@@ -1,0 +1,786 @@
+.desktop-view {
+    display: none;
+}
+
+.mobile-view {
+    display: block;
+}
+
+
+/*
+* navigation bar
+*/
+
+.ebs-nav {
+    font-size: 2em;
+}
+
+.ebs-nav img {
+    height: 35px;
+    width: auto;
+}
+
+.ebs-nav .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.main-head {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    /* background: url(../images/phonehackfest.svg); */
+}
+
+.main-head .navbar-hack {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+.main-head .navbar-hack .circle {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 3% 0% 3% 10%;
+}
+
+.header-sec {
+    color: #ffffff;
+    padding-top: 5%;
+    padding-left: 10%;
+    /* font-weight: thin; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 1em; */
+    background-color: #00999E;
+}
+
+.header-sec h6 {
+    font-size: 1.2em;
+}
+
+.btn-overwrite {
+    background-color: #ffffff;
+    border-radius: 10em;
+    border: 2px solid #ffffff;
+    padding: 0.5% 2.5%;
+    font-size: 20px;
+    color: #00999E;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.btn-overwrite:focus {
+    outline: none;
+}
+
+.ebs-nav {
+    margin-bottom: -1px;
+}
+
+.main-head .mule-class {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.main-head .mule-class .mule-class-1 {
+    height: 100px;
+}
+
+.main-head .mule-class .mule-class-2 {
+    height: auto;
+}
+
+.main-head .mule-img {
+    margin-left: -3%;
+    margin-top: 17%;
+}
+
+.main-head .white-img {
+    margin-top: -11%;
+    margin-right: -2%;
+}
+
+.main-head .white-class .white-img {
+    width: 100%;
+}
+
+.btn-overwrite:hover {
+    background-color: #ffffff;
+}
+
+.btn-overwrite:focus {
+    outline: none;
+}
+
+.mule-sec {
+    background: linear-gradient(to bottom, #00999E, #00999E 76%, transparent 76%, transparent 100%);
+}
+
+.laptop-sec1 .win-laptop {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 28px;
+    /* padding-top: 11%; */
+}
+
+.laptop-sec1 .win-laptop h2 {
+    font-size: 1.2em;
+    color: #ff9933;
+}
+
+.laptop-sec2 {
+    padding: 0;
+    margin: 0;
+}
+
+.laptop-sec2 .laptop-circle {
+    overflow: hidden;
+    padding-left: 39%;
+}
+
+.laptop-sec2 .laptop-circle .laptop {
+    height: 24rem;
+    width: 24rem;
+    border: 50%;
+    border: 4rem solid #ff9933;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.winner-section img {
+    height: 12rem;
+    width: auto;
+}
+
+.laptop-sec1 .win-laptop p {
+    font-size: 1rem;
+}
+
+
+/* 
+*
+*
+* design done by intakhab
+*/
+
+.bd-b {
+    border: 2px solid blue;
+}
+
+.bd-w {
+    border: 2px solid white;
+}
+
+.bd-bc {
+    border: 2px solid black;
+}
+
+.bd-y {
+    border: 2px solid yellow;
+}
+
+.bd-g {
+    border: 2px solid green;
+}
+
+.contributed-issue {
+    background-color: #00999E;
+    margin-top: 4%;
+}
+
+.contributed-issue .issue-row {
+    padding: 2%;
+}
+
+.contributed-issue .contri {
+    /* background-color: #017C7C; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.contributed-issue .contri img {
+    height: 260px;
+}
+
+.circlepr {
+    height: 5.5rem;
+    width: 5.5rem;
+    background-color: #017c7c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 5px solid #fff;
+    color: white;
+}
+
+.contributed-issue .temp p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contributed-issue .temp {
+    border: 1p solid transparent;
+}
+
+.contributed-issue .temp .issue-row1 {
+    padding: 10% 15% 1.5% 15%;
+}
+
+.contributed-issue .temp .issue-row2 {
+    padding: 1.5% 15% 10% 15%;
+}
+
+.cafe-section .details {
+    text-align: center;
+}
+
+.cafe-section .details .visitus {
+    background-color: aqua;
+    color: white;
+    padding: 2% 8%;
+}
+
+.cafe-section .details h4 {
+    font-size: 0.9rem;
+}
+
+.cafe-section .details .cafeimg {
+    height: 4rem;
+}
+
+.cafe-section .people .cafepeople {
+    height: 16rem;
+}
+
+.cafe-rev {
+    flex-direction: column-reverse;
+}
+
+
+/*
+    *footer section start
+    */
+
+div.boxItem {
+    display: inline-block;
+    /* border: 1px solid black; */
+    /* padding: 1em; */
+    margin-right: 5em;
+    position: relative
+}
+
+.boxItem:before,
+.boxItem:after {
+    content: '';
+    width: 5em;
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    top: 50%;
+}
+
+ :after {
+    left: 100%;
+}
+
+ :before {
+    right: 100%;
+}
+
+.boxItem:first-of-type:before,
+.boxItem:last-of-type:after {
+    display: none;
+}
+
+.boxItem {
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width:500px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 33%;
+    }
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 24rem;
+        width: 24rem;
+        border: 50%;
+        border: 4rem solid #ff9933;
+    }
+    .winner-section img {
+        height: 12rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .desktop-view {
+        display: block;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .ebs-nav {
+        font-size: 2em;
+    }
+    .ebs-nav img {
+        height: 35px;
+        width: auto;
+    }
+    .ebs-nav .logo img {
+        height: 60px;
+        width: auto;
+    }
+    .main-head {
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+    }
+    .main-head .navbar-hack {
+        padding: 0;
+        margin: 0;
+        height: 100px;
+    }
+    .main-head .navbar-hack .circle {
+        background-color: yellow;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin: 3% 0% 3% 10%;
+    }
+    .header-sec {
+        color: #ffffff;
+        padding-top: 5%;
+        padding-left: 10%;
+        /* font-weight: thin; */
+        font-family: 'Montserrat', sans-serif;
+        /* font-size: 1em; */
+        background-color: #00999E;
+    }
+    .header-sec h6 {
+        font-size: 1.2em;
+    }
+    .btn-overwrite {
+        background-color: #ffffff;
+        border-radius: 10em;
+        border: 2px solid #ffffff;
+        padding: 0.5% 2.5%;
+        font-size: 18px;
+        color: #00999E;
+        font-weight: bold;
+        margin-top: 1%;
+    }
+    .ebs-nav {
+        margin-bottom: -1px;
+    }
+    .main-head .mule-class {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    .main-head .mule-class .mule-class-1 {
+        height: 100px;
+    }
+    .main-head .mule-class .mule-class-2 {
+        height: auto;
+    }
+    .main-head .mule-img {
+        margin-left: -3%;
+        margin-top: 17%;
+    }
+    .main-head .white-img {
+        margin-top: -11%;
+        margin-right: -2%;
+    }
+    .main-head .white-class .white-img {
+        width: 100%;
+    }
+    .btn-overwrite:hover {
+        background-color: #ffffff;
+    }
+    .btn-overwrite:focus {
+        outline: none;
+    }
+    .mule-sec {
+        background: linear-gradient(to bottom, #00999E, #00999E 76%, transparent 76%, transparent 100%);
+    }
+    .laptop-sec1 .win-laptop {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-size: 28px;
+        /* padding-top: 11%; */
+    }
+    .laptop-sec1 .win-laptop h2 {
+        font-size: 1.2em;
+        color: #ff9933;
+    }
+    .laptop-sec2 {
+        padding: 0;
+        margin: 0;
+    }
+    .laptop-sec2 .laptop-circle {
+        overflow: hidden;
+        padding-left: 24%;
+    }
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 24rem;
+        width: 24rem;
+        border: 50%;
+        border: 5rem solid #ff9933;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .winner-section img {
+        height: 9rem;
+        width: auto;
+    }
+    .laptop-sec1 .win-laptop p {
+        font-size: 1rem;
+    }
+    /* 
+*
+*
+* design done by intakhab
+*/
+    .contributed-issue {
+        background-color: #00999E;
+        margin-top: 4%;
+    }
+    .contributed-issue .issue-row {
+        padding: 2%;
+    }
+    .contributed-issue .contri {
+        /* background-color: #017C7C; */
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .contributed-issue .contri img {
+        height: 260px;
+    }
+    .circlepr {
+        height: 5.5rem;
+        width: 5.5rem;
+        background-color: #017c7c;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: 5px solid #fff;
+        color: white;
+    }
+    .contributed-issue .temp p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .contributed-issue .temp {
+        border: 1p solid transparent;
+    }
+    .contributed-issue .temp .issue-row1 {
+        padding: 10% 15% 1.5% 15%;
+    }
+    .contributed-issue .temp .issue-row2 {
+        padding: 1.5% 15% 10% 15%;
+    }
+    .cafe-section .details {
+        text-align: end;
+    }
+    .cafe-section .details .visitus {
+        background-color: aqua;
+        color: white;
+        padding: 2% 8%;
+    }
+    .cafe-section .details h4 {
+        font-size: 0.9rem;
+    }
+    .cafe-section .details .cafeimg {
+        height: 4rem;
+    }
+    .cafe-section .people .cafepeople {
+        height: 16rem;
+    }
+    .cafe-rev {
+        flex-direction: row;
+    }
+    /*
+    *footer section start
+    */
+    div.boxItem {
+        display: inline-block;
+        /* border: 1px solid black; */
+        /* padding: 1em; */
+        margin-right: 5em;
+        position: relative
+    }
+    .boxItem:before,
+    .boxItem:after {
+        content: '';
+        width: 5em;
+        border-bottom: 5px solid #fff;
+        position: absolute;
+        top: 50%;
+    }
+     :after {
+        left: 100%;
+    }
+     :before {
+        right: 100%;
+    }
+    .boxItem:first-of-type:before,
+    .boxItem:last-of-type:after {
+        display: none;
+    }
+    .boxItem {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .contributed-issue .temp p {
+        font-size: 1.5rem;
+    }
+    .laptop-sec1 .win-laptop p {
+        font-size: 1.5rem;
+    }
+    .laptop-sec1 .win-laptop h2 {
+        font-size: 2em;
+    }
+    .cafe-section .details .cafeimg {
+        height: 80px;
+    }
+    .cafe-section .people .cafepeople {
+        height: 24rem;
+    }
+    .cafe-section .details h4 {
+        font-size: 1.3rem;
+    }
+    .boxItem {
+        font-size: 1rem;
+    }
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 33rem;
+        width: 33rem;
+    }
+    .winner-section img {
+        height: 18rem;
+        width: auto;
+    }
+}
+
+@media screen and (min-width:1427px) {
+    .ebs-nav {
+        font-size: 2.5em;
+    }
+    .ebs-nav img {
+        height: 47px;
+    }
+    .ebs-nav .logo img {
+        height: 70px;
+    }
+    .header-sec h6 {
+        font-size: 1.5em;
+    }
+    .header-sec h5 {
+        font-size: 1.5em;
+    }
+    .btn-overwrite {
+        font-size: 1.5em;
+    }
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 38rem;
+        width: 38rem;
+    }
+    .winner-section img {
+        height: 20rem;
+    }
+    .contributed-issue .contri img {
+        height: 20em;
+    }
+    .circlepr {
+        height: 7rem;
+        width: 7rem;
+        font-size: 2.5em;
+    }
+    .contributed-issue .temp p {
+        font-size: 1.5rem;
+    }
+    .cafe-section .details h4 {
+        font-size: 1.5em;
+    }
+    .cafe-section .details .cafeimg {
+        height: 6em;
+    }
+    .cafe-section .people .cafepeople {
+        height: 21em;
+    }
+}
+
+@media screen and (min-width:1527px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 14rem;
+    }
+}
+
+@media screen and (min-width:1627px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 16rem;
+    }
+}
+
+@media screen and (min-width:1727px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 21rem;
+    }
+}
+
+@media screen and (min-width:1827px) {
+    .ebs-nav {
+        font-size: 2.5em;
+    }
+    .ebs-nav img {
+        height: 47px;
+    }
+    .ebs-nav .logo img {
+        height: 80px;
+    }
+    .header-sec h6 {
+        font-size: 1.5em;
+    }
+    .header-sec h5 {
+        font-size: 2em;
+    }
+    .btn-overwrite {
+        font-size: 2em;
+    }
+    .laptop-sec1 .win-laptop p {
+        font-size: 2rem;
+    }
+    .laptop-sec1 .win-laptop h2 {
+        font-size: 3.5em;
+    }
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 41rem;
+        width: 41rem;
+    }
+    .winner-section img {
+        height: 22rem;
+    }
+    .contributed-issue .contri img {
+        height: 27em;
+    }
+    .circlepr {
+        height: 8rem;
+        width: 8rem;
+        font-size: 3em;
+    }
+    .contributed-issue .temp p {
+        font-size: 2rem;
+    }
+    .cafe-section .details h4 {
+        font-size: 2em;
+    }
+    .cafe-section .details .cafeimg {
+        height: 7em;
+    }
+    .cafe-section .people .cafepeople {
+        height: 30em;
+    }
+    .cafe-section .details .visitus {
+        font-size: 1.8em;
+    }
+    .boxItem {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width:1927px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 22rem;
+    }
+}
+
+@media screen and (min-width:2027px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 26rem;
+    }
+}
+
+@media screen and (min-width:2127px) {
+    .laptop-sec2 .laptop-circle {
+        padding-left: 30rem;
+    }
+}
+
+@media screen and (min-width:2227px) {
+    .ebs-nav {
+        font-size: 3.5em;
+    }
+    .ebs-nav img {
+        height: 55px;
+    }
+    .ebs-nav .logo img {
+        height: 80px;
+    }
+    .header-sec h6 {
+        font-size: 2em;
+    }
+    .laptop-sec1 .win-laptop p {
+        font-size: 2.5rem;
+    }
+    .laptop-sec1 .win-laptop h2 {
+        font-size: 3.5em;
+    }
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 41rem;
+        width: 41rem;
+    }
+    .winner-section img {
+        height: 22rem;
+    }
+    .laptop-sec2 .laptop-circle {
+        padding-left: 32rem;
+    }
+    /* issue section*/
+    .contributed-issue .contri img {
+        height: 30em;
+    }
+    .circlepr {
+        height: 10rem;
+        width: 10rem;
+        font-size: 4em;
+    }
+    .contributed-issue .temp p {
+        font-size: 2.5rem;
+    }
+    /* cafe section */
+    .cafe-section .details h4 {
+        font-size: 2em;
+    }
+    .cafe-section .details .cafeimg {
+        height: 7.5em;
+    }
+    .cafe-section .people .cafepeople {
+        height: 35em;
+    }
+    .cafe-section .details .visitus {
+        font-size: 1.8em;
+    }
+}

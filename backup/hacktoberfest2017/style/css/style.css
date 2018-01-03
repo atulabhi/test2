@@ -1,0 +1,1684 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.main-issuesec {
+    background-color: #273274;
+}
+
+.issuesec .isbtn {
+    /* padding-top: 1%; */
+}
+
+.issuesec .isbtn .button {
+    /* background-color: white;
+    color: #273274; */
+    /* height: 55px; */
+    width: 250px;
+    text-align: center;
+    margin: 5% 2%;
+    font-size: 25px;
+    background-color: #273274;
+    /* border: 3px solid white; */
+    /* box-shadow: inset 0 0 1em, 0 0 1em #131839; */
+    /* box-shadow: 0 0 5px #131839; */
+    /* box-shadow: 4px 4px #10293d; */
+    margin-bottom: -2.5%;
+}
+
+.issuesec .isbtn .button p {
+    /* margin-top: .2em; */
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 2% 3%;
+}
+
+.issuesec {
+    padding: 5% 0 5% 0;
+}
+
+.issuesec .mule {
+    /* padding: 5%; */
+}
+
+.main-issuesec .issuesec .mule-hacktober {
+    height: 130px;
+}
+
+.hactober-calender {
+    color: white;
+    text-align: center;
+}
+
+.hactober-calender .hacktober-heading {
+    color: #ff922e;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.hactober-calender .dt-main-box .sq-box {
+    margin: 2% 2%;
+}
+
+.hactober-calender .dt-main-box .sq-box img {
+    height: 60px;
+    width: auto;
+}
+
+.hactober-calender .dt-main-box .sq-box .dir {
+    margin-top: 2%;
+}
+
+.hactober-calender .dir img {
+    height: 50px;
+    width: auto;
+    padding: 2% 5%;
+}
+
+.main-issuesec .issuesec .github-section {
+    margin-top: 10%;
+}
+
+.main-issuesec .issuesec .github-section .github-row {
+    margin: 5% 0%;
+}
+
+.main-issuesec .issuesec .github-section .github-row .git-button {
+    margin-right: 5%;
+    background-color: #ff8c58;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 33%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px
+}
+
+.main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+    color: #192559;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    margin-right: 2%
+}
+
+.main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dt-main-box .hacktree {
+    padding-top: 3%;
+}
+
+.hackheader .sthack {
+    margin: -1% 0 6% 0;
+}
+
+.hackheader .sthack p {
+    background-color: #273274;
+    color: white;
+    border-radius: 5em;
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+
+/* adding new styles aMRISH */
+
+.hackheader .extraspace {
+    margin-top: 24%;
+    height: 160px;
+    width: 260px;
+    margin-right: 10%;
+}
+
+.hackheader .sthack1 {
+    margin: -1% 5% 6% 0;
+}
+
+.hackheader .img-re .btn-hack {
+    justify-content: start;
+}
+
+.hackheader .img-re {
+    width: 75%;
+    height: auto;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.hackheader .img-re .ebs {
+    color: #ee5a2b;
+    font-weight: bold;
+    width: 80%;
+    float: right;
+    font-size: 18px;
+}
+
+.hackheader .img-re .sthack {
+    width: 80%;
+    float: right;
+}
+
+.hackheader .sthack1 p {
+    background-color: #273274;
+    color: white;
+    border-radius: 5em 0em 0em 5em;
+    padding: 5px 50px;
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+
+.hackheader .sthack1 .abc {
+    padding-top: 15px;
+}
+
+
+/* Ending new stylesAMRISH END */
+
+.guddys .prsection .hack-tshirt {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -100%;
+}
+
+.guddys .prsection .hack-tshirt .attract {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.guddys .prsection .subnow {
+    margin: 0% 0 7% 0;
+}
+
+.guddys .prsection .subnow p {
+    background-color: #273274;
+    color: white;
+    border-radius: 5em;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.mobile-view {
+    display: none;
+}
+
+.desktop-view {
+    display: block;
+}
+
+
+/* .issuesec .isbtn {
+    padding-top: 1%;
+}
+
+.issuesec .isbtn .button {
+    background-color: white;
+    color: #273274;
+    border-radius: 30px;
+    /* height: 55px; 
+    width: 90%;
+    text-align: center;
+    margin: 5% 2%;
+    font-size: 25px;
+    /* box-shadow: inset 0 0 1em, 0 0 1em #131839; 
+    /* box-shadow: 0 0 5px #131839; 
+    /* box-shadow: 4px 4px #10293d; 
+}
+
+.issuesec .isbtn .button p {
+    margin-top: .2em;
+} */
+
+.guddys .prsection {
+    padding: 0;
+}
+
+.guddys .cafeseeting {
+    padding: 0;
+}
+
+.guddys .hacktober-cafe .cafeseeting img {
+    height: 280px;
+    width: auto;
+}
+
+.guddys .cafeseeting p {
+    line-height: normal;
+    text-align: center;
+    font-size: 20px;
+}
+
+.guddys .cafeseeting .attract {
+    font-size: 22px;
+}
+
+.guddys .cafeseeting .cafe-btn {
+    background-color: #62b2b2;
+    color: #4B3736;
+    border: none;
+    border-radius: 499rem;
+}
+
+
+/* start hacktober and cafe*/
+
+.newhacktobercafe .hacktober-cafe {
+    background: linear-gradient(to bottom right, #ff8c58 0%, #ff544e 100%);
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.newhacktobercafe .btn-hack {
+    background-color: #273274;
+    color: #ffffff;
+    border: none;
+    border-radius: 499rem;
+    padding: 1% 3%;
+    margin-top: 5%;
+}
+
+.newhacktobercafe .btn-cafe {
+    background-color: #62b2b2;
+    color: #4B3736;
+    border: none;
+    border-radius: 499rem;
+    padding: 2% 3%;
+}
+
+.newhacktobercafe .settingcafe {
+    padding: 2%;
+}
+
+.newhacktobercafe .settingcafe p {
+    line-height: normal;
+    text-align: left;
+    font-size: 15px;
+}
+
+.newhacktobercafe .settingcafe img {
+    height: 180px;
+}
+
+.newhacktobercafe .hacktober-cafe .prdetails {
+    text-align: center;
+    margin-top: -15%;
+    width: 70%;
+    color: white;
+    font-size: 20px;
+}
+
+.starcontributor {
+    background-color: #e8e8e8;
+}
+
+.starcontributor h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #273274;
+}
+
+.starcontributor img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.starcontributor .contriname-pr {
+    padding: 2.5% 5%;
+}
+
+.starcontributor .contriname-pr .people-hack {
+    margin: 2%;
+    width: 19%;
+}
+
+.starcontributor .contriname-pr .people-hack .namepr {
+    font-size: 15px;
+    padding-left: 3%;
+}
+
+.starcontributor .primage {
+    height: 15px;
+    width: 15px;
+}
+
+.starcontributor .hacktober-people .poe-row a {
+    /* background-color: blue; */
+    color: gray;
+    padding: 4%;
+    /* border-radius: 50%; */
+    font-size: 12px;
+}
+
+.starcontributor .btnclass i:hover {
+    background-color: #a6a7a8;
+    padding: 20px 4px 20px 4px;
+    border-radius: 2px;
+}
+
+
+/* .guddys .shirts img {
+    width: auto;
+    height: 300px;
+} */
+
+
+/* .guddys .helps {
+    padding: 0;
+} */
+
+.footer {
+    background-color: #273274;
+}
+
+.footer .sicons .sslack,
+.shome,
+.scareer {
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    margin: 5%;
+}
+
+.footer .sicons .sslack {
+    background-color: #ff8c58;
+}
+
+.footer .sicons .sslack a {
+    color: white;
+    padding-left: 20px;
+}
+
+.footer .sicons .shome {
+    background-color: #273274;
+}
+
+.footer .sicons .shome a {
+    color: white;
+    padding-left: 20px;
+}
+
+.footer .sicons .scareer {
+    background-color: #ff544e;
+}
+
+.footer .sicons .scareer a {
+    color: white;
+    padding-left: 20px;
+}
+
+.footer .sicons {
+    margin: 3%;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 11px;
+}
+
+@media screen and (max-width:4500px) {
+    .hackheader .sthack p {
+        font-size: 45px;
+    }
+    .issuesec .mule img {
+        height: 240px;
+        margin-top: 5%;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .guddys .shirts img {
+        height: 450px;
+    }
+    .issuesec .isbtn {
+        padding-top: 0%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .guddys .shirts {
+        font-size: 50px;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 70px; */
+        width: 380px;
+        font-size: 45px;
+    }
+    .footer .sicons .sslack,
+    .shome,
+    .scareer {
+        height: 100px;
+        width: 100px;
+        font-size: 65px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 800px;
+        margin-top: 8%;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 7%;
+        height: 100px;
+    }
+    .footer .sicons img {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width:3000px) {
+    .issuesec .mule img {
+        height: 240px;
+        margin-top: 5%;
+    }
+    .newhacktobercafe .btn-hack {
+        padding: 2% 8%;
+        margin-top: 5%;
+        font-size: 18px;
+    }
+    .newhacktobercafe .btn-cafe {
+        border-radius: 499rem;
+        padding: 2% 3%;
+        width: 38%;
+        font-size: 18px;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        text-align: center;
+        margin-top: -18%;
+        font-size: 32px;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .guddys .shirts img {
+        height: 450px;
+    }
+    .issuesec .isbtn {
+        padding-top: 0%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .guddys .shirts {
+        font-size: 50px;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 70px; */
+        width: 380px;
+        font-size: 45px;
+    }
+    .footer .sicons .sslack,
+    .shome,
+    .scareer {
+        height: 100px;
+        width: 100px;
+        font-size: 65px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 800px;
+        margin-top: 8%;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 7%;
+        height: 100px;
+    }
+    .footer .sicons img {
+        height: 90px;
+    }
+    /* New style Amrish start */
+    .hackheader .extraspace {
+        margin-top: 24%;
+        height: 266px;
+        width: 400px;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 5% 6% 0;
+    }
+    .hackheader .sthack p {
+        font-size: 41px;
+        margin-top: 2%;
+    }
+    .hackheader .img-re {
+        width: 70%;
+        height: auto;
+        padding-left: 3%;
+        padding-top: 4%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 80%;
+        float: right;
+        font-size: 27px;
+    }
+    .hackheader .img-re .sthack {
+        width: 80%;
+        float: right;
+    }
+    .hackheader .img-re img {
+        height: 192px;
+        width: 1048px;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 50px;
+        font-size: 33px;
+        margin-bottom: -10px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* style Amrish End */
+}
+
+@media screen and (max-width:2500px) {
+    .newhacktobercafe .btn-hack {
+        padding: 2% 8%;
+        margin-top: 5%;
+        font-size: 28px;
+    }
+    .newhacktobercafe .btn-cafe {
+        border-radius: 499rem;
+        padding: 2% 3%;
+        width: 50%;
+    }
+    .newhacktobercafe .settingcafe {
+        padding: 2%;
+    }
+    .newhacktobercafe .settingcafe .cafe-details {
+        margin-left: 4%;
+    }
+    .newhacktobercafe .settingcafe p {
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+    .newhacktobercafe .settingcafe img {
+        height: 320px;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        margin-top: -16%;
+        font-size: 34px;
+    }
+    .hackheader .sthack p {
+        margin-top: 4%;
+        font-size: 33px;
+    }
+    .issuesec .mule img {
+        height: 200px;
+        margin-top: 5%;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .guddys .shirts img {
+        height: 450px;
+    }
+    .issuesec .isbtn {
+        padding-top: 0%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .guddys .shirts {
+        font-size: 50px;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 50px; */
+        width: 240px;
+        font-size: 25px;
+    }
+    .footer .sicons .sslack,
+    .shome,
+    .scareer {
+        height: 100px;
+        width: 100px;
+        font-size: 65px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 600px;
+        margin-top: 7%;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 7%;
+        height: 100px;
+    }
+    .footer .sicons img {
+        height: 90px;
+    }
+    /* New style Amrish start */
+    .hackheader .extraspace {
+        margin-top: 31%;
+        height: 240px;
+        width: 360px;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 5% 6% 0;
+    }
+    .hackheader .img-re {
+        width: 70%;
+        height: auto;
+        padding-left: 3%;
+        padding-top: 4%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 80%;
+        float: right;
+        font-size: 27px;
+    }
+    .hackheader .img-re .sthack {
+        width: 80%;
+        float: right;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 50px;
+        font-size: 31px;
+        margin-bottom: -10px;
+    }
+    .newhacktobercafe .btn-hack {
+        padding: 2% 8%;
+        margin-top: 5%;
+        font-size: 28px;
+    }
+    .newhacktobercafe .btn-cafe {
+        border-radius: 499rem;
+        padding: 2% 3%;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* style Amrish End */
+}
+
+@media screen and (max-width:2000px) {
+    .newhacktobercafe .btn-hack {
+        padding: 2% 8%;
+        margin-top: 5%;
+        font-size: 18px;
+    }
+    .newhacktobercafe .btn-cafe {
+        border-radius: 499rem;
+        padding: 2% 3%;
+        width: 50%;
+        font-size: 18px;
+    }
+    .newhacktobercafe .settingcafe {
+        padding: 2%;
+        padding-left: 3.5%;
+    }
+    .newhacktobercafe .settingcafe p {
+        font-size: 18px;
+    }
+    .newhacktobercafe .settingcafe img {
+        height: 280px;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        margin-top: -15%;
+        font-size: 25px;
+    }
+    .hackheader .sthack p {
+        font-size: 25px;
+    }
+    .issuesec .mule img {
+        height: 180px;
+        margin-top: 5%;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .guddys .shirts img {
+        height: 1800px;
+    }
+    .issuesec .isbtn {
+        padding-top: 2%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .main-issuesec .issuesec .github-section {
+        margin-top: 10%;
+    }
+    .main-issuesec .issuesec .github-section .github-row {
+        margin: 5% 0%;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button {
+        margin-right: 5%;
+        background-color: #ff8c58;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 33%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+        color: #192559;
+        background-color: white;
+        height: 35px;
+        width: 35px;
+        align-items: center;
+        margin-right: 2%
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+    .guddys .shirts {
+        font-size: 50px;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 40px; */
+        font-size: 20px;
+        width: 220px;
+    }
+    .footer .sicons .sslack,
+    .shome,
+    .scareer {
+        height: 100px;
+        width: 100px;
+        font-size: 65px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 410px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 7%;
+        height: 60px;
+    }
+    .footer .sicons img {
+        height: 55px;
+    }
+    /* New style Amrish start */
+    .hackheader .extraspace {
+        margin-top: 27%;
+        height: 215px;
+        width: 323px;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 0% 6% 0;
+    }
+    .hackheader .img-re {
+        width: 65%;
+        height: auto;
+        padding-left: 4%;
+        padding-top: 6%;
+    }
+    .hackheader .img-re img {
+        height: 100%;
+        width: 120%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 80%;
+        float: right;
+        font-size: 20px;
+    }
+    .hackheader .img-re .sthack {
+        width: 80%;
+        float: right;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 50px;
+        font-size: 26px;
+        margin-bottom: -10px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* style Amrish End */
+    .footer .sicons {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .hackheader .sthack p {
+        font-size: 20px;
+    }
+    .newhacktobercafe .btn-hack {
+        padding: 2% 8%;
+        margin-top: 5%;
+    }
+    .newhacktobercafe .btn-cafe {
+        border-radius: 499rem;
+        padding: 2% 3%;
+        width: 52%;
+    }
+    .newhacktobercafe .settingcafe {
+        padding: 2%;
+    }
+    .newhacktobercafe .settingcafe p {
+        font-size: 15px;
+    }
+    .newhacktobercafe .settingcafe img {
+        height: 250px;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        margin-top: -15%;
+        font-size: 20px;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        font-size: 15px;
+        width: 72%;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .issuesec .mule img {
+        height: 150px;
+        margin-top: 5%;
+    }
+    .guddys .shirts img {
+        height: 320px;
+    }
+    .issuesec .isbtn {
+        padding-top: 2%;
+        margin-left: -4%;
+        padding-left: 0%;
+    }
+    .guddys .shirts {
+        font-size: 40px;
+    }
+    .guddys .shirts p {
+        font-size: 35px;
+        padding-top: 5%;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 40px; */
+        font-size: 20px;
+        width: 200px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 320px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 5%;
+        height: 50px;
+    }
+    .footer .sicons img {
+        height: 45px;
+    }
+    /* New style Amrish start */
+    .hackheader .extraspace {
+        margin-top: 30%;
+        height: 170px;
+        width: 255px;
+        margin-right: 10%;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 0% 6% 0;
+    }
+    .hackheader .img-re {
+        width: 65%;
+        height: auto;
+        padding-left: 4%;
+        padding-top: 5%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 80%;
+        float: right;
+        font-size: 18px;
+    }
+    .hackheader .img-re .sthack {
+        width: 80%;
+        float: right;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 50px;
+        font-size: 18px;
+        margin-bottom: -6px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    .hackheader .img-re img {
+        height: 100%;
+        width: 115%;
+    }
+    /* style Amrish End */
+    .footer .sicons {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .hackheader .sthack p {
+        font-size: 18px;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .newhacktobercafe .settingcafe img {
+        height: 210px;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        font-size: 18px;
+    }
+    .guddys .shirts img {
+        height: 220px;
+    }
+    .guddys .shirts p {
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    .issuesec .isbtn {
+        padding-top: 1.5%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .main-issuesec .issuesec .mule-hacktober {
+        height: 100px;
+    }
+    .hactober-calender .hacktober-heading {
+        font-size: 20px;
+    }
+    .hactober-calender .hacktober-heading .hack-details {
+        font-size: 18px;
+    }
+    .main-issuesec .issuesec .github-section {
+        margin-top: 10%;
+    }
+    .main-issuesec .issuesec .github-section .github-row {
+        margin: 5% 0%;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button {
+        width: 40%;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+        font-size: 14px
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        font-size: 12px;
+        padding-left: 4%;
+        width: 50%;
+    }
+    .footer .sicons .sslack,
+    .shome,
+    .scareer {
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 15px;
+        /* height: 40px; */
+        font-size: 18px;
+        width: 180px;
+    }
+    .footer .sicons .sslack a {
+        padding-left: 18px;
+    }
+    .footer .sicons .shome a {
+        padding-left: 18px;
+    }
+    .footer .sicons .scareer a {
+        padding-left: 18px;
+    }
+    .footer .sicons img {
+        height: 43px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 300px;
+        margin-top: 20%;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 5%;
+        height: 40px;
+    }
+    /* New style Amrish start */
+    .hackheader .img-re .ebs {
+        font-size: 14px;
+    }
+    .hackheader .sthack1 p {
+        font-size: 16px;
+    }
+    /* style Amrish End */
+    .footer .sicons {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        font-size: 10px;
+        padding-left: 4%;
+        width: 50%;
+    }
+    .hackheader .sthack p {
+        font-size: 15px;
+        padding: 10px 40px;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        margin-top: -15%;
+        font-size: 15px;
+    }
+    .newhacktobercafe .settingcafe p {
+        font-size: 13px;
+    }
+    .newhacktobercafe .btn-cafe {
+        width: 60%;
+        font-size: 13px;
+        padding: 0;
+        text-align: center;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 30px; */
+        width: 150px;
+        font-size: 15px;
+    }
+    .issuesec .mule img {
+        height: 100px;
+    }
+    .issuesec .isbtn {
+        padding-top: 1%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .hacktree {
+        background-color: #273274;
+        padding-top: 5%;
+    }
+    .footer .sicons img {
+        height: 40px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 245px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 0%;
+        height: 30px;
+    }
+    .footer .sicons {
+        font-size: 8px;
+    }
+    /* New style Amrish start */
+    .hackheader .extraspace {
+        margin-top: 58%;
+        height: 170px;
+        width: 250px;
+    }
+    .hackheader .img-re .ebs {
+        font-size: 11px;
+    }
+    .hackheader .sthack1 p {
+        font-size: 11px;
+    }
+    /* style Amrish End */
+}
+
+@media screen and (max-width:918px) {
+    .hackheader .re .remove-pd {
+        padding-right: 0;
+    }
+    .hackheader .sthack p {
+        font-size: 17px;
+        padding: 10px 40px;
+    }
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: block;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button {
+        width: 50%;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+        height: 30px;
+        width: 30px;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        width: 67%;
+    }
+    .newhacktobercafe .hacktober-cafe .prdetails {
+        margin-top: -17%;
+        font-size: 12px;
+    }
+    .newhacktobercafe .settingcafe p {
+        font-size: 13px;
+    }
+    .newhacktobercafe .btn-cafe {
+        width: 60%;
+        font-size: 13px;
+        padding: 0;
+        text-align: center;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 30px;
+        /* height: 30px; */
+        width: 150px;
+        font-size: 15px;
+    }
+    .issuesec .mule img {
+        height: 100px;
+    }
+    .issuesec .isbtn {
+        padding-top: 1%;
+        padding-left: 0%;
+        margin-left: -4%;
+    }
+    .hacktree {
+        background-color: #273274;
+        padding-top: 5%;
+    }
+    .footer .sicons img {
+        height: 40px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 245px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 0%;
+        height: 30px;
+    }
+    .footer .sicons {
+        font-size: 8px;
+    }
+    .newhacktobercafe .hacktober-cafe {
+        display: flex;
+        align-items: center;
+    }
+    /* adding new styles aMRISH */
+    .hackheader .extraspace {
+        margin-top: 95%;
+        height: 120px;
+        width: 180px;
+        margin-right: 10%;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 0 6% 0;
+    }
+    .hackheader .img-re .btn-hack {
+        justify-content: center;
+    }
+    .hackheader .img-re {
+        width: 100%;
+        height: auto;
+        padding-left: 5%;
+        padding-top: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hackheader .img-re img {
+        height: 100px;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+    .hackheader .img-re .sthack {
+        width: 100%;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 25px;
+        font-size: 14px;
+        margin-bottom: -7px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* Ending new stylesAMRISH END */
+}
+
+@media screen and (max-width:767px) {
+    starcontributor h1 {
+        font-size: 22px;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+        height: 30px;
+        width: 30px;
+    }
+    .contributorsection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .starcontributor .contriname-pr .pedetails {
+        flex-direction: column;
+    }
+    .starcontributor .contriname-pr {
+        flex-direction: column;
+        padding: 0;
+    }
+    .starcontributor .contriname-pr .mainnapr {
+        align-items: center;
+        margin-top: 5%;
+    }
+    .starcontributor .contriname-pr .people-hack {
+        width: 100%;
+    }
+    .hackheader .sthack {
+        margin: 2% 0 7% 0;
+    }
+    .hackheader .sthack p {
+        padding: 5px 20px;
+        font-size: 19px;
+    }
+    .newhacktobercafe .settingcafe img {
+        height: 150px;
+    }
+    .starcontributor .contriname-pr .people-hack .namepr {
+        text-align: center;
+        font-size: 11px;
+        margin-top: 5%;
+    }
+    .newhacktobercafe .hack-tshirt {
+        width: 95%;
+        margin-top: -105%;
+        text-align: center;
+        color: white;
+    }
+    .newhacktobercafe .settingcafe {
+        flex-direction: column;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .newhacktobercafe .settingcafe p {
+        text-align: center;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        font-size: 15px;
+    }
+    .newhacktobercafe .cafe-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .newhacktobercafe .cafe-details .btn-cafe {
+        width: 42%;
+        padding: 2% 3%;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .issuesec .mule img {
+        height: 120px;
+    }
+    .issuesec .isbtn {
+        margin-left: 0%;
+        padding-left: 15px;
+        margin-top: 4%;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 15px;
+        font-size: 18px;
+        /* height: 40px; */
+    }
+    .issuesec .isbtn .button p {
+        padding-top: 0%;
+    }
+    .guddys .shirts img {
+        height: 180px;
+    }
+    .guddys .shirts {
+        font-size: 25px;
+    }
+    .guddys .shirts {
+        font-size: 25px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 300px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 5%;
+        height: 40px;
+    }
+    .footer .sicons img {
+        height: 50px;
+    }
+    .footer .sicons {
+        margin: 6%;
+        font-size: 10px;
+    }
+    .newhacktobercafe .hacktober-cafe {
+        display: flex;
+        justify-content: center;
+    }
+    /* adding new styles aMRISH */
+    .hackheader .extraspace {
+        margin-top: 2%;
+        height: 140px;
+        width: 220px;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 0 6% 0;
+    }
+    .hackheader .img-re .btn-hack {
+        justify-content: center;
+    }
+    .hackheader .img-re {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 7%;
+    }
+    .hackheader .img-re img {
+        height: 100%;
+        width: 100%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .hackheader .img-re .sthack {
+        width: 100%;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 25px;
+        font-size: 15px;
+        margin-bottom: -7px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* Ending new stylesAMRISH END */
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        width: 57%;
+    }
+    .footer .sicons img {
+        height: 27px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .starcontributor .contriname-pr .people-hack {
+        width: 100%;
+    }
+    .hackheader .sthack {
+        margin: 2% 0 7% 0;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+        height: 27px;
+        width: 27px;
+    }
+    .hackheader .sthack p {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 15px;
+        font-size: 15px;
+        /* height: 35px; */
+        padding-top: 1%;
+    }
+    .guddys .shirts img {
+        height: 160px;
+    }
+    .issuesec .mule img {
+        height: 90px;
+    }
+    .hactober-calender .dir img {
+        height: 40px;
+        width: auto;
+        margin-top: 5%;
+    }
+    .main-issuesec .issuesec .mule-hacktober {
+        height: 100px;
+    }
+    .hactober-calender .hacktober-heading {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+    .hactober-calender .hacktober-heading .hack-details {
+        font-size: 12px;
+    }
+    .main-issuesec .issuesec .github-section {
+        margin-top: 10%;
+    }
+    .main-issuesec .issuesec .github-section .github-row {
+        margin: 5% 0%;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button {
+        width: 50%;
+        margin-right: 5px;
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-num {
+        font-size: 11px
+    }
+    .main-issuesec .issuesec .github-section .github-row .git-button .git-tag {
+        font-size: 10px;
+        width: 69%;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 230px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 7%;
+        height: 40px;
+    }
+    .footer .sicons {
+        margin: 6%;
+        font-size: 6.5px;
+    }
+    .footer .sicons img {
+        height: 27px;
+    }
+    /* adding new styles aMRISH */
+    .hackheader .extraspace {
+        margin-top: 2%;
+        height: 104px;
+        width: 163px;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 0 6% 0;
+    }
+    .hackheader .img-re .btn-hack {
+        justify-content: center;
+    }
+    .hackheader .img-re {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8%;
+    }
+    .hackheader .img-re img {
+        height: 100%;
+        width: 100%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+    .hackheader .img-re .sthack {
+        width: 100%;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 25px;
+        font-size: 15px;
+        margin-bottom: -8px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* Ending new stylesAMRISH END */
+}
+
+@media screen and (max-width:320px) {
+    .starcontributor .contriname-pr .people-hack {
+        width: 100%;
+    }
+    .hactober-calender .hacktober-heading {
+        font-size: 15px;
+        margin-top: 10%;
+    }
+    .hactober-calender .hack-details {
+        font-size: 10px;
+    }
+    .main-issuesec .issuesec .mule-hacktober {
+        height: 80px;
+    }
+    .github-section .mob-re-p {
+        padding: 0;
+    }
+    .hackheader .sthack {
+        margin: 2% 0 7% 0;
+    }
+    .hackheader .sthack p {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .issuesec .isbtn .button {
+        border-radius: 15px;
+        font-size: 15px;
+        /* height: 30px; */
+    }
+    .issuesec .isbtn .button p {
+        margin-top: 0;
+    }
+    .guddys .shirts .row img {
+        height: 170px;
+    }
+    .guddys .shirts {
+        font-size: 25px;
+    }
+    .guddys .cafeseeting .cafes {
+        height: 200px;
+    }
+    .guddys .cafeseeting .cafelink {
+        margin-bottom: 7%;
+        height: 30px;
+    }
+    .footer .sicons {
+        margin: 6%;
+    }
+    .footer .sicons img {
+        height: 30px;
+    }
+    /* adding new styles aMRISH */
+    .hackheader .extraspace {
+        margin-top: 2%;
+        height: 100px;
+        width: 150px;
+    }
+    .hackheader .sthack1 {
+        margin: -1% 0 6% 0;
+    }
+    .hackheader .img-re .btn-hack {
+        justify-content: center;
+    }
+    .hackheader .img-re {
+        width: 100%;
+        height: auto;
+        padding-left: 0%;
+        padding-top: 0%;
+        margin-top: 7%;
+    }
+    .hackheader .img-re .ebs {
+        color: #ee5a2b;
+        font-weight: bold;
+        width: 100%;
+        font-size: 11px;
+        text-align: center;
+    }
+    .hackheader .img-re .sthack {
+        width: 100%;
+    }
+    .hackheader .sthack1 p {
+        background-color: #273274;
+        color: white;
+        border-radius: 5em 0em 0em 5em;
+        padding: 5px 25px;
+        font-size: 11px;
+        margin-bottom: -7px;
+    }
+    .hackheader .sthack1 .abc {
+        padding-top: 15px;
+    }
+    /* Ending new stylesAMRISH END */
+}

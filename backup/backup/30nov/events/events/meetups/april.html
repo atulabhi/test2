@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>OpenEBS | OpenEBS Meetup #3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+
+
+    <meta name="msapplication-square70x70logo" content="../../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../../styles/images/fav/largetile.png" />
+
+
+    <!--iportant for gallary -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="../../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="../../styles/css/openebs.css" rel="stylesheet">
+    <link href="style/css/ebs_event.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../../styles/js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript" src="style/js/script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="../../index.html"><img src="../../styles/images/banner-icon.png" height="40" style="width:auto;"></a>
+                <a class="navbar-brand mobile-logo" href="../../index.html"><img src="../../styles/images/openebs-logo.svg" height="40" style="width:auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+
+    <section class=" pd-t-5">
+        <div class="container">
+            <div class="row" style="align-items: center;">
+                <div class="col-md-12">
+                    <p class="event-number">OpenEBS Bangalore Meetup #3</p>
+                </div>
+                <div class="col-md-12">
+                    <p class="event-details">The main attraction of the day was the release of OpenEBS 0.2, now integrated with Kubernetes and the new features within the update. Like always, the demo session by Kiran Mova was loaded with information and fun experience for all
+                        the collaborators presen</p>
+                </div>
+            </div>
+        </div>
+        <hr style="height: 1px; border: 0; background: black; background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, gray)); width: 80%; ">
+    </section>
+
+
+
+    <!-- youtube vedio -->
+
+    <div class="container-fluid pd-t-5">
+        <div class="row">
+            <div class="col-md-12 yvedio">
+                <div class="video-details">
+
+                    <a href="#myModal" data-toggle="modal" data-target="#exampleModal" style="color:white;"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document" style="top:30%">
+                            <div class="modal-content view-model">
+
+                                <div class="modal-body">
+                                    <iframe id="youtubeVideo" class="yvideo" src="https://www.youtube.com/embed/Gxw5k8_bG90?rel=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="sl">
+        <div class="container-fluid">
+            <div class="row flex-column-reverse flex-md-row" style="align-items: center;">
+                <div class="col-md-6 slide">
+
+                    <iframe class="slide-share" src="https://www.slideshare.net/slideshow/embed_code/key/5BVOZrCMjuNVM" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen> </iframe>
+
+                </div>
+                <div class="col-md-6">
+
+                    <div class="slide-details">
+                        <h1>Missed the Meetup ? </h1>
+                        <p style="color:gray">Take a look at the <br> <span style="font-weight: bold;">Slides </span> to check out the<br> content we discused<br> at the meetup
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class=" mar-t-5 contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: sans-serif; padding-bottom:1%">Join Our Community</h2>
+                    <p>Join the OpenEBS community by contributing on our blog, GitHub and following us on social media.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center ebs-footer">
+                            <div class="social"> <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <br> </div>
+                            <div class="social"> <a href="https://www.facebook.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="careers/index.html"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

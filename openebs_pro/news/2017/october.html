@@ -1,0 +1,1212 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>OpenEBS | News</title>
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="../../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../../styles/images/fav/largetile.png" />
+
+    <link href="../../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../styles/css/openebs.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../../styles/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="../../"><img src="../../styles/images/banner-icon.svg" height="40" style="width:auto;"></a>
+                <a class="navbar-brand mobile-logo" href="../../"><img src="../../styles/images/openebs-logo.svg" height="40" style="width:auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="documentation"><i class="fa fa-book" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="documentation"><i class="fa fa-book" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+    <!--newsletter menu-->
+    <div class="pd-t-5 menu-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 news-list">
+                    <div class="list-group">
+                        <a href="../" class="list-group-item">November 2017</a>
+                        <a href="" class="list-group-item active">October 2017</a>
+                        <a href="September.html" class="list-group-item">September 2017</a>
+                        <a href="august.html" class="list-group-item">August 2017</a>
+                        <a href="july.html" class="list-group-item">July 2017</a>
+                        <a href="june.html" class="list-group-item">June 2017</a>
+                        <a href="april.html" class="list-group-item">April 2017</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <style>
+                        body {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        body,
+                        table,
+                        td,
+                        p,
+                        a,
+                        li {
+                            -webkit-text-size-adjust: 100%;
+                            -ms-text-size-adjust: 100%;
+                        }
+                        
+                        a {
+                            word-wrap: break-word;
+                        }
+                        
+                        p {
+                            -webkit-margin-before: 0;
+                        }
+                        
+                        table td {
+                            border-collapse: collapse;
+                        }
+                        
+                        table {
+                            border-spacing: 0;
+                            border-collapse: collapse;
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                        }
+                        
+                        table,
+                        td {
+                            mso-table-lspace: 0pt;
+                            mso-table-rspace: 0pt;
+                        }
+                        
+                        .ReadMsgBody {
+                            width: 100%;
+                            background-color: #eeeeee;
+                        }
+                        
+                        .ExternalClass {
+                            width: 100%;
+                            background-color: #eeeeee;
+                        }
+                        
+                        .ExternalClass,
+                        .ExternalClass p,
+                        .ExternalClass span,
+                        .ExternalClass font,
+                        .ExternalClass td,
+                        .ExternalClass div {
+                            line-height: 100%;
+                        }
+                        
+                        .ExternalClass * {
+                            line-height: 100%;
+                        }
+                        
+                        @media only screen and (max-width: 540px) {
+                            .main {
+                                width: 100% !important;
+                                min-width: 200px !important;
+                            }
+                            .logo-img {
+                                width: 100% !important;
+                                float: none;
+                                margin-bottom: 15px;
+                            }
+                            .logo-img td {
+                                text-align: center !important;
+                            }
+                            .logo-title {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            .logo-title td {
+                                text-align: center;
+                                height: auto
+                            }
+                            .logo-title h1 {
+                                font-size: 24px !important;
+                            }
+                            .logo-title h2 {
+                                font-size: 18px !important;
+                            }
+                            .header-img img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            .title {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .title h1 {
+                                font-size: 24px !important;
+                            }
+                            td.block-text {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .block-text h2 {
+                                font-size: 20px !important;
+                                line-height: 170% !important;
+                            }
+                            .block-text p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            .block-text li {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            .two-columns {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .text-column {
+                                width: 100% !important;
+                                float: none;
+                                margin-bottom: 15px;
+                            }
+                            .image-caption {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .image-caption-container {
+                                width: 100% !important;
+                            }
+                            .image-caption-column {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            .image-caption-column-text {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            .image-caption-content img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            .image-caption-content h2 {
+                                font-size: 20px !important;
+                                line-height: 170% !important;
+                            }
+                            .image-caption-content p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            .image-caption-top-gap {
+                                height: 15px !important;
+                            }
+                            .image-caption-bottom-gap {
+                                height: 5px !important;
+                            }
+                            .text {
+                                width: 100% !important;
+                            }
+                            .text p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            .text h2 {
+                                font-size: 20px !important;
+                                line-height: 170% !important;
+                            }
+                            .gap {
+                                display: none;
+                            }
+                            .header {
+                                padding: 25px 25px 25px 25px !important;
+                            }
+                            .header h1 {
+                                font-size: 24px !important;
+                            }
+                            .header h2 {
+                                font-size: 20px !important;
+                            }
+                            .footer {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .footer p {
+                                font-size: 13px !important;
+                            }
+                            .footer-side {
+                                width: 100% !important;
+                                float: none !important;
+                            }
+                            .footer-side {
+                                text-align: center !important;
+                            }
+                            .social-links {
+                                text-align: center !important;
+                            }
+                            .footer-social-icons {
+                                float: none !important;
+                                margin: 0px auto !important;
+                            }
+                            .social-icon-link {
+                                padding: 0px 5px !important;
+                            }
+                            .image img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            .image {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .image-full img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            .image-full {
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            .image-group img {
+                                width: 100% !important;
+                                height: auto !important;
+                                margin: 15px 0px 15px 0px !important;
+                            }
+                            .image-group {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .image-in-table {
+                                width: 100% !important;
+                                float: none;
+                                margin-bottom: 15px;
+                            }
+                            .image-in-table td {
+                                width: 100% !important;
+                                padding-right: 0px !important;
+                            }
+                            .image-in-table img {
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                            .image-in-table table {
+                                float: none !important;
+                                margin: 0 auto;
+                            }
+                            .image-text {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .image-text p {
+                                font-size: 16px !important;
+                                line-height: 170% !important;
+                            }
+                            .divider-simple {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .divider-full {
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            .social {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .preheader {
+                                display: none;
+                            }
+                            .preheader-gap {
+                                display: none;
+                            }
+                            .preheader-link {
+                                display: none;
+                            }
+                            .preheader-text {
+                                width: 100%;
+                            }
+                            .buttons {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .button {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            .content-buttons {
+                                padding-left: 25px !important;
+                                padding-right: 25px !important;
+                            }
+                            .buttons-full-width {
+                                padding-left: 15px !important;
+                                padding-right: 15px !important;
+                            }
+                            .buttons-full-width a {
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            .buttons-full-width span {
+                                /* width:100% !important; */
+                                padding-left: 0px !important;
+                                padding-right: 0px !important;
+                            }
+                            .buttons-full-width td {
+                                display: inline !important
+                            }
+                            .content {
+                                width: 100% !important;
+                                float: none !important;
+                            }
+                            .gallery-image {
+                                width: 100% !important;
+                                padding: 0px !important;
+                            }
+                            .social {
+                                width: 100%!important;
+                                text-align: center!important;
+                            }
+                            .links {
+                                width: 100%!important;
+                            }
+                            .links td {
+                                text-align: center!important;
+                            }
+                            .footer-btn {
+                                text-align: center!important;
+                                width: 100%!important;
+                                margin-bottom: 10px;
+                            }
+                            .footer-btn-wrap {
+                                margin-bottom: 0px;
+                                width: 100%!important;
+                            }
+                            .head-social {
+                                width: 100%!important;
+                                text-align: center!important;
+                                padding-top: 20px;
+                            }
+                            .head-logo {
+                                width: 100%!important;
+                                text-align: center!important;
+                            }
+                            .header-nav {
+                                display: none;
+                            }
+                            .responsive-cell {
+                                display: block;
+                            }
+                            .image-caption {
+                                padding: 0px!important;
+                            }
+                            .image-group {
+                                padding: 0px!important;
+                            }
+                            .image-group-column {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            .image-group-column-text {
+                                width: 100% !important;
+                                float: none;
+                            }
+                            .tableText {
+                                padding-right: 25px!important;
+                                padding-left: 25px!important;
+                            }
+                            .textbuttonsimg {
+                                width: 65% !important;
+                                margin: 0 auto;
+                            }
+                        }
+                    </style>
+                    </head>
+
+                    <body>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style=" font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 21px; color: #000000;">
+                            <tbody>
+                                <tr>
+                                    <td width="100%" id="primary" class="main demo" align="center" valign="top">
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="95f5341e-ab5b-ba3d-0d43-24c23dd182bb" data-color="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="padding: 0px;" class="image">
+                                                        <a target="_blank" class="imgLink" href="https://www.openebs.io/" rel="noopener"><img class="" border="0" align="one_image" style="display: block; max-width: 640px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/capture2_png_1490176605601.PNG" width="640"
+                                                                height="180" data-maxwidth="640" id="859a53b0-ae54-0a7b-3a24-fa336a36a8f0" tabindex="0" /></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="1aa14af1-f4cd-b90c-1279-53ab06f75ee4">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" class="title textFix" style="padding: 5px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                        <h1 style="text-align: center;"><span style="background-color: #ffffff;">Community</span><span style="background-color: #ffffff;">&nbsp; Newsletter</span></h1>
+                                                        <h4 style="text-align: center;"><span style="background-color: #ffffff; font-size: 18px;">October 2017</span></h4>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="935cd186-d2c1-955c-6e83-03147a96f604">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="a719e598-ac8c-0448-1f18-6be593716055">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0px 10px 0px;" class="image">
+                                                        <a target="_blank" class="imgLink" href="https://www.openebs.io/hacktoberfest2017/" rel="noopener"><img class="" border="0" align="one_image" style="display: block; max-width: 600px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/newsletter_hacktober_01_jpg_1507014097835.jpg"
+                                                                width="600" height="257" data-maxwidth="640" id="e2f54d5a-b00e-a463-1e12-6b5b1eedc5fc" tabindex="0" /></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="7325c2cd-2232-5eec-c695-f7edf22bb377">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                                                            <div style="text-align: center;"><span style="color: #333333; font-family: verdana, geneva, sans-serif;"><span style="font-size: 16px;"><strong>We celebrated Hacktoberfest with a Bang!</strong></span></span>
+                                                            </div>
+                                                            <div style="text-align: center;">&nbsp;<br />We had a blast celebrating Hacktoberfest this year. There was a lot of excitement and curiosity among the open source enthusiasts regarding Hacktoberfest and we got some awesome PRs
+                                                                from all around the world.&nbsp;</div>
+                                                            <div style="text-align: center;">The winner of the best PR submitted to OpenEBS for Hacktoberfest is <a href="https://www.openebs.io/hacktoberfest2017/">Hrishikesh</a>, an open source enthusiast and an OpenEBS contributor.</div>
+                                                            <div style="text-align: center;">Many thanks to everyone for all your contributions and for being awesome. Keep hacking and keep contributing!</div>
+                                                            <div style="text-align: center;">&nbsp;</div>
+                                                            <div style="text-align: center;">&nbsp;</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="b22afec3-0ec6-6bcd-9f44-8af6b1328a87">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="92148f77-cac9-9989-d39d-97a273167385">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0px 10px 0px;" class="image"><img class="" border="0" align="one_image" style="display: block; max-width: 450px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/postgresplusopenebs_768x505_png_1510049805633.png"
+                                                            width="450" height="295" data-maxwidth="640" id="8cd02882-5485-87e9-b6b7-f34ffad6bf79" tabindex="0" /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="2cc9f7dc-8470-d669-2a4b-3dc5b115bc93">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                                                            <div style="text-align: center;"><span style="font-size: 16px; color: #333333;"><strong>Want to learn how to deploy PostgreSQL on Kubernetes+OpenEBS?</strong></span></div>
+                                                            <div style="text-align: center;">&nbsp;</div>
+                                                            <div style="text-align: center;">Written by Murat Karslioglu, VP Solutions of OpenEBS, this blog explains how to deploy PostgreSQL on Kubernetes+OpenEBS. Very elaborately, this piece also talks about why you should deploy Postgres
+                                                                on Kubernetes and even lists down the prerequisites for doing the same.</div>
+                                                            <div style="text-align: center;">The blog acts as a step by step guide for the deployment of PostgreSQL. So if you have ever asked yourself this very question, please read the <a href="http://containerized.me/how-to-deploy-a-postgresql-cluster-on-kubernetes-openebs/">blog</a>                                                                and don't forget to give us your feedback!</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="4e1a5432-c80d-c279-311e-c26b4499e876">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgtxt" id="203e50f0-2f1a-210d-0bbd-4312e020a780">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="image-text" align="left" style="padding: 15px 50px 10px 50px;">
+                                                        <table class="image-in-table" cellspacing="0" cellpadding="0" border="0" width="100%" align="left">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding: 0px 10px 10px 0px;"><img src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/hcybsawu_jpg_1509962413260.jpg" style="display: block; max-width: 120px;" width="120" data-maxwidth="350"
+                                                                                            height="120" border="0" align="left" id="beda9751-d605-3733-fb85-4aa6aa006fbc" alt="" /></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div class="textFix" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                                            <div><span style="font-size: 16px; color: #333333;"><strong>OpenEBS is now a proud member of CNCF</strong></span></div>
+                                                                            <div style="text-align: left;">We are happy to announce that we are now a member of the Cloud Native Computing Foundation (CNCF), thereby&nbsp;strengthening our&nbsp;position as an open source project that
+                                                                                is containerized, dynamically orchestrated and microservices-oriented.</div>
+                                                                            <div style="text-align: left;">To know more about CNCF <a href="https://www.cncf.io/">click here</a>.<br />&nbsp;</div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="f7a6e5e8-b4c0-3a15-e457-b32a2ee7e1c5">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgtxt" id="1f574a52-ffce-4707-fd95-fc41678690a8">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="image-text" align="left" style="padding: 15px 50px 10px 50px;">
+                                                        <table class="image-in-table" cellspacing="0" cellpadding="0" border="0" width="100%" align="left">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table cellspacing="0" cellpadding="0" border="0" align="left">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" style="padding: 0px 10px 10px 0px;"><img src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/img_78bd8ff24877fb97fcfc3aee4ca85c22_1504000176071_original_png_1509963664258.png" style="display: block; max-width: 190px;"
+                                                                                            width="190" data-maxwidth="350" height="122" border="0" align="left" id="9430d1ce-f1ba-ee39-48eb-1b7e7ccf0fd1" alt="" /></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <div class="textFix" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                                            <p><span style="font-size: 16px; color: #333333;"><strong>We were at Serverless Summit, Bangalore.</strong></span></p>
+                                                                            <p><span style="font-size: 10px;">27th October, 2017</span></p>
+                                                                            <p>OpenEBS was delighted to be a part of <a href="http://inserverless.com/">Serverless Summit</a>,&nbsp;India's&nbsp;First&nbsp;Conference on Serverless Technologies.We had a great
+                                                                                time at the summit and got to meet some awesome contributors from the open source community. We had some fun too, and chose two on the spot lucky winners for DevOps Handbooks.
+                                                                                Great talks and awesome community!</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="133dfe2f-35a3-dd96-43e3-7f6cfefaf01e">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="7ad424fa-97fe-8c9e-0dc4-863865cf22db">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 0px;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                        <table style="margin: 0 auto;" class="image-caption-column" align="left" border="0" cellpadding="0" cellspacing="0" width="71">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="image-caption-content image imageInColumn image-caption-img"><img border="0" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/capture_png_1509967853894.PNG" style="display: block; max-width: 71px; outline: none;" width="71"
+                                                                                            height="150" data-maxwidth="265" class="" alt="" id="07834a64-0d08-7e5a-a896-c13f0d094184" /></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table class="image-caption-column-text" align="right" border="0" cellpadding="0" cellspacing="0" width="434" data-align="right">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-block block-text">
+                                                                                        <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                            <p><span style="font-size: 16px; color: #333333;"><strong>We are announcing the start of OpenEBS Hackfest!</strong></span></p>
+                                                                                            <p>We are super excited to announce the first edition of OpenEBS Hackfest. OpenEBS as an open source enthusiast is extending the Hacktoberfest to OpenEBS Hackfest.
+                                                                                                We are looking for great PR contributions from the open source community. The contributor of the best PR gets to win a Laptop!</p>
+                                                                                            <p><a href="https://www.openebs.io/">Get hacking today!</a></p>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="cde984ef-e671-5815-e61a-5f6a8a4f1de8">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="2de826a2-0728-e079-d425-47ad74197652">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0px;" class="image"><img class="" border="0" align="one_image" style="display: block; max-width: 250px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/project_updates_01_jpg_1496320584960.jpg" width="250"
+                                                            height="250" data-maxwidth="640" id="cbbd8051-116c-bf80-6d47-2f1fd50eca75" tabindex="0" /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="266674a8-5508-f7ff-be64-0d389d966e87">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                                                            <ul>
+                                                                <li style="text-align: left;"><strong>Deploying&nbsp;PostgreSQL Cluster on Kubernetes + OpenEBS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong>PostgreSQL
+                                                                    is the&nbsp;preferred&nbsp;relational database for most developers around, although setting up a highly available Postgres cluster from scratch&nbsp;is&nbsp;always a challenge, being&nbsp;cloud-native&nbsp;adds
+                                                                    a bit to the..&nbsp;<a href="http://containerized.me/how-to-deploy-a-postgresql-cluster-on-kubernetes-openebs/#more-182">continue reading.</a></li>
+                                                                <li style="text-align: left;"><strong>How to Install OpenEBS on AWS using StackPointCloud&nbsp;</strong><br />StackPointCloud is a managed Kubernetes control plane to build cloud-native stacks on AWS, Google Cloud (GKE
+                                                                    &amp; GCE), Azure &amp; DigitalOcean. StackPointCloud simplifies installation and aggregation of multiple Kubernetes clusters..&nbsp;<a href="http://containerized.me/how-to-install-openebs-on-aws-using-stackpointcloud/#more-117">continue reading.</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="479aa5e9-fc00-160f-63af-471b8d918c52">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="8aade173-6c51-47d8-6f1c-7cc8a6239b95">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" class="title textFix" style="padding: 0px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                        <p>&nbsp;</p>
+                                                        <p>&nbsp;<span style="color: #ee5430; font-size: 18px;"><strong>UPCOMING EVENTS</strong></span></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="a986124b-71b1-1da0-13d4-41e96805ab1c">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="e4b5240f-3753-7539-f77c-b48f42fb02c6">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 10px 0px;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                        <table style="margin: 0 auto;" class="image-caption-column" align="left" border="0" cellpadding="0" cellspacing="0" width="180">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="image-caption-content image imageInColumn image-caption-img">
+                                                                                        <a target="_blank" class="imgLink" href="http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america" rel="noopener"><img border="0" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/cloud_native_kube_con_logo_jpg_1510036868285.jpg" style="display: block; max-width: 180px; outline: none;"
+                                                                                                width="180" height="101" data-maxwidth="265" id="1e193efc-bf31-b4d4-65f9-5e3e4fb9d9c6" class="" alt="" /></a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table class="image-caption-column-text" align="right" border="0" cellpadding="0" cellspacing="0" width="325" data-align="right">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-block block-text">
+                                                                                        <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                            <div style="text-align: justify;"><span style="font-size: 16px; color: #333333;"><strong>Meet us at KubeCon+CloudNativeCon 2017</strong></span><br />6-8 Dec, 2017<br />OpenEBS is sponsoring the
+                                                                                                KubeCon+CloudNativeCon, North America 2017 that is taking place in Austin from 6th December&nbsp;to 8th December. Do drop by our booth and say hello to the
+                                                                                                OpenEBS team.&nbsp;<a href="http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america">Read more</a></div>
+                                                                                            <div style="text-align: justify;">Psst...we have a surprise for you.</div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="6f70f4e2-9772-3490-ab96-e31e46a96e96">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgcaption" id="82051cdd-0ef0-f4ba-ebc4-9eddae45b890">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 10px 0px;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                        <table style="margin: 0 auto;" class="image-caption-column" align="left" border="0" cellpadding="0" cellspacing="0" width="140">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center" class="image-caption-content image imageInColumn image-caption-img">
+                                                                                        <a target="_blank" class="imgLink" href="https://www.meetup.com/Bay-Area-Kubernetes-Meetup/events/244666155/?from=ref&amp;_cookie-check=DqmP0I4sfkHhkobH" rel="noopener"><img border="0" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/favicon_png_1510049619420.png" style="display: block; max-width: 140px; outline: none;"
+                                                                                                width="140" height="140" data-maxwidth="265" class="" alt="" id="818914ec-84cb-af43-49c7-3459b3cb66f0" /></a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table class="image-caption-column-text" align="right" border="0" cellpadding="0" cellspacing="0" width="365" data-align="right">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="text-block block-text">
+                                                                                        <div style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" helvetica="" neue="" sans-serif="" font-size:="" 12px="" line-height:="" 22px="" class="textFix">
+                                                                                            <div style="text-align: justify;"><span style="font-size: 16px; color: #333333;"><strong>We are at the Bay Area Kubernetes Meetup!</strong></span><br />December 14, 2017<br />Murat Karslioglu,
+                                                                                                VP Solutions, is giving a talk on Containerized Storage for Containers, where he is going to explain to the Whys and the Hows of Containerized Storage and
+                                                                                                also what is wrong with stateful workloads on containers today. If you are around, <a href="https://www.meetup.com/Bay-Area-Kubernetes-Meetup/events/244666155/?from=ref&amp;_cookie-check=DqmP0I4sfkHhkobH">RSVP</a>                                                                                                today!</div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td height="10" width="100%"></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="7b3be116-5f76-c501-5b30-0fd291bf59da">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="title" id="caf0be27-5e0e-b122-178f-bb2b3549f0de">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left" class="title textFix" style="padding: 0px 50px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                        <h1 style="text-align: left;"><span style="font-size: 18px; color: #ee5430;"><strong>COMMUNITY UPDATES</strong></span></h1>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="72c69ff8-2e3e-7dd0-0cf1-fe3ff5d5cc32">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" style="padding: 10px 0px 10px 0px;" class="image">
+                                                        <a target="_blank" class="imgLink" href="http://openebs.io/cafe/" rel="noopener"><img class="" border="0" align="one_image" style="display: block; max-width: 601px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/cafe_banner_01_jpg_1507530604906.jpg" width="601"
+                                                                height="258" data-maxwidth="640" id="8c8b3557-387b-ab47-6a49-0ef85591d930" tabindex="0" /></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="ddec83e1-0a0d-a6d1-99f8-13a7d83d28ff">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                                                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                                                            <div style="text-align: center;"><span style="font-size: 16px; color: #333333;"><strong><span style="font-family: verdana, geneva, sans-serif;">Contribute to Open Source in OpenSource Cafe!</span></strong>
+                                                                </span>
+                                                            </div>
+                                                            <div style="text-align: center;">&nbsp;</div>
+                                                            <div style="text-align: center;">&nbsp;We support Open Source and want to make contributing to it easier, hence we are opening up Open Source Cafe ,one of its kind open source workplace in Bangalore for contributing to open
+                                                                source,&nbsp; building an open source community and learning more about Cloud Native storage.</div>
+                                                            <div style="text-align: center;">Once open, we are offering a variety of weekly 101 courses like Kubernetes 101, Docker 101, Prometheus 101 and many more. <a href="http://openebs.io/cafe/">Register now</a>&nbsp; to be a part
+                                                                it.
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="1c9c6fd4-4d85-4bcd-b969-268a03145de6">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="divider-simple" style="padding: 15px 50px 0px 50px;">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="100%" height="15px"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="main" data-type="imgtxtincol" style="background-color: #ffffff; display: table;" width="640" id="37edfde2-e614-786d-6248-7151bcb73ad5" data-color="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding-top: 30px; padding-bottom: 0px;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="image-caption" style="padding: 0px 50px 0px 50px;">
+                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="image-caption-container" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="responsive-cell" style="vertical-align: top;" align="left">
+                                                                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="image-caption-column" width="160">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="image-caption-content image imageInColumn">
+                                                                                                        <a target="_blank" class="imgLink" href="https://github.com/login/oauth/authorize?client_id=768d7617e686c9c2bd81&amp;scope=user%20public_repo&amp;state=openebs1234cloudbyte1234&amp;allow_signup=true" rel="noopener"><img alt="" border="0" height="167" data-maxwidth="160" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/star_us_newsletter_01_jpg_1510050592051.jpg"
+                                                                                                                style="display: block; max-width: 160px; outline: none;" width="160" id="6238da95-5270-56a7-05ca-b456b26e6b89" class="" /></a>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-content text block-text" style="text-align: left;">
+                                                                                                        <div class="textFix" style="margin: 0px 0px 10px; border: none; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                                                                            <div style="text-align: justify;">&nbsp;</div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr></tr>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-bottom-gap" height="5" width="100%"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                    <td class="responsive-cell" style="vertical-align: top;" align="center">
+                                                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="image-caption-column" width="160">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-top-gap" height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="image-caption-content image imageInColumn"><img alt="" border="0" class="" height="136" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/footer_02_png_1496319472793.png" data-maxwidth="160"
+                                                                                                            style="display: block; border: none; max-width: 160px; outline: none;" width="160" id="2828de49-ccf1-6a79-4f45-fc1548008de4" /></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-content text block-text" style="text-align: left;">
+                                                                                                        <div class="textFix" style="margin: 0px 0px 10px; border: none; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;"></div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr></tr>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-bottom-gap" height="5" width="100%"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                    <td class="responsive-cell" style="vertical-align: top;" align="right">
+                                                                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="image-caption-column" width="160">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-top-gap" height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td align="center" class="image-caption-content image imageInColumn">
+                                                                                                        <a target="_blank" class="imgLink" href="http://slack.openebs.io/" rel="noopener"><img alt="" border="0" class="" height="170" data-maxwidth="160" src="https://agilecrm.s3.amazonaws.com/editor/email/cloudbyte/footer_01_jpg_1496323564325.jpg"
+                                                                                                                style="display: block; border: none; max-width: 160px; outline: none;" width="160" id="23ec4dce-302a-0c9f-6cdd-4d1723212e24" /></a>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-content text block-text" style="text-align: left;">
+                                                                                                        <div class="textFix" style="margin: 0px 0px 10px; border: none; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                                                                                            <div style="text-align: justify;">&nbsp;</div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td height="15" width="100%"></td>
+                                                                                                </tr>
+                                                                                                <tr></tr>
+                                                                                                <tr>
+                                                                                                    <td class="image-caption-bottom-gap" height="5" width="100%"></td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="main" align="center" width="640" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" data-type="social-links" id="0d671c03-bca3-910e-6307-cd2988942729" data-color="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="social" align="center" style="padding: 0px 50px 10px;">
+                                                        <a href="https://www.facebook.com/openebs/" name="facebook" data-count="4" style="border: none; text-decoration: none;" class="facebook"><img border="0" src="https://s3.amazonaws.com/agilecrm/editor/email/staticfiles/facebook.png" width="35" height="35" /></a>&nbsp;
+                                                        <a href="https://twitter.com/openebs" name="twitter" data-count="4" style="border: none; text-decoration: none;" class="twitter"><img border="0" src="https://s3.amazonaws.com/agilecrm/editor/email/staticfiles/twitter.png" width="35" height="35" /></a>&nbsp;&nbsp;
+                                                        <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g" name="youtube" data-count="4" style="border: none; text-decoration: none;" class="youtube" target="_blank" rel="noopener"><img border="0" src="https://s3.amazonaws.com/agilecrm/editor/email/staticfiles/youtube.png" width="35" height="35" /></a>&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #e16036; display: table;" align="center" data-type="text-block" id="d1067f52-45b9-d1f6-fbee-4918a6e83725" data-color="true">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 0px;">
+                                                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                                                            <div style="text-align: center;"><span style="color: #ffffff;"><a style="color: #ffffff;" href="http://www.openebs.io">www.openebs.io</a>&nbsp;| October,&nbsp;2017</span></div>
+                                                            <div style="text-align: center;"><span style="color: #ffffff;"><a href="{{{unsubscribe_link}}}" style="color: #ffffff;">Unsubscribe</a></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </body>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Community section-->
+    <div class="subhead"></div>
+    <section class="mar-t-10 contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: sans-serif; padding-bottom:1%">Join Our Community</h2><br>
+                    <p>Join the OpenEBS community by contributing on our blog, GitHub and following us on social media.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center ebs-footer">
+                            <div class="social ">
+                                <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="social"> <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                            <div class="social"> <a href="https://www.facebook.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="../careers/index.html"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Google Analytics -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92076314-2"></script>
+    <!-- End Google Analytics -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92076314-2');
+    </script>
+</body>
+
+</html>

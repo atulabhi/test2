@@ -1,0 +1,200 @@
+/* .carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active { */
+
+
+/* display: flex;
+    flex-wrap: wrap; */
+
+
+/* height: 300px;
+} */
+
+
+/* 
+.carousel slide .angle {
+    font-size: 2em;
+    color: black;
+} */
+
+
+/*         
+.b-d {
+    border: 1px dotted red;
+}
+ */
+
+.pimg {
+    padding: 0.7%;
+    height: 35px;
+    width: 35px;
+}
+
+#map2 {
+    height: 250px;
+    width: 100%;
+}
+
+@media screen and (min-width:320px) {
+    #map2 {
+        height: 240px;
+    }
+    /* .pimg {
+        height: 40px;
+        width: 40px;
+    }
+    .mycarousel {
+        width: 320px;
+        height: 240px;
+    }
+    .mycol {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 5%;
+    } */
+}
+
+@media screen and (min-width:419px) {
+    #map2 {
+        height: 250px;
+    }
+    /* .mycarousel {
+        width: 400px;
+        height: 240px;
+    }
+    .pimg {
+        height: 40px;
+        width: 40px;
+    }
+    .mycol {
+        padding-left: 5px;
+        padding-right: 5px;
+    } */
+}
+
+@media screen and (min-width:521px) {
+    #map2 {
+        height: 240px;
+    }
+    /* .mycarousel {
+        width: 500px;
+        height: 240px;
+    }
+    .pimg {
+        height: 50px;
+        width: 50px;
+    }
+    .mycol {
+        padding-left: 5px;
+        padding-right: 5px;
+    } */
+}
+
+@media screen and (min-width:768px) {
+    #map2 {
+        height: 250px;
+    }
+    /* .pimg {
+        height: 50px;
+        width: 50px;
+    }
+    .mycol {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 0;
+    }
+    .mycarousel {
+        width: 400px;
+        height: 250px;
+    }
+    .myr {
+        align-items: center;
+    } */
+}
+
+@media screen and (min-width:1000px) {
+    #map2 {
+        height: 230px;
+        width: 100%;
+    }
+    /* .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active {
+        /* display: flex;
+    flex-wrap: wrap; */
+    /* height: 300px;
+    }
+    .pimg {
+        height: 50px;
+        width: 50px;
+    }
+    .mycont {
+        max-width: 1000px
+    }  */
+}
+
+@media screen and (min-width:1200px) {
+    #map2 {
+        height: 230px;
+        width: 100%;
+    }
+    /* .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active { */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* height: 300px;
+    }
+    .pimg {
+        height: 55px;
+        width: 55px;
+    }
+    .mycont {
+        max-width: 1200px
+    }
+    .mycarousel {
+        width: 495px;
+        height: 275px;
+    } */
+}
+
+@media screen and (min-width:1536px) {
+    #map2 {
+        height: 230px;
+        width: 100%;
+    }
+    /* .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active { */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* height: 350px;
+    } */
+    /* .pimg {
+        height: 70px;
+        width: 70px;
+    }
+    .mycarousel {
+        width: 700px;
+        height: 350px;
+    }
+    .mycont {
+        max-width: 1500px
+    }
+    .mycol {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+}
+
+.body-area .carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    height: 600px;
+    width: 100%;
+}
+
+.body-area .cimg {
+    height: 50%;
+    width: 50%;
+}

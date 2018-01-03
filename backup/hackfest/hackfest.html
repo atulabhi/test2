@@ -1,0 +1,207 @@
+<!DOCTYpE html>
+<html>
+
+<head>
+    <title>OpenEBS Hackfest!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../styles/images/fav/largetile.png" />
+
+
+    <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="style/css/hackfest.css" rel="stylesheet">
+    <script src="../styles/js/jquery.min.js"></script>
+    <script src="../styles/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="ebs-nav" style="background-color: #00999E;color:white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="../index.html"><img src="style/images/oebslogowhite.svg" height="40" style="width:auto;" alt="desk-logo" /></a>
+                <a class="navbar-brand mobile-logo" href="../index.html"><img src="style/images/mnewlogo.svg" height="40" style="width:auto;" alt="mob-logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <li class="nav-item p-3" style="display:inline;" title="Documentation">
+                            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><img src="style/images/docindex.svg" alt="doc" height="35" /></a>
+                        </li>
+
+                        <li class="nav-item p-3" style="display:inline;" title="Facebook"> <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true" style="color:white"></i></a></li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Slack">
+                            <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Blog">
+                            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Twitter">
+                            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Github ">
+                            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div style="display:none;" id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+
+            <li class="nav-item p-2" style="display:inline;" title="documentation">
+                <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><img src="../styles/images/docindex.svg" alt="doc" height="35" /></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Facebook">
+                <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Slack">
+                <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Blog">
+                <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Twitter">
+                <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Github ">
+                <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+
+        </ul>
+    </div>
+
+    <main>
+        <section>
+            <div class="main-head">
+
+                <!-- <div class="row navbar-hack">
+                    <div class="col-md-4" style="background-color:red;">
+                        <p class="circle">hey</p>
+                    </div>
+                    <div class="col-md-8" style="background-color:green;">
+
+                    </div>
+
+                </div> -->
+                <div class="header-sec mobile-view1">
+                    <h6>Thankyou for all your contributions to hacktoberfest 2017!</h6>
+                    <h6><strong>We are extending the hacktoberfest to our very own OpenEBS Hackfest</strong></h6>
+                    <button type="button" class="btn btn-outline-primary btn-overwrite">Get Hacking</button>
+                </div>
+                <div class="container-fluid">
+                    <div class="row mule-sec">
+
+                        <div class="col-3 col-md-6 ">
+
+                            <img src="style/images/mule-sitting-new.svg" alt="mule" title="Mule" class="mule-img desktop-view">
+                            <div class="">
+                                <img src="style/images/phonehackfestelements_1.svg" alt="" title="" class="mobile-view">
+                            </div>
+
+                        </div>
+                        <div class="col-9 col-md-6">
+                            <img src="style/images/white-section.svg" alt="white-section" title="OpenEBS Hackfest" class="white-img desktop-view">
+                            <img src="style/images/phonehackfestelements_2.svg" alt="" title="" class="mobile-view">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row" style="margin-top :2% 0">
+                <div class="col-md-6 laptop-sec1">
+                    <div class="win-laptop">
+                        <h2>Win a Laptop</h2>
+                        <p>Thisdjasd akjsdfasd j,hasdfsdf lasdf askdfhsada asdfhgasdfkashdf asdkjfh kjh sd kjdsf sdafkhdsf ka sdhasd kasdhsdf ksdhjsdkjsad asdhfgasd sadkjhsda ksdasl </p>
+                    </div>
+                </div>
+                <div class="col-md-6 laptop-sec2">
+                    <div class="laptop-circle">
+                        <div class="laptop"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7"></div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <div class="circlepr">20</div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="circlepr">20</div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            <div class="circlepr">20</div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="circlepr">20</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1>Hey this is the test file just for testing and learning purpose! So just make it best and glow it.
+    </h1>
+</body>
+
+</html>

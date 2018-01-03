@@ -1,0 +1,2837 @@
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    a:hover,
+    a:focus {
+        text-decoration: none;
+        color: #ff9933;
+    }
+    
+    .desktop-view {
+        display: none;
+    }
+    
+    .mobile-view {
+        display: block;
+    }
+    
+    .ebs-nav {
+        font-size: 2em;
+    }
+    
+    .ebs-nav img {
+        height: 50px;
+        width: auto;
+    }
+    
+    .ebs-nav .logo img {
+        height: 60px;
+        width: auto;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background: linear-gradient(46deg, rgb(255, 75, 0), rgb(255, 153, 51));
+        overflow-x: hidden;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+    
+    .sidenav .social-top {
+        align-items: center;
+        padding-right: 25px;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    .mobile-sec {
+        background: url("../images/phonehackfest-elements.svg") no-repeat;
+        background-size: 100%;
+    }
+    
+    .mobile-sec .cont {
+        display: flex;
+        height: 35rem;
+        align-items: flex-end;
+        padding: 0;
+        padding-right: 15px;
+    }
+    
+    .mobile-sec .cont .mule-details {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .btn-overwrite {
+        border-radius: 10em;
+        font-size: 1.1em;
+        font-weight: bold;
+        background-color: #ff9933;
+        color: #fff;
+        padding: 4% 14%;
+        margin-right: 2%;
+        border: 1px solid transparent;
+    }
+    
+    .back-color {
+        background: linear-gradient(180deg, #00999E 88%, white 6%);
+    }
+    
+    .mobile-sec .cont .mule-details img {
+        height: 13em;
+    }
+    
+    .ebs-nav {
+        margin-bottom: -1px;
+    }
+    
+    .btn-overwrite:focus {
+        outline: none;
+    }
+    
+    .btn-overwrite:active {
+        outline: none;
+    }
+    
+    .laptop-sec1 .win-laptop {
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-size: 28px;
+        /* padding-top: 11%; */
+    }
+    
+    .laptop-sec1 .win-laptop h2 {
+        font-size: 1.2em;
+        color: #ff9933;
+    }
+    
+    .laptop-sec2 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .laptop-sec2 .laptop-circle {
+        overflow: hidden;
+        padding-left: 15%;
+    }
+    
+    .laptop-sec2 .laptop-circle .laptop {
+        height: 20rem;
+        width: 22rem;
+        border: 50%;
+        border: 3rem solid #ff9933;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .winner-section img {
+        height: 10.5rem;
+        width: auto;
+    }
+    
+    .laptop-sec1 .win-laptop p {
+        font-size: 1rem;
+    }
+    /* 
+*
+*
+* design done by intakhab
+*/
+    
+    .contributed-issue {
+        background-color: #00999E;
+        margin-top: 4%;
+    }
+    
+    .contributed-issue .issue-row {
+        padding: 7% 2%;
+    }
+    
+    .contributed-issue .contri {
+        /* background-color: #017C7C; */
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contributed-issue .contri img {
+        height: 11em;
+    }
+    
+    .circlepr {
+        height: 4rem;
+        width: 4rem;
+        background-color: #023A36;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: 5px solid #fff;
+        color: white;
+    }
+    
+    .contributed-issue .temp p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #023A36;
+        padding-top: 0.5em;
+    }
+    
+    .contributed-issue .temp {
+        border: 1p solid transparent;
+    }
+    
+    .contributed-issue .temp .issue-row1 {
+        padding: 25% 2% 2.5% 2%;
+    }
+    
+    .contributed-issue .temp .issue-row2 {
+        padding: 2.5% 2% 25% 2%;
+    }
+    
+    .cafe-section .details {
+        text-align: center;
+    }
+    
+    .cafe-section .details .visitus {
+        background-color: #00999E;
+        color: white;
+        padding: 2% 8%;
+    }
+    
+    .cafe-section .details a {
+        color: white;
+    }
+    
+    .cafe-section .details h4 {
+        font-size: 0.9rem;
+    }
+    
+    .cafe-section .details .cafeimg {
+        height: 3rem;
+    }
+    
+    .cafe-section .people .cafepeople {
+        height: 16rem;
+    }
+    
+    .cafe-rev {
+        flex-direction: column-reverse;
+    }
+    /*
+    *footer section start
+    */
+    
+    div.boxItem {
+        display: inline-block;
+        /* border: 1px solid black; */
+        /* padding: 1em; */
+        margin-right: 1em;
+        position: relative;
+        margin-right: 3em;
+    }
+    
+    .boxItem:before,
+    .boxItem:after {
+        content: '';
+        width: 4em;
+        border-bottom: 5px solid #fff;
+        position: absolute;
+        top: 50%;
+    }
+    
+     :after {
+        left: 100%;
+    }
+    
+     :before {
+        right: 100%;
+    }
+    
+    .boxItem:first-of-type:before,
+    .boxItem:last-of-type:after {
+        display: none;
+    }
+    
+    .boxItem {
+        font-size: 0.5rem;
+    }
+    
+    @media screen and (min-width:351px) {
+        .mobile-sec .cont {
+            height: 40rem;
+        }
+        .mobile-sec .cont .mule-details img {
+            height: 13em;
+        }
+    }
+    
+    @media screen and (min-width:401px) {
+        .mobile-sec .cont {
+            height: 44rem;
+        }
+        .mobile-sec .cont .mule-details img {
+            height: 15em;
+        }
+        .boxItem {
+            font-size: 0.7rem;
+        }
+    }
+    
+    @media screen and (min-width:450px) {
+        .mobile-sec .cont {
+            height: 50rem;
+        }
+        .mobile-sec .cont .mule-details img {
+            height: 18em;
+        }
+        .back-color .btn-overwrite {
+            font-size: 1.3em;
+            padding: 4% 17%;
+        }
+        .ebs-nav img {
+            height: 70px;
+            width: auto;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 31%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 20rem;
+            width: 22rem;
+        }
+        .winner-section img {
+            height: 10.5rem;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.4rem;
+        }
+        .circlepr {
+            height: 6rem;
+            width: 6rem;
+        }
+        .contributed-issue .temp p {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .contributed-issue .temp .issue-row1 {
+            padding: 25% 2% 2.5% 2%;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 2.5% 2% 25% 2%;
+        }
+        .contributed-issue .contri img {
+            height: 13em;
+        }
+    }
+    
+    @media screen and (min-width:500px) {
+        .laptop-sec2 .laptop-circle {
+            padding-left: 33%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 24rem;
+            width: 24rem;
+            border: 4rem solid #ff9933;
+        }
+        .winner-section img {
+            height: 12rem;
+        }
+        .mobile-sec .cont .mule-details h6 {
+            font-size: 1.5em;
+        }
+        .mobile-sec .cont .mule-details h5 {
+            font-size: 1.5em;
+        }
+        .mobile-sec .cont {
+            height: 54rem;
+        }
+        .cafe-section .details .cafeimg {
+            height: 4rem;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.2rem;
+        }
+    }
+    
+    @media screen and (min-width:550px) {
+        .mobile-sec .cont {
+            height: 58rem;
+        }
+        .back-color .btn-overwrite {
+            font-size: 1.5em;
+        }
+    }
+    
+    @media screen and (min-width:600px) {
+        .mobile-sec .cont {
+            height: 64rem;
+        }
+        .mobile-sec .cont .mule-details img {
+            height: 23em;
+            margin-right: 24%;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 40%;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media screen and (min-width:650px) {
+        .mobile-sec .cont {
+            height: 69rem;
+        }
+        .back-color .btn-overwrite {
+            font-size: 1.5em;
+            margin-top: 55%
+        }
+    }
+    
+    @media screen and (min-width:768px) {
+        .desktop-view {
+            display: block;
+        }
+        .mobile-view {
+            display: none;
+        }
+        .ebs-nav {
+            font-size: 2em;
+        }
+        .ebs-nav img {
+            height: 35px;
+        }
+        .ebs-nav .logo img {
+            height: 60px;
+            width: auto;
+        }
+        .main-head {
+            padding: 0;
+            margin: 0;
+            color: #ffffff;
+        }
+        .main-head .navbar-hack {
+            padding: 0;
+            margin: 0;
+            height: 100px;
+        }
+        .main-head .navbar-hack .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 3% 0% 3% 10%;
+        }
+        .header-sec {
+            color: #ffffff;
+            padding-top: 5%;
+            padding-left: 10%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #00999E;
+        }
+        .header-sec h6 {
+            font-size: 1.25em;
+        }
+        .btn-overwrite {
+            background-color: #ee9933;
+            border-radius: 10em;
+            /* border: 2px solid #ffffff; */
+            padding: 0.5% 2.5%;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+            margin-top: 1%;
+            cursor: pointer;
+        }
+        .ebs-nav {
+            margin-bottom: -1px;
+        }
+        .main-head .mule-class {
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-top: 5%;
+        }
+        .main-head .mule-class .mule-class-1 {
+            height: 100px;
+        }
+        .main-head .mule-class .mule-class-2 {
+            height: auto;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 17%;
+        }
+        .main-head .white-img {
+            margin-top: -11%;
+            padding-right: 0;
+        }
+        .main-head .white-class .white-img {
+            width: 100%;
+        }
+        .btn-overwrite:hover {
+            background-color: #ffffff;
+            color: #00999E;
+            border-color: transparent;
+        }
+        .btn-overwrite:active {
+            border-color: transparent;
+        }
+        .btn-overwrite:focus {
+            border-color: transparent;
+            outline: none;
+        }
+        .mule-sec {
+            background: linear-gradient(to bottom, #00999E, #00999E 76%, transparent 76%, transparent 100%);
+        }
+        .laptop-sec1 .win-laptop {
+            padding-left: 20%;
+            padding-right: 19%;
+            text-align: center;
+            font-size: 28px;
+            /* padding-top: 11%; */
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 1.2em;
+            color: #ff9933;
+        }
+        .laptop-sec2 {
+            padding: 0;
+            margin: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            overflow: hidden;
+            padding-left: 24%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 24rem;
+            width: 24rem;
+            border: 50%;
+            border: 5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .winner-section img {
+            height: 9rem;
+            width: auto;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1rem;
+        }
+        /* 
+*
+*
+* design done by intakhab
+*/
+        .contributed-issue {
+            background-color: #00999E;
+            margin-top: 4%;
+        }
+        .contributed-issue .issue-row {
+            padding: 2%;
+        }
+        .contributed-issue .contri {
+            /* background-color: #017C7C; */
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .contributed-issue .contri img {
+            height: 260px;
+        }
+        .circlepr {
+            height: 5.5rem;
+            width: 5.5rem;
+            background-color: #017c7c;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border: 5px solid #fff;
+            color: white;
+        }
+        .contributed-issue .temp p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .contributed-issue .temp {
+            border: 1p solid transparent;
+        }
+        .contributed-issue .temp .issue-row1 {
+            padding: 10% 15% 1.5% 15%;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 1.5% 15% 10% 15%;
+        }
+        .cafe-section .details {
+            text-align: end;
+        }
+        .cafe-section .details .visitus {
+            color: white;
+            padding: 2% 8%;
+            margin-top: 3%;
+        }
+        .cafe-section .details h4 {
+            font-size: 0.9rem;
+        }
+        .cafe-section .details .cafeimg {
+            height: 4rem;
+        }
+        .cafe-section .people .cafepeople {
+            height: 16rem;
+        }
+        .cafe-rev {
+            flex-direction: row;
+        }
+        /*
+    *footer section start
+    */
+        div.boxItem {
+            margin-right: 5em;
+        }
+        .boxItem:before,
+        .boxItem:after {
+            width: 5em;
+            border-bottom: 5px solid #fff;
+        }
+        .boxItem {
+            font-size: 0.7rem;
+        }
+    }
+    /*
+////////////////////////////////////////////////////////////////////////////////
+MY CLASSES STARTS : Author - Amrish Kushwaha
+////////////////////////////////////////////////////////////////////
+*/
+    
+    @media screen and (max-width:575px) {
+        .container {
+            max-width: 575px;
+        }
+        .container1 {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .header-sec {
+            margin: 10% auto;
+            padding: 5% 8%;
+            text-align: center;
+        }
+        .header-sec h6 {
+            line-height: 1.2;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+        .hackcontributions {
+            margin-top: 0%;
+        }
+        .setcorrectmargin {
+            padding-left: 0px;
+            margin-bottom: 9%;
+            padding-right: 0;
+        }
+        .setdiv {
+            background-color: #00999e;
+            padding-top: 57%;
+            margin: 0;
+            padding-right: 0;
+        }
+        .mule-sitting-new {
+            margin-top: -53%;
+        }
+        .btn-overwrite {
+            font-size: 1.15rem;
+            margin-top: 5%;
+            padding: 2% 10%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .orangeText {
+            color: #000000;
+            font-weight: bold;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 5% 10%;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 0.95em;
+            color: #ff9933;
+            margin-bottom: 2%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            text-align: center;
+            padding-left: 0%;
+            font-size: 0.95rem
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 11.3rem;
+            width: 12.5rem;
+            border: 50%;
+            border: 2rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: .95rem;
+            text-align: center;
+            padding: 0 5%;
+            margin: auto;
+        }
+        .winner-section .tshirt img {
+            height: 8rem;
+            width: auto;
+            margin-left: 0;
+            border: 4px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 5rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 10rem;
+            width: 11rem;
+            border: 50%;
+            border: 2rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        .mobileup {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .mobile-down {
+            flex-direction: row;
+            margin: 5% auto;
+        }
+        .mob {
+            margin: auto;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 0%;
+            margin-left: -11%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .circlepr {
+            height: 4rem;
+            width: 4rem;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 86%;
+        }
+        .contributed-issue .contri {
+            justify-content: center;
+            display: inline-block;
+            align-items: center;
+        }
+        .contributed-issue .temp .issue-row1 {
+            padding: 0;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 0;
+        }
+        .contributed-issue .contri .contributeissue {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .desktop-view {
+            display: none;
+        }
+        .contributed-issue .temp {
+            border: 1p solid transparent;
+            margin: 5% auto;
+        }
+        .contributed-issue .firstme {
+            padding-bottom: 10%
+        }
+        .contributed-issue .secondme {
+            padding-top: 10%;
+        }
+        .contributed-issue .temp .newlinks {
+            background-color: #023A36;
+            color: #ffffff;
+            border-radius: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 11%;
+            width: 96%;
+        }
+        .contributed-issue .temp .newlinks p {
+            color: #ffffff;
+            padding-top: 0;
+            margin: 0;
+            padding: 3% 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 65%;
+        }
+        .mobile-view {
+            display: inline-flex;
+        }
+        .centerAm {
+            display: flex;
+            justify-content: center;
+        }
+        /* //////////////////////////////////////////////////////////////////////////////////
+        Openebs contibutor
+        /////////////////////////////////////////////////////////////////////////////////
+        */
+        .contibutor-section .contibutor-title {
+            padding-top: 3.5%;
+            padding-bottom: 3.5%;
+            text-align: center;
+        }
+        .contibutor-section .contibutor-title h2 {
+            font-size: 30px;
+        }
+        .contibutor-section .peoples {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            flex-wrap: wrap;
+        }
+        .contibutor-section .peoples .people-details {
+            width: 50%;
+            justify-content: center;
+            padding: 4%;
+        }
+        .contibutor-section .peoples .people-details .name {
+            font-size: 20px;
+        }
+        .contibutor-section .peoples .people-details .name-sec {
+            padding-left: 5%;
+        }
+        .contibutor-section .peoples .people-details .contriimg {
+            height: 70px;
+            width: 70px;
+            border-radius: 2em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-section .people .cafepeople {
+            height: 13rem;
+        }
+        .cafe-section .people {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+        }
+        .cafe-section .details {
+            text-align: center;
+            margin: 5% 0 10% 0;
+        }
+        .cafe-section .details .cafeimg {
+            height: 2.5em
+        }
+        .cafe-section .details h4 {
+            font-size: 1rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2% 8%;
+            font-size: 1.15rem;
+            margin-top: 3%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .footerlinks {
+            background-color: #ff9933;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: center;
+        }
+        .boxItem {
+            font-size: 0.5rem;
+            text-align: center;
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        div.boxItem {
+            display: inline-block;
+            /* border: 1px solid black; */
+            /* padding: 1em; */
+            position: relative;
+            margin-right: 1.5em;
+        }
+        .boxItem:before,
+        .boxItem:after {
+            content: '';
+            width: 3em;
+            border-bottom: 3px solid #fff;
+            position: absolute;
+            top: 50%;
+        }
+    }
+    
+    @media screen and (max-width:350px) {
+        div.boxItem {
+            display: inline-block;
+            /* border: 1px solid black; */
+            /* padding: 1em; */
+            position: relative;
+            margin-right: 1.5em;
+        }
+        .boxItem:before,
+        .boxItem:after {
+            content: '';
+            width: 3em;
+            border-bottom: 3px solid #fff;
+            position: absolute;
+            top: 50%;
+        }
+        .contributed-issue .temp .newlinks p {
+            color: #ffffff;
+            padding-top: 0;
+            margin: 0;
+            padding: 3% 0;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .contributed-issue .temp .newlinks {
+            background-color: #023A36;
+            color: #ffffff;
+            border-radius: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 11%;
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:575px) and (min-width:480px) {
+        .laptop-sec1 .win-tshirts p {
+            text-align: center;
+            padding-left: 0%;
+            font-size: 1.15rem;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 1.35em;
+            color: #ff9933;
+            margin-bottom: 2%;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.15rem;
+            text-align: center;
+            padding: 0 5%;
+            margin: auto;
+        }
+        .contributed-issue .temp .newlinks {
+            width: 75%;
+        }
+    }
+    
+    @media screen and (min-width:576px) {
+        .container {
+            max-width: 540px;
+        }
+        .container1 {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .header-sec {
+            margin: 19% auto;
+            padding: 5% 11%;
+            text-align: center;
+        }
+        .header-sec h6 {
+            line-height: 1.2;
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+        .hackcontributions {
+            margin-top: 0%;
+        }
+        .setcorrectmargin {
+            padding-left: 0px;
+            margin-bottom: 9%;
+            padding-right: 0;
+        }
+        .setdiv {
+            background-color: #00999e;
+            padding-top: 57%;
+            margin: 0;
+            padding-right: 0;
+        }
+        .mule-sitting-new {
+            margin-top: -53%;
+        }
+        .btn-overwrite {
+            font-size: 1.5rem;
+            margin-top: 8%;
+            padding: 2% 10%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .orangeText {
+            color: #000000;
+            font-weight: bold;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 5% 10%;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 1.25em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.15rem;
+            text-align: center;
+            padding-left: 0%;
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 18.9rem;
+            width: 19.8rem;
+            border: 50%;
+            border: 4rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.15rem;
+            text-align: center;
+            padding: 0 28% 0 14%;
+        }
+        .winner-section .tshirt img {
+            height: 11rem;
+            width: auto;
+            margin-left: 0;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 7rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 15rem;
+            width: 16rem;
+            border: 50%;
+            border: 3.8rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .circlepr {
+            height: 4rem;
+            width: 4rem;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 73%;
+        }
+        .contributed-issue .contri {
+            justify-content: center;
+            display: inline-block;
+            align-items: center;
+        }
+        .contributed-issue .temp .issue-row1 {
+            padding: 0;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 0;
+        }
+        .contributed-issue .contri .contributeissue {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        /* //////////////////////////////////////////////////////////////////////////////////
+        Openebs contibutor
+        /////////////////////////////////////////////////////////////////////////////////
+        */
+        .contibutor-section .contibutor-title {
+            padding-top: 3.5%;
+            padding-bottom: 3.5%;
+            text-align: center;
+        }
+        .contibutor-section .contibutor-title h2 {
+            font-size: 30px;
+        }
+        .contibutor-section .peoples {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            flex-wrap: wrap;
+        }
+        .contibutor-section .peoples .people-details {
+            width: 50%;
+            justify-content: start;
+            padding: 4%;
+        }
+        .contibutor-section .peoples .people-details .name {
+            font-size: 20px;
+        }
+        .contibutor-section .peoples .people-details .name-sec {
+            padding-left: 5%;
+        }
+        .contibutor-section .peoples .people-details .contriimg {
+            height: 70px;
+            width: 70px;
+            border-radius: 2em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-section .people .cafepeople {
+            height: 13rem;
+        }
+        .cafe-section .people {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+        }
+        .cafe-section .details {
+            text-align: center;
+            margin: 7.5% 0 7.5% 0;
+        }
+        .cafe-section .details .cafeimg {
+            height: 3.5em;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.5rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2% 8%;
+            font-size: 1.5rem;
+            margin-top: 3%;
+        }
+        .cafe-section .cafe-rev .people {
+            margin-top: 0%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .footerlinks {
+            background-color: #ff9933;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
+            display: flex;
+            justify-content: center;
+        }
+        .boxItem {
+            font-size: 0.70rem;
+            text-align: center;
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width:576px) and (max-width:767px) {
+        .mobileup {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .mobile-down {
+            flex-direction: row;
+            margin: 5% auto;
+        }
+        .mob {
+            margin: auto;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 0%;
+            margin-left: -11%;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+        .desktop-view {
+            display: none;
+        }
+        .contributed-issue .temp {
+            border: 1p solid transparent;
+            margin: 5% auto;
+        }
+        .contributed-issue .firstme {
+            padding-bottom: 10%
+        }
+        .contributed-issue .secondme {
+            padding-top: 10%;
+        }
+        .contributed-issue .temp .newlinks {
+            background-color: #023A36;
+            color: #ffffff;
+            border-radius: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 11%;
+            width: 74%;
+        }
+        .contributed-issue .temp .newlinks p {
+            color: #ffffff;
+            padding-top: 0;
+            margin: 0;
+            padding: 3% 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 65%;
+        }
+        .mobile-view {
+            display: inline-flex;
+        }
+        .centerAm {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (min-width:768px) {
+        .container {
+            max-width: 720px;
+        }
+        .container1 {
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        NAVGATION BAR
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .ebs-nav {
+            font-size: 2.1em;
+        }
+        .ebs-nav img {
+            height: 70%;
+            margin-top: -10px;
+        }
+        .ebs-nav .logo img {
+            height: 55px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .mule-sec {
+            margin-top: -26%;
+        }
+        .main-head {
+            overflow-y: hidden;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 53%;
+            width: 100%;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 52%;
+            width: 97%;
+        }
+        .main-head .white-img {
+            margin-top: -17%;
+        }
+        .header-sec {
+            margin-top: 91%;
+            padding: 0 4%;
+            text-align: left;
+        }
+        .header-sec .slant-line-div {
+            float: left;
+            /* shape-image-threshold: 0.5; */
+            shape-outside: polygon(0 0, 0 50px, 31px 137px);
+            height: 285px;
+            width: 300px;
+        }
+        .header-sec h6 {
+            font-size: 0.95em;
+        }
+        .header-sec h5 {
+            font-size: 1.1em;
+        }
+        .btn-overwrite {
+            padding: 1% 5%;
+            font-size: 0.95em;
+            margin-top: 2%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .orangeText {
+            color: #000000;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 14%;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 1.25em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.15rem;
+            text-align: center;
+            padding-left: 0%;
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 15.6rem;
+            width: 16.3rem;
+            border: 50%;
+            border: 3rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.15rem;
+            text-align: center;
+            padding: 0 28% 0 14%;
+        }
+        .winner-section .tshirt img {
+            width: auto;
+            height: 9.5rem;
+            margin-left: 0;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 10rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: -15%;
+            margin-left: -39%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 23rem;
+            width: 24rem;
+            border: 50%;
+            border: 5.8rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .contributed-issue {
+            margin-top: 0;
+        }
+        .contributed-issue .issue-row {
+            padding: 0;
+            padding-top: 5.5%;
+            padding-bottom: 2.5%;
+        }
+        .contributed-issue .temp .issue-row1 {
+            padding: 0;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 0;
+        }
+        .contributed-issue .contri {
+            padding: 2%;
+            margin: auto;
+        }
+        .contributed-issue .temp {
+            padding: 2%;
+            margin: 0 auto;
+        }
+        .contributed-issue .temp p {
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding-top: 1.5rem;
+            padding-left: 10%;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            height: 100%;
+            width: 85%;
+        }
+        .contributed-issue .contri .contributeissue {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .contributed-issue .temp .newlinks {
+            background-color: #023A36;
+            color: #ffffff;
+            border-radius: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 11%;
+            width: 74%;
+        }
+        .contributed-issue .temp .newlinks p {
+            color: #ffffff;
+            padding-top: 0;
+            margin: 0;
+            padding: 3% 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .centerAm {
+            display: flex;
+            justify-content: center;
+        }
+        .newlook {
+            margin: 5% auto;
+            display: -webkit-inline-box;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .newlook-top {
+            margin-top: 0;
+        }
+        /*
+//////////////////////////////////////////////////////////////////////////////////
+Openebs contibutor
+/////////////////////////////////////////////////////////////////////////////////
+*/
+        .contibutor-section {
+            background-color: #e8e8e8;
+        }
+        .contibutor-section .contibutor-title {
+            padding-top: 3.5%;
+            padding-bottom: 3.5%;
+            text-align: center;
+        }
+        .contibutor-section .peoples {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 1.5%;
+            padding-top: 0;
+            flex-wrap: wrap;
+        }
+        .contibutor-section .peoples .people-details {
+            width: 25%;
+        }
+        .contibutor-section .peoples .people-details .name {
+            font-size: 25px;
+        }
+        .contibutor-section .peoples .people-details .name-sec {
+            padding-left: 11%;
+        }
+        .contibutor-section .peoples .people-details .contriimg {
+            height: 70px;
+            width: 70px;
+            border-radius: 2em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin-top: 0;
+            margin-bottom: 0;
+            align-items: center;
+        }
+        .cafe-section {
+            margin: 0;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .cafe-section .people .cafepeople img {
+            height: 100%;
+        }
+        .cafe-section .cafe-rev .people {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 3%;
+        }
+        .cafe-section .people .cafepeople {
+            height: 13rem;
+        }
+        .cafe-section .details .cafeimg {
+            height: 3.5em;
+        }
+        .cafe-section .details h4 {
+            font-size: 0.95rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2% 8%;
+            margin-top: 3%;
+            font-size: 0.95rem;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .boxItem {
+            font-size: 0.70rem;
+            text-align: center;
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width:768px) and (max-width:880px) {
+        .laptop-sec2 .laptop-circle {
+            padding-left: 25.5%;
+        }
+    }
+    
+    @media screen and (min-width:881px) and (max-width:992px) {
+        .laptop-sec2 .laptop-circle {
+            padding-left: 29%;
+        }
+    }
+    
+    @media screen and (min-width:992px) {
+        .container {
+            max-width: 960px;
+        }
+        .container1 {
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        NAVGATION BAR
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .ebs-nav {
+            font-size: 2.1em;
+        }
+        .ebs-nav img {
+            height: 70%;
+            margin-top: -10px;
+        }
+        .ebs-nav .logo img {
+            height: 65px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .mule-sec {
+            margin-top: -26%;
+        }
+        .main-head {
+            overflow-y: hidden;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 52%;
+            width: 97%;
+        }
+        .main-head .white-img {
+            margin-top: -17%;
+        }
+        .header-sec {
+            margin-top: 91%;
+            padding: 0 4%;
+            text-align: left;
+        }
+        .header-sec .slant-line-div {
+            float: left;
+            /* shape-image-threshold: 0.5; */
+            shape-outside: polygon(0 0, 0 50px, 50px 203px);
+            height: 285px;
+            width: 300px;
+        }
+        .header-sec h6 {
+            font-size: 1.1em;
+        }
+        .header-sec h5 {
+            font-size: 1.1em;
+        }
+        .btn-overwrite {
+            padding: 1% 5%;
+            font-size: 1.15em;
+            margin-top: 2%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 0;
+            font-size: 24px;
+            padding-left: 14%;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 1.76em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.3rem;
+            padding-left: 0%;
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 22.9rem;
+            width: 23.6rem;
+            border: 50%;
+            border: 4.5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 0 31% 0 16%;
+        }
+        .winner-section .tshirt img {
+            height: 14rem;
+            width: auto;
+            margin-left: -3px;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 12rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: -10%;
+            margin-left: -39%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 27rem;
+            width: 28rem;
+            border: 50%;
+            border: 6.5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .contributed-issue {
+            margin-top: 0;
+        }
+        /* .contributed-issue .issue-row {
+            padding: 0;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+        } */
+        .contributed-issue .temp .issue-row1 {
+            padding: 0;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 0;
+        }
+        .contributed-issue .contri {
+            padding: 2%;
+            margin: auto;
+        }
+        .contributed-issue .temp {
+            padding: 2%;
+        }
+        .contributed-issue .temp p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding-top: 1.2rem;
+            padding-left: 8%;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 71%;
+        }
+        .contributed-issue .contri .contributeissue {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .contributed-issue .temp .newlinks {
+            width: 70%;
+        }
+        .contributed-issue .issue-row {
+            padding-top: 6%;
+        }
+        .centerAm {
+            display: flex;
+            justify-content: center;
+        }
+        .newlook {
+            margin: 6.8% auto;
+        }
+        .newlook-top {
+            margin-top: 0;
+        }
+        /*
+//////////////////////////////////////////////////////////////////////////////////
+Openebs contibutor
+/////////////////////////////////////////////////////////////////////////////////
+*/
+        .contibutor-section {
+            background-color: #e8e8e8;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%
+        }
+        .contibutor-section .contibutor-title {
+            padding-bottom: 3.5%;
+            padding-top: 0;
+            text-align: center;
+        }
+        .contibutor-section .peoples {
+            display: flex;
+            justify-content: start;
+            padding-bottom: 1.5%;
+            padding-top: 0;
+            flex-wrap: wrap;
+        }
+        .contibutor-section .peoples .people-details {
+            width: 25%;
+            padding: 0;
+        }
+        .contibutor-section .peoples .people-details .name {
+            font-size: 25px;
+        }
+        .contibutor-section .peoples .people-details .name-sec {
+            padding-left: 11%;
+        }
+        .contibutor-section .peoples .people-details .contriimg {
+            height: 100px;
+            width: 100px;
+            border-radius: 2em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin-top: 0;
+            margin-bottom: 0;
+            align-items: center;
+        }
+        .cafe-section {
+            margin: 0;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .cafe-section .people .cafepeople img {
+            height: 100%;
+        }
+        .cafe-section .cafe-rev .people {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 3%;
+            margin-top: 0;
+        }
+        .cafe-section .people .cafepeople {
+            height: 17rem;
+        }
+        .cafe-section .details .cafeimg {
+            height: 4.5em;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.15rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2% 8%;
+            font-size: 1.15rem;
+            margin-top: 3%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .boxItem {
+            font-size: 0.80rem;
+            text-align: center;
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width:992px) and (max-width:1100px) {
+        .laptop-sec2 .laptop-circle {
+            padding-left: 25.5%;
+        }
+    }
+    
+    @media screen and (min-width:1101px) and (max-width:1199px) {
+        .laptop-sec2 .laptop-circle {
+            padding-left: 27%;
+        }
+    }
+    
+    @media screen and (min-width:1200px) {
+        .container {
+            max-width: 1140px;
+        }
+        .container1 {
+            max-width: 100%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        NAVGATION BAR
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .ebs-nav {
+            font-size: 2.1em;
+        }
+        .ebs-nav img {
+            height: 70%;
+            margin-top: -10px;
+        }
+        .ebs-nav .logo img {
+            height: 65px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .main-head {
+            overflow-y: hidden;
+        }
+        .mule-sec {
+            margin-top: -26%;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 52%;
+            width: 97%;
+        }
+        .main-head .white-img {
+            margin-top: -17%;
+        }
+        .header-sec {
+            margin-top: 100%;
+            padding: 0 5%;
+            text-align: left;
+        }
+        .header-sec .slant-line-div {
+            float: left;
+            /* shape-image-threshold: 0.5; */
+            shape-outside: polygon(0 0, 0 100px, 45px 168px);
+            height: 200px;
+            width: 200px;
+        }
+        .header-sec h6 {
+            font-size: 1.2em;
+        }
+        .header-sec h5 {
+            font-size: 1.1em;
+        }
+        .btn-overwrite {
+            margin-top: 2%;
+            padding: 1% 4%;
+            font-size: 1.2em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 0;
+            font-size: 24px;
+            padding-left: 17%;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 2em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.50rem;
+            padding-left: 0%;
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 41.5%;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 22.3rem;
+            width: 25.6rem;
+            border: 50%;
+            border: 5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.5rem;
+            text-align: center;
+            /* padding-left: 2%; */
+            padding: 0 29% 0 25%;
+        }
+        .winner-section .tshirt img {
+            height: 13rem;
+            width: auto;
+            margin-left: -3px;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 12rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 0%;
+            margin-left: 0%;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 27rem;
+            width: 29rem;
+            border: 50%;
+            border: 6.5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .contributed-issue {
+            margin-top: 0;
+        }
+        .contributed-issue .issue-row {
+            padding-top: 6%;
+        }
+        .contributed-issue .temp .issue-row1 {
+            padding: 0;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 0;
+        }
+        .contributed-issue .contri {
+            padding: 2%;
+            margin: auto;
+        }
+        .contributed-issue .temp {
+            padding: 2%;
+        }
+        .contributed-issue .temp p {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 85%;
+        }
+        .contributed-issue .contri .contributeissue {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .newlook {
+            margin: 8.5% auto;
+            padding-left: 10%;
+        }
+        .newlook-top {
+            margin-top: 0;
+        }
+        .contributed-issue .temp .newlinks p {
+            font-size: 1.25rem;
+        }
+        .contributed-issue .temp .newlinks {
+            width: 70%;
+        }
+        .txt {
+            width: 70%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin-top: 0%;
+            margin-bottom: 0;
+            align-items: center;
+        }
+        .cafe-section {
+            margin: 0;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .cafe-section .people .cafepeople img {
+            height: 100%;
+        }
+        .cafe-section .cafe-rev .people {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 7%;
+            margin-top: 0%;
+        }
+        .cafe-section .people .cafepeople {
+            height: 22rem;
+        }
+        .cafe-section .details {
+            text-align: center;
+            margin: 7.5% 0 7.5% 0;
+        }
+        .cafe-section .details .cafeimg {
+            height: 5.5em;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.3rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2% 8%;
+            font-size: 1.3rem;
+            margin-top: 3%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .boxItem {
+            font-size: 1rem;
+            text
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width:1200px) and (max-width:1300px) {
+        /* .laptop-sec2 .laptop-circle {
+        padding-left: calc(29%);
+    }
+    .laptop-sec2 .tshirt-circle {
+        padding-left: 31.5%;
+    } */
+    }
+    
+    @media screen and (min-width:1301px) and (max-width:1400px) {
+        /* .laptop-sec2 .laptop-circle {
+        padding-left: calc(40%);
+        margin-bottom: -10%;
+        margin-left: -49%;
+    }
+    .laptop-sec2 .tshirt-circle {
+        padding-left: 37.5%;
+    } */
+    }
+    
+    @media screen and (min-width:1401px) and (max-width:1499px) {
+        /* .laptop-sec2 .laptop-circle {
+        padding-left: calc(44%);
+        margin-bottom: -9%;
+        margin-left: -53%;
+    }
+    .laptop-sec2 .tshirt-circle {
+        padding-left: 37.5%;
+    } */
+    }
+    
+    @media screen and (min-width:1500px) {
+        .container1 {
+            max-width: 1240px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        NAVGATION BAR
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .ebs-nav {
+            font-size: 2.1em;
+        }
+        .ebs-nav img {
+            height: 70%;
+            margin-top: -10px;
+        }
+        .ebs-nav .logo img {
+            height: 65px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .mule-sec {
+            margin-top: -26%;
+        }
+        .main-head {
+            overflow-y: hidden;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 52%;
+            width: 97%;
+        }
+        .main-head .white-img {
+            margin-top: -17%;
+        }
+        .header-sec {
+            margin-top: 94%;
+            padding: 0 8%;
+            text-align: left;
+        }
+        .header-sec .slant-line-div {
+            float: left;
+            /* shape-image-threshold: 0.5; */
+            shape-outside: polygon(0 0, 0 100px, 51px 200px);
+            height: 300px;
+            width: 300px;
+        }
+        .header-sec h6 {
+            font-size: 1.35em;
+            line-height: 1.3;
+        }
+        .header-sec h5 {
+            font-size: 1.1em;
+        }
+        .btn-overwrite {
+            padding: 1% 3%;
+            font-size: 1.15em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .orangeText {
+            color: #000000;
+            font-weight: bold;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 7%;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 2.3em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.6rem;
+            text-align: center;
+            padding-left: 0%;
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 19.5%;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 23rem;
+            width: 23.5rem;
+            border: 50%;
+            border: 5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.6rem;
+            text-align: center;
+            /* padding-left: 2%; */
+            padding: 0 16% 0 32%;
+        }
+        .winner-section .tshirt img {
+            height: 13rem;
+            width: auto;
+            margin-left: -3px;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 12rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 2%;
+            margin-left: 0;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 25rem;
+            width: 26rem;
+            border: 50%;
+            border: 6.2rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .contributed-issue {
+            margin-top: 0%;
+        }
+        /* .contributed-issue .issue-row {
+            padding: 0;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+        } */
+        .contributed-issue .temp .issue-row1 {
+            padding: 0%;
+        }
+        .contributed-issue .temp .issue-row2 {
+            padding: 0%;
+        }
+        .contributed-issue .contri {
+            padding: 2%;
+            margin: auto;
+        }
+        .contributed-issue .temp {
+            padding: 2%;
+        }
+        .contributed-issue .temp p {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 75%;
+        }
+        .contributed-issue .contri .contributeissue {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .newlink {
+            background-color: #023A36;
+            color: #ffffff;
+            font-size: 2rem;
+            border-radius: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 11%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin-top: 0%;
+            margin-bottom: 0%;
+            align-items: center;
+        }
+        .cafe-section {
+            margin: 0;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .cafe-section .people .cafepeople img {
+            height: 100%;
+        }
+        .cafe-section .cafe-rev .people {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0%;
+            margin-top: 0%;
+        }
+        .cafe-section .details {
+            text-align: center;
+            margin: 7.5% 0 7.5% 0;
+        }
+        .cafe-section .people .cafepeople {
+            height: 22rem;
+        }
+        .cafe-section .details .cafeimg {
+            height: 5.5em;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.3rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2% 8%;
+            font-size: 1.3rem;
+            margin-top: 3%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .boxItem {
+            font-size: 0.90rem;
+            text-align: center;
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (min-width:1500px) and (max-width:1600px) {
+        .container1 {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 26%;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 2.3em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.6rem;
+            text-align: center;
+            padding-left: 0%;
+        }
+        .laptop-sec2 .tshirt-circle {
+            padding-left: 36.5%;
+        }
+        .laptop-sec2 .tshirt-circle .tshirt {
+            height: 24.6rem;
+            width: 25.6rem;
+            border: 50%;
+            border: 5rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.6rem;
+            text-align: center;
+            /* padding-left: 2%; */
+            padding: 0 37% 0 25%;
+        }
+        .winner-section .tshirt img {
+            height: 15rem;
+            width: auto;
+            margin-left: -3px;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 12rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0;
+            margin-bottom: 0%;
+            margin-left: 0;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 29rem;
+            width: 30rem;
+            border: 50%;
+            border: 6.8rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+    }
+    
+    @media (min-width:1920px) {
+        .container1 {
+            max-width: 1350px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        NAVGATION BAR
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .ebs-nav {
+            font-size: 2.1em;
+        }
+        .ebs-nav img {
+            height: 70%;
+            margin-top: -10px;
+        }
+        .ebs-nav .logo img {
+            height: 65px;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        HEADER SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .mule-sec {
+            margin-top: -26%;
+        }
+        .main-head {
+            overflow-y: hidden;
+        }
+        .main-head .mule-img {
+            padding-left: 0;
+            margin-top: 52%;
+            width: 97%;
+        }
+        .main-head .white-img {
+            margin-top: -17%;
+        }
+        .header-sec {
+            margin-top: 100%;
+            padding: 0 17%;
+            text-align: left;
+        }
+        .header-sec .slant-line-div {
+            float: left;
+            /* shape-image-threshold: 0.5; */
+            shape-outside: polygon(0 0, 0 100px, 43px 200px);
+            height: 300px;
+            width: 300px
+        }
+        .header-sec h6 {
+            font-size: 1.7em;
+        }
+        .header-sec h5 {
+            font-size: 1.1em;
+        }
+        .btn-overwrite {
+            padding: 1% 5%;
+            font-size: 1.4em;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        LAPTOP SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-rev {
+            margin: 0;
+        }
+        .laptop-sec1 .win-tshirts {
+            padding: 0;
+            font-size: 24px;
+            padding-left: 9%;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-tshirts h2 {
+            font-size: 2.3em;
+            color: #ff9933;
+            margin-bottom: 3%;
+        }
+        .laptop-sec1 .win-tshirts p {
+            font-size: 1.6rem;
+            padding-left: 0%;
+        }
+        /* .laptop-sec2 .tshirt-circle {
+        padding-left: 25%;
+    }
+    .laptop-sec2 .tshirt-circle .tshirt {
+        border: 50%;
+        border: 5rem solid #ff9933;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    } */
+        .laptop-sec1 .win-laptop {
+            padding: 0;
+            text-align: center;
+            font-size: 24px;
+            padding-left: 0px;
+            margin-top: 0%;
+        }
+        .laptop-sec1 .win-laptop h2 {
+            font-size: 2em;
+            color: #ff9933;
+        }
+        .laptop-sec1 .win-laptop p {
+            font-size: 1.6rem;
+            text-align: center;
+            /* padding-left: 2%; */
+            padding: 0 11% 0 33%;
+        }
+        .winner-section .tshirt img {
+            height: 13rem;
+            width: auto;
+            margin-left: -3px;
+            border: 6px solid #ffffff;
+            border-radius: 50%;
+        }
+        .winner-section .laptop img {
+            height: 12rem;
+            width: auto;
+        }
+        .laptop-sec2 {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .laptop-sec2 .laptop-circle {
+            padding-left: 0%;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+        }
+        .laptop-sec2 .laptop-circle .laptop {
+            height: 26rem;
+            width: 26rem;
+            border: 50%;
+            border: 6.3rem solid #ff9933;
+            border-radius: 50%;
+            display: flex;
+            align-items: left;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CONTRIBUTION SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .contributed-issue {
+            margin-top: 1%;
+        }
+        /* .contributed-issue .issue-row {
+            padding: 0;
+        } */
+        .contributed-issue .contri {
+            padding: 2%
+        }
+        .contributed-issue .temp {
+            padding: 2%;
+        }
+        .contributed-issue .temp p {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .contributed-issue .contri img {
+            height: 100%;
+            width: 85%;
+        }
+        .newlook {
+            margin: 7.5% auto;
+            padding-left: 10%;
+        }
+        .newlook-top {
+            margin-top: 0;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        CAFE SECTION
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .cafe-section {
+            margin: 0;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .cafe-section .people .cafepeople img {
+            height: 100%;
+        }
+        .cafe-section .cafe-rev .people {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0%;
+        }
+        .cafe-section .people .cafepeople {
+            height: 19rem;
+        }
+        .cafe-section .details .cafeimg {
+            height: 5em;
+        }
+        .cafe-section .details h4 {
+            font-size: 1.5rem;
+        }
+        .cafe-section .details .visitus {
+            padding: 2.5% 11%;
+            font-size: 1.5rem;
+            margin-top: 3%;
+        }
+        /*
+        /////////////////////////////////////////////////////////////////////////////////////
+        FOOTER
+        /////////////////////////////////////////////////////////////////////////////////////
+    */
+        .boxItem {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .container-footer {
+            text-align: center;
+        }
+    }

@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>OpenEBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="OpenEBS is containerised storage for containers." />
+    <meta name="keywords" content="Containerized Storage,Block Storage,Open source,Kubernetes,Containerized Open source storage,Open source block storage,Storage DevOps,Written in Go,DevOps friendly,Cloud Native block storage,Cloud Native,Stateful applications,Scale out storage,Open Source storage,DevOps user,yaml files,Open source stack written in GO,Apache2 license"
+    />
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/" />
+    <link rel="shortcut icon" href="styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="styles/images/fav/largetile.png" />
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="styles/css/openebs_countdown.css" rel="stylesheet" />
+
+    <style>
+        .clhr {
+            display: none;
+        }
+        
+        .dek-v {
+            display: block;
+        }
+        
+        @media screen and (max-width:767px) {
+            .clhr {
+                display: block;
+            }
+            .dek-v {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="ebs-nav" style="">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="index.html" rel="noopener noreferrer"><img src="styles/images/banner-icon.svg" alt="desk-icon" title="OpenEBS"></a>
+                <a class="navbar-brand mobile-logo" href="index.html" rel="noopener noreferrer"><img src="styles/images/openebs-logo.svg" alt="mob-icon" title="OpenEBS"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><i class="fa fa-bars" aria-hidden="true" style="font-size:30px;"></i></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <li class="nav-item p-3" style="display:inline;" title="Documentation">
+                            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><img src="styles/images/docevery.svg" alt="doc" height="35" style="margin-bottom:5%;" /></a>
+                        </li>
+
+                        <li class="nav-item p-3" style="display:inline;" title="Facebook">
+                            <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-facebook" aria-hidden="true" style=""></i>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Slack">
+                            <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true" style=""></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Blog">
+                            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true" style=""></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Twitter">
+                            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true" style=""></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Github ">
+                            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true" style=""></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <li class="nav-item p-2" style="display:inline;" title="Documentation">
+                <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><img src="../styles/images/docindex.svg" alt="doc" height="35" /></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Facebook">
+                <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Slack">
+                <a href="http://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Blog">
+                <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Twitter">
+                <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Github ">
+                <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="container-fluid countdown-container">
+            <div class="row countdown-div">
+                <div class="col-md-3 desktop-view"></div>
+                <div class="col-12 col-md-6 countdown">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Hey this is OUR MULE CAN FLY section! -->
+                            <div class="mulecanfly">
+                                <h2>OUR MULE CAN FLY!</h2>
+                                <p>KubeCon' 2017</p>
+                            </div>
+                            <div>
+                                <h3>WATCH IT TAKE OFF</h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <!-- This is countdown-section! -->
+                            <!-- <div class="counttime">
+                                <div id="numbers" class="num">
+
+                                </div>
+
+                            </div> -->
+                            <div class="main-example">
+                                <div class="countdown-container" id="main-example"></div>
+                            </div>
+                            <script type="text/template" id="main-example-template">
+                                <div class="time <%= label %>">
+                                    <span class="count curr top"><%= curr %></span>
+                                    <span class="count next top"><%= next %></span>
+                                    <span class="count next bottom"><%= next %></span>
+                                    <span class="count curr bottom"><%= curr %></span>
+                                    <span class="label"><%= label.length < 10 ? label : label.substr(0, 3)  %></span>
+                                </div>
+                            </script>
+                        </div>
+
+
+
+                        <div class="col-12">
+                            <!-- Hey This is Register Button section! -->
+                            <button type="button" class="btn registerbutton"><a href="http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america" target="_blank">REGISTER HERE</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 countdown-img">
+                    <div class="imageplane">
+                        <img src="styles/images/plane-01.svg" alt="plane" title="Mule can fly!" style="margin:auto;">
+                    </div>
+                </div>
+                <!-- <div class="col-md-1 desktop-view"></div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <div class="body-area">
+
+        <main>
+            <div class="container-fluid remove-pd">
+                <div class="row mule-banner" style="">
+                    <div class="col-md-4 tag-line" style="">
+                        <h1>Containerized <br class="dek-v">Open Source <br class="dek-v">Storage for <br class="dek-v">Containers</h1>
+                        <div class="clhr">
+
+                            <h1>
+                                <a class="github-button" href="https://github.com/openebs/openebs" data-icon="octicon-star" data-show-count="true" aria-label="Star openebs/openebs on GitHub">Star</a>
+                            </h1>
+                            <a href="http://openebs.readthedocs.io/en/latest/ " target="_blank" class="btn btn-primary btn-ebs-md btn-lg buttton" rel="noopener noreferrer">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mule">
+                        <div class="mule-img">
+
+                            <img src="styles/images/mule-circle-01.svg" alt="mule-img" title="Mule">
+                        </div>
+                    </div>
+                    <div class="col-md-4 yebsonaws" style="">
+                        <h1>Why should you <br class="dek-v">deploy OpenEBS <br class="dek-v">on AWS?</h1>
+
+                        <a href="https://blog.openebs.io/why-are-users-using-openebs-on-ebs-9b38fb04cd35" target="_blank" class="blog-link" rel="noopener noreferrer">
+
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fa fa-arrow-right fa-stack-1x" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dek-v" style="text-align:center;">
+
+                            <h1>
+                                <a class="github-button" href="https://github.com/openebs/openebs" data-icon="octicon-star" data-show-count="true" aria-label="Star openebs/openebs on GitHub">Star</a>
+                            </h1>
+                            <a href="http://openebs.readthedocs.io/en/latest/ " target="_blank" class="btn btn-primary btn-ebs-md btn-lg buttton" rel="noopener noreferrer">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
+
+    <section class="wtopenebs ">
+        <div class="container-fluid wtopencont " style=" ">
+            <div class="row ">
+                <div class="col-md-6" style="display:flex;align-items:center;padding-left:0;padding-right:0;">
+                    <div class="youtube-player" data-id="ePlEzZSUH1w" style="height:auto;width:100%;height:100%;"></div>
+                </div>
+                <div class="col-md-6 " style="background-color:#EFEFEF;display: flex;align-items: center;">
+                    <div class="d-flex flex-column align-items-center openebs-details " style="padding:0;">
+                        <h2>Why OpenEBS?</h2>
+                        <ul>
+                            <li>OpenEBS enables your DevOps team to have their own storage policies for workloads on top of a cloud</li>
+                            <li>OpenEBS is not yet another scale-out storage system (YASSS)</li>
+                            <li>OpenEBS is tightly integrated with Kubernetes and the part of Kubernetes-incubator Project</li>
+                            <li>OpenEBS is the most active Cloud Native Containerized Storage project</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--openebs 0.4-->
+    <section class="section-1" style="padding-top:2.5%;padding-bottom:2.5%;">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="media fea-body">
+                        <div class="media-body fea-details" style="">
+                            <h2>OpenEBS<span> 0.4</span></h2>
+                            <p class="lead ">Hyper-Converged storage for stateful applications on Kubernetes Platform <br> <span style="font-size:1.em;font-weight:bold ">- A Developer friendly release</span>.</p>
+                            <a href="http://openebs.readthedocs.io/en/latest/release_notes/releasenotes.html " target="_blank" class="readdoc " rel="noopener noreferrer">
+                                    Try Now
+                                </a>
+                        </div> <img class="d-flex ebs4 " src="styles/images/cicrcle-01.svg " alt="openEBS 0.4 " title="OpenEBS 0.4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--featured card-->
+    <section class="mar-t-5">
+        <div class="ebs_feature ">
+            <div class="container ">
+                <div class="row justify-content-center ">
+                    <div class="col-md-3 fea-card  m-4"> <img src="styles/images/cloudnative1.svg " alt="cloudnative" title="Containerized Storage for Containers" width="120" height="120">
+                        <h2>Containerized Storage for Containers</h2>
+                        <p>Your storage controller is a container that follows your workloads around; very different than Yet Another Scale out Storage System (“!YASSS”).</p>
+                    </div>
+                    <div class="col-md-3 fea-card  m-4"> <img src="styles/images/ebsfea.svg " alt="ebsfea" title="Improves EBS & other cloud storage" width="120" height="120">
+                        <h2>Improves EBS & other cloud storage</h2>
+                        <p>Runs on top of EBS -to improve resiliency, to limit lock-in, and for better integration with Kubernetes.</p>
+                    </div>
+                    <div class="col-md-3 fea-card m-4"> <img src="styles/images/avoidlock.svg " alt="avoidlock" title="Avoid cloud lock-in" width="120" height="120">
+                        <h2>Avoid cloud lock-in</h2>
+                        <p>When you write your data to OpenEBS - you write to an open source, highly flexible data management layer that allows you to manage your exposure to each cloud or data center.</p>
+                    </div>
+                    <div class="col-md-3 fea-card m-4"> <img src="styles/images/granularcontrol1.svg" alt="granularcontrol" title="Granular Control" width="120" height="120">
+                        <h2>Granular Control</h2>
+                        <p>Each workload and hence, each team working on dynamic container based workloads has their own storage, instead of being managed by central storage.</p>
+                    </div>
+                    <!-- GO-->
+                    <div class="col-md-3 fea-card m-4 "> <img src="styles/images/WritteningO1.svg " alt="Writtening" title="Written in GO" width="120" height="120">
+                        <h2>Written in GO</h2>
+                        <p>OpenEBS is the only broadly adopted open source block storage written mostly in Go.</p>
+                    </div>
+
+                </div>
+                <hr class="dek-v ">
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" icbtn " style="padding-bottom:0;">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-md-10 ">
+                    <div class="subhead ">
+                        <h2 class="subhead-title ">Upcoming Events</h2>
+                    </div>
+
+
+
+                    <div class="event " style="margin-top:2%;">
+                        <div class="event-list ">
+                            <div class="pt-5 "> </div>
+                            <div class="media pb-2 eventmob "> <img class="d-flex mr-3 " src="styles/images/kubecon.jpg " alt="kubecon" title="Kubecon" width="100">
+                                <div class="media-body ev-details ">
+                                    <div style="">
+                                        <p>OpenEBS Sponsors </p>
+                                        <h5 class="mt-0 " style="font-size:18px; ">KubeCon + CloudNativeCon <br class="clhr ">North America 2017</h5>
+                                    </div>
+                                    <div class="text-muted temp-pd " style="font-size:14px; "> <span><strong>Date:</strong></span> - 6th Dec, 2017 to 8th Dec, 2017
+                                        <br> <span><strong>Location:</strong></span> - Austin, Texas </div>
+
+                                </div>
+                                <a href="http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america " target="_blank" class="btn btn-outline-secondary btn-sm" rel="noopener noreferrer">Learn more</a> </div>
+                        </div>
+                    </div>
+
+                    <div class="event " style="margin-bottom:10%;margin-top:2%;">
+                        <div class="event-list ">
+                            <div class="pt-5 "> </div>
+                            <div class="media pb-2 eventmob "> <img class="d-flex mr-3 " src="styles/images/openebsKubernet.png " alt="kubecon" title="Kubecon" width="100">
+                                <div class="media-body ev-details ">
+                                    <div style="">
+                                        <p> Murat Karslioglu's talk</p>
+                                        <h5 class="mt-0 " style="font-size:18px; ">Bay Area <br class="clhr ">Kubernetes Meetup </h5>
+                                    </div>
+                                    <div class="text-muted temp-pd " style="font-size:14px; "> <span><strong>Date:</strong></span> - 14th Dec, 2017
+                                        <br> <span><strong>Location:</strong></span> - Palo Alto, CA </div>
+
+                                </div>
+                                <a href="https://www.meetup.com/Bay-Area-Kubernetes-Meetup/events/244666155/?from=ref&_cookie-check=DqmP0I4sfkHhkobH" target="_blank" class="btn btn-outline-secondary btn-sm" rel="noopener noreferrer">Learn more</a> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-2 btn-option" style="" title="Events">
+                    <div class="enc-btn" style="">
+                        <div class="box-btn" style="">
+                            <a href="event/ " target="events" rel="noopener noreferrer">
+                                <span class="fa-stack fa-3x fnt3">
+                                        <i class=" fa-stack-2x " ></i>
+                                        <i class="fa fa-calendar fa-stack-1x fnt1" style=""></i>
+                                      </span></a>
+                            <p style="">Events</p>
+                        </div>
+                        <div class="box-btn" style="" title="Newsletter">
+                            <a href="news/ " target="news" rel="noopener noreferrer">
+                                <span class="fa-stack fa-3x fnt3">
+                                        <i class=" fa-stack-2x"></i>
+                                        <i class="fa fa-newspaper-o fa-stack-1x fnt1" style=""></i>
+                                      </span></a>
+                            <p style="">Newsletter</p>
+                        </div>
+
+                        <div class="box-btn" style="" title="Careers">
+                            <a href="careers/ " target="careers" rel="noopener noreferrer">
+                                <span class="fa-stack fa-3x fnt3">
+                                        <i class=" fa-stack-2x " ></i>
+                                        <i class="fa fa-briefcase  fa-stack-1x fnt1"  style=""></i>
+                                      </span></a>
+                            <p style="">Careers</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- hackthoberfest -->
+    <section class=" hack-cafe ">
+        <div class="container-fluid " style="padding-left:0;">
+            <div class="row ">
+                <div class="col-md-6  hackfest" style="">
+                    <div class="row hackfestrow" style="">
+                        <div class="col-md-12 " style="">
+                            <p style="">We are extending the the hacktoberfest to <br>our very own OpenEBS HackFest</p>
+                            <button class="btn-overwrite"> <a href="hackfest/" style="color:#fff"> Start Hacking </a> </button>
+                        </div>
+                    </div>
+                    <img src="styles/images/openebhackfest.svg" alt="" style="width:90%;">
+
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center cafe-sec ">
+                    <img src="styles/images/openebs-hacktober-section-01.svg " alt="cafe-image" title="Open Source Cafe" />
+                    <p style="line-height: normal; "> <span class="attract ">Hey</span>! If you are in Bangalore, visit the <br><span class="attract ">Open Source Cafe</span> to contribute to open source.</p>
+
+                    <div> <a href="cafe/ " class="btn btn-ebs-sm hero-btn " target="_blank" style="padding:2% 9%;line-height:normal" rel="noopener noreferrer">
+                            Visit Us 
+                        </a>
+                    </div>
+
+
+
+                </div>
+                <hr class="dek-v " style="margin-top:0;width:43%;margin-left:53%;">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="quotes" style="">
+        <div class="container-fluid">
+            <div class="row" style="align-items:center;">
+                <div class="col-md-4">
+                    <img src="styles/images/customerquotesimage.svg" alt="userqoute" title="Openebs users">
+                </div>
+
+                <div class="col-md-8 temp2">
+                    <div id="carouselExampleControls" class="carousel slide qoute-main" data-ride="carousel" style="">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center align-items-center qout" style="">
+
+                                    <div class="qout-details" style="">
+
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> With wonderful and really helpful community and developers, I found it easier to get to know OpenEBS a lot better. I found OpenEBS to be really easy to use as
+                                            a software defined storage for cloud native applications. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div style="">
+                                            <p class="name"> <span style="color:#191919">~Hrishikesh N</span>, OpenEBS Contributor and Stargazer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center qout" style="">
+
+                                    <div class="qout-details" style="">
+
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> OpenEBS is promising as it has the potential to bring the stability and scalability of Google File System to the masses. Personally, I am looking into a scalable
+                                            store to cache large chunks of data and am looking forward to evaluate OpenEBS for the same. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div style="">
+                                            <p class="name"> <span style="color:#191919">~Goutham</span>,Prometheus upstream contributor & OpenEBS User</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center qout" style="">
+
+                                    <div class="qout-details" style="">
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> I was taking part on hacktoberfest, and used it as opportunity to get to know some interesting projects. That's how I discovered OpenEBS. I liked its features
+                                            and development. I took one issue, and the developers were very solicit and nice! <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div style="">
+                                            <p class="name"><span style="color:#191919"> ~Eduardo</span>, OpenEBS contributor and Stargazer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center qout" style="">
+                                    <div class="qout-details" style="">
+                                        <p class="qoutes1"><i class="fa fa-quote-left" aria-hidden="true"></i> A welcoming open source community developing DevOps friendly hyper-converged storage for containers, this is what attracted me to contribute to this project as
+                                            a DevOps Engineer. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                                        <div style="">
+                                            <p class="name"><span style="color:#191919">~Debojit Kakoti</span>,OpenEBS contributor and Stargazer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="width:10%;">
+                            <i class="fa fa-angle-left" style="font-size:24px;color:#696969"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="width:10%;">
+                            <i class="fa fa-angle-right" style="font-size:24px;color:#696969"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Slack section-->
+    <section class="pd-b-5 pd-t-5 slack-sec ">
+        <div class="media slack-section " style="margin:0;">
+            <img class="d-flex align-self-center " src="styles/images/slack%20icon-01.svg " title="Join us on Slack" alt="Join us on Slack ">
+            <div class="media-body ">
+                <h5>Join us on Slack</h5>
+                <p class="mb-0 lead ">Join our OpenEBS slack community to get help and support from OpenEBS team and community members.</p><br>
+                <a href="http://slack.openebs.io " target="_blank" class="btn btn-primary btn-ebs-sm btn-lg " rel="noopener noreferrer">Join Us!</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Community section-->
+
+    <section class="mar-t-10 contribute ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <h2 style="font-family: sans-serif; padding-bottom:1% ">Join Our Community</h2>
+                    <p>Join the OpenEBS community by contributing to our blog, GitHub and following us on social media.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <div class="d-flex justify-content-center ebs-footer ">
+                        <div class="social ">
+                            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                                <img class="docicon" src="styles/images/docindex.svg" alt="doc" title="Documentation">
+                            </a>
+                        </div>
+                        <div class="social"> <a href="https://twitter.com/openebs " target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                        <div class="social"> <a href="https://www.facebook.com/openebs " target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="http://slack.openebs.io " target="_blank" rel="noopener noreferrer" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="https://github.com/openebs/ " target="_blank" rel="noopener noreferrer" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g " target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fa fa-youtube-play " aria-hidden="true"></i></a> </div>
+                        <div class="social"> <a href="careers/index.html " target="_blank" rel="noopener noreferrer" title="Career"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <!--footer-->
+    <section class="mar-t-5 social-bottom ">
+        <footer>
+            <div class="container "> </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <!-- Github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
+    <!--Agile crm Analytics-->
+    <script id="_agile_min_js" async type="text/javascript" src="https://d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js ">
+    </script>
+
+    <!--js files-->
+    <script src="styles/js/openebs.js "></script>
+    <script src="styles/js/jquery.min.js"></script>
+
+    <!-- JS code -->
+    <script src="styles/js/popper.min.js"></script>
+    <script src="styles/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            var labels = ['Days', 'Hours', 'Minutes', 'Seconds', ],
+                finaltime = new Date().getFullYear() + '/12/06 10:10:00',
+                template = _.template($('#main-example-template').html()),
+                currDate = '00:00:00:00',
+                nextDate = '00:00:00:00',
+                parser = /([0-9]{2})/gi,
+                $example = $('#main-example');
+            // Parse countdown string to an object
+            function strfobj(str) {
+                var parsed = str.match(parser),
+                    obj = {};
+                labels.forEach(function(label, i) {
+                    obj[label] = parsed[i]
+                });
+                return obj;
+            }
+            // Return the time components that diffs
+            function diff(obj1, obj2) {
+                var diff = [];
+                labels.forEach(function(key) {
+                    if (obj1[key] !== obj2[key]) {
+                        diff.push(key);
+                    }
+                });
+                return diff;
+            }
+            // Build the layout
+            var initData = strfobj(currDate);
+            labels.forEach(function(label, i) {
+                $example.append(template({
+                    curr: initData[label],
+                    next: initData[label],
+                    label: label
+                }));
+            });
+            // Starts the countdown
+            $example.countdown(finaltime, function(event) {
+                var newDate = event.strftime('%D:%H:%M:%S'),
+                    data;
+                if (newDate !== nextDate) {
+                    currDate = nextDate;
+                    nextDate = newDate;
+                    // Setup the data
+                    data = {
+                        'curr': strfobj(currDate),
+                        'next': strfobj(nextDate)
+                    };
+                    // Apply the new values to each node that changed
+                    diff(data.curr, data.next).forEach(function(label) {
+                        var selector = '.%s'.replace(/%s/, label),
+                            $node = $example.find(selector);
+                        // Update the node
+                        $node.removeClass('flip');
+                        $node.find('.curr').text(data.curr[label]);
+                        $node.find('.next').text(data.next[label]);
+                        // Wait for a repaint to then flip
+                        _.delay(function($node) {
+                            $node.addClass('flip');
+                        }, 50, $node);
+                    });
+                }
+            });
+        });
+    </script>
+
+
+    <!-- <script>
+        var target_time = new Date('December 08, 2017 10:00:00');
+        var days, hours, mins, seconds;
+        var picktarget = document.getElementById("numbers");
+
+        getCurrentTime();
+
+        setInterval(function() {
+            getCurrentTime();
+        }, 1000);
+
+        function getCurrentTime() {
+            var current_time = new Date().getTime();
+            var remaining_seconds = (target_time - current_time) / 1000;
+            // var remaining_seconds = current_time / 1000;
+            days = pad(parseInt(remaining_seconds / (24 * 60 * 60)));
+            remaining_seconds = remaining_seconds % (24 * 60 * 60);
+            hours = pad(parseInt(remaining_seconds / (60 * 60)));
+            remaining_seconds = remaining_seconds % (60 * 60);
+            mins = pad(parseInt(remaining_seconds / (60)));
+            seconds = pad(parseInt(remaining_seconds % (60)));
+            picktarget.innerHTML = "<div class='alignme'><div class='pic'>" + days + "</div><div class='name'>Days</div></div><div class='alignme'><div class='pic'>" + hours + "</div><div class='name'>Hours</div></div><div class='alignme'><div class='pic'>" + mins + "</div><div class='name'>Minutes</div></div>";
+        }
+
+        function pad(n) {
+            return (n < 10 ? '0' : '') + n;
+        }
+    </script> -->
+
+
+
+</body>
+
+</html>

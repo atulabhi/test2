@@ -1,0 +1,771 @@
+.hangout-section {
+    padding: 0;
+    margin: 0;
+}
+
+.hangout-section p {
+    color: #606060;
+    font-size: 2rem;
+}
+
+.hangout-heading {
+    color: #ed592a;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.hangout-section .hg-rf {
+    justify-content: flex-end;
+    padding: 3% auto;
+}
+
+.hangout-section .hg-lf {
+    justify-content: flex-start;
+    padding: 2% auto;
+}
+
+.hg-bg {
+    background-color: #f4f4f4;
+}
+
+.hangout-heading h1 {
+    font-size: 4.5rem;
+    padding: 3% 0% 1% 0%;
+}
+
+.hangout-col-1 {
+    padding: 2% 0% 5% 0%;
+    background-color: #f4f4f4;
+}
+
+.hangout-col-2 {
+    text-align: center;
+    margin: auto 20%;
+    padding: 2% 0% 5% 0%;
+}
+
+.md-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.md-center img {
+    width: 85%;
+}
+
+.time-image {
+    padding: 4% 0%;
+}
+
+.hangout-para-lf {
+    padding-left: 7%;
+    margin: auto;
+}
+
+.hangout-para-rf {
+    margin: auto;
+}
+
+.hangout-countdown h2 {
+    color: #ed592a;
+    font-size: 2rem;
+}
+
+.countdown-div {
+    height: auto;
+    width: 75%;
+    text-align: center;
+    background-color: #333333;
+    align-items: center;
+}
+
+.count-demo-div .dhm-val {
+    font-size: 2rem;
+}
+
+.count-demo-div .dhm-text {
+    font-size: 1.5rem;
+}
+
+.time-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5% 0%;
+}
+
+.theme2 {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.theme2 .agile-field {
+    width: 100%;
+}
+
+.agile-group .i-checks {
+    font-size: 2rem;
+    color: #606060;
+}
+
+.agile-group h4 {
+    font-size: 1.75rem;
+    padding: 0;
+}
+
+.theme2 .agile-group {
+    margin-left: 0;
+}
+
+.choose-me {
+    margin: 0;
+    padding: 0;
+}
+
+.choose-me h4 {
+    margin: 0;
+    padding: 5% 0%;
+    font-size: 1.85rem;
+}
+
+.agile-field1 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+
+.register-now {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+
+.theme2 button,
+.theme2 button:hover,
+.theme2 button:focus {
+    margin-left: 0;
+    background-color: #ed592a;
+    border: #ed592a;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 3% 3%;
+    width: 100%!important;
+    border-radius: 0.25rem;
+}
+
+
+/* Mobile View Design Start Here! */
+
+@media screen and (max-width:767px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: flex;
+    }
+    .hangout-heading h1 {
+        font-size: 2.5rem;
+    }
+    .md-center img {
+        width: 50%;
+    }
+    .hangout-para-rf {
+        margin: auto;
+        padding: 5% 0%;
+    }
+    .hangout-section p {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .mobile-reverse {
+        flex-direction: column-reverse;
+    }
+    .hangout-para-lf {
+        padding-left: 0;
+        margin: auto;
+        padding-top: 5%;
+    }
+    .hangout-countdown {
+        background-color: #333333;
+        padding: 5% 0%;
+    }
+    .hg-lf {
+        background-color: #f4f4f4;
+    }
+    .hangout-col-2 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .rm-pd {
+        padding: 0;
+    }
+    .set-bg {
+        background-color: #f4f4f4;
+        padding: 5% 0%;
+    }
+    .time-image {
+        background-color: #f4f4f4;
+        padding: 5% 0%;
+        margin: 0;
+    }
+    .m-choose {
+        padding-top: 5%;
+    }
+    .m-choose h4 {
+        font-size: 2.5rem;
+    }
+    .mobile-bound {
+        margin: auto;
+        width: 70%;
+        padding: 5% 0%;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 2rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1.25rem;
+    }
+    .register-now {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .theme2 {
+        border-radius: 0px;
+        margin-top: -2%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hangout-heading h1 {
+        font-size: 2.4rem;
+    }
+    .hangout-section p {
+        font-size: 1.5rem;
+    }
+    .md-center img {
+        width: 45%;
+    }
+    .agile-group .i-checks {
+        font-size: 1.5rem;
+    }
+    .m-choose h4 {
+        font-size: 1.85rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hangout-heading h1 {
+        font-size: 2rem;
+    }
+    .hangout-section .hg-lf,
+    .hangout-section .hg-rf {
+        padding-top: 5%;
+    }
+    .hangout-section p {
+        font-size: 1.35rem;
+    }
+    .md-center img {
+        width: 50%;
+    }
+    .hangout-countdown h2 {
+        font-size: 1.75rem;
+    }
+    .m-choose h4 {
+        font-size: 1.25rem;
+    }
+    .theme2 button,
+    .theme2 button:hover,
+    .theme2 button:focus {
+        font-size: 1rem;
+    }
+    .theme2 .agile-group:nth-child(3),
+    .theme3 .agile-group:nth-child(3),
+    .theme4 .agile-group:nth-child(3) {
+        padding-top: 0%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hangout-heading h1 {
+        font-size: 1.5rem;
+    }
+    .hangout-section p {
+        font-size: 1.15rem;
+    }
+    .hangout-countdown h2 {
+        font-size: 1.5rem;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 1.5rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1.05rem;
+    }
+    .time-img img {
+        width: 33%;
+    }
+    .agile-group .i-checks {
+        font-size: 1.15rem;
+    }
+    .m-choose h4 {
+        font-size: 1rem;
+    }
+    .agile-group .agile-header-element {
+        padding: 0;
+    }
+    .theme2 button,
+    .theme2 button:hover,
+    .theme2 button:focus {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width:320px) {}
+
+
+/* Desktop View Design Start Here */
+
+@media screen and (min-width:768px) {
+    .mobile-view {
+        display: none
+    }
+    .hangout-heading h1 {
+        font-size: 2rem;
+    }
+    .hangout-section p {
+        font-size: 0.85rem;
+    }
+    .hangout-countdown h2 {
+        font-size: 1rem;
+    }
+    .pd-row {
+        padding: 18% 3%;
+        padding-top: 5%;
+    }
+    .time {
+        font-size: 1rem;
+    }
+    .time-img img {
+        width: 33%;
+    }
+    .agile-group .i-checks {
+        font-size: 1rem;
+    }
+    .choose-me h4 {
+        font-size: 1rem;
+    }
+    .hangout-col-2 {
+        margin: auto 10%;
+        padding: 0;
+    }
+    .theme2 button,
+    .theme2 button:hover,
+    .theme2 button:focus {
+        font-size: 1rem;
+    }
+    .md-center img {
+        width: 90%;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 2rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1rem;
+    }
+    .mobile-bound {
+        width: 75%;
+        margin: auto;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 1rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 0.5rem;
+    }
+    .agile-group h4 {
+        font-size: 1.05rem;
+    }
+    .theme2 .agile-group {
+        margin-left: 0;
+    }
+    .theme2 .agile-group:last-child,
+    .theme3 .agile-group:last-child,
+    .theme4 .agile-group:last-child {
+        padding-bottom: 0px;
+    }
+    .theme2 .agile-group:nth-child(3),
+    .theme3 .agile-group:nth-child(3),
+    .theme4 .agile-group:nth-child(3) {
+        padding-top: 0;
+    }
+    .agile-group .agile-header-element {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .pd-row {
+        padding: 7% 3%;
+    }
+    .time {
+        font-size: 1.35rem;
+    }
+    .hangout-heading h1 {
+        font-size: 2.5rem;
+    }
+    .hangout-section p {
+        font-size: 1rem;
+    }
+    .hangout-countdown h2 {
+        font-size: 1.35rem;
+    }
+    .agile-group .i-checks {
+        font-size: 1.25rem;
+    }
+    .choose-me h4 {
+        font-size: 1.25rem;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 1.5rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .pd-row {
+        padding: 0% 3% 14% 3%;
+    }
+    .hangout-section p {
+        font-size: 1.25rem;
+    }
+    .hangout-countdown h2 {
+        font-size: 1.5rem;
+    }
+    .time {
+        font-size: 1.5rem;
+    }
+    .agile-group .i-checks {
+        font-size: 1.5rem;
+    }
+    .choose-me h4 {
+        font-size: 1.5rem;
+    }
+    .agile-group h4 {
+        font-size: 1.5rem;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 1.5rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1rem;
+    }
+    .agile-group {
+        margin-bottom: 3%;
+    }
+    .hangout-col-1 {
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .pd-row {
+        padding: 0% 10% 7% 10%;
+    }
+    .hangout-section {
+        padding: 0;
+        margin: 0;
+    }
+    .hangout-section p {
+        color: #606060;
+        font-size: 1.35rem;
+    }
+    .hangout-heading {
+        color: #ed592a;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .hangout-section .hg-rf {
+        justify-content: flex-end;
+    }
+    .hangout-section .hg-lf {
+        justify-content: flex-start;
+    }
+    .hg-bg {
+        background-color: #f4f4f4;
+    }
+    .hangout-heading h1 {
+        font-size: 3rem;
+    }
+    .hangout-col-1 {
+        padding: 0% 0% 6% 0%;
+    }
+    .hangout-col-2 {
+        text-align: center;
+        margin: auto 20%;
+        padding: 2% 0% 6% 0%;
+    }
+    .md-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .md-center img {
+        width: 100%;
+    }
+    .time-image {
+        padding: 5% 0%;
+    }
+    .hangout-para-lf {
+        padding-left: 7%;
+        margin: auto;
+    }
+    .hangout-para-rf {
+        margin: auto;
+    }
+    .hangout-countdown h2 {
+        color: #ed592a;
+        font-size: 1.5rem;
+    }
+    .countdown-div {
+        height: auto;
+        width: 75%;
+        text-align: center;
+        background-color: #333333;
+        align-items: center;
+        padding: 2% 1%;
+    }
+    .time-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5% 0%;
+    }
+    .theme2 {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .theme2 .agile-field {
+        width: 100%;
+    }
+    .agile-group .i-checks {
+        font-size: 1.5rem;
+        color: #606060;
+    }
+    .agile-group h4 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+    .theme2 .agile-group {
+        margin-left: 0;
+    }
+    .theme2 .agile-group:last-child,
+    .theme3 .agile-group:last-child,
+    .theme4 .agile-group:last-child {
+        padding-bottom: 0px;
+    }
+    .theme2 .agile-group:nth-child(3),
+    .theme3 .agile-group:nth-child(3),
+    .theme4 .agile-group:nth-child(3) {
+        padding-top: 0;
+    }
+    .theme2 button {
+        margin-top: 0;
+    }
+    .choose-me {
+        margin: 0;
+        padding: 0;
+    }
+    .choose-me h4 {
+        margin: 0;
+        padding: 5% 0%;
+        font-size: 1.85rem;
+    }
+    .agile-field1 {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: center;
+    }
+    .theme2 button,
+    .theme2 button:hover,
+    .theme2 button:focus {
+        margin-left: 0;
+        background-color: #ed592a;
+        border: #ed592a;
+        border-radius: 0;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 2rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .pd-row {
+        padding: 0% 10% 3% 10%;
+    }
+    .hangout-section {
+        padding: 0;
+        margin: 0;
+    }
+    .hangout-section p {
+        color: #606060;
+        font-size: 1.7rem;
+    }
+    .hangout-heading {
+        color: #ed592a;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .hangout-section .hg-rf {
+        justify-content: flex-end;
+    }
+    .hangout-section .hg-lf {
+        justify-content: flex-start;
+    }
+    .hg-bg {
+        background-color: #f4f4f4;
+    }
+    .hangout-heading h1 {
+        font-size: 3rem;
+    }
+    .hangout-col-1 {
+        padding: 0% 0% 6% 0%;
+    }
+    .hangout-col-2 {
+        text-align: center;
+        margin: auto 20%;
+        padding: 2% 0% 6% 0%;
+    }
+    .md-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .md-center img {
+        width: 100%;
+    }
+    .time-image {
+        padding: 5% 0%;
+    }
+    .hangout-para-lf {
+        padding-left: 7%;
+        margin: auto;
+    }
+    .hangout-para-rf {
+        margin: auto;
+    }
+    .hangout-countdown h2 {
+        color: #ed592a;
+        font-size: 2rem;
+    }
+    .countdown-div {
+        height: auto;
+        width: 75%;
+        text-align: center;
+        background-color: #333333;
+        align-items: center;
+        padding: 2% 1%;
+    }
+    .time-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5% 0%;
+    }
+    .theme2 {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    .theme2 .agile-field {
+        width: 100%;
+    }
+    .agile-group .i-checks {
+        font-size: 2rem;
+        color: #606060;
+    }
+    .agile-group h4 {
+        font-size: 1.75rem;
+        padding: 0;
+    }
+    .theme2 .agile-group {
+        margin-left: 0;
+    }
+    .theme2 .agile-group:last-child,
+    .theme3 .agile-group:last-child,
+    .theme4 .agile-group:last-child {
+        padding-bottom: 0px;
+    }
+    .theme2 .agile-group:nth-child(3),
+    .theme3 .agile-group:nth-child(3),
+    .theme4 .agile-group:nth-child(3) {
+        padding-top: 0;
+    }
+    .theme2 button {
+        margin-top: 0;
+    }
+    .choose-me {
+        margin: 0;
+        padding: 0;
+    }
+    .choose-me h4 {
+        margin: 0;
+        padding: 5% 0%;
+        font-size: 1.85rem;
+    }
+    .agile-field1 {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: center;
+    }
+    .theme2 button,
+    .theme2 button:hover,
+    .theme2 button:focus {
+        margin-left: 0;
+        background-color: #ed592a;
+        border: #ed592a;
+        border-radius: 0;
+    }
+    .count-demo-div .dhm-val {
+        font-size: 2rem;
+    }
+    .count-demo-div .dhm-text {
+        font-size: 1.5rem;
+    }
+}

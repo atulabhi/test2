@@ -1,0 +1,859 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>OpenEBS Internship</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../styles/images/fav/largetile.png" />
+    <link rel="manifest" href="/manifest.json">
+    <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../styles/css/openebs.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../styles/js/bootstrap.min.js"></script>
+
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="OpenEBS EET">
+    <meta itemprop="description" content="OpenEBS is offering internships for students and recent graduates.">
+    <meta itemprop="image" content="https://openebs.io/styles/images/internship-desktop.svg">
+    <meta itemprop="image" content="https://openebs.io/styles/images/internship-desktop.svg">
+    <!-- <meta name="robots" content="noindex" /> -->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="Summary_large_image">
+    <meta name="twitter:site" content="@openebs">
+    <meta name="twitter:title" content="OpenEBS EET">
+    <meta name="twitter:description" content="OpenEBS is offering internships for students and recent graduates.">
+    <meta name="twitter:creator" content="@openebs">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="https://openebs.io/styles/images/internship-desktop.svg">
+    <meta name="twitter:image" content="https://openebs.io/styles/images/internship-desktop.svg">
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://www.openebs.io/internships" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="OpenEBS" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="OpenEBS is offering internships for students and recent graduates." />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://openebs.io/styles/images/internship-desktop.svg" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://openebs.io/styles/images/internship-desktop.svg" />
+
+
+
+
+
+    <meta name="description" content="OpenEBS is offering internships for students and recent graduates" />
+    <meta property="og:title" content="OpenEBS EET" />
+    <meta property="og:description" content="OpenEBS is offering internships for students and recent graduates" />
+    <link href="https://d1gwclp1pmzk26.cloudfront.net/agile/forms/v1/agile-form-min.css" rel="stylesheet">
+    <style>
+        
+        .form-entry {
+            width: 80%;
+            text-align: left;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .instruction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5;
+            font-weight: 500;
+            padding-right: 0;
+        }
+        
+        .talkbubble {
+            width: 100%;
+            height: 100%;
+            background: #f3f3f3;
+            position: relative;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 0;
+            margin-left: 3rem;
+        }
+        
+        .talkbubble:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 10px;
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-right: 26px solid #f3f3f3;
+            border-bottom: 13px solid transparent;
+        }
+        
+        .pd {
+            margin: 2% 0%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .user-size {
+            font-size: 3rem;
+            color: #0EB4C1;
+        }
+        
+        .stargazer-img {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .align-checks {
+            width: 33%;
+        }
+        
+        .openebs-intro {
+            padding: 0%;
+            padding-bottom: 2.5%;
+            font-size: 1.35rem;
+        }
+        
+        .pd-here {
+            /* padding: 5%; */
+            padding-top: 2.5%;
+            padding-bottom: 5%;
+        }
+        
+        .openebs-intro h1 {
+            color: #f05928;
+        }
+        
+        .openebs-require {
+            padding-top: 2%;
+            line-height: 1.65;
+        }
+        
+        .ob {
+            font-weight: 500;
+        }
+        
+        .ob a,
+        .ob a:focus,
+        .ob a:hover {
+            color: #f05928;
+        }
+        
+        .theme2 .agile-form-description {
+            font-size: 1.25rem;
+            padding: 2% 0%;
+        }
+        
+        .theme2 .agile-label {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        .theme2 .agile-label a,
+        .theme2 .agile-label a:hover,
+        .theme2 .agile-label a:focus {
+            color: #f05928;
+        }
+        
+        .theme2 .agile-field {
+            width: 95%;
+        }
+        
+        .theme2 .agile-group {
+            margin-left: 0;
+        }
+        
+        .theme2 .agile-group .i-checks:first-child {
+            margin-bottom: 0px;
+            padding: 2%;
+        }
+        
+        .agile-group .i-checks {
+            margin-bottom: 0px;
+            padding: 2%;
+            margin-right: 0;
+        }
+        
+        .theme2 .agile-field textarea {
+            min-height: 150px;
+        }
+        
+        .align-button {
+            text-align: center;
+        }
+        
+        .theme2 button {
+            width: 250px!important;
+            border-radius: 0;
+        }
+        
+        .openebs-project {
+            font-size: 2rem;
+            font-weight: 500;
+            color: #f05928;
+        }
+        
+        .h3,
+        h3 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        
+        .mobile-view {
+            display: none;
+        }
+        
+        .desktop-view {
+            display: flex;
+        }
+        
+        @media screen and (max-width:767px) {
+            .stargazer-img {
+                height: 100%;
+                width: 100%;
+            }
+            .pd-here {
+                /* padding: 5%; */
+                padding: 0;
+            }
+            .arrow-style {
+                font-size: 40px;
+                color: grey;
+            }
+            .mobile-view {
+                display: flex;
+            }
+            .desktop-view {
+                display: none;
+            }
+            .openebs-require {
+                padding-top: 2%;
+                line-height: 1.5;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            .carousel-item h3 {
+                font-size: 1.5rem;
+                padding-top: 10%;
+            }
+            /*  Mobile carousel here! */
+            .carousel-indicators li {
+                height: 10px;
+                width: 10px;
+                border-radius: 50rem;
+                background-color: #f0f0f0;
+            }
+            .carousel-indicators .active {
+                background-color: #f05928;
+            }
+            .form-entry-mob {
+                width: 80%;
+                text-align: left;
+                /* display: flex; */
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                padding-bottom: 15%;
+                padding-top: 0%;
+            }
+            .carousel-control-next,
+            .carousel-control-prev {
+                width: 10%;
+            }
+            .theme2 .agile-form-description {
+                font-size: 1.05rem;
+                padding: 2% 0%;
+            }
+            .instruction {
+                font-size: 1rem;
+            }
+            .theme2 .agile-field {
+                width: 100%;
+            }
+            .align-checks {
+                width: 100%;
+            }
+            .openebs-require {
+                padding-top: 2%;
+                line-height: 1.65;
+                text-align: center;
+                font-size: 1.05rem;
+            }
+            .talkbubble {
+                text-align: left;
+            }
+            .talkbubble:before {
+                top: 14%;
+            }
+            .openebs-project {
+                font-size: 1.5rem;
+            }
+            .h3,
+            h3 {
+                font-size: 1.5rem;
+            }
+            .theme2 button {
+                width: 170px!important;
+                border-radius: 0;
+            }
+        }
+        
+        @media screen and (max-width:400px) {
+            .openebs-require {
+                padding-top: 2%;
+                line-height: 1.5;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+            .theme2 .agile-form-description {
+                font-size: 1rem;
+            }
+            .theme2 .agile-label {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+            .instruction {
+                font-size: 0.9rem;
+            }
+            .openebs-project {
+                font-size: 1.25rem;
+            }
+            .talkbubble:before {
+                top: 3%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="ebs-nav">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-logo" href="../index.html"><img src="../styles/images/banner-icon.svg" height="40" style="width:auto;"></a>
+                <a class="navbar-brand mobile-logo" href="../index.html"><img src="../styles/images/openebs-logo.svg" height="40" style="width:auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Documentation"><i class="fa fa-book" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://slack.openebs.io" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+            <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="documentation"><i class="fa fa-book" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://slack.openebs.io" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </a>
+            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer">
+                <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+            </a>
+        </ul>
+    </div>
+    <!--community section-->
+    <!-- <div class="subhead">
+    </div> -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 openebs-intro " style="">
+                    <!-- <h1 style="text-align:center">OpenEBS is offering internships for students and recent graduates</h1> -->
+                    <img class="desktop-view" src="../styles/images/internship-desktop.svg" alt="internship" title="OpenEBS Internship">
+                    <img class="mobile-view" src="../styles/images/internship-mob.svg" alt="internship" title="OpenEBS Internship">
+                    <div class="bg-img">
+
+                        <!-- <p>OpenEBS looking for get set go interns.</p> -->
+                        <img class="desktop-view" src="../styles/images/graduates.svg" alt="graduates" title="OpenEBS offers Internship">
+                        <img class="mobile-view" src="../styles/images/mobile-banner.svg" alt="graduates" title="OpenEBS offers Internship">
+                        <div class="container">
+                            <div class="openebs-require " style="">
+                                <div class="pd">
+                                    <div style="display:inline-block;padding: 1% 1%;"><i class="fa fa-user-circle user-size" aria-hidden="true"></i></div>
+                                    <div class="talkbubble" style="display:inline-block; 
+                                   
+                                    background-color: #f3f3f3;
+                                    padding: 1% 1%;"> Are you passionate about contributing to Open Source ?</div>
+
+                                </div>
+                                <div class="pd">
+                                    <div style="display:inline-block;padding: 1% 1%;"><i class="fa fa-user-circle user-size" aria-hidden="true"></i></div>
+                                    <div class="talkbubble" style="display:inline-block;  
+                                  
+                                    background-color: #f3f3f3;
+                                    padding: 1% 1%;">
+                                        <div>Are you hungry for working with cutting edge technologies and learning new age concepts?</div>
+                                    </div>
+
+                                </div>
+                                <div class="">
+                                    <!-- <div style="display:inline-block;padding: 1% 1%;"><i class="fa fa-user-circle user-size" aria-hidden="true"></i></div> -->
+                                    <div style="display:block; text-align:center; font-weight:700; font-size:1.5rem;
+                                       
+                                        
+                                        padding: 1% 1%;">You came to the right spot&nbsp;!</div>
+
+                                </div>
+
+
+                                <p class="ob openebs-project" style="text-align:center;">OpenEBS Internship Program Details</p>
+
+
+                                <p> OpenEBS is the fastest growing open source community in the Cloud Native Storage space. OpenEBS project is sponsored by MayaData Inc, a startup headquartered in the Silicon Valley, and has a large R&D team operating out
+                                    of Bangalore.
+                                </p>
+                                <p>At OpenEBS we not only give you an opportunity to display your full potential, but we also nurture you to contribute effectively to open source projects.</p>
+
+                                <p class="ob"> We are seeking talents across the globe who are keen on working with us as an intern on open source technologies such as Kubernetes, Prometheus and OpenEBS.</p>
+                                <p class="ob"> Colleges can request OpenEBS team for a seminar on Open Source Development and Internships.</p>
+                                <p class="ob"><a href="../styles/pdf/OpenEBS-student-internships.pdf" target="_blank">Find the details here.</a></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pd-here">
+                <div id="agileFormHolder" style="margin:0 auto; border:1px solid transparent; ">
+
+                    <form class="form-view theme2" id="agile-form" action="https://cloudbyte.agilecrm.com/formsubmit" style="background-color:transparent;box-shadow:none;">
+                        <fieldset>
+
+
+                            <div id="my-desktop" style="padding:5% 0% 2% 0%;">
+                                <!-- Form Name -->
+                                <h3 style="color:#f05928; text-align:center;">Find An Internship</h3>
+                                <p class="agile-form-description">Fill up the details with correct and accurate information.</p>
+                                <div style="display: none; height: 0px; width: 0px;">
+                                    <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="OpenEBS EET">
+                                    <input type="hidden" id="_agile_domain" name="_agile_domain" value="cloudbyte">
+                                    <input type="hidden" id="_agile_api" name="_agile_api" value="2fj7t9epllsfe6c2jm86pnpqro">
+                                    <input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="#">
+                                    <input type="hidden" id="_agile_document_url" name="_agile_document_url" value="">
+                                    <input type="hidden" id="_agile_confirmation_msg" name="_agile_confirmation_msg" value="Great! Thanks for filling out the form. We will verify the details of the form and will get back to you ">
+                                    <input type="hidden" id="_agile_form_id_tags" name="tags" value="OpenEBS EET-2">
+
+                                    <input type="hidden" id="_agile_form_id" name="_agile_form_id" value="5740073718906880">
+                                </div>
+                                <div class="form-entry">
+                                    <!-- Text input-->
+                                    <div class="agile-group required-control">
+                                        <label class="agile-label" for="agilefield-1">Name<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field-xlarge agile-field">
+                                            <input maxlength="250" id="agilefield-1" name="first_name" type="text" placeholder="Enter Your Name" class="agile-height-default" required="" autocomplete="off">
+                                        </div>
+                                        <div class="agile-custom-clear"></div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="agile-group required-control">
+                                        <label class="agile-label" for="agilefield-3">Email<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field-xlarge agile-field">
+                                            <input maxlength="250" id="agilefield-3" name="email" type="email" placeholder="Enter Your Email" class="agile-height-default" required="" autocomplete="off">
+                                        </div>
+                                        <div class="agile-custom-clear"></div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="agile-group required-control">
+                                        <label class="agile-label" for="agilefield-2">Github Username .<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field-xlarge agile-field">
+                                            <input maxlength="250" id="agilefield-2" name="Github User Name" autocomplete="off" type="text" placeholder="Enter Github Username" class="agile-height-default" required="">
+                                        </div>
+                                        <div class="agile-custom-clear"></div>
+                                    </div>
+
+                                    <div class="agile-group agile-form-inlineradios">
+                                        <label class="agile-label" for="inline_radios_1514291697289">Highest Qualification<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field agile-field-xlarge agile-height-default">
+                                            <label for="inline_radios_1514291697289-0" class="i-checks align-checks">
+              <input type="radio" name="Highest Qualification" id="inline_radios_1514291697289-0" value="B.TECH" checked="checked" required=""><i></i>
+              B.TECH
+            </label>
+                                            <label for="inline_radios_1514291697289-1" class="i-checks align-checks">
+              <input type="radio" name="Highest Qualification" id="inline_radios_1514291697289-1" value="MCA" required=""><i></i>
+              MCA
+            </label>
+                                            <label for="inline_radios_1514291697289-2" class="i-checks align-checks">
+              <input type="radio" name="Highest Qualification" id="inline_radios_1514291697289-2" value="OTHERS" required=""><i></i>
+              OTHERS
+            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Multiple Radios (inline) -->
+                                    <div class="agile-group agile-form-inlineradios">
+                                        <label class="agile-label" for="inline_radios_1514291805248">Specialization/Branch<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field agile-field-xlarge agile-height-default">
+                                            <label for="inline_radios_1514291805248-0" class="i-checks align-checks">
+              <input type="radio" name="BTECH Branch" id="inline_radios_1514291805248-0" value="Computer Science" checked="checked" required=""><i></i>
+              CS
+            </label>
+                                            <label for="inline_radios_1514291805248-1" class="i-checks align-checks">
+              <input type="radio" name="BTECH Branch" id="inline_radios_1514291805248-1" value="IT" required=""><i></i>
+              IT
+            </label>
+                                            <label for="inline_radios_1514291805248-2" class="i-checks align-checks">
+              <input type="radio" name="BTECH Branch" id="inline_radios_1514291805248-2" value="ENTC/ECE" required=""><i></i>
+              ENTC/ECE
+            </label>
+                                            <label for="inline_radios_1514291805248-3" class="i-checks align-checks">
+              <input type="radio" name="BTECH Branch" id="inline_radios_1514291805248-3" value="OTHERS" required=""><i></i>
+              OTHERS
+            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="agile-group required-control">
+                                        <label class="agile-label" for="agilefield-7">Year of Graduation<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field-xlarge agile-field">
+                                            <input maxlength="250" id="agilefield-7" autocomplete="off" name="agilefield-7" type="text" placeholder="Enter Year" class="agile-height-default" required="">
+                                        </div>
+                                        <div class="agile-custom-clear"></div>
+                                    </div>
+                                    <!-- Multiple Checkboxes (inline) -->
+                                    <div class="agile-group agile-form-multicheckboxes">
+                                        <label class="agile-label" for="inline_checkboxes_1514292069326">Keyskills<span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field agile-field-xlarge agile-height-default">
+                                            <label for="inline_checkboxes_1514292069326-0" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-0" value="C" checked="checked"><i></i>
+              C
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-1" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-1" value="Python"><i></i>
+              Python
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-2" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-2" value="JSP/Javascript"><i></i>
+              JSP/Javascript
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-3" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-3" value="Machine Language"><i></i>
+              Machine Language
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-4" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-4" value="Golang"><i></i>
+              Golang
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-5" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-5" value="Ember Js"><i></i>
+              Ember Js
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-6" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-6" value="SQL and Other Databases"><i></i>
+              SQL and Other Databases
+            </label>
+                                            <label for="inline_checkboxes_1514292069326-7" class="i-checks align-checks">
+              <input type="checkbox" name="Key Skills" id="inline_checkboxes_1514292069326-7" value="Others"><i></i>
+              Others
+            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Textarea -->
+                                    <div class="agile-group required-control">
+                                        <label class="agile-label" for="agilefield-9">List the open source projects that you are connected with. Type "None" if you do never participated in any Open source projects <span class="agile-span-asterisk"> *</span></label>
+                                        <div class="agile-field-xlarge agile-field">
+                                            <textarea maxlength="250" id="agilefield-9" autocomplete="off" name="Contributed to Open Source" placeholder="" required="" class="agile-height-default"></textarea>
+                                        </div>
+                                        <div class="agile-custom-clear"></div>
+                                    </div>
+
+                                    <!--recaptcha aglignment-->
+                                    <!-- Button -->
+                                    <div class="align-button">
+                                        <!-- <label class="agile-label">&nbsp;</label> -->
+                                        <div class="">
+                                            <button type="submit" class="agile-button" style="background-color:#ee5a2b;border:1px solid #ee5a2b">Register Now</button>
+                                            <br><span id="agile-error-msg"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="display:none;text-align:center;" id="thanks">Great <span id="intern-name" style="font-weight:600; color:#f05928;"></span>! Thanks for filling out the form. We will verify the details of the form and will get back to you </p>
+
+    <!--community section-->
+    <!-- <div class="subhead">
+    </div> -->
+    <section class="mar-t-5 contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-family: sans-serif; padding-bottom:1%">Join Our Community</h2>
+                    <p>Join the OpenEBS community by contributing on our blog, GitHub and following us on social media.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center ebs-footer">
+                            <div class="social ">
+                                <a href="http://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="social"> <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a><br> </div>
+                            <div class="social"> <a href="https://www.facebook.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                            <div class="social">
+                                <a href="https://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="social"> <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </div>
+                            <div class="social"> <a href="careers/index.html"><i class="fa fa-briefcase" aria-hidden="true"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--js files-->
+    <script src="../styles/js/openebs.js"></script>
+    <script src="../styles/js/popper.min.js"></script>
+    <script src="../styles/js/bootstrap.min.js"></script>
+    <!-- Google Analytics -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92076314-2"></script>
+    <!-- End Google Analytics -->
+    <!-- <script>
+        $(document).ready(function() {
+            var intViewportWidth = window.innerWidth;
+            if (intViewportWidth <= 767) {
+                document.getElementById("my-desktop").remove();
+            } else {
+              
+                $("#myam").remove();
+            }
+           
+        });
+    </script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92076314-2');
+    </script>
+    <script type="text/javascript">
+        (function(a) {
+            var b = a.onload,
+                p = false;
+            isCaptcha = false;
+            if (p) {
+                a.onload = "function" != typeof b ? function() {
+                    try {
+                        _agile_load_form_fields()
+                    } catch (a) {}
+                } : function() {
+                    b();
+                    try {
+                        _agile_load_form_fields()
+                    } catch (a) {}
+                }
+            };
+            var formLen = document.forms.length;
+            for (i = 0; i < formLen; i++) {
+                if (document.forms.item(i).getAttribute("id") == "agile-form") {
+                    a.document.forms.item(i).onsubmit = function(a) {
+                        a.preventDefault();
+                        try {
+                            _agile_synch_form_v5(this)
+                        } catch (b) {
+
+
+
+
+                            $.ajax({
+                                url: 'https://cloudbyte.agilecrm.com/formsubmit',
+                                type: 'post',
+                                data: $('#agile-form').serialize(),
+                                success: function() {
+
+
+                                    console.log('thanks u note');
+                                    document.getElementById('agilefield-5').innerHTML = '';
+                                }
+                            });
+                            var internname = document.getElementById('intern-name');
+                            internname.innerHTML = $("#agilefield-1").val();
+                            // $('#agile-form').addClass("d-none");
+                            // $("#").css();
+                            document.getElementById("agilefield-1").value = "";
+                            document.getElementById("agilefield-2").value = "";
+                            document.getElementById("agilefield-3").value = "";
+                            // document.getElementById("agilefield-4").value = "";
+                            // document.getElementById("agilefield-5").value = "";
+                            document.getElementById("agilefield-7").value = "";
+                            document.getElementById("agilefield-9").value = "";
+                            document.getElementById("inline_radios_1514291697289-0").checked = true;
+                            document.getElementById("inline_radios_1514291697289-1").checked = false;
+                            document.getElementById("inline_radios_1514291697289-2").checked = false;
+                            document.getElementById("inline_radios_1514291805248-0").checked = true;
+                            document.getElementById("inline_radios_1514291805248-1").checked = false;
+                            document.getElementById("inline_radios_1514291805248-2").checked = false;
+                            document.getElementById("inline_radios_1514291805248-3").checked = false;
+
+                            document.getElementById("inline_checkboxes_1514292069326-0").checked = true;
+                            document.getElementById("inline_checkboxes_1514292069326-1").checked = false;
+                            document.getElementById("inline_checkboxes_1514292069326-2").checked = false;
+                            document.getElementById("inline_checkboxes_1514292069326-3").checked = false;
+                            document.getElementById("inline_checkboxes_1514292069326-4").checked = false;
+                            document.getElementById("inline_checkboxes_1514292069326-5").checked = false;
+                            document.getElementById("inline_checkboxes_1514292069326-6").checked = false;
+                            document.getElementById("inline_checkboxes_1514292069326-7").checked = false;
+
+                            // $('input[type=checkbox]').attr('checked', false);
+
+                            // $('input:checkbox').removeAttr('checked');
+
+
+                            $('#thanks').css('display', 'block');
+
+                            var modal = document.getElementById('myModal');
+
+                            // Get the button that opens the modal
+                            // var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+                            // btn.onclick = function() {
+                            modal.style.display = "block";
+                            // }
+                            username.innerHTML = $('#agilefield-1').val();
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function() {
+                                modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function(event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+
+                            var pst = document.getElementById('pst');
+
+                            pst.onclick = function() {
+                                modal.style.display = "none";
+                            }
+
+                            var ist = document.getElementById('ist');
+
+                            ist.onclick = function() {
+                                modal.style.display = "none";
+                            }
+
+                            if (checkpst && checkist) {
+
+                                $('#pst').css('display', 'block');
+                                $('#ist').css('display', 'block');
+
+                            } else if (checkpst) {
+                                $('#pst').css('display', 'inline-block');
+                            } else if (checkist) {
+                                $('#ist').css('display', 'inline-block');
+                            } else {
+                                $('#ist').css('display', 'none');
+                                $('#pst').css('display', 'none');
+                            }
+
+
+                            if (checkpst) {
+                                $('#pst').css('display', 'inline-block');
+                            } else {
+                                $('#pst').css('display', 'none');
+                            }
+
+                        }
+                    }
+                }
+            }
+        })(window);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+
+</body>
+
+</html>

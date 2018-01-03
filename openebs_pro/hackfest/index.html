@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OpenEBS | HackFest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OpenEBS is containerised storage for containers.">
+    <meta name="keywords" content="">
+    <link rel="author" href="http://github.com/openebs" />
+    <link rel="canonical" href="http://www.openebs.io/">
+    <link rel="shortcut icon" href="../styles/images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../styles/images/fav/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../styles/images/fav/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../styles/images/fav/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../styles/images/fav/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../styles/images/fav/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../styles/images/fav/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../styles/images/fav/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../styles/images/fav/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../styles/images/fav/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../styles/images/fav/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+    <meta name="msapplication-square70x70logo" content="../styles/images/fav/smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="../styles/images/fav/mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="../styles/images/fav/widetile.png" />
+    <meta name="msapplication-square310x310logo" content="../styles/images/fav/largetile.png" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="OpenEBS Hackfest">
+    <meta itemprop="description" content="Thank you, for all your contributions to Hacktoberfest 2017! We are extending the Hacktoberfest to our very own OpenEBS Hackfest.">
+    <meta itemprop="image" content="http://openebs.io/hackfest/style/images/OpenEBShackfest.png">
+    <meta itemprop="image" content="https://openebs.io/hackfest/style/images/OpenEBShackfest.png">
+    <!-- <meta name="robots" content="noindex" /> -->
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="Summary_large_image">
+    <meta name="twitter:site" content="@openebs">
+    <meta name="twitter:title" content="OpenEBS Hackfest">
+    <meta name="twitter:description" content="Thank you, for all your contributions to Hacktoberfest 2017! We are extending the Hacktoberfest to our very own OpenEBS Hackfest.">
+    <meta name="twitter:creator" content="@openebs">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image" content="http://openebs.io/hackfest/style/images/OpenEBShackfest.png">
+    <meta name="twitter:image" content="https://openebs.io/hackfest/style/images/OpenEBShackfest.png">
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://www.openebs.io/hackfest/index.html" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:type" content="article" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="OpenEBS Hackfest" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Thank you, for all your contributions to Hacktoberfest 2017! We are extending the Hacktoberfest to our very own OpenEBS Hackfest." />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://openebs.io/hackfest/style/images/OpenEBShackfest.png" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://openebs.io/hackfest/style/images/OpenEBShackfest.png" />
+    <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="style/css/style.css" rel="stylesheet">
+    <link href="style/css/winner-sec.css" rel="stylesheet">
+
+
+
+    <style>
+        .mobile-view1 {
+            display: none;
+        }
+        
+        @media screen and (max-width:767px) {
+            .mobile-view1 {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="ebs-nav" style="background-color: #00999E;color:white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-view logo" href="../"><img src="style/images/oebslogowhite.svg" alt="desk-logo" title="OpenEBS" /></a>
+                <a class="navbar-brand mobile-view" href="../"><img src="style/images/mnewlogo.svg" height="50" style="width:auto;" alt="mob-logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-md-auto social-top">
+                        <li class="nav-item p-3" style="display:inline;" title="Documentation">
+                            <a href="https://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><i class="fa fa-book" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li class="nav-item p-3" style="display:inline;" title="Facebook"> <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true" style="color:white"></i></a></li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Slack">
+                            <a href="https://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Blog">
+                            <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Twitter">
+                            <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+
+                        <li class="nav-item p-3" style="display:inline;" title="Github ">
+                            <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Side drawer-->
+    <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="navbar-nav ml-md-auto social-top">
+
+            <li class="nav-item p-2" style="display:inline;" title="Documentation">
+                <a href="https://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"><i class="fa fa-book" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Facebook">
+                <a href="https://www.facebook.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Slack">
+                <a href="https://slack.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-slack" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Blog">
+                <a href="https://blog.openebs.io" target="_blank" rel="noopener noreferrer"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Twitter">
+                <a href="https://twitter.com/openebs" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+
+
+            <li class="nav-item p-2" style="display:inline;" title="Github ">
+                <a href="https://github.com/openebs/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+
+        </ul>
+    </div>
+
+    <main>
+        <section class="desktop-view">
+            <div class="main-head">
+
+
+                <div class="container-fluid">
+                    <div class="row mule-sec chang-bg">
+
+                        <div class="col-md-7 " style="padding-left:0px;">
+
+                            <div>
+                                <img src="style/images/whitehack-01.svg" alt="OpenEBS Hackfest" title="OpenEBS Hackfest " class="mule-img mule-sitting-new">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-5" style="padding-right:0px;">
+
+                            <div class="header-sec ">
+                                <div class="slant-line">
+                                    <h6 style="text-align:center">Thank you for all your contributions <br> to OpenEBS Hackfest 2017! <br> Hope You had a great run with us</h6>
+                                    <!-- <h6>Thank you, for all your contributions to <strong><a href="../hacktoberfest2017/"><u>Hacktoberfest 2017!</u> </a></strong>We are extending the Hacktoberfest to our very own <strong>OpenEBS Hackfest.</strong><br><br>
+                                        <span style="color:black;"><i class="fa fa-calendar" aria-hidden="true"></i><strong> 15th Nov - 15th Dec</strong></span></h6>
+                                    <a href="#contribute-to-me"><button type="button" class=" btn-overwrite  helloAm">Get Hacking</button></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+        <section class="mobile-view1 ">
+            <div class="main-head">
+
+
+                <div class="container-fluid">
+                    <div class="row mule-sec">
+                        <div class="col-12" class="hackcontributions" style="padding-right:0px;background-color:#00999E">
+                            <div class="header-sec ">
+
+                                <h6 style="text-align:center">Thank you for all your contributions <br> to OpenEBS Hackfest 2017! <br> Hope You had a great run with us</h6>
+                                <!-- <span style="color:black;"><i class="fa fa-calendar" aria-hidden="true"></i><strong> 15th Nov - 15th Dec</strong></span></h6>
+                                <button type="button" class=" btn-overwrite">Get Hacking</button> -->
+
+                            </div>
+                        </div>
+                        <div class="col-12 mule-sec" class="setcorrectmargin" style="padding-left:0px;padding-right:0;margin-bottom:8%;">
+                            <div>
+                                <!-- <div class="setdiv"></div> -->
+                                <img src="style/images/whitehack-01.svg" alt="OpenEBS Hackfest" title="OpenEBS Hackfest " class="mule-img mule-sitting-new">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- <section class="winner-section">
+        <div class="container-fluid container1">
+            <div class="row cafe-rev mobileup">
+                <div class="col-12 col-md-7 laptop-sec1" style="padding:1px;">
+                    <div class="win-tshirts">
+                        <h2>Contribute to us and win!</h2>
+
+                        <p>We are giving away special edition <span class="orangeText">T-shirts</span> and <span class="orangeText">stickers</span> to every hackfest contributor.</p>
+                        <p>Every contributor gets a chance to be <span class="orangeText">featured on our website.</span></p>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 laptop-sec2">
+                    <div class="tshirt-circle">
+                        <div class="tshirt">
+                            <img src="style/images/t-shirt-new.png" alt="OpenEBS Hackfest Tshirts" title="OpenEBS Hackfest Tshirts">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid container1">
+            <div class="row cafe-rev mobile-down" style="">
+
+                <div class="col-6 col-md-6 laptop-sec2">
+                    <div class="laptop-circle">
+                        <div class="laptop">
+                            <img src="style/images/laptopprize-new.png" alt="laptop" title="HackFest Prize">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-6  laptop-sec1 mob" style="padding:1px;">
+                    <div class="win-laptop">
+
+
+                        <p>The contributor with the best PR submission gets to win a <span class="orangeText">Laptop!</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <section class="contibutor-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contibutor-title">
+                        <h2>OpenEBS Hackfest Contributors, thank you for your contributions!</h2>
+                    </div>
+                    <div class="peoples">
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/atheoscommune" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars3.githubusercontent.com/u/15967659?s=110&v=44" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">atheos</p>
+                                <a href="https://github.com/openebs/maya/pull/228" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/xetys" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars3.githubusercontent.com/u/2758003?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">David</p>
+                                <a href="https://github.com/openebs/openebs/pull/1021" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/mynktl" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars0.githubusercontent.com/u/33252549?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Mayank</p>
+                                <a href="https://github.com/openebs/maya/pull/227" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/dungeonmaster18" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars0.githubusercontent.com/u/23421535?s=400&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Umesh</p>
+                                <a href="https://github.com/openebs/maya/pull/199" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="peoples" style="">
+
+
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/rohythakur" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars2.githubusercontent.com/u/11797824?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Rohit</p>
+                                <a href="https://github.com/openebs/openebs/pull/913" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/mptap" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars1.githubusercontent.com/u/2568272?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Manjiri</p>
+                                <a href="https://github.com/openebs/maya/pull/191" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/ferhatelmas" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars3.githubusercontent.com/u/648018?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">ferhat</p>
+                                <a href="https://github.com/openebs/openebs/pull/907" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/abhisheklakra007" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars3.githubusercontent.com/u/16861795?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Abhishek</p>
+                                <a href="https://github.com/openebs/maya/pull/207" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="peoples" style="">
+
+                        <!-- <div class="d-flex people-details">
+                            <a href="https://github.com/abhisheklakra007" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars3.githubusercontent.com/u/16861795?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Abhishek</p>
+                                <a href="https://github.com/openebs/maya/pull/207" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div> -->
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/senthilkumar-e" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars1.githubusercontent.com/u/19323339?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Senthil</p>
+                                <a href="https://github.com/openebs/openebs/pull/932" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/hammadmashkoor" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars2.githubusercontent.com/u/28043522?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Mashkoor</p>
+                                <a href="https://github.com/openebs/openebs/pull/900" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+                        <div class="d-flex people-details">
+                            <a href="https://github.com/thepriefy" target="_blank" rel="noopener noreferrer"> <img class="contriimg" src="https://avatars1.githubusercontent.com/u/10849586?s=110&v=4" alt="thepriefy" /></a>
+                            <div class="d-flex flex-column name-sec">
+                                <p class="name">Thepriefy</p>
+                                <a href="https://github.com/openebs/openebs/pull/188" target="_blank" rel="noopener noreferrer" style="color:#ff9933"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="cafe-section " style="margin:4% 4% 4% 4%; ">
+        <div class="container ">
+            <div class="row cafe-rev">
+                <div class="col-md-6 details ">
+                    <img src="style/images/cafetitle.svg" alt="cafetitle " title="OpenEBS Cafe " class="cafeimg ">
+
+                    <h4>Hey, if you are in Bangalore, stop by the OpenSource Cafe for free WiFi and chai/coffee or book it for your community meeting</h4>
+                    <button type="button" class="btn btn-primary btn-overwrite visitus "> <a href="../cafe/" target="_blank">Visit Us</a></button>
+                </div>
+                <div class="col-md-6 people ">
+                    <img src="style/images/openebs-hacktober-section-01.svg" alt="people-sitting " title="cafe " class="cafepeople ">
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <section style="background-color:#efefef;">
+        <div class="container">
+            <div class="row pd-hackfest">
+                <div class="col-12 col-md-6 middle-me mobile-background m-r">
+                    <div class="row reverse-mob">
+                        <!-- <div class="col-md-3"></div> -->
+                        <div class="col-12 col-md-8 middle-me ">
+                            <div class="about-winner">
+                                <p class="winner-name">David Steiman</p>
+                                <p>Won a laptop for the best PR for Hacktfest</p>
+                                <p>
+                                    <a href="https://github.com/openebs/openebs/pull/1021" target="_blank" rel="noopener noreferrer"><img class="primage" src="style/images/merged.svg" alt="primage" height="15" width="15" />PR</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 middle-me">
+                            <div class="winner-image">
+                                <img src="https://avatars3.githubusercontent.com/u/2758003?s=150&v=4" title="Hackfest Winner" alt="Hackfest Winner">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 middle-me winner-tp">
+                    <div class="winner-trophy">
+                        <img src="style/images/hack-winner-trophy.svg" alt="Winner Trophy" title="Winner Trophy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contributed-issue" id="contribute-to-me">
+        <div class="container">
+            <div class="row issue-row">
+                <div class="col-12 col-md-4 temp firstme">
+                    <div class="row issue-row1">
+                        <!-- <div class="col-6 col-md-6 " style="display: flex;align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">0</div>
+                            <p class="txt">Open Issues</p>
+                        </div>
+                        <div class="col-6 col-md-6 " style="display: flex;align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">0</div>
+                            <p class="txt"> Submitted PRs</p>
+                        </div> -->
+                        <div class="col-6 col-md-12 centerAm">
+                            <div class="button newlinks">
+                                <a href="https://github.com/openebs/openebs/labels/help%2Fsmall " target="_blank">
+                                    <p class="newlink">Beginner</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-12 centerAm">
+                            <div class="button newlinks">
+                                <a href="https://github.com/openebs/openebs/labels/help%2Fmedium " target="_blank">
+                                    <p class="newlink">Intermediate</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <br> -->
+                    <div class="row issue-row2">
+                        <!-- <div class=" col-6 col-md-6 " style="display: flex;align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">0</div>
+                            <p class="txt">Merge PRs</p>
+                        </div>
+                        <div class="col-6 col-md-6 " style="display: flex;align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">0</div>
+                            <p class="txt">Open PRs</p>
+                        </div> -->
+                        <div class="col-6 col-md-12 centerAm">
+                            <div class="button newlinks">
+                                <a href="https://github.com/openebs/openebs/search?q=go&type=Issues&utf8=%E2%9C%93" target="_blank">
+                                    <p class="newlink">Go</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-12 centerAm">
+                            <div class="button newlinks">
+                                <a href="https://github.com/openebs/openebs/issues?utf8=%E2%9C%93&q=is%3Aopen%20python " target="_blank">
+                                    <p class="newlink">Python</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row issue-row2">
+                        <!-- <div class=" col-6 col-md-6 " style="display: flex;align-items: center;justify-content: center;flex-direction: column; ">
+                                <div class="circlepr ">0</div>
+                                <p class="txt">Merge PRs</p>
+                            </div>
+                            <div class="col-6 col-md-6 " style="display: flex;align-items: center;justify-content: center;flex-direction: column; ">
+                                <div class="circlepr ">0</div>
+                                <p class="txt">Open PRs</p>
+                            </div> -->
+                        <div class="col-6 col-md-12 centerAm">
+                            <div class="button newlinks">
+                                <a href="https://github.com/openebs/openebs/labels/documentation " target="_blank">
+                                    <p class="newlink">Documentation</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-12 centerAm">
+                            <div class="button newlinks">
+                                <a href="https://github.com/openebs/openebs/issues" target="_blank">
+                                    <p class="newlink">All</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 contri">
+                    <div class="contributeissue">
+                        <img src="style/images/hackfest-01.svg" alt="contribute" title="Contribute" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 temp secondme">
+                    <div class="row issue-row1">
+                        <div class="col-6 col-md-12 mobile-view" style="align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">369</div>
+
+                            <p class="txt">Open Issues</p>
+
+                        </div>
+                        <div class="col-6 col-md-12 desktop-view newlook newlook-top">
+                            <div class="circlepr ">369</div>
+
+                            <p class="txt">Open Issues</p>
+
+                        </div>
+                        <div class="col-6 col-md-12 mobile-view" style="align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">38</div>
+                            <p class="txt"> Submitted PRs</p>
+                        </div>
+                        <div class="col-6 col-md-12 desktop-view newlook">
+                            <div class="circlepr ">38</div>
+                            <p class="txt"> Submitted PRs</p>
+                        </div>
+                    </div>
+                    <br class="mobile-view">
+                    <!-- <br> -->
+                    <div class="row issue-row2">
+                        <div class=" col-6 col-md-12 mobile-view" style="align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">29</div>
+                            <p class="txt">Merged PRs</p>
+                        </div>
+                        <div class=" col-6 col-md-12 desktop-view newlook">
+                            <div class="circlepr ">29</div>
+                            <p class="txt">Merged PRs</p>
+                        </div>
+                        <div class="col-6 col-md-12 mobile-view" style="align-items: center;justify-content: center;flex-direction: column; ">
+                            <div class="circlepr ">4</div>
+                            <p class="txt">Open PRs</p>
+                        </div>
+                        <div class="col-6 col-md-12 desktop-view newlook">
+                            <div class="circlepr ">4</div>
+                            <p class="txt">Open PRs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footerlinks">
+        <div class="container container-footer">
+            <div class="boxItem "> <a href="https://openebs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer "><span class="fa-stack fa-2x " style="background-color: white;border-radius:50%; " title="Documentation">
+                    <i class=" fa-stack-2x " ></i>
+                    <i class="fa fa-book fa-stack-1x " style="color:#ff9933 "></i>
+                    
+                  </span></a>
+            </div>
+            <div class="boxItem ">
+                <a href="https://www.facebook.com/openebs/ " target="_blank" rel="noopener noreferrer "><span class="fa-stack fa-2x " style="background-color: white;border-radius:50%; " title="Facebook">
+                            <i class=" fa-stack-2x "></i>
+                            <i class="fa fa-facebook fa-stack-1x " style="color:#ff9933 "></i>
+                          </span></a>
+            </div>
+            <div class="boxItem ">
+                <a href="https://slack.openebs.io" target="_blank" rel="noopener noreferrer "><span class="fa-stack fa-2x " style="background-color: white;border-radius:50%; " title="Slack">
+                            <i class=" fa-stack-2x "></i>
+                            <i class="fa fa-slack fa-stack-1x " style="color:#ff9933 "></i>
+                          </span></a>
+            </div>
+            <div class="boxItem ">
+                <a href="https://twitter.com/openebs " target="_blank" rel="noopener noreferrer "><span class="fa-stack fa-2x " style="background-color: white;border-radius:50%; " title="Twitter">
+                            <i class=" fa-stack-2x "></i>
+                            <i class="fa fa-twitter fa-stack-1x " style="color:#ff9933 "></i>
+                          </span></a>
+            </div>
+            <div class="boxItem ">
+                <a href="https://github.com/openebs/ " target="_blank" rel="noopener noreferrer "><span class="fa-stack fa-2x " style="background-color: white;border-radius:50%; " title="Github">
+                            <i class=" fa-stack-2x "></i>
+                            <i class="fa fa-github fa-stack-1x " style="color:#ff9933 "></i>
+                          </span></a>
+            </div>
+            <div class="boxItem last-bxitem " style="margin-right:0;">
+                <a href="../careers/index.html " target="_blank" rel="noopener noreferrer "><span class="fa-stack fa-2x " style="background-color: white;border-radius:50%; " title="Career">
+                            <i class=" fa-stack-2x "></i>
+                            <i class="fa fa-briefcase fa-stack-1x " style="color:#ff9933 "></i>
+                          </span></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../styles/js/jquery.min.js"></script>
+    <script src="../styles/js/bootstrap.min.js"></script>
+    <script src="../styles/js/openebs.js "></script>
+    <!-- Google Analytics -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92076314-2"></script>
+    <!-- End Google Analytics -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92076314-2');
+    </script>
+</body>
+
+</html>

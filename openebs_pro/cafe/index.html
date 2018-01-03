@@ -1,0 +1,218 @@
+    <!doctype html>
+    <html>
+    <head>
+        <title>OpenEBS | Cafe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="description" content="OpenEBS is containerised storage for containers.">
+        <meta name="keywords" content="">
+        <link rel="author" href="http://github.com/openebs" />
+        <link rel="canonical" href="http://www.openebs.io/">
+        <link rel="shortcut icon" href="../styles/images/fav/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="57x57" href="../styles/images/fav/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../styles/images/fav/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../styles/images/fav/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../styles/images/fav/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../styles/images/fav/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../styles/images/fav/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../styles/images/fav/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../styles/images/fav/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../styles/images/fav/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="../styles/images/fav/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="../styles/images/fav/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="../styles/images/fav/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="../styles/images/fav/android-chrome-192x192.png" sizes="192x192">
+        <meta name="msapplication-square70x70logo" content="../styles/images/fav/smalltile.png" />
+        <meta name="msapplication-square150x150logo" content="../styles/images/fav/mediumtile.png" />
+        <meta name="msapplication-wide310x150logo" content="../styles/images/fav/widetile.png" />
+        <meta name="msapplication-square310x310logo" content="../styles/images/fav/largetile.png" />
+        <link href="../styles/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../styles/css/bootstrap-reboot.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../styles/css/openebs.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <script src="../styles/js/jquery.min.js"></script>
+        <script src="../styles/js/bootstrap.min.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+        <style>
+        .desktopv {
+            display: block;
+        }
+        
+        .mobview {
+            display: none;
+        }
+        .mailto , .mailto:hover , .mailto:focus {
+            text-decoration: none;
+            outline: none;
+            text-transform: none;
+        }
+        
+        @media screen and (max-width:780px) {
+            .desktopv {
+                display: none;
+            }
+            .mobview {
+                display: block;
+            }
+            .hero .hero-btn {
+                margin-top: -56%;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .hero .hero-btn {
+                margin-top: -56%;
+            }
+        }
+    </style>
+
+
+    </head>
+
+    <body class="cafe-body">
+        <!--header-->
+        <!--header-->
+    <div class="ebs-nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand desktop-logo" href="https://openebs.io"><img src="../styles/images/banner-icon.svg" height="40" style="width:auto;" alt="Desktop-logo" title="OpenEBS"></a>
+            <a class="navbar-brand mobile-logo" href="https://openebs.io"><img src="../styles/images/openebs-logo.svg" height="40" style="width:auto;" alt="Desktop-logo" title="OpenEBS"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" onclick="openNav()" aria-label="Toggle navigation" style="border:0px;"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-md-auto social-top-cafe">
+                    <a href="https://openebs.readthedocs.io/en/latest/"  target="_blank" rel="noopener noreferrer" title="Documentation">
+                        <li class="nav-item p-3" style="display:inline;" title="Documentation"><i class="fa fa-book" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://www.facebook.com/openebs/"  target="_blank" rel="noopener noreferrer" title="Facebook">
+                        <li class="nav-item p-3" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://slack.openebs.io"  target="_blank" rel="noopener noreferrer" title="Slack">
+                        <li class="nav-item p-3" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://blog.openebs.io"  target="_blank" rel="noopener noreferrer" title="Blog">
+                        <li class="nav-item p-3" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://twitter.com/openebs"  target="_blank" rel="noopener noreferrer" title="Twitter">
+                        <li class="nav-item p-3" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://github.com/openebs/"  target="_blank" rel="noopener noreferrer" title="Github">
+                        <li class="nav-item p-3" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Side drawer-->
+<div id="mySidenav" class="sidenav" style="background:#52b8ba;"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav ml-md-auto social-top">
+        <a href="https://openebs.readthedocs.io/en/latest/"  target="_blank" rel="noopener noreferrer">
+            <li class="nav-item p-2" style="display:inline;" title="Documentation"><i class="fa fa-book" aria-hidden="true"></i></li>
+        </a>
+        <a href="https://www.facebook.com/openebs/"  target="_blank" rel="noopener noreferrer">
+            <li class="nav-item p-2" style="display:inline;" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        </a>
+        <a href="https://slack.openebs.io"  target="_blank" rel="noopener noreferrer">
+            <li class="nav-item p-2" style="display:inline;" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></li>
+        </a>
+        <a href="https://blog.openebs.io"  target="_blank" rel="noopener noreferrer">
+            <li class="nav-item p-2" style="display:inline;" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></li>
+        </a>
+        <a href="https://twitter.com/openebs"  target="_blank" rel="noopener noreferrer">
+            <li class="nav-item p-2" style="display:inline;" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        </a>
+        <a href="https://github.com/openebs/"  target="_blank" rel="noopener noreferrer">
+            <li class="nav-item p-2" style="display:inline;" title="Github "><i class="fa fa-github" aria-hidden="true"></i></li>
+        </a>
+    </ul>
+</div>
+
+
+        <!--cafe-hero-->
+        <section class="hero desktop-view desktopv"> <img class="" src="styles/icons/Opensourcecafe-des.svg" alt="Desktop-Mule" title="Mule">
+            <center> <a href="" class="btn btn-ebs-sm hero-btn" id="hero-bttn" name="hero-bttn" value="#coming-soon-section">Become A Member</a> </center>
+        </section>
+        <section class="hero mobile-view mobview"> <img class="" src="styles/icons/OpenSourcecafe-mobile.svg" alt="Mobile-Mule" title="Mule">
+            <center> <a href="#coming-soon-section" class="btn btn-ebs-sm hero-btn" id="hero-bttn" name="hero-bttn" value="#coming-soon-section">Become A Member</a> </center>
+        </section>
+        <!--Benefits section-->
+        <section class="menu-section" style="margin-top:0%;">
+            <div class="desktop-view desktopv"> <img src="styles/icons/menu.svg"> </div>
+            <div class="mobile-view mobview"> <img src="styles/icons/menu-mob.svg"> </div>
+        </section>
+        <!--Coming soon section-->
+        <section class="coming-soon-section" id="coming-soon-section">
+            <div class="container">
+                <div class="row" style="align-items: center;">
+                    <div class="col-md-5 meet-icon"> <img src="styles/icons/ebscafe-meet.svg"> </div>
+                    <div class="col-md-7 soon-text">
+                        <h2 style="color:#62b2b2;">Become a member</h2>
+                        <h3>Be the first to know when we launch.</h3>
+                        <br>
+                        <!-- <div id=frm-area>
+                            <form id="soon-frm" class="form-inline" method="post" action="">
+                                <div class="form-group mr-3 soon-frm">
+                                    <input type="email" class="form-control" placeholder="Enter your email address" id="email_txt" name="email_txt" required> </div>
+                                <button type="submit" class="btn btn-ebs-sm" name="join-bttn" id="join-bttn" style="background-color:#62b2b2;"> Let me know</button>
+                                <br>
+                                
+<script>
+        $('#soon-frm').hide();
+        $('#frm-area').append("<p style=color:#62b2b2;>Thanks for registering.</p>");
+        event.preventDefault();
+</script>
+
+                            </form>
+
+
+                        </div> -->
+                        <button type="button" class="btn btn-md mailto" style="text-decoration:none;"><a href="mailto:niti.suryawanshi@openebs.io" style="color:#ff8c58">Email us</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Main 101 courses-->
+        <section class="course-section">
+            <div class="desktop-view desktopv" style="margin:5% 0% 0 0%;"> <img src="styles/icons/course-desktop.svg" width="100%" height="auto"> </div>
+            <div class="mobile-view mobview"> <img src="styles/icons/course-mob.svg"> </div>
+        </section>
+        <!--Community section-->
+        <section class="mar-t-5 contribute" style="background:#fff;">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-center ebs-footer cafe-footer">
+                            <div class="social ">
+                                <a href="http://openebs.readthedocs.io/en/latest/"  target="_blank" rel="noopener noreferrer" title="Documentation"><i class="fa fa-book" aria-hidden="true"></i></a>
+                            </div>
+                                <div class="social"> <a href="https://twitter.com/openebs"  target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                                <div class="social"> <a href="https://www.facebook.com/openebs"  target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> </div>
+                                <div class="social"> <a href="https://slack.openebs.io"  target="_blank" rel="noopener noreferrer" title="Slack"><i class="fa fa-slack" aria-hidden="true"></i></a> </div>
+                                <div class="social"> <a href="https://github.com/openebs/"  target="_blank" rel="noopener noreferrer" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a> </div>
+                                <div class="social"> <a href="https://www.youtube.com/channel/UC3ywadaAUQ1FI4YsHZ8wa0g"  target="_blank" rel="noopener noreferrer" title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </div>
+                                <div class="social"> <a href="https://blog.openebs.io"  target="_blank" rel="noopener noreferrer" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section> </section>
+        <!--js files-->
+        <script src="../styles/js/openebs.js"></script>
+        <script>
+            $('#hero-bttn').click(function () {
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('value')).offset().top
+                }, 500);
+                return false;
+            });
+        </script>
+    </body>
+
+    </html>
