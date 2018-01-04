@@ -24,9 +24,10 @@ before_script:
 - sleep 3
 - fluxbox >/dev/null 2>&1 &
 after_success:
-- if  [[ $TRAVIS_PULL_REQUEST = "false"] && ["$TRAVIS_BRANCH" == "master"]] then export REPO=avneetsingh/openebs-website;
-  docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" && docker build -f openebs_pro/Dockerfile
-  -t $REPO:$COMMIT . && docker push $REPO; fi
+- if  [[ $TRAVIS_PULL_REQUEST = "false" && $TRAVIS_BRANCH == "master"]] 
+  then 
+    export REPO=avneetsingh/openebs-website;
+    docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" && docker build -f openebs_pro/Dockerfile -t $REPO:$COMMIT . && docker push $REPO; fi
 notifications:
   email:
     on_success: never
